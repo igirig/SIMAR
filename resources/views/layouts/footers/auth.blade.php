@@ -14,7 +14,7 @@
             <script>
                 document.write(new Date().getFullYear())
 
-            </script>, hecho con <a style="color: lightgreen" href="https://www.creative-tim.com"
+            </script>, hecho con <a href="https://www.creative-tim.com"
                 target="_blank">Creative Tim</a>
         </div>
     </div>
