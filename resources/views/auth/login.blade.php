@@ -4,6 +4,7 @@
     <div class="container" style="height: auto;">
         <div class="row align-items-center">
             <div class="col-md-9 ml-auto mr-auto mb-3 text-center">
+                <img src="{{ asset('img/grupoSimar.png') }}" alt="Grupo Simar">
                 <h3>{{ __('Bienvenido al Sistema Integral de Apoyo a Procesos Administrativos de Grupo SIMAR') }}</h3>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
@@ -24,8 +25,8 @@
                                         </span>
                                     </div>
                                     <input type="email" name="email" class="form-control"
-                                        placeholder="{{ __('Correo Electrónico...') }}" value="{{ old('email', null) }}" required
-                                        autocomplete="email" autofocus>
+                                        placeholder="{{ __('Correo Electrónico...') }}" value="{{ old('email', null) }}"
+                                        required autocomplete="email" autofocus>
                                 </div>
                                 @if ($errors->has('email'))
                                     <div id="email-error" class="error text-danger pl-3" for="email"
@@ -62,7 +63,8 @@
                             </div>
                         </div>
                         <div class="card-footer justify-content-center">
-                            <button type="submit" class="btn btn-success btn-link btn-lg">{{ __('Iniciar Sesión') }}</button>
+                            <button type="submit"
+                                class="btn btn-success btn-link btn-lg">{{ __('Iniciar Sesión') }}</button>
                         </div>
                     </div>
                 </form>
