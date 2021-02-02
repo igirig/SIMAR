@@ -14,6 +14,7 @@
                     <div class="card card-login card-hidden mb-3">
                         <div class="card-header card-header-success text-center">
                             <h3 class="card-title"><strong>{{ __('Iniciar sesión') }}</strong></h3>
+                            <img src="{{ asset('img/logoSimar2.png') }}" alt="Grupo Simar" height="50px" width="50px">
                         </div>
                         <div class="card-body">
                             <p class="card-description text-center">{{ __('Ingrese sus datos del sistema:') }}</p>
