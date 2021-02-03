@@ -22,9 +22,9 @@
                                             <thead class="text-primary">
                                                 <th>ID</th>
                                                 <th>Nombre</th>
+                                                <th>Apellidos</th>
                                                 <th>Correo</th>
                                                 <th>Fecha de Creación</th>
-                                                <th>Fecha de Modificación</th>
                                                 <th class="text-right">Acciones</th>
                                             </thead>
                                             <tbody>
@@ -32,9 +32,9 @@
                                                     <tr>
                                                         <td>{{ $user->id }}</td>
                                                         <td>{{ $user->name }}</td>
+                                                        <td>{{ $user->lastName }}</td>
                                                         <td>{{ $user->email }}</td>
                                                         <td>{{ $user->created_at }}</td>
-                                                        <td>{{ $user->updated_at }}</td>
                                                         <td class="td-actions text-right">
                                                             <a href="{{ route('users.show', $user->id) }}"
                                                                 class="btn btn-info" title="Visualizar usuario"><i
