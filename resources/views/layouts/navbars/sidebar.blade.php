@@ -19,6 +19,7 @@
                 </a>
             </li>
 
+            {{-- Usuarios --}}
             <li class="nav-item {{ $activePage == 'users.index' || $activePage == 'users.create' ? ' active' : '' }}">
                 <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample" aria-expanded="false">
                     <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
@@ -44,25 +45,26 @@
                 </div>
             </li>
 
-            <li class="nav-item {{ $activePage == 'users.index' || $activePage == 'users.create' ? ' active' : '' }}">
+            {{-- Clientes --}}
+            <li class="nav-item {{ $activePage == 'clientes.index' || $activePage == 'clientes.create' ? ' active' : '' }}">
                 <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample2" aria-expanded="false">
                     <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
-                    <p>{{ __('Usuarios') }}
+                    <p>{{ __('Clientes') }}
                         <b class="caret"></b>
                     </p>
                 </a>
                 <div class="collapse" id="laravelExample2">
                     <ul class="nav">
-                        <li class="nav-item{{ $activePage == 'users.index' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('users.index') }}">
+                        <li class="nav-item{{ $activePage == 'clientes.index' ? ' active' : '' }}">
+                            <a class="nav-link" href="{{ route('clientes.index') }}">
                                 <span class="sidebar-mini"> UP </span>
-                                <span class="sidebar-normal">{{ __('Lista de usuarios') }} </span>
+                                <span class="sidebar-normal">{{ __('Lista de clientes') }} </span>
                             </a>
                         </li>
-                        <li class="nav-item{{ $activePage == 'users.create' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('users.create') }}">
+                        <li class="nav-item{{ $activePage == 'clientes.create' ? ' active' : '' }}">
+                            <a class="nav-link" href="{{ route('clientes.create') }}">
                                 <span class="sidebar-mini"> UM </span>
-                                <span class="sidebar-normal"> {{ __('Crear un usuario') }} </span>
+                                <span class="sidebar-normal"> {{ __('Crear un cliente') }} </span>
                             </a>
                         </li>
                     </ul>

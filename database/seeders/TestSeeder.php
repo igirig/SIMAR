@@ -48,11 +48,15 @@ class TestSeeder extends Seeder
 		DB::table('clientes')->insert([
 			'id' => '1',
 			'razonSocial' =>  'TECNOLÓGICO NACIONAL DE MÉXICO',
+			'created_at' => Carbon::now(),
+			'updated_at' => Carbon::now(),
 		]);
 
 		DB::table('clientes')->insert([
 			'id' => '2',
 			'razonSocial' =>  'COMISION FEDERAL DE ELECTRICIDAD',
+			'created_at' => Carbon::now(),
+			'updated_at' => Carbon::now(),
 		]);
 
 		DB::table('sucursales')->insert([
