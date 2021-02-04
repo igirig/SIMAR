@@ -17,7 +17,6 @@ class CreateAllTables extends Migration
         Schema::create('clientes', function (Blueprint $table) {
             $table->id();
             $table->string('razonSocial')->unique();
-            $table->string('noRegistroAmbiental'); //Número de registro ambiental / SEMARNAT
             $table->timestamps();
         });
 
@@ -26,9 +25,10 @@ class CreateAllTables extends Migration
             $table->unsignedBigInteger('cliente_id');
             $table->foreign('cliente_id')->references('id')->on('clientes');
             $table->string('nombre')->unique();
+            $table->string('noRegistroAmbiental')->unique(); //Número de registro ambiental / SEMARNAT
             $table->string('calle');
             $table->string('noExterior')->nullable(); //Número exterior
-            $table->string('noInterior')->nulleable(); //Número interior
+            $table->string('noInterior')->nullable(); //Número interior
             $table->string('colonia');
             $table->integer('codigoPostal');
             $table->unsignedBigInteger('estado_id');
@@ -59,7 +59,7 @@ class CreateAllTables extends Migration
             $table->string('noRegistroAmbiental'); //Número de registro ambiental / SEMARNAT
             $table->string('calle');
             $table->string('noExterior')->nullable(); //Número exterior
-            $table->string('noInterior')->nulleable(); //Número interior
+            $table->string('noInterior')->nullable(); //Número interior
             $table->string('colonia');
             $table->integer('codigoPostal');
             $table->unsignedBigInteger('estado_id');
@@ -88,7 +88,7 @@ class CreateAllTables extends Migration
             $table->string('noRegistroAmbiental'); //Número de registro ambiental / SEMARNAT
             $table->string('calle');
             $table->string('noExterior')->nullable(); //Número exterior
-            $table->string('noInterior')->nulleable(); //Número interior
+            $table->string('noInterior')->nullable(); //Número interior
             $table->string('colonia');
             $table->integer('codigoPostal');
             $table->unsignedBigInteger('estado_id');
@@ -106,7 +106,7 @@ class CreateAllTables extends Migration
             $table->string('noEstacion'); //Número de estación
             $table->string('calle');
             $table->string('noExterior')->nullable(); //Número exterior
-            $table->string('noInterior')->nulleable(); //Número interior
+            $table->string('noInterior')->nullable(); //Número interior
             $table->string('colonia');
             $table->integer('codigoPostal');
             $table->unsignedBigInteger('estado_id');
