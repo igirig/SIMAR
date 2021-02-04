@@ -3,8 +3,9 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
 
-class CreateEntidadesMunicipiosTables extends Migration
+class CreateEstadosMunicipiosTables extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +14,7 @@ class CreateEntidadesMunicipiosTables extends Migration
      */
     public function up()
     {
-        Schema::create('entidades', function (Blueprint $table) {
+        Schema::create('estados', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('abbrev');
@@ -22,8 +23,8 @@ class CreateEntidadesMunicipiosTables extends Migration
         Schema::create('municipios', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->unsignedBigInteger('entidad_id');
-            $table->foreign('entidad_id')->references('id')->on('entidades');
+            $table->unsignedBigInteger('estado_id');
+            $table->foreign('estado_id')->references('id')->on('estados');
             $table->integer('number');
         });
     }
@@ -36,7 +37,9 @@ class CreateEntidadesMunicipiosTables extends Migration
      */
     public function down()
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::dropIfExists('entidades');
         Schema::dropIfExists('municipios');
+        DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 }
