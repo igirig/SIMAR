@@ -22,7 +22,6 @@
                                             <thead class="text-primary">
                                                 <th>ID</th>
                                                 <th>Nombre</th>
-                                                <th>Apellidos</th>
                                                 <th>Correo</th>
                                                 <th>Fecha de Creación</th>
                                                 <th class="text-right">Acciones</th>
@@ -32,7 +31,6 @@
                                                     <tr>
                                                         <td>{{ $user->id }}</td>
                                                         <td>{{ $user->name }}</td>
-                                                        <td>{{ $user->lastName }}</td>
                                                         <td>{{ $user->email }}</td>
                                                         <td>{{ $user->created_at }}</td>
                                                         <td class="td-actions text-right">
