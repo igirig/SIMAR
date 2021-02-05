@@ -34,3 +34,11 @@ Route::get('/clientes/{cliente}', [App\Http\Controllers\ClienteController::class
 Route::get('/clientes/{cliente}/edit', [App\Http\Controllers\ClienteController::class, 'edit'])->name('clientes.edit');
 Route::put('/clientes/{cliente}', [App\Http\Controllers\ClienteController::class, 'update'])->name('clientes.update');
 Route::delete('/clientes/{cliente}', [App\Http\Controllers\ClienteController::class, 'destroy'])->name('clientes.destroy');
+
+Route::get('/sucursales/create', [App\Http\Controllers\SucursalController::class, 'create'])->name('sucursales.create');
+Route::post('/sucursales', [App\Http\Controllers\SucursalController::class, 'store'])->name('sucursales.store');
+Route::get('/sucursales', [App\Http\Controllers\SucursalController::class, 'index'])->name('sucursales.index');
+Route::get('/sucursales/{sucursal}', [App\Http\Controllers\SucursalController::class, 'show'])->name('sucursales.show');
+Route::get('/sucursales/{sucursal}/edit', [App\Http\Controllers\SucursalController::class, 'edit'])->name('sucursales.edit');
+Route::put('/sucursales/{sucursal}', [App\Http\Controllers\SucursalController::class, 'update'])->name('sucursales.update');
+Route::delete('/sucursales/{sucursal}', [App\Http\Controllers\SucursalController::class, 'destroy'])->name('sucursales.destroy');

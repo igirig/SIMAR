@@ -25,9 +25,8 @@ class ClienteEditRequest extends FormRequest
     {
         $cliente = $this->route('cliente');
         return [
-            //'razonSocial' => ['required', 'min:3', 'max:128'],
             'razonSocial' => [
-                'required', 'unique:clientes,razonSocial,' . request()->route('cliente')->id
+                'required', 'min:3', 'max:128', 'unique:clientes,razonSocial,' . request()->route('cliente')->id
             ],
         ];
     }

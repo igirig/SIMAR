@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UserEditRequest extends FormRequest
+class SucursalCreateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,13 +23,17 @@ class UserEditRequest extends FormRequest
      */
     public function rules()
     {
-        $user = $this->route('user');
         return [
-            'name' => ['required', 'min:3', 'max:64'],
-            'email' => [
-                'required', 'email', 'unique:users,email,' . request()->route('user')->id
-            ],
-            'password' => 'sometimes'
+            'cliente_id' => 'required',
+            'nombre' => 'required|min:3|max:128|unique:sucursales',
+            'noRegistroAmbiental' => 'required|size:12|unique:sucursales',
+            'calle' => 'required|min:1|max:128',
+            'colonia' => 'required|min:3|max:128',
+            'codigoPostal' => 'size:5',
+            'estado_id' => 'required',
+            'municipio_id' => 'required',
+            'telefono' => 'min:10|max:13',
+            'correo' => 'required|email',
         ];
     }
 
@@ -37,7 +41,6 @@ class UserEditRequest extends FormRequest
     // {
     //     return [
     //         'name.required' => 'El campo nombre es requerido',
-    //         'email.required' => 'El campo correo  es requerido'
     //     ];
     // }
 }

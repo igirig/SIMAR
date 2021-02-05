@@ -65,13 +65,12 @@ class TestSeeder extends Seeder
 			'nombre' =>  'INSTITUTO TECNOLÓGICO SUPERIOR DE XALAPA',
 			'noRegistroAmbiental' =>  'IT-SX1-23-45-678-AB',
 			'calle' =>  'Sección 5A Reserva Territorial',
-			'noExterior' =>  'S/N',
 			'colonia' =>  'Santa Bárbara',
 			'codigoPostal' =>  '91096',
 			'estado_id' =>  '30',
 			'municipio_id' =>  '2168',
 			'telefono' =>  '228 165 0525',
-			'correoElectronico' =>  'serviciosAmbientales@itsx.edu.mx',
+			'correo' =>  'serviciosAmbientales@itsx.edu.mx',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -88,7 +87,7 @@ class TestSeeder extends Seeder
 			'estado_id' =>  '30',
 			'municipio_id' =>  '2274',
 			'telefono' =>  '229 934 1500',
-			'correoElectronico' =>  'serviciosAmbientales@itv.edu.mx',
+			'correo' =>  'serviciosAmbientales@itv.edu.mx',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -105,7 +104,7 @@ class TestSeeder extends Seeder
 			'estado_id' =>  '30',
 			'municipio_id' =>  '2274',
 			'telefono' =>  '221 154 7662',
-			'correoElectronico' =>  'cfeXalapa2@live.com.mx',
+			'correo' =>  'cfeXalapa2@live.com.mx',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -122,7 +121,7 @@ class TestSeeder extends Seeder
 			'estado_id' =>  '30',
 			'municipio_id' =>  '2107',
 			'telefono' =>  '228 852 4544',
-			'correoElectronico' =>  'cfeBanderilla@live.com.mx',
+			'correo' =>  'cfeBanderilla@live.com.mx',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -194,7 +193,7 @@ class TestSeeder extends Seeder
 			'estado_id' =>  '30',
 			'municipio_id' =>  '2168',
 			'telefono' =>  '228 824 4169',
-			'correoElectronico' =>  'grupoSimar@hotmail.com',
+			'correo' =>  'grupoSimar@hotmail.com',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -210,7 +209,7 @@ class TestSeeder extends Seeder
 			'estado_id' =>  '30',
 			'municipio_id' =>  '2168',
 			'telefono' =>  '228 946 4419',
-			'correoElectronico' =>  'renobablesRes@gmail.com',
+			'correo' =>  'renobablesRes@gmail.com',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -270,7 +269,7 @@ class TestSeeder extends Seeder
 			'estado_id' =>  '11',
 			'municipio_id' =>  '347',
 			'telefono' =>  '213 643 6435',
-			'correoElectronico' =>  'ecoltec@hotmail.com',
+			'correo' =>  'ecoltec@hotmail.com',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -286,7 +285,7 @@ class TestSeeder extends Seeder
 			'estado_id' =>  '13',
 			'municipio_id' =>  '482',
 			'telefono' =>  '222 433 5381',
-			'correoElectronico' =>  'confinesEcologicos@outlook.com',
+			'correo' =>  'confinesEcologicos@outlook.com',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -302,7 +301,7 @@ class TestSeeder extends Seeder
 			'estado_id' =>  '30',
 			'municipio_id' =>  '2274',
 			'telefono' =>  '222 754 4563',
-			'correoElectronico' =>  'adoVeracruz@gmail.com',
+			'correo' =>  'adoVeracruz@gmail.com',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -318,7 +317,7 @@ class TestSeeder extends Seeder
 			'estado_id' =>  '16',
 			'municipio_id' =>  '798',
 			'telefono' =>  '236 456 3642',
-			'correoElectronico' =>  'fercheGasContepec@live.com.mx',
+			'correo' =>  'fercheGasContepec@live.com.mx',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);

@@ -13,6 +13,7 @@
                                 <p class="card-category">Edite los datos del Cliente {{ $cliente->razonSocial }}...</p>
                             </div>
                             <div class="card-body">
+
                                 <div class="row">
                                     <label for="razonSocial" class="col-sm-2 col-form-label">Nombre:</label>
                                     <div class="col-sm-9">
@@ -24,58 +25,6 @@
                                         @endif
                                     </div>
                                 </div>
-
-                                {{-- BOTONES PARA RESIDUOS
-                                    
-                                    <div class="row">
-                                    <label for="razonSocial" class="col-sm-2 col-form-label">Clasifiación:</label>
-                                    <div class="col-sm-10">
-                                        <div class="form-check">
-                                            <label class="col-sm-12 form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                Option one is this and that&mdash;be sure to include why it's great
-                                                <span class="form-check-sign">
-                                                    <span class="check"></span>
-                                                </span>
-                                            </label>
-                                        </div>
-
-                                        <div class="form-check">
-                                            <label class="col-sm-12 form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                Option one is this and that&mdash;be sure to include why it's great
-                                                <span class="form-check-sign">
-                                                    <span class="check"></span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <label for="razonSocial" class="col-sm-2 col-form-label">Clasifiación:</label>
-                                    <div class="col-sm-10">
-                                        <div class="form-check">
-                                            <label class="col-sm-12 form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                Option one is this and that&mdash;be sure to include why it's great
-                                                <span class="form-check-sign">
-                                                    <span class="check"></span>
-                                                </span>
-                                            </label>
-                                        </div>
-
-                                        <div class="form-check">
-                                            <label class="col-sm-12 form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                Option one is this and that&mdash;be sure to include why it's great
-                                                <span class="form-check-sign">
-                                                    <span class="check"></span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div> --}}
 
                             </div>
                             <!--Footer-->

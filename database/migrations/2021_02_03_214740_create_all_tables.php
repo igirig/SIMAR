@@ -27,7 +27,7 @@ class CreateAllTables extends Migration
             $table->string('nombre')->unique();
             $table->string('noRegistroAmbiental')->unique(); //Número de registro ambiental / SEMARNAT
             $table->string('calle');
-            $table->string('noExterior')->nullable(); //Número exterior
+            $table->string('noExterior')->default('S/N'); //Número exterior
             $table->string('noInterior')->nullable(); //Número interior
             $table->string('colonia');
             $table->integer('codigoPostal');
@@ -36,7 +36,7 @@ class CreateAllTables extends Migration
             $table->unsignedBigInteger('municipio_id');
             $table->foreign('municipio_id')->references('id')->on('municipios');
             $table->string('telefono');
-            $table->string('correoElectronico');
+            $table->string('correo');
             $table->timestamps();
         });
 
@@ -67,7 +67,7 @@ class CreateAllTables extends Migration
             $table->unsignedBigInteger('municipio_id');
             $table->foreign('municipio_id')->references('id')->on('municipios');
             $table->string('telefono');
-            $table->string('correoElectronico');
+            $table->string('correo');
             $table->timestamps();
         });
 
@@ -96,7 +96,7 @@ class CreateAllTables extends Migration
             $table->unsignedBigInteger('municipio_id');
             $table->foreign('municipio_id')->references('id')->on('municipios');
             $table->string('telefono');
-            $table->string('correoElectronico');
+            $table->string('correo');
             $table->timestamps();
         });
 
@@ -114,7 +114,7 @@ class CreateAllTables extends Migration
             $table->unsignedBigInteger('municipio_id');
             $table->foreign('municipio_id')->references('id')->on('municipios');
             $table->string('telefono'); //PREGUNTAR
-            $table->string('correoElectronico'); //PREGUNTAR
+            $table->string('correo'); //PREGUNTAR
             $table->timestamps();
         });
 

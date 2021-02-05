@@ -71,25 +71,26 @@
                 </div>
             </li>
 
-            <li class="nav-item {{ $activePage == 'users.index' || $activePage == 'users.create' ? ' active' : '' }}">
+            {{-- Sucursales --}}
+            <li class="nav-item {{ $activePage == 'clientes.index' || $activePage == 'sucursales.create' ? ' active' : '' }}">
                 <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample3" aria-expanded="false">
                     <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
-                    <p>{{ __('Usuarios') }}
+                    <p>{{ __('Sucursales') }}
                         <b class="caret"></b>
                     </p>
                 </a>
                 <div class="collapse" id="laravelExample3">
                     <ul class="nav">
-                        <li class="nav-item{{ $activePage == 'users.index' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('users.index') }}">
+                        <li class="nav-item{{ $activePage == 'clientes.index' ? ' active' : '' }}">
+                            <a class="nav-link" href="{{ route('clientes.index') }}">
                                 <span class="sidebar-mini"> UP </span>
-                                <span class="sidebar-normal">{{ __('Lista de usuarios') }} </span>
+                                <span class="sidebar-normal">{{ __('Lista de clientes') }} </span>
                             </a>
                         </li>
-                        <li class="nav-item{{ $activePage == 'users.create' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('users.create') }}">
+                        <li class="nav-item{{ $activePage == 'sucursales.create' ? ' active' : '' }}">
+                            <a class="nav-link" href="{{ route('sucursales.create') }}">
                                 <span class="sidebar-mini"> UM </span>
-                                <span class="sidebar-normal"> {{ __('Crear un usuario') }} </span>
+                                <span class="sidebar-normal"> {{ __('Crear una sucursal') }} </span>
                             </a>
                         </li>
                     </ul>
