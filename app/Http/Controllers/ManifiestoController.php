@@ -29,9 +29,38 @@ class ManifiestoController extends Controller
 
             $pdf->SetFont('Helvetica');
 
-            $pdf->SetFontSize('14');
-            $pdf->SetXY(100, 57);
-            $pdf->Write(10, $clientes);
+            $pdf->SetFontSize('12');
+            $pdf->SetXY(79, 57);
+            $pdf->Write(10, 'GRUPO GASEROS ZAMORA SA  DE CV');
+
+            $pdf->SetFontSize('12');
+            $pdf->SetXY(67, 62);
+            $pdf->Write(10, 'Arquitectos #12                                                   Casa Blanca');
+
+            $pdf->SetFontSize('12');
+            $pdf->SetXY(67, 67);
+            $pdf->Write(10, 'Gutierrez Zamora                                                   Veracruz');
+
+            //Hoja2
+            $pdf->SetFontSize('12');
+            $pdf->SetXY(79, 180);
+            $pdf->Write(10, 'GRUPO GASEROS ZAMORA SA  DE CV');
+
+            $pdf->SetFontSize('12');
+            $pdf->SetXY(67, 185);
+            $pdf->Write(10, 'Arquitectos #12                                                   Casa Blanca');
+
+            $pdf->SetFontSize('12');
+            $pdf->SetXY(67, 190);
+            $pdf->Write(10, 'Gutierrez Zamora                                                   Veracruz');
+        
+            // $pdf->SetFontSize('12');
+            // $pdf->SetXY(79, 57);
+            // $pdf->Write(10,$clientes);
+
+            // $pdf->SetFontSize('12');
+            // $pdf->SetXY(79, 180);
+            // $pdf->Write(10,$clientes);
         }
 
         $pdf->Output();
