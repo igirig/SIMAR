@@ -15,6 +15,16 @@ class TestSeeder extends Seeder
 	 */
 	public function run()
 	{
+		DB::table('users')->insert([
+			'id' => '1',
+			'name' =>  'Administrador',
+			'email' =>  'admin@admin',
+			'password' => bcrypt('password'),
+			'created_at' => Carbon::now(),
+			'updated_at' => Carbon::now(),
+		]);
+
+
 		DB::table('formatos')->insert([
 			'id' => '1',
 			'nombre' =>  'Manifiesto de entrega, transporte y recepción de residuos peligrosos',

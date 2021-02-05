@@ -1,5 +1,5 @@
 <div class="sidebar" data-color="green" data-background-color="white"
-    data-image="{{ asset('img/sidebar-1.jpg')}}">
+    data-image="{{ asset('img/sidebar-1.png')}}">
     <!--
       Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -16,6 +16,13 @@
                 <a class="nav-link" href="{{ route('home') }}">
                     <i class="material-icons">dashboard</i>
                     <p>{{ __('Menú principal') }}</p>
+                </a>
+            </li>
+
+            <li class="nav-item{{ $activePage == 'manifiestos.create' ? ' active' : '' }}">
+                <a class="nav-link" href="{{ route('manifiestos.create') }}">
+                    <i class="material-icons">dashboard</i>
+                    <p>{{ __('Crear documento') }}</p>
                 </a>
             </li>
 
@@ -72,7 +79,7 @@
             </li>
 
             {{-- Sucursales --}}
-            <li class="nav-item {{ $activePage == 'clientes.index' || $activePage == 'sucursales.create' ? ' active' : '' }}">
+            <li class="nav-item {{ $activePage == 'sucursales.index' || $activePage == 'sucursales.create' ? ' active' : '' }}">
                 <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample3" aria-expanded="false">
                     <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
                     <p>{{ __('Sucursales') }}
@@ -81,10 +88,10 @@
                 </a>
                 <div class="collapse" id="laravelExample3">
                     <ul class="nav">
-                        <li class="nav-item{{ $activePage == 'clientes.index' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('clientes.index') }}">
+                        <li class="nav-item{{ $activePage == 'sucursales.index' ? ' active' : '' }}">
+                            <a class="nav-link" href="{{ route('sucursales.index') }}">
                                 <span class="sidebar-mini"> UP </span>
-                                <span class="sidebar-normal">{{ __('Lista de clientes') }} </span>
+                                <span class="sidebar-normal">{{ __('Lista de sucursales') }} </span>
                             </a>
                         </li>
                         <li class="nav-item{{ $activePage == 'sucursales.create' ? ' active' : '' }}">

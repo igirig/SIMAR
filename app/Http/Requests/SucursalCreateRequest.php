@@ -24,14 +24,11 @@ class SucursalCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'cliente_id' => 'required',
             'nombre' => 'required|min:3|max:128|unique:sucursales',
             'noRegistroAmbiental' => 'required|size:12|unique:sucursales',
             'calle' => 'required|min:1|max:128',
             'colonia' => 'required|min:3|max:128',
             'codigoPostal' => 'size:5',
-            'estado_id' => 'required',
-            'municipio_id' => 'required',
             'telefono' => 'min:10|max:13',
             'correo' => 'required|email',
         ];

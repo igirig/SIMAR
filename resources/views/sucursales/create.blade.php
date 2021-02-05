@@ -69,12 +69,10 @@
                                     <label for="cliente_id" class="col-sm-2 col-form-label">Cliente:</label>
                                     <div class="col-sm-7">
                                         <select id="cliente_id" name="cliente_id" form="cliente_id">
-                                            @forelse ($clientes as $cliente)
+                                            @foreach ($clientes as $cliente)
                                                 <option value="{{ $cliente->id }}">{{ $cliente->razonSocial }}
                                                 </option>
-                                            @empty
-                                                <option value="">[Vacío]</option>
-                                            @endforelse
+                                            @endforeach
                                         </select>
                                         @if ($errors->has('cliente_id'))
                                             <span class="error text-danger"
@@ -223,7 +221,17 @@
                                     </div>
                                 </div>
 
-
+                                <div class="row">
+                                    <label for="correo" class="col-sm-2 col-form-label">Correo electrónico:</label>
+                                    <div class="col-sm-7">
+                                        <input type="email" class="form-control" name="correo"
+                                            placeholder="Ingrese su correo electrónico" value="{{ old('correo') }}">
+                                        @if ($errors->has('correo'))
+                                            <span class="error text-danger"
+                                                for="input-email">{{ $errors->first('correo') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
 
                             </div>
                             <!--Footer-->

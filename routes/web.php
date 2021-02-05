@@ -42,3 +42,5 @@ Route::get('/sucursales/{sucursal}', [App\Http\Controllers\SucursalController::c
 Route::get('/sucursales/{sucursal}/edit', [App\Http\Controllers\SucursalController::class, 'edit'])->name('sucursales.edit');
 Route::put('/sucursales/{sucursal}', [App\Http\Controllers\SucursalController::class, 'update'])->name('sucursales.update');
 Route::delete('/sucursales/{sucursal}', [App\Http\Controllers\SucursalController::class, 'destroy'])->name('sucursales.destroy');
+
+Route::get('/manifiestos/create', [App\Http\Controllers\ManifiestoController::class, 'create'])->name('manifiestos.create');

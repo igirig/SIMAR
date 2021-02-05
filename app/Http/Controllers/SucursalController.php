@@ -36,6 +36,7 @@ class SucursalController extends Controller
 
     public function show(Sucursal $sucursal)
     {
+        $estado = DB::select('select nombre from estado where id = ?', $sucursal->id);
         return view('sucursales.show', compact('sucursal'));
     }
 
