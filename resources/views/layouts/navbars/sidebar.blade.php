@@ -21,7 +21,7 @@
 
             <li class="nav-item{{ $activePage == 'manifiestos.create' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('manifiestos.create') }}">
-                    <i class="material-icons">dashboard</i>
+                    <i class="material-icons">person</i>
                     <p>{{ __('Crear documento') }}</p>
                 </a>
             </li>
@@ -97,7 +97,7 @@
                         <li class="nav-item{{ $activePage == 'sucursales.create' ? ' active' : '' }}">
                             <a class="nav-link" href="{{ route('sucursales.create') }}">
                                 <span class="sidebar-mini"> UM </span>
-                                <span class="sidebar-normal"> {{ __('Crear un cliente') }} </span>
+                                <span class="sidebar-normal"> {{ __('Crear una sucursal') }} </span>
                             </a>
                         </li>
                     </ul>
@@ -123,7 +123,7 @@
                         <li class="nav-item{{ $activePage == 'plantas.create' ? ' active' : '' }}">
                             <a class="nav-link" href="{{ route('plantas.create') }}">
                                 <span class="sidebar-mini"> UM </span>
-                                <span class="sidebar-normal"> {{ __('Crear un cliente') }} </span>
+                                <span class="sidebar-normal"> {{ __('Crear una planta') }} </span>
                             </a>
                         </li>
                     </ul>
