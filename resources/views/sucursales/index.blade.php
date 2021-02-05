@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'users.index', 'titlePage' => 'Usuarios'] )
+@extends('layouts.main', ['activePage' => 'sucursales.index', 'titlePage' => 'sucursales'] )
 @section('content')
     <div class="content">
         <div class="container-fluid">
@@ -8,7 +8,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-success">
-                                    <h4 class="card-title">Lista de usuarios</h4>
+                                    <h4 class="card-title">Lista de sucursales</h4>
                                     <p class="card-category">Seleccione una accion...</p>
                                 </div>
                                 <div class="card-body">
@@ -27,27 +27,27 @@
                                                 <th class="text-right">Acciones</th>
                                             </thead>
                                             <tbody>
-                                                @foreach ($users as $user)
+                                                @foreach ($sucursales as $sucursal)
                                                     <tr>
-                                                        <td>{{ $user->id }}</td>
-                                                        <td>{{ $user->name }}</td>
-                                                        <td>{{ $user->email }}</td>
-                                                        <td>{{ $user->created_at }}</td>
+                                                        <td>{{ $sucursal->id }}</td>
+                                                        <td>{{ $sucursal->name }}</td>
+                                                        <td>{{ $sucursal->email }}</td>
+                                                        <td>{{ $sucursal->created_at }}</td>
                                                         <td class="td-actions text-right">
-                                                            <a href="{{ route('users.show', $user->id) }}"
-                                                                class="btn btn-info" title="Visualizar usuario"><i
+                                                            <a href="{{ route('sucursales.show', $sucursal->id) }}"
+                                                                class="btn btn-info" title="Visualizar sucursal"><i
                                                                     class="material-icons">person</i></a>
-                                                            <a href="{{ route('users.edit', $user->id) }}"
-                                                                class="btn btn-warning" title="Editar usuario"><i
+                                                            <a href="{{ route('sucursales.edit', $sucursal->id) }}"
+                                                                class="btn btn-warning" title="Editar sucursal"><i
                                                                     class="material-icons">edit</i></a>
-                                                            <form action="{{ route('users.destroy', $user->id) }}"
+                                                            <form action="{{ route('sucursales.destroy', $sucursal->id) }}"
                                                                 method="POST" style="display: inline-block;"
-                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar al usuario {{ $user->name }}?')">
+                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar al sucursal {{ $sucursal->name }}?')">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button class="btn btn-danger" type="submit"
                                                                     rel="tooltip"><i class="material-icons"
-                                                                        title="Eliminar usuario">close</i></button>
+                                                                        title="Eliminar sucursal">close</i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -57,7 +57,7 @@
                                     </div>
                                 </div>
                                 <div class="card-footer mr-auto">
-                                    {{ $users->links() }}
+                                    {{ $sucursales->links() }}
                                 </div>
                             </div>
                         </div>

@@ -43,4 +43,12 @@ Route::get('/sucursales/{sucursal}/edit', [App\Http\Controllers\SucursalControll
 Route::put('/sucursales/{sucursal}', [App\Http\Controllers\SucursalController::class, 'update'])->name('sucursales.update');
 Route::delete('/sucursales/{sucursal}', [App\Http\Controllers\SucursalController::class, 'destroy'])->name('sucursales.destroy');
 
+Route::get('/plantas/create', [App\Http\Controllers\PlantaController::class, 'create'])->name('plantas.create');
+Route::post('/plantas', [App\Http\Controllers\PlantaController::class, 'store'])->name('plantas.store');
+Route::get('/plantas', [App\Http\Controllers\PlantaController::class, 'index'])->name('plantas.index');
+Route::get('/plantas/{planta}', [App\Http\Controllers\PlantaController::class, 'show'])->name('plantas.show');
+Route::get('/plantas/{planta}/edit', [App\Http\Controllers\PlantaController::class, 'edit'])->name('plantas.edit');
+Route::put('/plantas/{planta}', [App\Http\Controllers\PlantaController::class, 'update'])->name('plantas.update');
+Route::delete('/plantas/{planta}', [App\Http\Controllers\PlantaController::class, 'destroy'])->name('plantas.destroy');
+
 Route::get('/manifiestos/create', [App\Http\Controllers\ManifiestoController::class, 'create'])->name('manifiestos.create');
