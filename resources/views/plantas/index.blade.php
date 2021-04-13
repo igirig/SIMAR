@@ -44,7 +44,7 @@
                                                                     class="material-icons">edit</i></a>
                                                             <form action="{{ route('plantas.destroy', $planta->id) }}"
                                                                 method="POST" style="display: inline-block;"
-                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar esta planta de tratamiento {{ $planta->name }}?')">
+                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar esta planta de tratamiento: {{ $planta->razonSocial }}?')">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button class="btn btn-danger" type="submit"
