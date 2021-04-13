@@ -17,18 +17,9 @@ class Sucursal extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'cliente_id',
-        'nombre',
-        'noRegistroAmbiental',
-        'calle',
-        'noExterior',
-        'noInterior',
-        'colonia',
-        'codigoPostal',
-        'estado_id',
-        'municipio_id',
-        'telefono',
-        'correoElectronico',
+        'name',
+        'email',
+        'password',
     ];
 
     /**
@@ -37,6 +28,8 @@ class Sucursal extends Authenticatable
      * @var array
      */
     protected $hidden = [
+        'password',
+        'remember_token',
     ];
 
     /**
@@ -45,5 +38,6 @@ class Sucursal extends Authenticatable
      * @var array
      */
     protected $casts = [
+        'email_verified_at' => 'datetime',
     ];
 }

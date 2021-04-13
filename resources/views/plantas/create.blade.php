@@ -1,10 +1,10 @@
-@extends('layouts.main', ['activePage' => 'plantas.create', 'titlePage' => 'plantas'])
+@extends('layouts.main', ['activePage' => 'plantas.create', 'titlePage' => 'Plantas'])
 @section('content')
     <div class="content">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <form action="{{ route('plantas.store') }}" method="post" class="form-horizontal">
+                    <form action="{{ route('plantas.store') }}" method="post" class="form-horizontal" >
                         @csrf
                         <div class="card">
                             <div class="card-header card-header-warning">
@@ -14,13 +14,13 @@
                             <div class="card-body">
 
                                 <div class="row">
-                                    <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
+                                    <label for="razonSocial" class="col-sm-2 col-form-label">Razón Social:</label>
                                     <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="nombre"
-                                            placeholder="Ingrese su nombre" value="{{ old('nombre') }}">
-                                        @if ($errors->has('nombre'))
+                                        <input type="text" class="form-control" name="razonSocial"
+                                            placeholder="Ingrese su Razón Social" value="{{ old('razonSocial') }}" autofocus>
+                                        @if ($errors->has('razonSocial'))
                                             <span class="error text-danger"
-                                                for="input-nombre">{{ $errors->first('nombre') }}</span>
+                                                for="input-razonSocial">{{ $errors->first('razonSocial') }}</span>
                                         @endif
                                     </div>
                                 </div>
@@ -105,14 +105,9 @@
                                 <div class="row">
                                     <label for="estado_id" class="col-sm-2 col-form-label">Estado:</label>
                                     <div class="col-sm-7">
-                                        <select id="estado_id" name="estado_id" form="estado_id">
-                                            @forelse ($estados as $estado)
-                                                <option value="{{ $estado->id }}">{{ $estado->nombre }}
-                                                </option>
-                                            @empty
-                                                <option value="">[Vacío]</option>
-                                            @endforelse
-                                        </select>
+                                        <input type="text" class="form-control" name="estado_id"
+                                            placeholder="Ingrese el Código postal donde esta ubicada" value="{{ old('estado_id') }}"
+                                            maxlength="5">
                                         @if ($errors->has('estado_id'))
                                             <span class="error text-danger"
                                                 for="input-estado_id">{{ $errors->first('estado_id') }}</span>
@@ -123,14 +118,9 @@
                                 <div class="row">
                                     <label for="municipio_id" class="col-sm-2 col-form-label">Municipio:</label>
                                     <div class="col-sm-7">
-                                        <select id="municipio_id" name="municipio_id" form="municipio_id">
-                                            @forelse ($municipios as $municipio)
-                                                <option value="{{ $municipio->id }}">{{ $municipio->nombre }}
-                                                </option>
-                                            @empty
-                                                <option value="">[Vacío]</option>
-                                            @endforelse
-                                        </select>
+                                        <input type="text" class="form-control" name="municipio_id"
+                                            placeholder="Ingrese el Código postal donde esta ubicada" value="{{ old('municipio_id') }}"
+                                            maxlength="5">
                                         @if ($errors->has('municipio_id'))
                                             <span class="error text-danger"
                                                 for="input-municipio_id">{{ $errors->first('municipio_id') }}</span>
@@ -138,12 +128,10 @@
                                     </div>
                                 </div>
 
-                                
-
                                 <div class="row">
                                     <label for="telefono" class="col-sm-2 col-form-label">Teléfono:</label>
                                     <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="telefono"
+                                        <input type="tel" class="form-control" name="telefono"
                                             placeholder="Ingrese el Teléfono donde esta ubicada" value="{{ old('telefono') }}"
                                             maxlength="10">
                                         @if ($errors->has('telefono'))

@@ -20,7 +20,7 @@ class SucursalController extends Controller
     {
         $clientes = DB::table('clientes')->get();
         $estados = DB::table('estados')->get();
-        $municipios = DB::table('municipios')->get();
+        $municipios = DB::select('select * from municipios where estado_id = 1', [1]);
 
         return view('sucursales.create', compact('clientes', 'estados', 'municipios'));
     }

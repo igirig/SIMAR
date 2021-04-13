@@ -27,7 +27,7 @@ class CreateAllTables extends Migration
             $table->string('nombre')->unique();
             $table->string('noRegistroAmbiental')->unique(); //Número de registro ambiental / SEMARNAT
             $table->string('calle');
-            $table->string('noExterior')->default('S/N'); //Número exterior
+            $table->string('noExterior')->nullable(); //Número exterior
             $table->string('noInterior')->nullable(); //Número interior
             $table->string('colonia');
             $table->integer('codigoPostal');

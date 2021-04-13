@@ -19,18 +19,16 @@ class PlantaController extends Controller
     public function create()
     {
         $estados = DB::table('estados')->get();
-        $municipios = DB::table('municipios')->get();
+        $municipios = DB::select('select * from municipios where estado_id = 1', [1]);
 
         return view('plantas.create', compact('estados', 'municipios'));
     }
 
     public function store(PlantaCreateRequest $request)
     {
-        $planta = Planta::create($request->only('name', 'email')
-            + [
-                'password' => bcrypt($request->input('password')),
-            ]);
-        return redirect()->route('plantas.show', $planta->id)->with('success', 'Usuario creado correctamente');
+        $planta = Planta::create($request->all());
+
+        return redirect()->route('plantas.show', $planta->id)->with('success', 'Planta creada correctamente');
     }
 
     public function show(Planta $planta)
@@ -38,25 +36,33 @@ class PlantaController extends Controller
         return view('plantas.show', compact('planta'));
     }
 
-    public function edit(planta $planta)
+    public function edit(Planta $planta)
     {
         return view('plantas.edit', compact('planta'));
     }
 
     public function update(PlantaEditRequest $request, planta $planta)
     {
-        $data = $request->only('name', 'email');
-        $password = $request->input('password');
-        if ($password)
-            $data['password'] = bcrypt($password);
+
+        $data = $request->only('razonSocial',
+        'noRegistroAmbiental',
+        'calle',
+        'noExterior',
+        'noInterior',
+        'colonia',
+        'codigoPostal',
+        'estado_id',
+        'municipio_id',
+        'telefono',
+        'correo',);
 
         $planta->update($data);
-        return redirect()->route('plantas.show', $planta->id)->with('success', 'Usuario actualizado correctamente');
+        return redirect()->route('plantas.show', $planta->id)->with('success', 'Planta actualizada correctamente');
     }
 
     public function destroy(Planta $planta)
     {
         $planta->delete();
-        return redirect()->route('plantas.index')->with('sucess', 'Usuario eliminado correctamente');
+        return redirect()->route('plantas.index')->with('sucess', 'Planta eliminada correctamente');
     }
 }

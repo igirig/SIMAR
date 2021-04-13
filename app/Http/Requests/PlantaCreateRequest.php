@@ -13,7 +13,7 @@ class PlantaCreateRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,18 @@ class PlantaCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'razonSocial' => 'required|min:3|max:64|unique:plantas',
+            'noRegistroAmbiental' => 'required|min:12|max:13|unique:plantas',
+            'calle' => 'required|min:1|max:64',
+            'noInterior' => 'max:16',
+            'noExterior' => 'max:16',
+            'colonia' => 'required|min:1|max:64',
+            'codigoPostal' => 'required|min:5|numeric',
+            'estado_id' => '',
+            'municipio_id' => '',
+            'telefono' => 'required|min:10|numeric',
+            'correo' => 'required|email',
+        
         ];
     }
 }

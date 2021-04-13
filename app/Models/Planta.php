@@ -17,9 +17,17 @@ class Planta extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'razonSocial',
+        'noRegistroAmbiental',
+        'calle',
+        'noInterior',
+        'noExterior',
+        'colonia',
+        'codigoPostal',
+        'estado_id',
+        'municipio_id',
+        'telefono',
+        'correo',
     ];
 
     /**
@@ -27,17 +35,12 @@ class Planta extends Authenticatable
      *
      * @var array
      */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
+    protected $hidden = [];
 
     /**
      * The attributes that should be cast to native types.
      *
      * @var array
      */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    protected $casts = [];
 }

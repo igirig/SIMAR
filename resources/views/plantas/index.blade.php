@@ -20,19 +20,19 @@
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead class="text-primary">
-                                                <th>ID</th>
-                                                <th>Nombre</th>
-                                                <th>No. de registro ambiental</th>
-                                                <th>Teleéfono</th>
+                                                <th>Razón Social</th>
+                                                <th>NRA</th>
+                                                <th>Teléfono</th>
+                                                <th>Correo Electrónico</th>
                                                 <th class="text-right">Acciones</th>
                                             </thead>
                                             <tbody>
                                                 @foreach ($plantas as $planta)
                                                     <tr>
-                                                        <td>{{ $planta->id }}</td>
                                                         <td>{{ $planta->razonSocial }}</td>
                                                         <td>{{ $planta->noRegistroAmbiental }}</td>
                                                         <td>{{ $planta->telefono }}</td>
+                                                        <td><a href="mailto:{{ $planta->correo }}" title="Enviar correo a {{ $planta->correo }}">{{ $planta->correo }}</a></td>
                                                         <td class="td-actions text-right">
                                                             <a href="{{ route('plantas.show', $planta->id) }}"
                                                                 class="btn btn-info" title="Visualizar planta de tratamiento
