@@ -51,4 +51,28 @@ Route::get('/plantas/{planta}/edit', [App\Http\Controllers\PlantaController::cla
 Route::put('/plantas/{planta}', [App\Http\Controllers\PlantaController::class, 'update'])->name('plantas.update');
 Route::delete('/plantas/{planta}', [App\Http\Controllers\PlantaController::class, 'destroy'])->name('plantas.destroy');
 
+Route::get('/estaciones/create', [App\Http\Controllers\estacionController::class, 'create'])->name('estaciones.create');
+Route::post('/estaciones', [App\Http\Controllers\estacionController::class, 'store'])->name('estaciones.store');
+Route::get('/estaciones', [App\Http\Controllers\estacionController::class, 'index'])->name('estaciones.index');
+Route::get('/estaciones/{estacion}', [App\Http\Controllers\estacionController::class, 'show'])->name('estaciones.show');
+Route::get('/estaciones/{estacion}/edit', [App\Http\Controllers\estacionController::class, 'edit'])->name('estaciones.edit');
+Route::put('/estaciones/{estacion}', [App\Http\Controllers\estacionController::class, 'update'])->name('estaciones.update');
+Route::delete('/estaciones/{estacion}', [App\Http\Controllers\estacionController::class, 'destroy'])->name('estaciones.destroy');
+
+Route::get('/transportistas/create', [App\Http\Controllers\transportistaController::class, 'create'])->name('transportistas.create');
+Route::post('/transportistas', [App\Http\Controllers\transportistaController::class, 'store'])->name('transportistas.store');
+Route::get('/transportistas', [App\Http\Controllers\transportistaController::class, 'index'])->name('transportistas.index');
+Route::get('/transportistas/{transportista}', [App\Http\Controllers\transportistaController::class, 'show'])->name('transportistas.show');
+Route::get('/transportistas/{transportista}/edit', [App\Http\Controllers\transportistaController::class, 'edit'])->name('transportistas.edit');
+Route::put('/transportistas/{transportista}', [App\Http\Controllers\transportistaController::class, 'update'])->name('transportistas.update');
+Route::delete('/transportistas/{transportista}', [App\Http\Controllers\transportistaController::class, 'destroy'])->name('transportistas.destroy');
+
+Route::get('/vehiculos/create', [App\Http\Controllers\vehiculoController::class, 'create'])->name('vehiculos.create');
+Route::post('/vehiculos', [App\Http\Controllers\vehiculoController::class, 'store'])->name('vehiculos.store');
+Route::get('/vehiculos', [App\Http\Controllers\vehiculoController::class, 'index'])->name('vehiculos.index');
+Route::get('/vehiculos/{vehiculo}', [App\Http\Controllers\vehiculoController::class, 'show'])->name('vehiculos.show');
+Route::get('/vehiculos/{vehiculo}/edit', [App\Http\Controllers\vehiculoController::class, 'edit'])->name('vehiculos.edit');
+Route::put('/vehiculos/{vehiculo}', [App\Http\Controllers\vehiculoController::class, 'update'])->name('vehiculos.update');
+Route::delete('/vehiculos/{vehiculo}', [App\Http\Controllers\vehiculoController::class, 'destroy'])->name('vehiculos.destroy');
+
 Route::get('/manifiestos/create', [App\Http\Controllers\ManifiestoController::class, 'create'])->name('manifiestos.create');

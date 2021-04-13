@@ -1,5 +1,4 @@
-<div class="sidebar" data-color="green" data-background-color="white"
-    data-image="{{ asset('img/sidebar-1.png')}}">
+<div class="sidebar" data-color="green" data-background-color="white" data-image="{{ asset('img/sidebar-1.png') }}">
     <!--
       Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -53,7 +52,8 @@
             </li>
 
             {{-- Clientes --}}
-            <li class="nav-item {{ $activePage == 'clientes.index' || $activePage == 'clientes.create' ? ' active' : '' }}">
+            <li
+                class="nav-item {{ $activePage == 'clientes.index' || $activePage == 'clientes.create' ? ' active' : '' }}">
                 <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample2" aria-expanded="false">
                     <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
                     <p>{{ __('Clientes') }}
@@ -78,8 +78,9 @@
                 </div>
             </li>
 
-            {{-- sucursales --}}
-            <li class="nav-item {{ $activePage == 'sucursales.index' || $activePage == 'sucursales.create' ? ' active' : '' }}">
+            {{-- Sucursales --}}
+            <li
+                class="nav-item {{ $activePage == 'sucursales.index' || $activePage == 'sucursales.create' ? ' active' : '' }}">
                 <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample3" aria-expanded="false">
                     <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
                     <p>{{ __('sucursales') }}
@@ -104,8 +105,9 @@
                 </div>
             </li>
 
-            {{-- plantas --}}
-            <li class="nav-item {{ $activePage == 'plantas.index' || $activePage == 'plantas.create' ? ' active' : '' }}">
+            {{-- Plantas --}}
+            <li
+                class="nav-item {{ $activePage == 'plantas.index' || $activePage == 'plantas.create' ? ' active' : '' }}">
                 <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample4" aria-expanded="false">
                     <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
                     <p>{{ __('plantas') }}
@@ -129,7 +131,88 @@
                     </ul>
                 </div>
             </li>
-            
+
+            {{-- Estaciones --}}
+            <li
+                class="nav-item {{ $activePage == 'estaciones.index' || $activePage == 'estaciones.create' ? ' active' : '' }}">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample5" aria-expanded="false">
+                    <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
+                    <p>{{ __('estaciones') }}
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse" id="laravelExample5">
+                    <ul class="nav">
+                        <li class="nav-item{{ $activePage == 'estaciones.index' ? ' active' : '' }}">
+                            <a class="nav-link" href="{{ route('estaciones.index') }}">
+                                <span class="sidebar-mini"> UP </span>
+                                <span class="sidebar-normal">{{ __('Lista de estaciones') }} </span>
+                            </a>
+                        </li>
+                        <li class="nav-item{{ $activePage == 'estaciones.create' ? ' active' : '' }}">
+                            <a class="nav-link" href="{{ route('estaciones.create') }}">
+                                <span class="sidebar-mini"> UM </span>
+                                <span class="sidebar-normal"> {{ __('Crear una estacion') }} </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            {{-- Transportistas --}}
+            <li
+                class="nav-item {{ $activePage == 'transportistas.index' || $activePage == 'transportistas.create' ? ' active' : '' }}">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample6" aria-expanded="false">
+                    <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
+                    <p>{{ __('transportistas') }}
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse" id="laravelExample6">
+                    <ul class="nav">
+                        <li class="nav-item{{ $activePage == 'transportistas.index' ? ' active' : '' }}">
+                            <a class="nav-link" href="{{ route('transportistas.index') }}">
+                                <span class="sidebar-mini"> UP </span>
+                                <span class="sidebar-normal">{{ __('Lista de transportistas') }} </span>
+                            </a>
+                        </li>
+                        <li class="nav-item{{ $activePage == 'transportistas.create' ? ' active' : '' }}">
+                            <a class="nav-link" href="{{ route('transportistas.create') }}">
+                                <span class="sidebar-mini"> UM </span>
+                                <span class="sidebar-normal"> {{ __('Crear un transportista') }} </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            {{-- vehiculos --}}
+            <li
+                class="nav-item {{ $activePage == 'vehiculos.index' || $activePage == 'vehiculos.create' ? ' active' : '' }}">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample7" aria-expanded="false">
+                    <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
+                    <p>{{ __('vehiculos') }}
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse" id="laravelExample7">
+                    <ul class="nav">
+                        <li class="nav-item{{ $activePage == 'vehiculos.index' ? ' active' : '' }}">
+                            <a class="nav-link" href="{{ route('vehiculos.index') }}">
+                                <span class="sidebar-mini"> UP </span>
+                                <span class="sidebar-normal">{{ __('Lista de vehiculos') }} </span>
+                            </a>
+                        </li>
+                        <li class="nav-item{{ $activePage == 'vehiculos.create' ? ' active' : '' }}">
+                            <a class="nav-link" href="{{ route('vehiculos.create') }}">
+                                <span class="sidebar-mini"> UM </span>
+                                <span class="sidebar-normal"> {{ __('Crear un vehiculo') }} </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
         </ul>
     </div>
 </div>
