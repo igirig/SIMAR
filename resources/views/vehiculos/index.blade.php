@@ -9,7 +9,7 @@
                             <div class="card">
                                 <div class="card-header card-header-success">
                                     <h4 class="card-title">Lista de usuarios</h4>
-                                    <p class="card-category">Seleccione una accion...</p>
+                                    <p class="card-category">Seleccione una acción...</p>
                                 </div>
                                 <div class="card-body">
                                     @if (session('success'))

@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'clientes.index', 'titlePage' => 'clientes'] )
+@extends('layouts.main', ['activePage' => 'clientes.index', 'titlePage' => 'Clientes'] )
 @section('content')
     <div class="content">
         <div class="container-fluid">
@@ -8,8 +8,8 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-success">
-                                    <h4 class="card-title">AAAAAAAA SEXOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</h4>
-                                    <p class="card-category">Seleccione una accion...</p>
+                                    <h4 class="card-title">Lista de clientes</h4>
+                                    <p class="card-category">Seleccione una acción...</p>
                                 </div>
                                 <div class="card-body">
                                     @if (session('success'))
