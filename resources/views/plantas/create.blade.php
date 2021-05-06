@@ -1,10 +1,22 @@
 @extends('layouts.main', ['activePage' => 'plantas.create', 'titlePage' => 'Plantas'])
+@section('scripts')
+    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('select#estado_id').on('change', function() {
+                var valor = $(this).val();
+                console.log(valor);
+            });
+        });
+
+    </script>
+@endsection
 @section('content')
     <div class="content">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <form action="{{ route('plantas.store') }}" method="post" class="form-horizontal" >
+                    <form action="{{ route('plantas.store') }}" method="post" class="form-horizontal">
                         @csrf
                         <div class="card">
                             <div class="card-header card-header-warning">
@@ -17,7 +29,8 @@
                                     <label for="razonSocial" class="col-sm-2 col-form-label">Razón Social:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="razonSocial"
-                                            placeholder="Ingrese su Razón Social" value="{{ old('razonSocial') }}" autofocus>
+                                            placeholder="Ingrese su Razón Social" value="{{ old('razonSocial') }}"
+                                            autofocus>
                                         @if ($errors->has('razonSocial'))
                                             <span class="error text-danger"
                                                 for="input-razonSocial">{{ $errors->first('razonSocial') }}</span>
@@ -55,8 +68,8 @@
                                     <label for="noExterior" class="col-sm-2 col-form-label">Número exterior:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noExterior"
-                                            placeholder="Ingrese el número exterior donde esta ubicada (*)" value="{{ old('noExterior') }}"
-                                            maxlength="16">
+                                            placeholder="Ingrese el número exterior donde esta ubicada (*)"
+                                            value="{{ old('noExterior') }}" maxlength="16">
                                         @if ($errors->has('noExterior'))
                                             <span class="error text-danger"
                                                 for="input-noExterior">{{ $errors->first('noExterior') }}</span>
@@ -68,8 +81,8 @@
                                     <label for="noInterior" class="col-sm-2 col-form-label">Número interior:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noInterior"
-                                            placeholder="Ingrese el número interior donde esta ubicada (*)" value="{{ old('noInterior') }}"
-                                            maxlength="16">
+                                            placeholder="Ingrese el número interior donde esta ubicada (*)"
+                                            value="{{ old('noInterior') }}" maxlength="16">
                                         @if ($errors->has('noInterior'))
                                             <span class="error text-danger"
                                                 for="input-noInterior">{{ $errors->first('noInterior') }}</span>
@@ -81,7 +94,8 @@
                                     <label for="colonia" class="col-sm-2 col-form-label">Colonia:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="colonia"
-                                            placeholder="Ingrese la colonia donde esta ubicada" value="{{ old('colonia') }}">
+                                            placeholder="Ingrese la colonia donde esta ubicada"
+                                            value="{{ old('colonia') }}">
                                         @if ($errors->has('colonia'))
                                             <span class="error text-danger"
                                                 for="input-colonia">{{ $errors->first('colonia') }}</span>
@@ -93,8 +107,8 @@
                                     <label for="codigoPostal" class="col-sm-2 col-form-label">Código postal:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="codigoPostal"
-                                            placeholder="Ingrese el Código postal donde esta ubicada" value="{{ old('codigoPostal') }}"
-                                            maxlength="5">
+                                            placeholder="Ingrese el Código postal donde esta ubicada"
+                                            value="{{ old('codigoPostal') }}" maxlength="5">
                                         @if ($errors->has('codigoPostal'))
                                             <span class="error text-danger"
                                                 for="input-codigoPostal">{{ $errors->first('codigoPostal') }}</span>
@@ -104,27 +118,51 @@
 
                                 <div class="row">
                                     <label for="estado_id" class="col-sm-2 col-form-label">Estado:</label>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="estado_id"
-                                            placeholder="Ingrese el Código postal donde esta ubicada" value="{{ old('estado_id') }}"
-                                            maxlength="5">
-                                        @if ($errors->has('estado_id'))
-                                            <span class="error text-danger"
-                                                for="input-estado_id">{{ $errors->first('estado_id') }}</span>
-                                        @endif
+                                    <div class="col-md-7">
+                                        <select name="estado_id"
+                                            class="form-control @error('estado_id') is-invalid @enderror" id="estado_id">
+                                            <option value="">Seleccione el estado...</option>
+                                            <!--Comienzo for each -->
+                                            @foreach ($estados as $estado)
+                                                <option value="{{ $estado->id }}"
+                                                    {{ old('estado_id') == $estado->id ? 'selected' : '' }}>
+                                                    {{ $estado->nombre }}</option>
+                                                <?php $valor = $estado->id; ?>
+                                            @endforeach
+                                            <!--termino for each -->
+                                        </select>
+                                        @error('estado_id')
+                                            <span class="invalid-feedback d-block" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                 </div>
 
+                                {{-- <h1>
+                                    {{ $valor }}
+                                </h1> --}}
+
                                 <div class="row">
                                     <label for="municipio_id" class="col-sm-2 col-form-label">Municipio:</label>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="municipio_id"
-                                            placeholder="Ingrese el Código postal donde esta ubicada" value="{{ old('municipio_id') }}"
-                                            maxlength="5">
-                                        @if ($errors->has('municipio_id'))
-                                            <span class="error text-danger"
-                                                for="input-municipio_id">{{ $errors->first('municipio_id') }}</span>
-                                        @endif
+                                    <div class="col-md-7">
+                                        <select name="municipio_id"
+                                            class="form-control @error('municipio_id') is-invalid @enderror"
+                                            id="municipio_id">
+                                            <option value="">Seleccione el municipio...</option>
+                                            <!--Comienzo for each -->
+                                            @foreach ($municipios as $municipio)
+                                                <option value="{{ $municipio->id }}"
+                                                    {{ old('municipio_id') == $municipio->id ? 'selected' : '' }}>
+                                                    {{ $municipio->nombre }}</option>
+                                            @endforeach
+                                            <!--termino for each -->
+                                        </select>
+                                        @error('municipio_id')
+                                            <span class="invalid-feedback d-block" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                 </div>
 
@@ -132,8 +170,8 @@
                                     <label for="telefono" class="col-sm-2 col-form-label">Teléfono:</label>
                                     <div class="col-sm-7">
                                         <input type="tel" class="form-control" name="telefono"
-                                            placeholder="Ingrese el Teléfono donde esta ubicada" value="{{ old('telefono') }}"
-                                            maxlength="10">
+                                            placeholder="Ingrese el Teléfono donde esta ubicada"
+                                            value="{{ old('telefono') }}" maxlength="10">
                                         @if ($errors->has('telefono'))
                                             <span class="error text-danger"
                                                 for="input-telefono">{{ $errors->first('telefono') }}</span>
@@ -156,6 +194,7 @@
                             </div>
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
+                                <a href="{{ route('plantas.index') }}" class="btn btn-success mr-3">Volver al índice</a>
                                 <button type="submit" class="btn btn-warning">Guardar planta</button>
                             </div>
                             <!--Fin del Footer-->

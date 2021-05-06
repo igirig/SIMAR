@@ -20,7 +20,6 @@
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead class="text-primary">
-                                                <th>ID</th>
                                                 <th>Razón social</th>
                                                 <th>Última Modificación</th>
                                                 <th class="text-right">Acciones</th>
@@ -28,7 +27,6 @@
                                             <tbody>
                                                 @foreach ($clientes as $cliente)
                                                     <tr>
-                                                        <td>{{ $cliente->id }}</td>
                                                         <td>{{ $cliente->razonSocial }}</td>
                                                         <td>{{ $cliente->updated_at }}</td>
                                                         <td class="td-actions text-right">
@@ -56,6 +54,10 @@
                                 </div>
                                 <div class="card-footer mr-auto">
                                     {{ $clientes->links() }}
+                                </div>
+                                <div class="card-footer ml-auto mr-auto">
+                                    <a href="{{ route('clientes.create') }}" class="btn btn-warning mr-3">Crear
+                                        Cliente</a>
                                 </div>
                             </div>
                         </div>

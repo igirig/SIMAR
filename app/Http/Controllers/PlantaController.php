@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\PlantaCreateRequest;
 use App\Http\Requests\PlantaEditRequest;
-use Illuminate\Http\Request;
 use App\Models\Planta;
 use Illuminate\Support\Facades\DB;
 
@@ -19,7 +18,8 @@ class PlantaController extends Controller
     public function create()
     {
         $estados = DB::table('estados')->get();
-        $municipios = DB::select('select * from municipios where estado_id = 1', [1]);
+        $municipios = DB::table('municipios')->get();
+        //$municipios = DB::select('select * from municipios where estado_id = 1', [1]);
 
         return view('plantas.create', compact('estados', 'municipios'));
     }

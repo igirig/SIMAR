@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\SucursalCreateRequest;
 use App\Http\Requests\SucursalEditRequest;
-use Illuminate\Http\Request;
 use App\Models\Sucursal;
 use Illuminate\Support\Facades\DB;
 
@@ -20,7 +19,7 @@ class SucursalController extends Controller
     {
         $clientes = DB::table('clientes')->get();
         $estados = DB::table('estados')->get();
-        $municipios = DB::select('select * from municipios where estado_id = 1', [1]);
+        $municipios = DB::table('municipios')->get();
 
         return view('sucursales.create', compact('clientes', 'estados', 'municipios'));
     }
@@ -31,12 +30,11 @@ class SucursalController extends Controller
             + [
                 'password' => bcrypt($request->input('password')),
             ]);
-        return redirect()->route('sucursales.show', $sucursal->id)->with('success', 'sucursal creada correctamente');
+        return redirect()->route('sucursales.show', $sucursal->id)->with('success', 'Sucursal creada correctamente');
     }
 
     public function show(Sucursal $sucursal)
     {
-        $estado = DB::select('select nombre from estado where id = ?', $sucursal->id);
         return view('sucursales.show', compact('sucursal'));
     }
 
@@ -47,13 +45,21 @@ class SucursalController extends Controller
 
     public function update(SucursalEditRequest $request, Sucursal $sucursal)
     {
-        $data = $request->only('name', 'email');
-        $password = $request->input('password');
-        if ($password)
-            $data['password'] = bcrypt($password);
+        $data = $request->only('cliente_id',
+        'nombre',
+        'noRegistroAmbiental',
+        'calle',
+        'noExterior',
+        'noInterior',
+        'colonia',
+        'codigoPostal',
+        'estado_id',
+        'municipio_id',
+        'telefono',
+        'correo',);
 
         $sucursal->update($data);
-        return redirect()->route('sucursales.show', $sucursal->id)->with('success', 'sucursal actualizada correctamente');
+        return redirect()->route('sucursales.show', $sucursal->id)->with('success', 'Sucursal actualizada correctamente');
     }
 
     public function destroy(Sucursal $sucursal)

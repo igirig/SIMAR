@@ -48,6 +48,7 @@
                             </div>
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
+                                <a href="{{ route('users.index') }}" class="btn btn-success mr-3">Volver al índice</a>
                                 <button type="submit" class="btn btn-warning">Guardar usuario</button>
                             </div>
                             <!--Fin del Footer-->

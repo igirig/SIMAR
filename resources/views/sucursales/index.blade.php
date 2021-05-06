@@ -20,7 +20,7 @@
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead class="text-primary">
-                                                <th>Razón Social</th>
+                                                <th>Nombre</th>
                                                 <th>NRA</th>
                                                 <th>Teléfono</th>
                                                 <th>Correo Electrónico</th>
@@ -29,7 +29,7 @@
                                             <tbody>
                                                 @foreach ($sucursales as $sucursal)
                                                     <tr>
-                                                        <td>{{ $sucursal->razonSocial }}</td>
+                                                        <td>{{ $sucursal->nombre }}</td>
                                                         <td>{{ $sucursal->noRegistroAmbiental }}</td>
                                                         <td>{{ $sucursal->telefono }}</td>
                                                         <td><a href="mailto:{{ $sucursal->correo }}"
@@ -38,10 +38,12 @@
                                                         <td class="td-actions text-right">
                                                             <a href="{{ route('sucursales.show', $sucursal->id) }}"
                                                                 class="btn btn-info" title="Visualizar sucursal
-                                                                    "><i class="material-icons">person</i></a>
+                                                                                    "><i
+                                                                    class="material-icons">person</i></a>
                                                             <a href="{{ route('sucursales.edit', $sucursal->id) }}"
                                                                 class="btn btn-warning" title="Editar sucursal
-                                                                    "><i class="material-icons">edit</i></a>
+                                                                                    "><i
+                                                                    class="material-icons">edit</i></a>
                                                             <form
                                                                 action="{{ route('sucursales.destroy', $sucursal->id) }}"
                                                                 method="POST" style="display: inline-block;"
@@ -50,17 +52,22 @@
                                                                 @method('DELETE')
                                                                 <button class="btn btn-danger" type="submit"
                                                                     rel="tooltip"><i class="material-icons" title="Eliminar sucursal
-                                                                            ">close</i></button>
+                                                                                            ">close</i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
                                                 @endforeach
                                             </tbody>
                                         </table>
+
                                     </div>
                                 </div>
                                 <div class="card-footer mr-auto">
                                     {{ $sucursales->links() }}
+                                </div>
+                                <div class="card-footer ml-auto mr-auto">
+                                    <a href="{{ route('sucursales.create') }}" class="btn btn-warning mr-3">Crear
+                                        Sucursal</a>
                                 </div>
                             </div>
                         </div>

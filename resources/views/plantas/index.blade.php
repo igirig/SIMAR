@@ -62,6 +62,10 @@
                                 <div class="card-footer mr-auto">
                                     {{ $plantas->links() }}
                                 </div>
+                                <div class="card-footer ml-auto mr-auto">
+                                    <a href="{{ route('plantas.create') }}" class="btn btn-warning mr-3">Crear
+                                        Planta</a>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\Sucursal as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -10,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 class Sucursal extends Authenticatable
 {
     use HasFactory, Notifiable;
+    public $table = "sucursales";
 
     /**
      * The attributes that are mass assignable.
@@ -17,9 +17,18 @@ class Sucursal extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'cliente_id',
+        'nombre',
+        'noRegistroAmbiental',
+        'calle',
+        'noInterior',
+        'noExterior',
+        'colonia',
+        'codigoPostal',
+        'estado_id',
+        'municipio_id',
+        'telefono',
+        'correo',
     ];
 
     /**
@@ -27,17 +36,12 @@ class Sucursal extends Authenticatable
      *
      * @var array
      */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
+    protected $hidden = [];
 
     /**
      * The attributes that should be cast to native types.
      *
      * @var array
      */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    protected $casts = [];
 }

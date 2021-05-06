@@ -52,84 +52,27 @@
             </li>
 
             {{-- Clientes --}}
-            <li
-                class="nav-item {{ $activePage == 'clientes.index' || $activePage == 'clientes.create' ? ' active' : '' }}">
-                <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample2" aria-expanded="false">
-                    <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
-                    <p>{{ __('Clientes') }}
-                        <b class="caret"></b>
-                    </p>
+            <li class="nav-item {{ $activePage == 'clientes.index' || $activePage == 'clientes.create' ? ' active' : '' }}">
+                <a class="nav-link" href="{{ route('clientes.index') }}">
+                    <i class="material-icons">dashboard</i>
+                    <p>{{ __('Clientes') }}</p>
                 </a>
-                <div class="collapse" id="laravelExample2">
-                    <ul class="nav">
-                        <li class="nav-item{{ $activePage == 'clientes.index' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('clientes.index') }}">
-                                <span class="sidebar-mini"> UP </span>
-                                <span class="sidebar-normal">{{ __('Lista de clientes') }} </span>
-                            </a>
-                        </li>
-                        <li class="nav-item{{ $activePage == 'clientes.create' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('clientes.create') }}">
-                                <span class="sidebar-mini"> UM </span>
-                                <span class="sidebar-normal"> {{ __('Crear un cliente') }} </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </li>
 
             {{-- Sucursales --}}
-            <li
-                class="nav-item {{ $activePage == 'sucursales.index' || $activePage == 'sucursales.create' ? ' active' : '' }}">
-                <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample3" aria-expanded="false">
-                    <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
-                    <p>{{ __('sucursales') }}
-                        <b class="caret"></b>
-                    </p>
+            <li class="nav-item{{ $activePage == 'sucursales.index' || $activePage == 'sucursales.create' ? ' active' : '' }}">
+                <a class="nav-link" href="{{ route('sucursales.index') }}">
+                    <i class="material-icons">dashboard</i>
+                    <p>{{ __('Sucursales') }}</p>
                 </a>
-                <div class="collapse" id="laravelExample3">
-                    <ul class="nav">
-                        <li class="nav-item{{ $activePage == 'sucursales.index' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('sucursales.index') }}">
-                                <span class="sidebar-mini"> UP </span>
-                                <span class="sidebar-normal">{{ __('Lista de sucursales') }} </span>
-                            </a>
-                        </li>
-                        <li class="nav-item{{ $activePage == 'sucursales.create' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('sucursales.create') }}">
-                                <span class="sidebar-mini"> UM </span>
-                                <span class="sidebar-normal"> {{ __('Crear una sucursal') }} </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </li>
 
             {{-- Plantas --}}
-            <li
-                class="nav-item {{ $activePage == 'plantas.index' || $activePage == 'plantas.create' ? ' active' : '' }}">
-                <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample4" aria-expanded="false">
-                    <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
-                    <p>{{ __('plantas') }}
-                        <b class="caret"></b>
-                    </p>
+            <li class="nav-item {{ $activePage == 'plantas.index' || $activePage == 'plantas.create' ? ' active' : '' }}">
+                <a class="nav-link" href="{{ route('plantas.index') }}">
+                    <i class="material-icons">dashboard</i>
+                    <p>{{ __('Plantas') }}</p>
                 </a>
-                <div class="collapse" id="laravelExample4">
-                    <ul class="nav">
-                        <li class="nav-item{{ $activePage == 'plantas.index' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('plantas.index') }}">
-                                <span class="sidebar-mini"> UP </span>
-                                <span class="sidebar-normal">{{ __('Lista de plantas') }} </span>
-                            </a>
-                        </li>
-                        <li class="nav-item{{ $activePage == 'plantas.create' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('plantas.create') }}">
-                                <span class="sidebar-mini"> UM </span>
-                                <span class="sidebar-normal"> {{ __('Crear una planta') }} </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </li>
 
             {{-- Estaciones --}}

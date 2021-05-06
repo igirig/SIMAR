@@ -12,6 +12,7 @@
                                 <p class="card-category">Ingrese los datos del cliente...</p>
                             </div>
                             <div class="card-body">
+                                
                                 <div class="row">
                                     <label for="razonSocial" class="col-sm-2 col-form-label">Razón social</label>
                                     <div class="col-sm-7">
@@ -26,6 +27,7 @@
                             </div>
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
+                                <a href="{{ route('clientes.index') }}" class="btn btn-success mr-3">Volver al índice</a>
                                 <button type="submit" class="btn btn-warning">Guardar Cliente</button>
                             </div>
                             <!--Fin del Footer-->
