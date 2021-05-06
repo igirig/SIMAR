@@ -8,7 +8,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-success">
-                                    <h4 class="card-title">Lista de clientes</h4>
+                                    <h4 class="card-title">AAAAAAAA SEXOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO</h4>
                                     <p class="card-category">Seleccione una accion...</p>
                                 </div>
                                 <div class="card-body">
