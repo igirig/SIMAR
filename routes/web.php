@@ -76,3 +76,5 @@ Route::put('/vehiculos/{vehiculo}', [App\Http\Controllers\vehiculoController::cl
 Route::delete('/vehiculos/{vehiculo}', [App\Http\Controllers\vehiculoController::class, 'destroy'])->name('vehiculos.destroy');
 
 Route::get('/manifiestos/create', [App\Http\Controllers\ManifiestoController::class, 'create'])->name('manifiestos.create');
+Route::get('/manifiestos', [App\Http\Controllers\ManifiestoController::class, 'index'])->name('manifiestos.index');
+Route::post('/manifiestos', [App\Http\Controllers\ManifiestoController::class, 'store'])->name('manifiestos.store');
