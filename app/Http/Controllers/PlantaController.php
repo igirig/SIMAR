@@ -18,7 +18,9 @@ class PlantaController extends Controller
 
     public function forStates($id){
 
-        return DB::select('select * from municipios where estado_id = ?', [$id]);
+        //return DB::select('select * from municipios where estado_id = ?', [$id]);
+
+        return DB::table('municipios')->select('*')->where('estado_id', '=', $id)->orderBy('nombre')->get();
     }
 
     public function create()
