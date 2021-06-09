@@ -6,6 +6,7 @@ use App\Http\Requests\PlantaCreateRequest;
 use App\Http\Requests\PlantaEditRequest;
 use App\Models\Planta;
 use Illuminate\Support\Facades\DB;
+use PhpParser\Node\Expr\FuncCall;
 
 class PlantaController extends Controller
 {
@@ -13,6 +14,11 @@ class PlantaController extends Controller
     {
         $plantas = Planta::paginate(6);
         return view('plantas.index', compact('plantas'));
+    }
+
+    public function forStates($id){
+
+        return DB::select('select * from municipios where estado_id = ?', [$id]);
     }
 
     public function create()

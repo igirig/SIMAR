@@ -8,6 +8,11 @@
                 console.log(valor);
             });
         });
+
+        $(document).on('change', 'btn btn-info dropdown-toggle', function (e) {
+            $(this).closest('form').submit();
+        });
+
     </script>
 @endsection
 @section('content')
@@ -29,7 +34,7 @@
                                       Documentos
                                     </button>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="LE">Limpieza ecologica</a>
+                                      <a class="dropdown-item" href="#">Limpieza ecologica</a>
                                       <a class="dropdown-item" href="#">Algo</a>
                                       <a class="dropdown-item" href="#">Something else here</a>
                                       <a class="dropdown-item" href="#">Separated link</a>
@@ -46,3 +51,4 @@
         </div>
     </div>
 @endsection
+

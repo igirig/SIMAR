@@ -2,12 +2,21 @@
 @section('scripts')
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $('select#estado_id').on('change', function() {
-                var valor = $(this).val();
-                console.log(valor);
+        $(function(){
+            $('#estado_id').on('change', estadoSeleccionado);
+        }) 
+        function estadoSeleccionado(){
+            var estado_id = $(this).val();
+            //alert(estado_id); Llamada peticion AJAXXX
+
+            $.get('/api/estados/'+estado_id+'', function(data){
+                var select = '<option value="">Seleccione el municipio...</option>';
+                for(var i=0; i<data.length; ++i){
+                    select+='<option value="'+data[i].id+'">'+data[i].nombre+'</option>';
+                    $('#municipio_id').html(select);
+                }
             });
-        });
+        }
 
     </script>
 @endsection
@@ -151,11 +160,11 @@
                                             id="municipio_id">
                                             <option value="">Seleccione el municipio...</option>
                                             <!--Comienzo for each -->
-                                            @foreach ($municipios as $municipio)
+                                             {{-- @foreach ($municipios as $municipio)
                                                 <option value="{{ $municipio->id }}"
                                                     {{ old('municipio_id') == $municipio->id ? 'selected' : '' }}>
                                                     {{ $municipio->nombre }}</option>
-                                            @endforeach
+                                            @endforeach --}}
                                             <!--termino for each -->
                                         </select>
                                         @error('municipio_id')

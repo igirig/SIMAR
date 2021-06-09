@@ -16,11 +16,12 @@ class ManifiestoController extends Controller
     public function index()
     {
         $sucursales = Manifiesto::paginate(6);
-        return view('manifiestos.index', compact('manifiestos'));
+        return view('manifiestos.index');
     }
 
     public function create()
     {
         return view('manifiestos.create');
     }
+
 }
