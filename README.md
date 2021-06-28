@@ -12,8 +12,11 @@
 VERSIONES UTILIZADAS:
 
 PHP: php-7.3.25-Win32-VC15-x64
+
 APACHE: httpd-2.4.35-win63-VC15
+
 MYSQL: mysql-5.7.24-winx64
+
 NODE: node-v14.15.4-win-x64
 
 
