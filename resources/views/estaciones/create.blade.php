@@ -30,7 +30,7 @@
                         <div class="card">
                             <div class="card-header card-header-warning">
                                 <h4 class="card-title">Nueva estación</h4>
-                                <p class="card-category">Ingrese los datos de la estación...</p>
+                                <p class="card-category">Ingrese los datos de la estación....</p>
                             </div>
                             <div class="card-body">
 
