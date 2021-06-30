@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'users', 'titlePage' => 'Usuario'])
+@extends('layouts.main', ['activePage' => 'estaciones', 'titlePage' => 'Estaciones'])
 @section('content')
     <div class="content">
         <div class="container-fluid">
@@ -6,8 +6,8 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header card-header-info">
-                            <h4 class="card-title">Detalles del usuario</h4>
-                            <p class="card-category">Vista detallada del usuario {{ $user->name }}...</p>
+                            <h4 class="card-title">Detalles de la Estacion</h4>
+                            <p class="card-category">Vista detallada de {{ $estacion->razonSocial }}...</p>
                         </div>
                         <!--Body-->
                         <div class="card-body">
@@ -25,24 +25,38 @@
                                                 <tbody>
                                                     <tr>
                                                         <th>ID</th>
-                                                        <td>{{ $user->id }}</td>
+                                                        <td>{{ $estacion->id }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Name</th>
-                                                        <td>{{ $user->name }}</td>
+                                                        <th>Razón Social</th>
+                                                        <td>{{ $estacion->razonSocial }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Email</th>
-                                                        <td><span class="badge badge-primary">{{ $user->email }}</span>
+                                                        <th>Número de Registro Ambiental</th>
+                                                        <td><span
+                                                                class="badge badge-primary">{{ $estacion->noEstacion }}</span>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Password</th>
-                                                        <td>{{ $user->password }}</td>
+                                                        <th>Dirección</th>
+                                                        <td>{{ $estacion->calle }} {{ $estacion->noExterior }},
+                                                            {{ $estacion->noInterior }} Col. {{ $estacion->colonia }},
+                                                            {{ $estacion->estado_id }}, {{ $estacion->municipio_id }} C.P.
+                                                            {{ $estacion->codigoPostal }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Created at</th>
-                                                        <td><a href="#" target="_blank">{{ $user->created_at }}</a>
+                                                        <th>Teléfono</th>
+                                                        <td>{{ $estacion->telefono }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Correo de Contacto</th>
+                                                        <td><a href="mailto:{{ $estacion->correo }}"
+                                                                title="Enviar correo a {{ $estacion->correo }}">{{ $estacion->correo }}</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Ultima Modificación</th>
+                                                        <td>{{ $estacion->updated_at }}</a>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -50,17 +64,17 @@
                                         </div>
                                         <div class="card-footer">
                                             <div class="button-container">
-                                                <a href="{{ route('users.index') }}"
+                                                <a href="{{ route('estaciones.index') }}"
                                                     class="btn btn-sm btn-success mr-3">Volver al índice</a>
-                                                <a href="{{ route('users.edit', $user->id) }}"
-                                                    class="btn btn-sm btn-warning mr-3">Editar usuario</a>
-                                                <form action="{{ route('users.destroy', $user->id) }}" method="POST"
+                                                <a href="{{ route('estaciones.edit', $estacion->id) }}"
+                                                    class="btn btn-sm btn-warning mr-3">Editar Estacion</a>
+                                                <form action="{{ route('estaciones.destroy', $estacion->id) }}" method="POST"
                                                     style="display: inline-block;"
-                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar al usuario {{ $user->name }}?')">
+                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar a la Estacion {{ $estacion->name }}?')">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button class="btn btn-sm btn-danger" type="submit"
-                                                        rel="tooltip">Eliminar Usuario</button>
+                                                        rel="tooltip">Eliminar Estacion</button>
                                                 </form>
                                             </div>
                                         </div>

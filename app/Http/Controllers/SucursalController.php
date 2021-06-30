@@ -15,6 +15,10 @@ class SucursalController extends Controller
         return view('sucursales.index', compact('sucursales'));
     }
 
+    public function forStates($id){
+        return DB::table('municipios')->select('*')->where('estado_id', '=', $id)->orderBy('nombre')->get();
+    }
+
     public function create()
     {
         $clientes = DB::table('clientes')->get();
@@ -26,10 +30,8 @@ class SucursalController extends Controller
 
     public function store(SucursalCreateRequest $request)
     {
-        $sucursal = Sucursal::create($request->only('name', 'email')
-            + [
-                'password' => bcrypt($request->input('password')),
-            ]);
+        $sucursal = Sucursal::create($request->all());
+
         return redirect()->route('sucursales.show', $sucursal->id)->with('success', 'Sucursal creada correctamente');
     }
 

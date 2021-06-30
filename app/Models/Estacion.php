@@ -3,12 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\Planta as Authenticatable;
+use Illuminate\Foundation\Auth\Estacion as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class Planta extends Authenticatable
+class Estacion extends Authenticatable
 {
     use HasFactory, Notifiable;
+    public $table = "estaciones";
 
     /**
      * The attributes that are mass assignable.
@@ -17,7 +18,7 @@ class Planta extends Authenticatable
      */
     protected $fillable = [
         'razonSocial',
-        'noRegistroAmbiental',
+        'noEstacion',
         'calle',
         'noExterior',
         'noInterior',

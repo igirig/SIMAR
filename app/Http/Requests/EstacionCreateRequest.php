@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PlantaCreateRequest extends FormRequest
+class EstacionCreateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,8 +24,8 @@ class PlantaCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'razonSocial' => 'required|min:3|max:64|unique:plantas',
-            'noRegistroAmbiental' => 'required|min:12|max:13|unique:plantas',
+            'razonSocial' => 'required|min:3|max:64|unique:estaciones',
+            'noEstacion' => 'required|min:6|max:13|unique:estaciones',
             'calle' => 'required|min:1|max:64',
             'noExterior' => 'max:16',
             'noInterior' => 'max:16',

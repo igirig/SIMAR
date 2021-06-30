@@ -2,15 +2,25 @@
 @section('scripts')
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $('select#estado_id').on('change', function() {
-                var valor = $(this).val();
-                console.log(valor);
+        $(function(){
+            $('#estado_id').on('change', estadoSeleccionado);
+        }) 
+        function estadoSeleccionado(){
+            var estado_id = $(this).val();
+            //alert(estado_id); Llamada peticion AJAX
+
+            $.get('/api/estados/'+estado_id+'', function(data){
+                var select = '<option value="">Seleccione el municipio...</option>';
+                for(var i=0; i<data.length; ++i){
+                    select+='<option value="'+data[i].id+'">'+data[i].nombre+'</option>';
+                    $('#municipio_id').html(select);
+                }
             });
-        });
+        }
 
     </script>
 @endsection
+
 @section('content')
     <div class="content">
         <div class="container-fluid">
@@ -78,24 +88,9 @@
                                 </div> --}}
 
 
-                                {{-- INTENTO DE MENÚ DESPLEGABLE CLIENTE
+                                {{-- PLACEHOLDER DE MENÚ DESPLEGABLE
 
-                                <div class="row">
-                                    <label for="cliente_id" class="col-sm-2 col-form-label">Cliente:</label>
-                                    <div class="col-sm-7">
-                                        <select id="cliente_id" name="cliente_id" form="cliente_id">
-                                            @foreach ($clientes as $cliente)
-                                                <option value="{{ $cliente->id }}">{{ $cliente->nombre }}
-                                                </option>
-                                            @endforeach
-                                        </select>
-                                        @if ($errors->has('cliente_id'))
-                                            <span class="error text-danger"
-                                                for="input-cliente_id">{{ $errors->first('cliente_id') }}</span>
-                                        @endif
-                                    </div>
-                                </div> --}}
-
+                                
                                 <div class="row">
                                     <label for="cliente_id" class="col-sm-2 col-form-label">Cliente:</label>
                                     <div class="col-sm-7">
@@ -107,10 +102,10 @@
                                                 for="input-cliente_id">{{ $errors->first('cliente_id') }}</span>
                                         @endif
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 <div class="row">
-                                    <label for="cliente_id" class="col-sm-2 col-form-label">Estado:</label>
+                                    <label for="cliente_id" class="col-sm-2 col-form-label">Cliente:</label>
                                     <div class="col-md-7">
                                         <select name="cliente_id"
                                             class="form-control @error('cliente_id') is-invalid @enderror" id="cliente_id">
@@ -224,19 +219,6 @@
 
                                 <div class="row">
                                     <label for="estado_id" class="col-sm-2 col-form-label">Estado:</label>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="estado_id"
-                                            placeholder="PLACEHOLDER DE MENÚ DESPLEGABLE"
-                                            value="{{ old('estado_id') }}" maxlength="5">
-                                        @if ($errors->has('estado_id'))
-                                            <span class="error text-danger"
-                                                for="input-estado_id">{{ $errors->first('estado_id') }}</span>
-                                        @endif
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <label for="estado_id" class="col-sm-2 col-form-label">Estado:</label>
                                     <div class="col-md-7">
                                         <select name="estado_id"
                                             class="form-control @error('estado_id') is-invalid @enderror" id="estado_id">
@@ -270,11 +252,11 @@
                                             id="municipio_id">
                                             <option value="">Seleccione el municipio...</option>
                                             <!--Comienzo for each -->
-                                            @foreach ($municipios as $municipio)
+                                             {{-- @foreach ($municipios as $municipio)
                                                 <option value="{{ $municipio->id }}"
                                                     {{ old('municipio_id') == $municipio->id ? 'selected' : '' }}>
                                                     {{ $municipio->nombre }}</option>
-                                            @endforeach
+                                            @endforeach --}}
                                             <!--termino for each -->
                                         </select>
                                         @error('municipio_id')
@@ -282,6 +264,19 @@
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label for="telefono" class="col-sm-2 col-form-label">Teléfono:</label>
+                                    <div class="col-sm-7">
+                                        <input type="tel" class="form-control" name="telefono"
+                                            placeholder="Ingrese el Teléfono donde esta ubicada"
+                                            value="{{ old('telefono') }}" maxlength="10">
+                                        @if ($errors->has('telefono'))
+                                            <span class="error text-danger"
+                                                for="input-telefono">{{ $errors->first('telefono') }}</span>
+                                        @endif
                                     </div>
                                 </div>
 
@@ -296,46 +291,6 @@
                                         @endif
                                     </div>
                                 </div>
-
-
-                                {{-- INTENTO DE MENÚ DESPLEGABLE ESTADO - MUNICIPIO
-                                    
-                                    <div class="row">
-                                    <label for="estado_id" class="col-sm-2 col-form-label">Estado:</label>
-                                    <div class="col-sm-7">
-                                        <select id="estado_id" name="estado_id" form="estado_id">
-                                            @forelse ($estados as $estado)
-                                                <option value="{{ $estado->id }}">{{ $estado->nombre }}
-                                                </option>
-                                            @empty
-                                                <option value="">[Vacío]</option>
-                                            @endforelse
-                                        </select>
-                                        @if ($errors->has('estado_id'))
-                                            <span class="error text-danger"
-                                                for="input-estado_id">{{ $errors->first('estado_id') }}</span>
-                                        @endif
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <label for="municipio_id" class="col-sm-2 col-form-label">Municipio:</label>
-                                    <div class="col-sm-7">
-                                        <select id="municipio_id" name="municipio_id" form="municipio_id">
-                                            @forelse ($municipios as $municipio)
-                                                <option value="{{ $municipio->id }}">{{ $municipio->nombre }}
-                                                </option>
-                                            @empty
-                                                <option value="">[Vacío]</option>
-                                            @endforelse
-                                        </select>
-                                        @if ($errors->has('municipio_id'))
-                                            <span class="error text-danger"
-                                                for="input-municipio_id">{{ $errors->first('municipio_id') }}</span>
-                                        @endif
-                                    </div>
-                                </div> --}}
-
 
                             </div>
                             <!--Footer-->

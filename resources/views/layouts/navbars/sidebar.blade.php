@@ -79,30 +79,11 @@
             </li>
 
             {{-- Estaciones --}}
-            <li
-                class="nav-item {{ $activePage == 'estaciones.index' || $activePage == 'estaciones.create' ? ' active' : '' }}">
-                <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample5" aria-expanded="false">
-                    <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
-                    <p>{{ __('estaciones') }}
-                        <b class="caret"></b>
-                    </p>
+            <li class="nav-item{{ $activePage == 'estaciones.index' || $activePage == 'estaciones.create' ? ' active' : '' }}">
+                <a class="nav-link" href="{{ route('estaciones.index') }}">
+                    <i class="material-icons">dashboard</i>
+                    <p>{{ __('Estaciones') }}</p>
                 </a>
-                <div class="collapse" id="laravelExample5">
-                    <ul class="nav">
-                        <li class="nav-item{{ $activePage == 'estaciones.index' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('estaciones.index') }}">
-                                <span class="sidebar-mini"> UP </span>
-                                <span class="sidebar-normal">{{ __('Lista de estaciones') }} </span>
-                            </a>
-                        </li>
-                        <li class="nav-item{{ $activePage == 'estaciones.create' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('estaciones.create') }}">
-                                <span class="sidebar-mini"> UM </span>
-                                <span class="sidebar-normal"> {{ __('Crear una estacion') }} </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </li>
 
             {{-- Transportistas --}}

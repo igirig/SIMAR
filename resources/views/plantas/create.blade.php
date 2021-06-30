@@ -7,7 +7,7 @@
         }) 
         function estadoSeleccionado(){
             var estado_id = $(this).val();
-            //alert(estado_id); Llamada peticion AJAXXX
+            //alert(estado_id); Llamada peticion AJAX
 
             $.get('/api/estados/'+estado_id+'', function(data){
                 var select = '<option value="">Seleccione el municipio...</option>';

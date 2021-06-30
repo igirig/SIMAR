@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'users.index', 'titlePage' => 'Usuarios'] )
+@extends('layouts.main', ['activePage' => 'estaciones.index', 'titlePage' => 'Estaciones'] )
 @section('content')
     <div class="content">
         <div class="container-fluid">
@@ -8,8 +8,8 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-success">
-                                    <h4 class="card-title">Lista de usuarios</h4>
-                                    <p class="card-category">Seleccione una accion...</p>
+                                    <h4 class="card-title">Lista de estaciones</h4>
+                                    <p class="card-category">Seleccione una acción...</p>
                                 </div>
                                 <div class="card-body">
                                     @if (session('success'))
@@ -20,34 +20,37 @@
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead class="text-primary">
-                                                <th>ID</th>
-                                                <th>Nombre</th>
-                                                <th>Correo</th>
-                                                <th>Fecha de Creación</th>
+                                                <th>Razón Social</th>
+                                                <th>Número de Estación</th>
+                                                <th>Teléfono</th>
+                                                <th>Correo Electrónico</th>
                                                 <th class="text-right">Acciones</th>
                                             </thead>
                                             <tbody>
-                                                @foreach ($users as $user)
+                                                @foreach ($estaciones as $estacion)
                                                     <tr>
-                                                        <td>{{ $user->id }}</td>
-                                                        <td>{{ $user->name }}</td>
-                                                        <td>{{ $user->email }}</td>
-                                                        <td>{{ $user->created_at }}</td>
+                                                        <td>{{ $estacion->razonSocial }}</td>
+                                                        <td>{{ $estacion->noEstacion }}</td>
+                                                        <td>{{ $estacion->telefono }}</td>
+                                                        <td><a href="mailto:{{ $estacion->correo }}" title="Enviar correo a {{ $estacion->correo }}">{{ $estacion->correo }}</a></td>
                                                         <td class="td-actions text-right">
-                                                            <a href="{{ route('users.show', $user->id) }}"
-                                                                class="btn btn-info" title="Visualizar usuario"><i
+                                                            <a href="{{ route('estaciones.show', $estacion->id) }}"
+                                                                class="btn btn-info" title="Visualizar estación
+                                                                "><i
                                                                     class="material-icons">person</i></a>
-                                                            <a href="{{ route('users.edit', $user->id) }}"
-                                                                class="btn btn-warning" title="Editar usuario"><i
+                                                            <a href="{{ route('estaciones.edit', $estacion->id) }}"
+                                                                class="btn btn-warning" title="Editar estación
+                                                                "><i
                                                                     class="material-icons">edit</i></a>
-                                                            <form action="{{ route('users.destroy', $user->id) }}"
+                                                            <form action="{{ route('estaciones.destroy', $estacion->id) }}"
                                                                 method="POST" style="display: inline-block;"
-                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar al usuario {{ $user->name }}?')">
+                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar esta estación: {{ $estacion->razonSocial }}?')">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button class="btn btn-danger" type="submit"
                                                                     rel="tooltip"><i class="material-icons"
-                                                                        title="Eliminar usuario">close</i></button>
+                                                                        title="Eliminar estación
+                                                                        ">close</i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -57,7 +60,11 @@
                                     </div>
                                 </div>
                                 <div class="card-footer mr-auto">
-                                    {{ $users->links() }}
+                                    {{ $estaciones->links() }}
+                                </div>
+                                <div class="card-footer ml-auto mr-auto">
+                                    <a href="{{ route('estaciones.create') }}" class="btn btn-warning mr-3">Crear
+                                        Estación</a>
                                 </div>
                             </div>
                         </div>
