@@ -2,17 +2,7 @@
 @section('scripts')
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $('select#estado_id').on('change', function() {
-                var valor = $(this).val();
-                console.log(valor);
-            });
-        });
-
-        $(document).on('change', 'btn btn-info dropdown-toggle', function (e) {
-            $(this).closest('form').submit();
-        });
-
+        
     </script>
 @endsection
 @section('content')
@@ -20,8 +10,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <form action="{{ route('manifiestos.store') }}" method="post" class="form-horizontal">
-                        @csrf
+                    
                         
                         <div class="card">
                             <div class="card-header card-header-warning">
@@ -34,18 +23,15 @@
                                       Documentos
                                     </button>
                                     <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="#">Limpieza ecologica</a>
-                                      <a class="dropdown-item" href="#">Algo</a>
-                                      <a class="dropdown-item" href="#">Something else here</a>
-                                      <a class="dropdown-item" href="#">Separated link</a>
+                                      <a class="dropdown-item" href="{{ route('LE.create') }}">Limpieza ecologica</a>
+                                      <a class="dropdown-item" href="{{ route('RME.create') }}">Residuos Manejo Especial</a>
+                                      <a class="dropdown-item" href="{{ route('MRP.create') }}">Residuos Peligrosos</a>
                                     </div>
                                   </div>
                                 </div>
                             </div>
 
                         </div>
-
-                    </form>
                 </div>
             </div>
         </div>
