@@ -40,6 +40,16 @@ class CreateAllTables extends Migration
             $table->timestamps();
         });
 
+        Schema::create('clases_residuo', function (Blueprint $table) { //Clase del residuo
+            $table->id();
+            $table->string('nombre')->unique();
+        });
+
+        Schema::create('estados_residuo', function (Blueprint $table) { //Estado de la materia del residuo
+            $table->id();
+            $table->string('nombre')->unique();
+        });
+
         Schema::create('residuos', function (Blueprint $table) {
             $table->id();
             $table->string('nombre')->unique();
@@ -49,7 +59,13 @@ class CreateAllTables extends Migration
             $table->boolean('toxico'); //TRUE=si es, FALSE=no es
             $table->boolean('inflamable'); //TRUE=si es, FALSE=no es
             $table->boolean('biologico'); //TRUE=si es, FALSE=no es (BIOLÓGICO/INFECCIOSO)
-            $table->boolean('mezcla'); //TRUE=si es, FALSE=no es 
+            $table->boolean('mezcla'); //TRUE=si es, FALSE=no es
+            $table->string('noONU'); //Número de la ONU
+            $table->string('descripcion')->nullable(); //Descipción del residuo
+            $table->unsignedBigInteger('clase_id');
+            $table->foreign('clase_id')->references('id')->on('clases_residuo'); //Clase del residuo
+            $table->unsignedBigInteger('materia_id');
+            $table->foreign('materia_id')->references('id')->on('estados_residuo'); //Estado de la ma
             $table->timestamps();
         });
 
@@ -71,14 +87,26 @@ class CreateAllTables extends Migration
             $table->timestamps();
         });
 
+        Schema::create('tipos_vehiculo', function (Blueprint $table) { //Tipo de vehículo
+            $table->id();
+            $table->string('nombre')->unique();
+        });
+
+        Schema::create('capacidades_vehiculo', function (Blueprint $table) { //Capacidad del vehículo
+            $table->id();
+            $table->string('nombre')->unique();
+        });
+
         Schema::create('vehiculos', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('transportista_id');
             $table->foreign('transportista_id')->references('id')->on('transportistas');
             $table->string('noPermisoSCT'); //Número de permiso de la Secretaría de Comunicaciones y Transportes (SCT)
-            $table->string('tipo');
-            $table->string('capacidad');
-            $table->string('noPlaca'); //Número de placa
+            $table->unsignedBigInteger('tipo_id');
+            $table->foreign('tipo_id')->references('id')->on('tipos_vehiculo'); //Tipo de vehiculo
+            $table->unsignedBigInteger('capacidad_id');
+            $table->foreign('capacidad_id')->references('id')->on('capacidades_vehiculo'); //Capacidad del vehiculo
+            $table->string('noPlaca')->unique(); //Número de placa
             $table->timestamps();
         });
 
@@ -223,8 +251,12 @@ class CreateAllTables extends Migration
         DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::dropIfExists('clientes');
         Schema::dropIfExists('sucursales');
+        Schema::dropIfExists('clases_residuo');
+        Schema::dropIfExists('estados_residuo');
         Schema::dropIfExists('residuos');
         Schema::dropIfExists('transportistas');
+        Schema::dropIfExists('tipos_vehiculo');
+        Schema::dropIfExists('capacidades_vehiculo');
         Schema::dropIfExists('vehiculos');
         Schema::dropIfExists('plantas');
         Schema::dropIfExists('estaciones');
