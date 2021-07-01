@@ -55,7 +55,8 @@
             </li>
 
             {{-- Clientes --}}
-            <li class="nav-item {{ $activePage == 'clientes.index' || $activePage == 'clientes.create' ? ' active' : '' }}">
+            <li
+                class="nav-item {{ $activePage == 'clientes.index' || $activePage == 'clientes.create' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('clientes.index') }}">
                     <i class="material-icons">dashboard</i>
                     <p>{{ __('Clientes') }}</p>
@@ -63,7 +64,8 @@
             </li>
 
             {{-- Sucursales --}}
-            <li class="nav-item{{ $activePage == 'sucursales.index' || $activePage == 'sucursales.create' ? ' active' : '' }}">
+            <li
+                class="nav-item{{ $activePage == 'sucursales.index' || $activePage == 'sucursales.create' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('sucursales.index') }}">
                     <i class="material-icons">dashboard</i>
                     <p>{{ __('Sucursales') }}</p>
@@ -71,7 +73,8 @@
             </li>
 
             {{-- Plantas --}}
-            <li class="nav-item {{ $activePage == 'plantas.index' || $activePage == 'plantas.create' ? ' active' : '' }}">
+            <li
+                class="nav-item {{ $activePage == 'plantas.index' || $activePage == 'plantas.create' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('plantas.index') }}">
                     <i class="material-icons">dashboard</i>
                     <p>{{ __('Plantas') }}</p>
@@ -79,7 +82,8 @@
             </li>
 
             {{-- Estaciones --}}
-            <li class="nav-item{{ $activePage == 'estaciones.index' || $activePage == 'estaciones.create' ? ' active' : '' }}">
+            <li
+                class="nav-item{{ $activePage == 'estaciones.index' || $activePage == 'estaciones.create' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('estaciones.index') }}">
                     <i class="material-icons">dashboard</i>
                     <p>{{ __('Estaciones') }}</p>
@@ -88,29 +92,11 @@
 
             {{-- Transportistas --}}
             <li
-                class="nav-item {{ $activePage == 'transportistas.index' || $activePage == 'transportistas.create' ? ' active' : '' }}">
-                <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample6" aria-expanded="false">
-                    <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
-                    <p>{{ __('transportistas') }}
-                        <b class="caret"></b>
-                    </p>
+                class="nav-item{{ $activePage == 'transportistas.index' || $activePage == 'transportistas.create' ? ' active' : '' }}">
+                <a class="nav-link" href="{{ route('transportistas.index') }}">
+                    <i class="material-icons">dashboard</i>
+                    <p>{{ __('Transportistas') }}</p>
                 </a>
-                <div class="collapse" id="laravelExample6">
-                    <ul class="nav">
-                        <li class="nav-item{{ $activePage == 'transportistas.index' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('transportistas.index') }}">
-                                <span class="sidebar-mini"> UP </span>
-                                <span class="sidebar-normal">{{ __('Lista de transportistas') }} </span>
-                            </a>
-                        </li>
-                        <li class="nav-item{{ $activePage == 'transportistas.create' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('transportistas.create') }}">
-                                <span class="sidebar-mini"> UM </span>
-                                <span class="sidebar-normal"> {{ __('Crear un transportista') }} </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </li>
 
             {{-- vehiculos --}}

@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'users.index', 'titlePage' => 'Usuarios'] )
+@extends('layouts.main', ['activePage' => 'transportistas.index', 'titlePage' => 'Transportistas'] )
 @section('content')
     <div class="content">
         <div class="container-fluid">
@@ -8,7 +8,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-success">
-                                    <h4 class="card-title">Lista de usuarios</h4>
+                                    <h4 class="card-title">Lista de transportistas</h4>
                                     <p class="card-category">Seleccione una acción...</p>
                                 </div>
                                 <div class="card-body">
@@ -20,34 +20,37 @@
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead class="text-primary">
-                                                <th>ID</th>
-                                                <th>Nombre</th>
-                                                <th>Correo</th>
-                                                <th>Fecha de Creación</th>
+                                                <th>Razón Social</th>
+                                                <th>NRA</th>
+                                                <th>Teléfono</th>
+                                                <th>Correo Electrónico</th>
                                                 <th class="text-right">Acciones</th>
                                             </thead>
                                             <tbody>
-                                                @foreach ($users as $user)
+                                                @foreach ($transportistas as $transportista)
                                                     <tr>
-                                                        <td>{{ $user->id }}</td>
-                                                        <td>{{ $user->name }}</td>
-                                                        <td>{{ $user->email }}</td>
-                                                        <td>{{ $user->created_at }}</td>
+                                                        <td>{{ $transportista->razonSocial }}</td>
+                                                        <td>{{ $transportista->noRegistroAmbiental }}</td>
+                                                        <td>{{ $transportista->telefono }}</td>
+                                                        <td><a href="mailto:{{ $transportista->correo }}"
+                                                                title="Enviar correo a {{ $transportista->correo }}">{{ $transportista->correo }}</a>
+                                                        </td>
                                                         <td class="td-actions text-right">
-                                                            <a href="{{ route('users.show', $user->id) }}"
-                                                                class="btn btn-info" title="Visualizar usuario"><i
-                                                                    class="material-icons">person</i></a>
-                                                            <a href="{{ route('users.edit', $user->id) }}"
-                                                                class="btn btn-warning" title="Editar usuario"><i
-                                                                    class="material-icons">edit</i></a>
-                                                            <form action="{{ route('users.destroy', $user->id) }}"
+                                                            <a href="{{ route('transportistas.show', $transportista->id) }}"
+                                                                class="btn btn-info" title="Visualizar transportista
+                                                                    "><i class="material-icons">person</i></a>
+                                                            <a href="{{ route('transportistas.edit', $transportista->id) }}"
+                                                                class="btn btn-warning" title="Editar transportista
+                                                                    "><i class="material-icons">edit</i></a>
+                                                            <form
+                                                                action="{{ route('transportistas.destroy', $transportista->id) }}"
                                                                 method="POST" style="display: inline-block;"
-                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar al usuario {{ $user->name }}?')">
+                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar esta transportista: {{ $transportista->razonSocial }}?')">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button class="btn btn-danger" type="submit"
-                                                                    rel="tooltip"><i class="material-icons"
-                                                                        title="Eliminar usuario">close</i></button>
+                                                                    rel="tooltip"><i class="material-icons" title="Eliminar transportista
+                                                                            ">close</i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -57,7 +60,11 @@
                                     </div>
                                 </div>
                                 <div class="card-footer mr-auto">
-                                    {{ $users->links() }}
+                                    {{ $transportistas->links() }}
+                                </div>
+                                <div class="card-footer ml-auto mr-auto">
+                                    <a href="{{ route('transportistas.create') }}" class="btn btn-warning mr-3">Crear
+                                        Transportista</a>
                                 </div>
                             </div>
                         </div>
