@@ -27,16 +27,39 @@
                             <div class="card-body">
                                 <form>
                                     <div class="form-group col-md-3">
-                                        <label for="inputServiceStation">Razón social de la estación de servicio</label>
+                                        <label for="inputServiceStation">Razón social del generador</label>
                                         <select id="inputServiceStation" class="form-control">
                                           <option selected>Escoge...</option>
                                           <option>...</option>
                                         </select>
-                                      </div>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputServiceStation">Razón social del transportista</label>
+                                        <select id="inputServiceStation" class="form-control">
+                                          <option selected>Escoge...</option>
+                                          <option>...</option>
+                                        </select>
+                                    </div>
+                                      <div class="form-group col-md-3">
+                                        <label for="inputServiceStation">Razón social del destinatario</label>
+                                        <select id="inputServiceStation" class="form-control">
+                                          <option selected>Escoge...</option>
+                                          <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputServiceStation">Residuo 0</label>
+                                        <select id="inputServiceStation" class="form-control">
+                                          <option selected>Escoge...</option>
+                                          <option>...</option>
+                                        </select>
+                                        <button type="button" class="btn btn-info btn-sm btn-round">Agregar residuo</button>
+                                    </div>
+        
                             </div>
-                            <button type="submit" class="btn btn-primary">Crear</button>
+                            <button type="submit" class="btn btn-primary" >Crear</button>
                         </div>
-                                </form>
+                    </form>
                     </div>
                 </div>
         </div>

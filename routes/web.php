@@ -78,3 +78,6 @@ Route::delete('/vehiculos/{vehiculo}', [App\Http\Controllers\VehiculoController:
 Route::get('/manifiestos/create', [App\Http\Controllers\ManifiestoController::class, 'create'])->name('manifiestos.create');
 Route::get('/manifiestos', [App\Http\Controllers\ManifiestoController::class, 'index'])->name('manifiestos.index');
 Route::post('/manifiestos', [App\Http\Controllers\ManifiestoController::class, 'store'])->name('manifiestos.store');
+Route::get('/LE/create', [App\Http\Controllers\LimpiezaEcologicaController::class, 'create'])->name('LE.create');
+Route::get('/RME/create', [App\Http\Controllers\ResiduosManejoEspecialController::class, 'create'])->name('RME.create');
+Route::get('/MRP/create', [App\Http\Controllers\ResiduosPeligrososController::class, 'create'])->name('MRP.create');
