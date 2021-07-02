@@ -154,6 +154,19 @@
                                 </div>
 
                                 <div class="row">
+                                    <label for="extension" class="col-sm-2 col-form-label">Extensión:</label>
+                                    <div class="col-sm-7">
+                                        <input type="tel" class="form-control" name="extension"
+                                            value="{{ old('extension', $sucursal->extension) }}"
+                                            maxlength="6">
+                                        @if ($errors->has('extension'))
+                                            <span class="error text-danger"
+                                                for="input-extension">{{ $errors->first('extension') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="row">
                                     <label for="correo" class="col-sm-2 col-form-label">Correo electrónico:</label>
                                     <div class="col-sm-7">
                                         <input type="email" class="form-control" name="correo"

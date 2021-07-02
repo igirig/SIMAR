@@ -8,12294 +8,12294 @@ use Illuminate\Support\Facades\DB;
 class MunicipiosTableSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * RUN THE Database SEEDS.
      *
      * @return void
      */
     public function run()
     {        
         DB::table('municipios')->insert([
-            'nombre' =>  'Aguascalientes',
+            'nombre' =>  'AGUASCALIENTES',
             'estado_id' => '01',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Asientos',
+            'nombre' =>  'ASIENTOS',
             'estado_id' => '01',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Calvillo',
+            'nombre' =>  'CALVILLO',
             'estado_id' => '01',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cosío',
+            'nombre' =>  'COSÍO',
             'estado_id' => '01',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jesús María',
+            'nombre' =>  'JESÚS MARÍA',
             'estado_id' => '01',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pabellón de Arteaga',
+            'nombre' =>  'PABELLÓN DE ARTEAGA',
             'estado_id' => '01',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rincón de Romos',
+            'nombre' =>  'RINCÓN DE ROMOS',
             'estado_id' => '01',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San José de Gracia',
+            'nombre' =>  'SAN JOSÉ DE GRACIA',
             'estado_id' => '01',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepezalá',
+            'nombre' =>  'TEPEZALÁ',
             'estado_id' => '01',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Llano',
+            'nombre' =>  'EL LLANO',
             'estado_id' => '01',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco de los Romo',
+            'nombre' =>  'SAN FRANCISCO DE LOS ROMO',
             'estado_id' => '01',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ensenada',
+            'nombre' =>  'ENSENADA',
             'estado_id' => '02',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mexicali',
+            'nombre' =>  'MEXICALI',
             'estado_id' => '02',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tecate',
+            'nombre' =>  'TECATE',
             'estado_id' => '02',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tijuana',
+            'nombre' =>  'TIJUANA',
             'estado_id' => '02',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Playas de Rosarito',
+            'nombre' =>  'PLAYAS DE ROSARITO',
             'estado_id' => '02',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Comondú',
+            'nombre' =>  'COMONDÚ',
             'estado_id' => '03',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mulegé',
+            'nombre' =>  'MULEGÉ',
             'estado_id' => '03',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Paz',
+            'nombre' =>  'LA PAZ',
             'estado_id' => '03',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Los Cabos',
+            'nombre' =>  'LOS CABOS',
             'estado_id' => '03',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Loreto',
+            'nombre' =>  'LORETO',
             'estado_id' => '03',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Calkiní',
+            'nombre' =>  'CALKINÍ',
             'estado_id' => '04',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Campeche',
+            'nombre' =>  'CAMPECHE',
             'estado_id' => '04',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Carmen',
+            'nombre' =>  'CARMEN',
             'estado_id' => '04',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Champotón',
+            'nombre' =>  'CHAMPOTÓN',
             'estado_id' => '04',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hecelchakán',
+            'nombre' =>  'HECELCHAKÁN',
             'estado_id' => '04',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hopelchén',
+            'nombre' =>  'HOPELCHÉN',
             'estado_id' => '04',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Palizada',
+            'nombre' =>  'PALIZADA',
             'estado_id' => '04',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tenabo',
+            'nombre' =>  'TENABO',
             'estado_id' => '04',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Escárcega',
+            'nombre' =>  'ESCÁRCEGA',
             'estado_id' => '04',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Calakmul',
+            'nombre' =>  'CALAKMUL',
             'estado_id' => '04',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Candelaria',
+            'nombre' =>  'CANDELARIA',
             'estado_id' => '04',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Abasolo',
+            'nombre' =>  'ABASOLO',
             'estado_id' => '05',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acuña',
+            'nombre' =>  'ACUÑA',
             'estado_id' => '05',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Allende',
+            'nombre' =>  'ALLENDE',
             'estado_id' => '05',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Arteaga',
+            'nombre' =>  'ARTEAGA',
             'estado_id' => '05',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Candela',
+            'nombre' =>  'CANDELA',
             'estado_id' => '05',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Castaños',
+            'nombre' =>  'CASTAÑOS',
             'estado_id' => '05',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuatro Ciénegas',
+            'nombre' =>  'CUATRO CIÉNEGAS',
             'estado_id' => '05',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Escobedo',
+            'nombre' =>  'ESCOBEDO',
             'estado_id' => '05',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Francisco I. Madero',
+            'nombre' =>  'FRANCISCO I. MADERO',
             'estado_id' => '05',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Frontera',
+            'nombre' =>  'FRONTERA',
             'estado_id' => '05',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'General Cepeda',
+            'nombre' =>  'GENERAL CEPEDA',
             'estado_id' => '05',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guerrero',
+            'nombre' =>  'GUERRERO',
             'estado_id' => '05',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hidalgo',
+            'nombre' =>  'HIDALGO',
             'estado_id' => '05',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jiménez',
+            'nombre' =>  'JIMÉNEZ',
             'estado_id' => '05',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juárez',
+            'nombre' =>  'JUÁREZ',
             'estado_id' => '05',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Lamadrid',
+            'nombre' =>  'LAMADRID',
             'estado_id' => '05',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Matamoros',
+            'nombre' =>  'MATAMOROS',
             'estado_id' => '05',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Monclova',
+            'nombre' =>  'MONCLOVA',
             'estado_id' => '05',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Morelos',
+            'nombre' =>  'MORELOS',
             'estado_id' => '05',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Múzquiz',
+            'nombre' =>  'MÚZQUIZ',
             'estado_id' => '05',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nadadores',
+            'nombre' =>  'NADADORES',
             'estado_id' => '05',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nava',
+            'nombre' =>  'NAVA',
             'estado_id' => '05',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocampo',
+            'nombre' =>  'OCAMPO',
             'estado_id' => '05',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Parras',
+            'nombre' =>  'PARRAS',
             'estado_id' => '05',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Piedras Negras',
+            'nombre' =>  'PIEDRAS NEGRAS',
             'estado_id' => '05',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Progreso',
+            'nombre' =>  'PROGRESO',
             'estado_id' => '05',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ramos Arizpe',
+            'nombre' =>  'RAMOS ARIZPE',
             'estado_id' => '05',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sabinas',
+            'nombre' =>  'SABINAS',
             'estado_id' => '05',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sacramento',
+            'nombre' =>  'SACRAMENTO',
             'estado_id' => '05',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Saltillo',
+            'nombre' =>  'SALTILLO',
             'estado_id' => '05',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Buenaventura',
+            'nombre' =>  'SAN BUENAVENTURA',
             'estado_id' => '05',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan de Sabinas',
+            'nombre' =>  'SAN JUAN DE SABINAS',
             'estado_id' => '05',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro',
+            'nombre' =>  'SAN PEDRO',
             'estado_id' => '05',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sierra Mojada',
+            'nombre' =>  'SIERRA MOJADA',
             'estado_id' => '05',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Torreón',
+            'nombre' =>  'TORREÓN',
             'estado_id' => '05',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Viesca',
+            'nombre' =>  'VIESCA',
             'estado_id' => '05',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Unión',
+            'nombre' =>  'VILLA UNIÓN',
             'estado_id' => '05',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zaragoza',
+            'nombre' =>  'ZARAGOZA',
             'estado_id' => '05',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Armería',
+            'nombre' =>  'ARMERÍA',
             'estado_id' => '06',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Colima',
+            'nombre' =>  'COLIMA',
             'estado_id' => '06',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Comala',
+            'nombre' =>  'COMALA',
             'estado_id' => '06',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coquimatlán',
+            'nombre' =>  'COQUIMATLÁN',
             'estado_id' => '06',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuauhtémoc',
+            'nombre' =>  'CUAUHTÉMOC',
             'estado_id' => '06',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtlahuacán',
+            'nombre' =>  'IXTLAHUACÁN',
             'estado_id' => '06',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Manzanillo',
+            'nombre' =>  'MANZANILLO',
             'estado_id' => '06',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Minatitlán',
+            'nombre' =>  'MINATITLÁN',
             'estado_id' => '06',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tecomán',
+            'nombre' =>  'TECOMÁN',
             'estado_id' => '06',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa de Álvarez',
+            'nombre' =>  'VILLA DE ÁLVAREZ',
             'estado_id' => '06',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acacoyagua',
+            'nombre' =>  'ACACOYAGUA',
             'estado_id' => '07',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acala',
+            'nombre' =>  'ACALA',
             'estado_id' => '07',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acapetahua',
+            'nombre' =>  'ACAPETAHUA',
             'estado_id' => '07',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Altamirano',
+            'nombre' =>  'ALTAMIRANO',
             'estado_id' => '07',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amatán',
+            'nombre' =>  'AMATÁN',
             'estado_id' => '07',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amatenango de la Frontera',
+            'nombre' =>  'AMATENANGO DE LA FRONTERA',
             'estado_id' => '07',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amatenango del Valle',
+            'nombre' =>  'AMATENANGO DEL VALLE',
             'estado_id' => '07',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Angel Albino Corzo',
+            'nombre' =>  'ANGEL ALBINO CORZO',
             'estado_id' => '07',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Arriaga',
+            'nombre' =>  'ARRIAGA',
             'estado_id' => '07',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bejucal de Ocampo',
+            'nombre' =>  'BEJUCAL DE OCAMPO',
             'estado_id' => '07',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bella Vista',
+            'nombre' =>  'BELLA VISTA',
             'estado_id' => '07',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Berriozábal',
+            'nombre' =>  'BERRIOZÁBAL',
             'estado_id' => '07',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bochil',
+            'nombre' =>  'BOCHIL',
             'estado_id' => '07',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Bosque',
+            'nombre' =>  'EL BOSQUE',
             'estado_id' => '07',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cacahoatán',
+            'nombre' =>  'CACAHOATÁN',
             'estado_id' => '07',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Catazajá',
+            'nombre' =>  'CATAZAJÁ',
             'estado_id' => '07',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cintalapa',
+            'nombre' =>  'CINTALAPA',
             'estado_id' => '07',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coapilla',
+            'nombre' =>  'COAPILLA',
             'estado_id' => '07',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Comitán de Domínguez',
+            'nombre' =>  'COMITÁN DE DOMÍNGUEZ',
             'estado_id' => '07',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Concordia',
+            'nombre' =>  'LA CONCORDIA',
             'estado_id' => '07',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Copainalá',
+            'nombre' =>  'COPAINALÁ',
             'estado_id' => '07',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chalchihuitán',
+            'nombre' =>  'CHALCHIHUITÁN',
             'estado_id' => '07',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chamula',
+            'nombre' =>  'CHAMULA',
             'estado_id' => '07',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chanal',
+            'nombre' =>  'CHANAL',
             'estado_id' => '07',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chapultenango',
+            'nombre' =>  'CHAPULTENANGO',
             'estado_id' => '07',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chenalhó',
+            'nombre' =>  'CHENALHÓ',
             'estado_id' => '07',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chiapa de Corzo',
+            'nombre' =>  'CHIAPA DE CORZO',
             'estado_id' => '07',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chiapilla',
+            'nombre' =>  'CHIAPILLA',
             'estado_id' => '07',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chicoasén',
+            'nombre' =>  'CHICOASÉN',
             'estado_id' => '07',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chicomuselo',
+            'nombre' =>  'CHICOMuseLO',
             'estado_id' => '07',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chilón',
+            'nombre' =>  'CHILÓN',
             'estado_id' => '07',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Escuintla',
+            'nombre' =>  'ESCUINTLA',
             'estado_id' => '07',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Francisco León',
+            'nombre' =>  'FRANCISCO LEÓN',
             'estado_id' => '07',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Frontera Comalapa',
+            'nombre' =>  'FRONTERA COMALAPA',
             'estado_id' => '07',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Frontera Hidalgo',
+            'nombre' =>  'FRONTERA HIDALGO',
             'estado_id' => '07',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Grandeza',
+            'nombre' =>  'LA GRANDEZA',
             'estado_id' => '07',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huehuetán',
+            'nombre' =>  'HUEHUETÁN',
             'estado_id' => '07',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huixtán',
+            'nombre' =>  'HUIXTÁN',
             'estado_id' => '07',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huitiupán',
+            'nombre' =>  'HUITIUPÁN',
             'estado_id' => '07',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huixtla',
+            'nombre' =>  'HUIXTLA',
             'estado_id' => '07',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Independencia',
+            'nombre' =>  'LA INDEPENDENCIA',
             'estado_id' => '07',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixhuatán',
+            'nombre' =>  'IXHUATÁN',
             'estado_id' => '07',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtacomitán',
+            'nombre' =>  'IXTACOMITÁN',
             'estado_id' => '07',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtapa',
+            'nombre' =>  'IXTAPA',
             'estado_id' => '07',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtapangajoya',
+            'nombre' =>  'IXTAPANGAJOYA',
             'estado_id' => '07',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jiquipilas',
+            'nombre' =>  'JIQUIPILAS',
             'estado_id' => '07',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jitotol',
+            'nombre' =>  'JITOTOL',
             'estado_id' => '07',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juárez',
+            'nombre' =>  'JUÁREZ',
             'estado_id' => '07',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Larráinzar',
+            'nombre' =>  'LARRÁINZAR',
             'estado_id' => '07',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Libertad',
+            'nombre' =>  'LA LIBERTAD',
             'estado_id' => '07',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mapastepec',
+            'nombre' =>  'MAPASTEPEC',
             'estado_id' => '07',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Las Margaritas',
+            'nombre' =>  'LAS MARGARITAS',
             'estado_id' => '07',
             'number' =>  '052',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mazapa de Madero',
+            'nombre' =>  'MAZAPA DE MADERO',
             'estado_id' => '07',
             'number' =>  '053',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mazatán',
+            'nombre' =>  'MAZATÁN',
             'estado_id' => '07',
             'number' =>  '054',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Metapa',
+            'nombre' =>  'METAPA',
             'estado_id' => '07',
             'number' =>  '055',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mitontic',
+            'nombre' =>  'MITONTIC',
             'estado_id' => '07',
             'number' =>  '056',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Motozintla',
+            'nombre' =>  'MOTOZINTLA',
             'estado_id' => '07',
             'number' =>  '057',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nicolás Ruíz',
+            'nombre' =>  'NICOLÁS RUÍZ',
             'estado_id' => '07',
             'number' =>  '058',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocosingo',
+            'nombre' =>  'OCOSINGO',
             'estado_id' => '07',
             'number' =>  '059',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocotepec',
+            'nombre' =>  'OCOTEPEC',
             'estado_id' => '07',
             'number' =>  '060',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocozocoautla de Espinosa',
+            'nombre' =>  'OCOZOCOAUTLA DE ESPINOSA',
             'estado_id' => '07',
             'number' =>  '061',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ostuacán',
+            'nombre' =>  'OSTUACÁN',
             'estado_id' => '07',
             'number' =>  '062',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Osumacinta',
+            'nombre' =>  'OSUMACINTA',
             'estado_id' => '07',
             'number' =>  '063',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Oxchuc',
+            'nombre' =>  'OXCHUC',
             'estado_id' => '07',
             'number' =>  '064',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Palenque',
+            'nombre' =>  'PALENQUE',
             'estado_id' => '07',
             'number' =>  '065',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pantelhó',
+            'nombre' =>  'PANTELHÓ',
             'estado_id' => '07',
             'number' =>  '066',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pantepec',
+            'nombre' =>  'PANTEPEC',
             'estado_id' => '07',
             'number' =>  '067',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pichucalco',
+            'nombre' =>  'PICHUCALCO',
             'estado_id' => '07',
             'number' =>  '068',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pijijiapan',
+            'nombre' =>  'PIJIJIAPAN',
             'estado_id' => '07',
             'number' =>  '069',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Porvenir',
+            'nombre' =>  'EL PORVENIR',
             'estado_id' => '07',
             'number' =>  '070',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Comaltitlán',
+            'nombre' =>  'VILLA COMALTITLÁN',
             'estado_id' => '07',
             'number' =>  '071',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pueblo Nuevo Solistahuacán',
+            'nombre' =>  'PUEBLO NUEVO SOLISTAHUACÁN',
             'estado_id' => '07',
             'number' =>  '072',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rayón',
+            'nombre' =>  'RAYÓN',
             'estado_id' => '07',
             'number' =>  '073',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Reforma',
+            'nombre' =>  'REFORMA',
             'estado_id' => '07',
             'number' =>  '074',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Las Rosas',
+            'nombre' =>  'LAS ROSAS',
             'estado_id' => '07',
             'number' =>  '075',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sabanilla',
+            'nombre' =>  'SABANILLA',
             'estado_id' => '07',
             'number' =>  '076',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Salto de Agua',
+            'nombre' =>  'SALTO DE AGUA',
             'estado_id' => '07',
             'number' =>  '077',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Cristóbal de las Casas',
+            'nombre' =>  'SAN CRISTÓBAL DE LAS CASAS',
             'estado_id' => '07',
             'number' =>  '078',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Fernando',
+            'nombre' =>  'SAN FERNANDO',
             'estado_id' => '07',
             'number' =>  '079',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Siltepec',
+            'nombre' =>  'SILTEPEC',
             'estado_id' => '07',
             'number' =>  '080',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Simojovel',
+            'nombre' =>  'SIMOJOVEL',
             'estado_id' => '07',
             'number' =>  '081',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sitalá',
+            'nombre' =>  'SITALÁ',
             'estado_id' => '07',
             'number' =>  '082',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Socoltenango',
+            'nombre' =>  'SOCOLTENANGO',
             'estado_id' => '07',
             'number' =>  '083',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Solosuchiapa',
+            'nombre' =>  'SOLOSUCHIAPA',
             'estado_id' => '07',
             'number' =>  '084',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Soyaló',
+            'nombre' =>  'SOYALÓ',
             'estado_id' => '07',
             'number' =>  '085',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Suchiapa',
+            'nombre' =>  'SUCHIAPA',
             'estado_id' => '07',
             'number' =>  '086',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Suchiate',
+            'nombre' =>  'SUCHIATE',
             'estado_id' => '07',
             'number' =>  '087',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sunuapa',
+            'nombre' =>  'SUNUAPA',
             'estado_id' => '07',
             'number' =>  '088',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tapachula',
+            'nombre' =>  'TAPACHULA',
             'estado_id' => '07',
             'number' =>  '089',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tapalapa',
+            'nombre' =>  'TAPALAPA',
             'estado_id' => '07',
             'number' =>  '090',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tapilula',
+            'nombre' =>  'TAPILULA',
             'estado_id' => '07',
             'number' =>  '091',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tecpatán',
+            'nombre' =>  'TECPATÁN',
             'estado_id' => '07',
             'number' =>  '092',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tenejapa',
+            'nombre' =>  'TENEJAPA',
             'estado_id' => '07',
             'number' =>  '093',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teopisca',
+            'nombre' =>  'TEOPISCA',
             'estado_id' => '07',
             'number' =>  '094',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tila',
+            'nombre' =>  'TILA',
             'estado_id' => '07',
             'number' =>  '096',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tonalá',
+            'nombre' =>  'TONALÁ',
             'estado_id' => '07',
             'number' =>  '097',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Totolapa',
+            'nombre' =>  'TOTOLAPA',
             'estado_id' => '07',
             'number' =>  '098',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Trinitaria',
+            'nombre' =>  'LA TRINITARIA',
             'estado_id' => '07',
             'number' =>  '099',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tumbalá',
+            'nombre' =>  'TUMBALÁ',
             'estado_id' => '07',
             'number' =>  '100',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tuxtla Gutiérrez',
+            'nombre' =>  'TUXTLA GUTIÉRREZ',
             'estado_id' => '07',
             'number' =>  '101',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tuxtla Chico',
+            'nombre' =>  'TUXTLA CHICO',
             'estado_id' => '07',
             'number' =>  '102',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tuzantán',
+            'nombre' =>  'TUZANTÁN',
             'estado_id' => '07',
             'number' =>  '103',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tzimol',
+            'nombre' =>  'TZIMOL',
             'estado_id' => '07',
             'number' =>  '104',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Unión Juárez',
+            'nombre' =>  'UNIÓN JUÁREZ',
             'estado_id' => '07',
             'number' =>  '105',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Venustiano Carranza',
+            'nombre' =>  'VENUSTIANO CARRANZA',
             'estado_id' => '07',
             'number' =>  '106',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Corzo',
+            'nombre' =>  'VILLA CORZO',
             'estado_id' => '07',
             'number' =>  '107',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villaflores',
+            'nombre' =>  'VILLAFLORES',
             'estado_id' => '07',
             'number' =>  '108',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yajalón',
+            'nombre' =>  'YAJALÓN',
             'estado_id' => '07',
             'number' =>  '109',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Lucas',
+            'nombre' =>  'SAN LUCAS',
             'estado_id' => '07',
             'number' =>  '110',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zinacantán',
+            'nombre' =>  'ZINACANTÁN',
             'estado_id' => '07',
             'number' =>  '111',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Cancuc',
+            'nombre' =>  'SAN JUAN CANCUC',
             'estado_id' => '07',
             'number' =>  '112',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Aldama',
+            'nombre' =>  'ALDAMA',
             'estado_id' => '07',
             'number' =>  '113',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Benemérito de las Américas',
+            'nombre' =>  'BENEMÉRITO DE LAS AMÉRICAS',
             'estado_id' => '07',
             'number' =>  '114',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Maravilla Tenejapa',
+            'nombre' =>  'MARAVILLA TENEJAPA',
             'estado_id' => '07',
             'number' =>  '115',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Marqués de Comillas',
+            'nombre' =>  'MARQUÉS DE COMILLAS',
             'estado_id' => '07',
             'number' =>  '116',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Montecristo de Guerrero',
+            'nombre' =>  'MONTECRISTO DE GUERRERO',
             'estado_id' => '07',
             'number' =>  '117',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Duraznal',
+            'nombre' =>  'SAN ANDRÉS DURAZNAL',
             'estado_id' => '07',
             'number' =>  '118',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago el Pinar',
+            'nombre' =>  'SANTIAGO EL PINAR',
             'estado_id' => '07',
             'number' =>  '119',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ahumada',
+            'nombre' =>  'AHUMADA',
             'estado_id' => '08',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Aldama',
+            'nombre' =>  'ALDAMA',
             'estado_id' => '08',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Allende',
+            'nombre' =>  'ALLENDE',
             'estado_id' => '08',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Aquiles Serdán',
+            'nombre' =>  'AQUILES SERDÁN',
             'estado_id' => '08',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ascensión',
+            'nombre' =>  'ASCENSIÓN',
             'estado_id' => '08',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bachíniva',
+            'nombre' =>  'BACHÍNIVA',
             'estado_id' => '08',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Balleza',
+            'nombre' =>  'BALLEZA',
             'estado_id' => '08',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Batopilas',
+            'nombre' =>  'BATOPILAS',
             'estado_id' => '08',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bocoyna',
+            'nombre' =>  'BOCOYNA',
             'estado_id' => '08',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Buenaventura',
+            'nombre' =>  'BUENAVENTURA',
             'estado_id' => '08',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Camargo',
+            'nombre' =>  'CAMARGO',
             'estado_id' => '08',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Carichí',
+            'nombre' =>  'CARICHÍ',
             'estado_id' => '08',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Casas Grandes',
+            'nombre' =>  'CASAS GRANDES',
             'estado_id' => '08',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coronado',
+            'nombre' =>  'CORONADO',
             'estado_id' => '08',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coyame del Sotol',
+            'nombre' =>  'COYAME DEL SOTOL',
             'estado_id' => '08',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Cruz',
+            'nombre' =>  'LA CRUZ',
             'estado_id' => '08',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuauhtémoc',
+            'nombre' =>  'CUAUHTÉMOC',
             'estado_id' => '08',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cusihuiriachi',
+            'nombre' =>  'CUSIHUIRIACHI',
             'estado_id' => '08',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chihuahua',
+            'nombre' =>  'CHIHUAHUA',
             'estado_id' => '08',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chínipas',
+            'nombre' =>  'CHÍNIPAS',
             'estado_id' => '08',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Delicias',
+            'nombre' =>  'DELICIAS',
             'estado_id' => '08',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Dr. Belisario Domínguez',
+            'nombre' =>  'DR. BELISARIO DOMÍNGUEZ',
             'estado_id' => '08',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Galeana',
+            'nombre' =>  'GALEANA',
             'estado_id' => '08',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Isabel',
+            'nombre' =>  'SANTA ISABEL',
             'estado_id' => '08',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Gómez Farías',
+            'nombre' =>  'GÓMEZ FARÍAS',
             'estado_id' => '08',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Gran Morelos',
+            'nombre' =>  'GRAN MORELOS',
             'estado_id' => '08',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guachochi',
+            'nombre' =>  'GUACHOCHI',
             'estado_id' => '08',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guadalupe',
+            'nombre' =>  'GUADALUPE',
             'estado_id' => '08',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guadalupe y Calvo',
+            'nombre' =>  'GUADALUPE Y CALVO',
             'estado_id' => '08',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guazapares',
+            'nombre' =>  'GUAZAPARES',
             'estado_id' => '08',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guerrero',
+            'nombre' =>  'GUERRERO',
             'estado_id' => '08',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hidalgo del Parral',
+            'nombre' =>  'HIDALGO DEL PARRAL',
             'estado_id' => '08',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huejotitán',
+            'nombre' =>  'HUEJOTITÁN',
             'estado_id' => '08',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ignacio Zaragoza',
+            'nombre' =>  'IGNACIO ZARAGOZA',
             'estado_id' => '08',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Janos',
+            'nombre' =>  'JANOS',
             'estado_id' => '08',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jiménez',
+            'nombre' =>  'JIMÉNEZ',
             'estado_id' => '08',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juárez',
+            'nombre' =>  'JUÁREZ',
             'estado_id' => '08',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Julimes',
+            'nombre' =>  'JULIMES',
             'estado_id' => '08',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'López',
+            'nombre' =>  'LÓPEZ',
             'estado_id' => '08',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Madera',
+            'nombre' =>  'MADERA',
             'estado_id' => '08',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Maguarichi',
+            'nombre' =>  'MAGUARICHI',
             'estado_id' => '08',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Manuel Benavides',
+            'nombre' =>  'MANUEL BENAVIDES',
             'estado_id' => '08',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Matachí',
+            'nombre' =>  'MATACHÍ',
             'estado_id' => '08',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Matamoros',
+            'nombre' =>  'MATAMOROS',
             'estado_id' => '08',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Meoqui',
+            'nombre' =>  'MEOQUI',
             'estado_id' => '08',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Morelos',
+            'nombre' =>  'MORELOS',
             'estado_id' => '08',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Moris',
+            'nombre' =>  'MORIS',
             'estado_id' => '08',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Namiquipa',
+            'nombre' =>  'NAMIQUIPA',
             'estado_id' => '08',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nonoava',
+            'nombre' =>  'NONOAVA',
             'estado_id' => '08',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nuevo Casas Grandes',
+            'nombre' =>  'NUEVO CASAS GRANDES',
             'estado_id' => '08',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocampo',
+            'nombre' =>  'OCAMPO',
             'estado_id' => '08',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ojinaga',
+            'nombre' =>  'OJINAGA',
             'estado_id' => '08',
             'number' =>  '052',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Praxedis G. Guerrero',
+            'nombre' =>  'PRAXEDIS G. GUERRERO',
             'estado_id' => '08',
             'number' =>  '053',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Riva Palacio',
+            'nombre' =>  'RIVA PALACIO',
             'estado_id' => '08',
             'number' =>  '054',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rosales',
+            'nombre' =>  'ROSALES',
             'estado_id' => '08',
             'number' =>  '055',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rosario',
+            'nombre' =>  'ROSARIO',
             'estado_id' => '08',
             'number' =>  '056',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco de Borja',
+            'nombre' =>  'SAN FRANCISCO DE BORJA',
             'estado_id' => '08',
             'number' =>  '057',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco de Conchos',
+            'nombre' =>  'SAN FRANCISCO DE CONCHOS',
             'estado_id' => '08',
             'number' =>  '058',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco del Oro',
+            'nombre' =>  'SAN FRANCISCO DEL ORO',
             'estado_id' => '08',
             'number' =>  '059',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Bárbara',
+            'nombre' =>  'SANTA BÁRBARA',
             'estado_id' => '08',
             'number' =>  '060',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Satevó',
+            'nombre' =>  'SATEVÓ',
             'estado_id' => '08',
             'number' =>  '061',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Saucillo',
+            'nombre' =>  'SAUCILLO',
             'estado_id' => '08',
             'number' =>  '062',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Temósachic',
+            'nombre' =>  'TEMÓSACHIC',
             'estado_id' => '08',
             'number' =>  '063',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Tule',
+            'nombre' =>  'EL TULE',
             'estado_id' => '08',
             'number' =>  '064',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Urique',
+            'nombre' =>  'URIQUE',
             'estado_id' => '08',
             'number' =>  '065',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Uruachi',
+            'nombre' =>  'URUACHI',
             'estado_id' => '08',
             'number' =>  '066',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Valle de Zaragoza',
+            'nombre' =>  'VALLE DE ZARAGOZA',
             'estado_id' => '08',
             'number' =>  '067',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Azcapotzalco',
+            'nombre' =>  'AZCAPOTZALCO',
             'estado_id' => '09',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coyoacán',
+            'nombre' =>  'COYOACÁN',
             'estado_id' => '09',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuajimalpa de Morelos',
+            'nombre' =>  'CUAJIMALPA DE MORELOS',
             'estado_id' => '09',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Gustavo A. Madero',
+            'nombre' =>  'GUSTAVO A. MADERO',
             'estado_id' => '09',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Iztacalco',
+            'nombre' =>  'IZTACALCO',
             'estado_id' => '09',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Iztapalapa',
+            'nombre' =>  'IZTAPALAPA',
             'estado_id' => '09',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Magdalena Contreras',
+            'nombre' =>  'LA MAGDALENA CONTRERAS',
             'estado_id' => '09',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Milpa Alta',
+            'nombre' =>  'MILPA ALTA',
             'estado_id' => '09',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Álvaro Obregón',
+            'nombre' =>  'ÁLVARO OBREGÓN',
             'estado_id' => '09',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tláhuac',
+            'nombre' =>  'TLÁHUAC',
             'estado_id' => '09',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlalpan',
+            'nombre' =>  'TLALPAN',
             'estado_id' => '09',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xochimilco',
+            'nombre' =>  'XOCHIMILCO',
             'estado_id' => '09',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Benito Juárez',
+            'nombre' =>  'BENITO JUÁREZ',
             'estado_id' => '09',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuauhtémoc',
+            'nombre' =>  'CUAUHTÉMOC',
             'estado_id' => '09',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Miguel Hidalgo',
+            'nombre' =>  'MIGUEL HIDALGO',
             'estado_id' => '09',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Venustiano Carranza',
+            'nombre' =>  'VENUSTIANO CARRANZA',
             'estado_id' => '09',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Canatlán',
+            'nombre' =>  'CANATLÁN',
             'estado_id' => '10',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Canelas',
+            'nombre' =>  'CANELAS',
             'estado_id' => '10',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coneto de Comonfort',
+            'nombre' =>  'CONETO DE COMONFORT',
             'estado_id' => '10',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuencamé',
+            'nombre' =>  'CUENCAMÉ',
             'estado_id' => '10',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Durango',
+            'nombre' =>  'DURANGO',
             'estado_id' => '10',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'General Simón Bolívar',
+            'nombre' =>  'GENERAL SIMÓN BOLÍVAR',
             'estado_id' => '10',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Gómez Palacio',
+            'nombre' =>  'GÓMEZ PALACIO',
             'estado_id' => '10',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guadalupe Victoria',
+            'nombre' =>  'GUADALUPE VICTORIA',
             'estado_id' => '10',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guanaceví',
+            'nombre' =>  'GUANACEVÍ',
             'estado_id' => '10',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hidalgo',
+            'nombre' =>  'HIDALGO',
             'estado_id' => '10',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Indé',
+            'nombre' =>  'INDÉ',
             'estado_id' => '10',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Lerdo',
+            'nombre' =>  'LERDO',
             'estado_id' => '10',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mapimí',
+            'nombre' =>  'MAPIMÍ',
             'estado_id' => '10',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mezquital',
+            'nombre' =>  'MEZQUITAL',
             'estado_id' => '10',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nazas',
+            'nombre' =>  'NAZAS',
             'estado_id' => '10',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nombre de Dios',
+            'nombre' =>  'nombre DE DIOS',
             'estado_id' => '10',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocampo',
+            'nombre' =>  'OCAMPO',
             'estado_id' => '10',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Oro',
+            'nombre' =>  'EL ORO',
             'estado_id' => '10',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Otáez',
+            'nombre' =>  'OTÁEZ',
             'estado_id' => '10',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pánuco de Coronado',
+            'nombre' =>  'PÁNUCO DE CORONADO',
             'estado_id' => '10',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Peñón Blanco',
+            'nombre' =>  'PEÑÓN BLANCO',
             'estado_id' => '10',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Poanas',
+            'nombre' =>  'POANAS',
             'estado_id' => '10',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pueblo Nuevo',
+            'nombre' =>  'PUEBLO NUEVO',
             'estado_id' => '10',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rodeo',
+            'nombre' =>  'RODEO',
             'estado_id' => '10',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Bernardo',
+            'nombre' =>  'SAN BERNARDO',
             'estado_id' => '10',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Dimas',
+            'nombre' =>  'SAN DIMAS',
             'estado_id' => '10',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan de Guadalupe',
+            'nombre' =>  'SAN JUAN DE GUADALUPE',
             'estado_id' => '10',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan del Río',
+            'nombre' =>  'SAN JUAN DEL RÍO',
             'estado_id' => '10',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Luis del Cordero',
+            'nombre' =>  'SAN LUIS DEL CORDERO',
             'estado_id' => '10',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro del Gallo',
+            'nombre' =>  'SAN PEDRO DEL GALLO',
             'estado_id' => '10',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Clara',
+            'nombre' =>  'SANTA CLARA',
             'estado_id' => '10',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Papasquiaro',
+            'nombre' =>  'SANTIAGO PAPASQUIARO',
             'estado_id' => '10',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Súchil',
+            'nombre' =>  'SÚCHIL',
             'estado_id' => '10',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tamazula',
+            'nombre' =>  'TAMAZULA',
             'estado_id' => '10',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepehuanes',
+            'nombre' =>  'TEPEHUANES',
             'estado_id' => '10',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlahualilo',
+            'nombre' =>  'TLAHUALILO',
             'estado_id' => '10',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Topia',
+            'nombre' =>  'TOPIA',
             'estado_id' => '10',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Vicente Guerrero',
+            'nombre' =>  'VICENTE GUERRERO',
             'estado_id' => '10',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nuevo Ideal',
+            'nombre' =>  'NUEVO IDEAL',
             'estado_id' => '10',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Abasolo',
+            'nombre' =>  'ABASOLO',
             'estado_id' => '11',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acámbaro',
+            'nombre' =>  'ACÁMBARO',
             'estado_id' => '11',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel de Allende',
+            'nombre' =>  'SAN MIGUEL DE ALLENDE',
             'estado_id' => '11',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Apaseo el Alto',
+            'nombre' =>  'APASEO EL ALTO',
             'estado_id' => '11',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Apaseo el Grande',
+            'nombre' =>  'APASEO EL GRANDE',
             'estado_id' => '11',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atarjea',
+            'nombre' =>  'ATARJEA',
             'estado_id' => '11',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Celaya',
+            'nombre' =>  'CELAYA',
             'estado_id' => '11',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Manuel Doblado',
+            'nombre' =>  'MANUEL DOBLADO',
             'estado_id' => '11',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Comonfort',
+            'nombre' =>  'COMONFORT',
             'estado_id' => '11',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coroneo',
+            'nombre' =>  'CORONEO',
             'estado_id' => '11',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cortazar',
+            'nombre' =>  'CORTAZAR',
             'estado_id' => '11',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuerámaro',
+            'nombre' =>  'CUERÁMARO',
             'estado_id' => '11',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Doctor Mora',
+            'nombre' =>  'DOCTOR MORA',
             'estado_id' => '11',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Dolores Hidalgo Cuna de la Independencia Nacional',
+            'nombre' =>  'DOLORES HIDALGO CUNA DE LA INDEPENDENCIA NACIONAL',
             'estado_id' => '11',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guanajuato',
+            'nombre' =>  'GUANAJUATO',
             'estado_id' => '11',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huanímaro',
+            'nombre' =>  'HUANÍMARO',
             'estado_id' => '11',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Irapuato',
+            'nombre' =>  'IRAPUATO',
             'estado_id' => '11',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jaral del Progreso',
+            'nombre' =>  'JARAL DEL PROGRESO',
             'estado_id' => '11',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jerécuaro',
+            'nombre' =>  'JERÉCUARO',
             'estado_id' => '11',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'León',
+            'nombre' =>  'LEÓN',
             'estado_id' => '11',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Moroleón',
+            'nombre' =>  'MOROLEÓN',
             'estado_id' => '11',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocampo',
+            'nombre' =>  'OCAMPO',
             'estado_id' => '11',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pénjamo',
+            'nombre' =>  'PÉNJAMO',
             'estado_id' => '11',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pueblo Nuevo',
+            'nombre' =>  'PUEBLO NUEVO',
             'estado_id' => '11',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Purísima del Rincón',
+            'nombre' =>  'PURÍSIMA DEL RINCÓN',
             'estado_id' => '11',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Romita',
+            'nombre' =>  'ROMITA',
             'estado_id' => '11',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Salamanca',
+            'nombre' =>  'SALAMANCA',
             'estado_id' => '11',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Salvatierra',
+            'nombre' =>  'SALVATIERRA',
             'estado_id' => '11',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Diego de la Unión',
+            'nombre' =>  'SAN DIEGO DE LA UNIÓN',
             'estado_id' => '11',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Felipe',
+            'nombre' =>  'SAN FELIPE',
             'estado_id' => '11',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco del Rincón',
+            'nombre' =>  'SAN FRANCISCO DEL RINCÓN',
             'estado_id' => '11',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San José Iturbide',
+            'nombre' =>  'SAN JOSÉ ITURBIDE',
             'estado_id' => '11',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Luis de la Paz',
+            'nombre' =>  'SAN LUIS DE LA PAZ',
             'estado_id' => '11',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina',
+            'nombre' =>  'SANTA CATARINA',
             'estado_id' => '11',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz de Juventino Rosas',
+            'nombre' =>  'SANTA CRUZ DE JUVENTINO ROSAS',
             'estado_id' => '11',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Maravatío',
+            'nombre' =>  'SANTIAGO MARAVATÍO',
             'estado_id' => '11',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Silao de la Victoria',
+            'nombre' =>  'SILAO DE LA VICTORIA',
             'estado_id' => '11',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tarandacuao',
+            'nombre' =>  'TARANDACUAO',
             'estado_id' => '11',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tarimoro',
+            'nombre' =>  'TARIMORO',
             'estado_id' => '11',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tierra Blanca',
+            'nombre' =>  'TIERRA BLANCA',
             'estado_id' => '11',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Uriangato',
+            'nombre' =>  'URIANGATO',
             'estado_id' => '11',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Valle de Santiago',
+            'nombre' =>  'VALLE DE SANTIAGO',
             'estado_id' => '11',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Victoria',
+            'nombre' =>  'VICTORIA',
             'estado_id' => '11',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villagrán',
+            'nombre' =>  'VILLAGRÁN',
             'estado_id' => '11',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xichú',
+            'nombre' =>  'XICHÚ',
             'estado_id' => '11',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yuriria',
+            'nombre' =>  'YURIRIA',
             'estado_id' => '11',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acapulco de Juárez',
+            'nombre' =>  'ACAPULCO DE JUÁREZ',
             'estado_id' => '12',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ahuacuotzingo',
+            'nombre' =>  'AHUACUOTZINGO',
             'estado_id' => '12',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ajuchitlán del Progreso',
+            'nombre' =>  'AJUCHITLÁN DEL PROGRESO',
             'estado_id' => '12',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Alcozauca de Guerrero',
+            'nombre' =>  'ALCOZAUCA DE GUERRERO',
             'estado_id' => '12',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Alpoyeca',
+            'nombre' =>  'ALPOYECA',
             'estado_id' => '12',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Apaxtla',
+            'nombre' =>  'APAXTLA',
             'estado_id' => '12',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Arcelia',
+            'nombre' =>  'ARCELIA',
             'estado_id' => '12',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atenango del Río',
+            'nombre' =>  'ATENANGO DEL RÍO',
             'estado_id' => '12',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atlamajalcingo del Monte',
+            'nombre' =>  'ATLAMAJALCINGO DEL MONTE',
             'estado_id' => '12',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atlixtac',
+            'nombre' =>  'ATLIXTAC',
             'estado_id' => '12',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atoyac de Álvarez',
+            'nombre' =>  'ATOYAC DE ÁLVAREZ',
             'estado_id' => '12',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ayutla de los Libres',
+            'nombre' =>  'AYUTLA DE LOS LIBRES',
             'estado_id' => '12',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Azoyú',
+            'nombre' =>  'AZOYÚ',
             'estado_id' => '12',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Benito Juárez',
+            'nombre' =>  'BENITO JUÁREZ',
             'estado_id' => '12',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Buenavista de Cuéllar',
+            'nombre' =>  'BUENAVISTA DE CUÉLLAR',
             'estado_id' => '12',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coahuayutla de José María Izazaga',
+            'nombre' =>  'COAHUAYUTLA DE JOSÉ MARÍA IZAZAGA',
             'estado_id' => '12',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cocula',
+            'nombre' =>  'COCULA',
             'estado_id' => '12',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Copala',
+            'nombre' =>  'COPALA',
             'estado_id' => '12',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Copalillo',
+            'nombre' =>  'COPALILLO',
             'estado_id' => '12',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Copanatoyac',
+            'nombre' =>  'COPANATOYAC',
             'estado_id' => '12',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coyuca de Benítez',
+            'nombre' =>  'COYUCA DE BENÍTEZ',
             'estado_id' => '12',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coyuca de Catalán',
+            'nombre' =>  'COYUCA DE CATALÁN',
             'estado_id' => '12',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuajinicuilapa',
+            'nombre' =>  'CUAJINICUILAPA',
             'estado_id' => '12',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cualác',
+            'nombre' =>  'CUALÁC',
             'estado_id' => '12',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuautepec',
+            'nombre' =>  'CUAUTEPEC',
             'estado_id' => '12',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuetzala del Progreso',
+            'nombre' =>  'CUETZALA DEL PROGRESO',
             'estado_id' => '12',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cutzamala de Pinzón',
+            'nombre' =>  'CUTZAMALA DE PINZÓN',
             'estado_id' => '12',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chilapa de Álvarez',
+            'nombre' =>  'CHILAPA DE ÁLVAREZ',
             'estado_id' => '12',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chilpancingo de los Bravo',
+            'nombre' =>  'CHILPANCINGO DE LOS BRAVO',
             'estado_id' => '12',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Florencio Villarreal',
+            'nombre' =>  'FLORENCIO VILLARREAL',
             'estado_id' => '12',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'General Canuto A. Neri',
+            'nombre' =>  'GENERAL CANUTO A. NERI',
             'estado_id' => '12',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'General Heliodoro Castillo',
+            'nombre' =>  'GENERAL HELIODORO CASTILLO',
             'estado_id' => '12',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huamuxtitlán',
+            'nombre' =>  'HUAMUXTITLÁN',
             'estado_id' => '12',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huitzuco de los Figueroa',
+            'nombre' =>  'HUITZUCO DE LOS FIGUEROA',
             'estado_id' => '12',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Iguala de la Independencia',
+            'nombre' =>  'IGUALA DE LA INDEPENDENCIA',
             'estado_id' => '12',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Igualapa',
+            'nombre' =>  'IGUALAPA',
             'estado_id' => '12',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixcateopan de Cuauhtémoc',
+            'nombre' =>  'IXCATEOPAN DE CUAUHTÉMOC',
             'estado_id' => '12',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zihuatanejo de Azueta',
+            'nombre' =>  'ZIHUATANEJO DE AZUETA',
             'estado_id' => '12',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juan R. Escudero',
+            'nombre' =>  'JUAN R. ESCUDERO',
             'estado_id' => '12',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Leonardo Bravo',
+            'nombre' =>  'LEONARDO BRAVO',
             'estado_id' => '12',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Malinaltepec',
+            'nombre' =>  'MALINALTEPEC',
             'estado_id' => '12',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mártir de Cuilapan',
+            'nombre' =>  'MÁRTIR DE CUILAPAN',
             'estado_id' => '12',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Metlatónoc',
+            'nombre' =>  'METLATÓNOC',
             'estado_id' => '12',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mochitlán',
+            'nombre' =>  'MOCHITLÁN',
             'estado_id' => '12',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Olinalá',
+            'nombre' =>  'OLINALÁ',
             'estado_id' => '12',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ometepec',
+            'nombre' =>  'OMETEPEC',
             'estado_id' => '12',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pedro Ascencio Alquisiras',
+            'nombre' =>  'PEDRO ASCENCIO ALQUISIRAS',
             'estado_id' => '12',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Petatlán',
+            'nombre' =>  'PETATLÁN',
             'estado_id' => '12',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pilcaya',
+            'nombre' =>  'PILCAYA',
             'estado_id' => '12',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pungarabato',
+            'nombre' =>  'PUNGARABATO',
             'estado_id' => '12',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Quechultenango',
+            'nombre' =>  'QUECHULTENANGO',
             'estado_id' => '12',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Luis Acatlán',
+            'nombre' =>  'SAN LUIS ACATLÁN',
             'estado_id' => '12',
             'number' =>  '052',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Marcos',
+            'nombre' =>  'SAN MARCOS',
             'estado_id' => '12',
             'number' =>  '053',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Totolapan',
+            'nombre' =>  'SAN MIGUEL TOTOLAPAN',
             'estado_id' => '12',
             'number' =>  '054',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Taxco de Alarcón',
+            'nombre' =>  'TAXCO DE ALARCÓN',
             'estado_id' => '12',
             'number' =>  '055',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tecoanapa',
+            'nombre' =>  'TECOANAPA',
             'estado_id' => '12',
             'number' =>  '056',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Técpan de Galeana',
+            'nombre' =>  'TÉCPAN DE GALEANA',
             'estado_id' => '12',
             'number' =>  '057',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teloloapan',
+            'nombre' =>  'TELOLOAPAN',
             'estado_id' => '12',
             'number' =>  '058',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepecoacuilco de Trujano',
+            'nombre' =>  'TEPECOACUILCO DE TRUJANO',
             'estado_id' => '12',
             'number' =>  '059',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tetipac',
+            'nombre' =>  'TETIPAC',
             'estado_id' => '12',
             'number' =>  '060',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tixtla de Guerrero',
+            'nombre' =>  'TIXTLA DE GUERRERO',
             'estado_id' => '12',
             'number' =>  '061',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlacoachistlahuaca',
+            'nombre' =>  'TLACOACHISTLAHUACA',
             'estado_id' => '12',
             'number' =>  '062',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlacoapa',
+            'nombre' =>  'TLACOAPA',
             'estado_id' => '12',
             'number' =>  '063',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlalchapa',
+            'nombre' =>  'TLALCHAPA',
             'estado_id' => '12',
             'number' =>  '064',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlalixtaquilla de Maldonado',
+            'nombre' =>  'TLALIXTAQUILLA DE MALDONADO',
             'estado_id' => '12',
             'number' =>  '065',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlapa de Comonfort',
+            'nombre' =>  'TLAPA DE COMONFORT',
             'estado_id' => '12',
             'number' =>  '066',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlapehuala',
+            'nombre' =>  'TLAPEHUALA',
             'estado_id' => '12',
             'number' =>  '067',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Unión de Isidoro Montes de Oca',
+            'nombre' =>  'LA UNIÓN DE ISIDORO MONTES DE OCA',
             'estado_id' => '12',
             'number' =>  '068',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xalpatláhuac',
+            'nombre' =>  'XALPATLÁHUAC',
             'estado_id' => '12',
             'number' =>  '069',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xochihuehuetlán',
+            'nombre' =>  'XOCHIHUEHUETLÁN',
             'estado_id' => '12',
             'number' =>  '070',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xochistlahuaca',
+            'nombre' =>  'XOCHISTLAHUACA',
             'estado_id' => '12',
             'number' =>  '071',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zapotitlán Tablas',
+            'nombre' =>  'ZAPOTITLÁN TABLAS',
             'estado_id' => '12',
             'number' =>  '072',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zirándaro',
+            'nombre' =>  'ZIRÁNDARO',
             'estado_id' => '12',
             'number' =>  '073',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zitlala',
+            'nombre' =>  'ZITLALA',
             'estado_id' => '12',
             'number' =>  '074',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Eduardo Neri',
+            'nombre' =>  'EDUARDO NERI',
             'estado_id' => '12',
             'number' =>  '075',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acatepec',
+            'nombre' =>  'ACATEPEC',
             'estado_id' => '12',
             'number' =>  '076',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Marquelia',
+            'nombre' =>  'MARQUELIA',
             'estado_id' => '12',
             'number' =>  '077',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cochoapa el Grande',
+            'nombre' =>  'COCHOAPA EL GRANDE',
             'estado_id' => '12',
             'number' =>  '078',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'José Joaquín de Herrera',
+            'nombre' =>  'JOSÉ JOAQUÍN DE HERRERA',
             'estado_id' => '12',
             'number' =>  '079',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juchitán',
+            'nombre' =>  'JUCHITÁN',
             'estado_id' => '12',
             'number' =>  '080',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Iliatenco',
+            'nombre' =>  'ILIATENCO',
             'estado_id' => '12',
             'number' =>  '081',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acatlán',
+            'nombre' =>  'ACATLÁN',
             'estado_id' => '13',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acaxochitlán',
+            'nombre' =>  'ACAXOCHITLÁN',
             'estado_id' => '13',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Actopan',
+            'nombre' =>  'ACTOPAN',
             'estado_id' => '13',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Agua Blanca de Iturbide',
+            'nombre' =>  'AGUA BLANCA DE ITURBIDE',
             'estado_id' => '13',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ajacuba',
+            'nombre' =>  'AJACUBA',
             'estado_id' => '13',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Alfajayucan',
+            'nombre' =>  'ALFAJAYUCAN',
             'estado_id' => '13',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Almoloya',
+            'nombre' =>  'ALMOLOYA',
             'estado_id' => '13',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Apan',
+            'nombre' =>  'APAN',
             'estado_id' => '13',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Arenal',
+            'nombre' =>  'EL ARENAL',
             'estado_id' => '13',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atitalaquia',
+            'nombre' =>  'ATITALAQUIA',
             'estado_id' => '13',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atlapexco',
+            'nombre' =>  'ATLAPEXCO',
             'estado_id' => '13',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atotonilco el Grande',
+            'nombre' =>  'ATOTONILCO EL GRANDE',
             'estado_id' => '13',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atotonilco de Tula',
+            'nombre' =>  'ATOTONILCO DE TULA',
             'estado_id' => '13',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Calnali',
+            'nombre' =>  'CALNALI',
             'estado_id' => '13',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cardonal',
+            'nombre' =>  'CARDONAL',
             'estado_id' => '13',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuautepec de Hinojosa',
+            'nombre' =>  'CUAUTEPEC DE HINOJOSA',
             'estado_id' => '13',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chapantongo',
+            'nombre' =>  'CHAPANTONGO',
             'estado_id' => '13',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chapulhuacán',
+            'nombre' =>  'CHAPULHUACÁN',
             'estado_id' => '13',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chilcuautla',
+            'nombre' =>  'CHILCUAUTLA',
             'estado_id' => '13',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Eloxochitlán',
+            'nombre' =>  'ELOXOCHITLÁN',
             'estado_id' => '13',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Emiliano Zapata',
+            'nombre' =>  'EMILIANO ZAPATA',
             'estado_id' => '13',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Epazoyucan',
+            'nombre' =>  'EPAZOYUCAN',
             'estado_id' => '13',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Francisco I. Madero',
+            'nombre' =>  'FRANCISCO I. MADERO',
             'estado_id' => '13',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huasca de Ocampo',
+            'nombre' =>  'HUASCA DE OCAMPO',
             'estado_id' => '13',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huautla',
+            'nombre' =>  'HUAUTLA',
             'estado_id' => '13',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huazalingo',
+            'nombre' =>  'HUAZALINGO',
             'estado_id' => '13',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huehuetla',
+            'nombre' =>  'HUEHUETLA',
             'estado_id' => '13',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huejutla de Reyes',
+            'nombre' =>  'HUEJUTLA DE REYES',
             'estado_id' => '13',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huichapan',
+            'nombre' =>  'HUICHAPAN',
             'estado_id' => '13',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixmiquilpan',
+            'nombre' =>  'IXMIQUILPAN',
             'estado_id' => '13',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jacala de Ledezma',
+            'nombre' =>  'JACALA DE LEDEZMA',
             'estado_id' => '13',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jaltocán',
+            'nombre' =>  'JALTOCÁN',
             'estado_id' => '13',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juárez Hidalgo',
+            'nombre' =>  'JUÁREZ HIDALGO',
             'estado_id' => '13',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Lolotla',
+            'nombre' =>  'LOLOTLA',
             'estado_id' => '13',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Metepec',
+            'nombre' =>  'METEPEC',
             'estado_id' => '13',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Agustín Metzquititlán',
+            'nombre' =>  'SAN AGUSTÍN METZQUITITLÁN',
             'estado_id' => '13',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Metztitlán',
+            'nombre' =>  'METZTITLÁN',
             'estado_id' => '13',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mineral del Chico',
+            'nombre' =>  'MINERAL DEL CHICO',
             'estado_id' => '13',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mineral del Monte',
+            'nombre' =>  'MINERAL DEL MONTE',
             'estado_id' => '13',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Misión',
+            'nombre' =>  'LA MISIÓN',
             'estado_id' => '13',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mixquiahuala de Juárez',
+            'nombre' =>  'MIXQUIAHUALA DE JUÁREZ',
             'estado_id' => '13',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Molango de Escamilla',
+            'nombre' =>  'MOLANGO DE ESCAMILLA',
             'estado_id' => '13',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nicolás Flores',
+            'nombre' =>  'NICOLÁS FLORES',
             'estado_id' => '13',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nopala de Villagrán',
+            'nombre' =>  'NOPALA DE VILLAGRÁN',
             'estado_id' => '13',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Omitlán de Juárez',
+            'nombre' =>  'OMITLÁN DE JUÁREZ',
             'estado_id' => '13',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Felipe Orizatlán',
+            'nombre' =>  'SAN FELIPE ORIZATLÁN',
             'estado_id' => '13',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pacula',
+            'nombre' =>  'PACULA',
             'estado_id' => '13',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pachuca de Soto',
+            'nombre' =>  'PACHUCA DE SOTO',
             'estado_id' => '13',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pisaflores',
+            'nombre' =>  'PISAFLORES',
             'estado_id' => '13',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Progreso de Obregón',
+            'nombre' =>  'PROGRESO DE OBREGÓN',
             'estado_id' => '13',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mineral de la Reforma',
+            'nombre' =>  'MINERAL DE LA REFORMA',
             'estado_id' => '13',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Agustín Tlaxiaca',
+            'nombre' =>  'SAN AGUSTÍN TLAXIACA',
             'estado_id' => '13',
             'number' =>  '052',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Bartolo Tutotepec',
+            'nombre' =>  'SAN BARTOLO TUTOTEPEC',
             'estado_id' => '13',
             'number' =>  '053',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Salvador',
+            'nombre' =>  'SAN SALVADOR',
             'estado_id' => '13',
             'number' =>  '054',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago de Anaya',
+            'nombre' =>  'SANTIAGO DE ANAYA',
             'estado_id' => '13',
             'number' =>  '055',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Tulantepec de Lugo Guerrero',
+            'nombre' =>  'SANTIAGO TULANTEPEC DE LUGO GUERRERO',
             'estado_id' => '13',
             'number' =>  '056',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Singuilucan',
+            'nombre' =>  'SINGUILUCAN',
             'estado_id' => '13',
             'number' =>  '057',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tasquillo',
+            'nombre' =>  'TASQUILLO',
             'estado_id' => '13',
             'number' =>  '058',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tecozautla',
+            'nombre' =>  'TECOZAUTLA',
             'estado_id' => '13',
             'number' =>  '059',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tenango de Doria',
+            'nombre' =>  'TENANGO DE DORIA',
             'estado_id' => '13',
             'number' =>  '060',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepeapulco',
+            'nombre' =>  'TEPEAPULCO',
             'estado_id' => '13',
             'number' =>  '061',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepehuacán de Guerrero',
+            'nombre' =>  'TEPEHUACÁN DE GUERRERO',
             'estado_id' => '13',
             'number' =>  '062',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepeji del Río de Ocampo',
+            'nombre' =>  'TEPEJI DEL RÍO DE OCAMPO',
             'estado_id' => '13',
             'number' =>  '063',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepetitlán',
+            'nombre' =>  'TEPETITLÁN',
             'estado_id' => '13',
             'number' =>  '064',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tetepango',
+            'nombre' =>  'TETEPANGO',
             'estado_id' => '13',
             'number' =>  '065',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa de Tezontepec',
+            'nombre' =>  'VILLA DE TEZONTEPEC',
             'estado_id' => '13',
             'number' =>  '066',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tezontepec de Aldama',
+            'nombre' =>  'TEZONTEPEC DE ALDAMA',
             'estado_id' => '13',
             'number' =>  '067',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tianguistengo',
+            'nombre' =>  'TIANGUISTENGO',
             'estado_id' => '13',
             'number' =>  '068',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tizayuca',
+            'nombre' =>  'TIZAYUCA',
             'estado_id' => '13',
             'number' =>  '069',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlahuelilpan',
+            'nombre' =>  'TLAHUELILPAN',
             'estado_id' => '13',
             'number' =>  '070',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlahuiltepa',
+            'nombre' =>  'TLAHUILTEPA',
             'estado_id' => '13',
             'number' =>  '071',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlanalapa',
+            'nombre' =>  'TLANALAPA',
             'estado_id' => '13',
             'number' =>  '072',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlanchinol',
+            'nombre' =>  'TLANCHINOL',
             'estado_id' => '13',
             'number' =>  '073',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlaxcoapan',
+            'nombre' =>  'TLAXCOAPAN',
             'estado_id' => '13',
             'number' =>  '074',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tolcayuca',
+            'nombre' =>  'TOLCAYUCA',
             'estado_id' => '13',
             'number' =>  '075',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tula de Allende',
+            'nombre' =>  'TULA DE ALLENDE',
             'estado_id' => '13',
             'number' =>  '076',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tulancingo de Bravo',
+            'nombre' =>  'TULANCINGO DE BRAVO',
             'estado_id' => '13',
             'number' =>  '077',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xochiatipan',
+            'nombre' =>  'XOCHIATIPAN',
             'estado_id' => '13',
             'number' =>  '078',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xochicoatlán',
+            'nombre' =>  'XOCHICOATLÁN',
             'estado_id' => '13',
             'number' =>  '079',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yahualica',
+            'nombre' =>  'YAHUALICA',
             'estado_id' => '13',
             'number' =>  '080',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zacualtipán de Ángeles',
+            'nombre' =>  'ZACUALTIPÁN DE ÁNGELES',
             'estado_id' => '13',
             'number' =>  '081',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zapotlán de Juárez',
+            'nombre' =>  'ZAPOTLÁN DE JUÁREZ',
             'estado_id' => '13',
             'number' =>  '082',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zempoala',
+            'nombre' =>  'ZEMPOALA',
             'estado_id' => '13',
             'number' =>  '083',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zimapán',
+            'nombre' =>  'ZIMAPÁN',
             'estado_id' => '13',
             'number' =>  '084',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acatic',
+            'nombre' =>  'ACATIC',
             'estado_id' => '14',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acatlán de Juárez',
+            'nombre' =>  'ACATLÁN DE JUÁREZ',
             'estado_id' => '14',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ahualulco de Mercado',
+            'nombre' =>  'AHUALULCO DE MERCADO',
             'estado_id' => '14',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amacueca',
+            'nombre' =>  'AMACUECA',
             'estado_id' => '14',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amatitán',
+            'nombre' =>  'AMATITÁN',
             'estado_id' => '14',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ameca',
+            'nombre' =>  'AMECA',
             'estado_id' => '14',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juanito de Escobedo',
+            'nombre' =>  'SAN JUANITO DE ESCOBEDO',
             'estado_id' => '14',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Arandas',
+            'nombre' =>  'ARANDAS',
             'estado_id' => '14',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Arenal',
+            'nombre' =>  'EL ARENAL',
             'estado_id' => '14',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atemajac de Brizuela',
+            'nombre' =>  'ATEMAJAC DE BRIZUELA',
             'estado_id' => '14',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atengo',
+            'nombre' =>  'ATENGO',
             'estado_id' => '14',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atenguillo',
+            'nombre' =>  'ATENGUILLO',
             'estado_id' => '14',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atotonilco el Alto',
+            'nombre' =>  'ATOTONILCO EL ALTO',
             'estado_id' => '14',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atoyac',
+            'nombre' =>  'ATOYAC',
             'estado_id' => '14',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Autlán de Navarro',
+            'nombre' =>  'AUTLÁN DE NAVARRO',
             'estado_id' => '14',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ayotlán',
+            'nombre' =>  'AYOTLÁN',
             'estado_id' => '14',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ayutla',
+            'nombre' =>  'AYUTLA',
             'estado_id' => '14',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Barca',
+            'nombre' =>  'LA BARCA',
             'estado_id' => '14',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bolaños',
+            'nombre' =>  'BOLAÑOS',
             'estado_id' => '14',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cabo Corrientes',
+            'nombre' =>  'CABO CORRIENTES',
             'estado_id' => '14',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Casimiro Castillo',
+            'nombre' =>  'CASIMIRO CASTILLO',
             'estado_id' => '14',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cihuatlán',
+            'nombre' =>  'CIHUATLÁN',
             'estado_id' => '14',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zapotlán el Grande',
+            'nombre' =>  'ZAPOTLÁN EL GRANDE',
             'estado_id' => '14',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cocula',
+            'nombre' =>  'COCULA',
             'estado_id' => '14',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Colotlán',
+            'nombre' =>  'COLOTLÁN',
             'estado_id' => '14',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Concepción de Buenos Aires',
+            'nombre' =>  'CONCEPCIÓN DE BUENOS AIRES',
             'estado_id' => '14',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuautitlán de García Barragán',
+            'nombre' =>  'CUAUTITLÁN DE GARCÍA BARRAGÁN',
             'estado_id' => '14',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuautla',
+            'nombre' =>  'CUAUTLA',
             'estado_id' => '14',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuquío',
+            'nombre' =>  'CUQUÍO',
             'estado_id' => '14',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chapala',
+            'nombre' =>  'CHAPALA',
             'estado_id' => '14',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chimaltitán',
+            'nombre' =>  'CHIMALTITÁN',
             'estado_id' => '14',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chiquilistlán',
+            'nombre' =>  'CHIQUILISTLÁN',
             'estado_id' => '14',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Degollado',
+            'nombre' =>  'DEGOLLADO',
             'estado_id' => '14',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ejutla',
+            'nombre' =>  'EJUTLA',
             'estado_id' => '14',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Encarnación de Díaz',
+            'nombre' =>  'ENCARNACIÓN DE DÍAZ',
             'estado_id' => '14',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Etzatlán',
+            'nombre' =>  'ETZATLÁN',
             'estado_id' => '14',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Grullo',
+            'nombre' =>  'EL GRULLO',
             'estado_id' => '14',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guachinango',
+            'nombre' =>  'GUACHINANGO',
             'estado_id' => '14',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guadalajara',
+            'nombre' =>  'GUADALAJARA',
             'estado_id' => '14',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hostotipaquillo',
+            'nombre' =>  'HOSTOTIPAQUILLO',
             'estado_id' => '14',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huejúcar',
+            'nombre' =>  'HUEJÚCAR',
             'estado_id' => '14',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huejuquilla el Alto',
+            'nombre' =>  'HUEJUQUILLA EL ALTO',
             'estado_id' => '14',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Huerta',
+            'nombre' =>  'LA HUERTA',
             'estado_id' => '14',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtlahuacán de los Membrillos',
+            'nombre' =>  'IXTLAHUACÁN DE LOS MEMBRILLOS',
             'estado_id' => '14',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtlahuacán del Río',
+            'nombre' =>  'IXTLAHUACÁN DEL RÍO',
             'estado_id' => '14',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jalostotitlán',
+            'nombre' =>  'JALOSTOTITLÁN',
             'estado_id' => '14',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jamay',
+            'nombre' =>  'JAMAY',
             'estado_id' => '14',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jesús María',
+            'nombre' =>  'JESÚS MARÍA',
             'estado_id' => '14',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jilotlán de los Dolores',
+            'nombre' =>  'JILOTLÁN DE LOS DOLORES',
             'estado_id' => '14',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jocotepec',
+            'nombre' =>  'JOCOTEPEC',
             'estado_id' => '14',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juanacatlán',
+            'nombre' =>  'JUANACATLÁN',
             'estado_id' => '14',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juchitlán',
+            'nombre' =>  'JUCHITLÁN',
             'estado_id' => '14',
             'number' =>  '052',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Lagos de Moreno',
+            'nombre' =>  'LAGOS DE MORENO',
             'estado_id' => '14',
             'number' =>  '053',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Limón',
+            'nombre' =>  'EL LIMÓN',
             'estado_id' => '14',
             'number' =>  '054',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Magdalena',
+            'nombre' =>  'MAGDALENA',
             'estado_id' => '14',
             'number' =>  '055',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María del Oro',
+            'nombre' =>  'SANTA MARÍA DEL ORO',
             'estado_id' => '14',
             'number' =>  '056',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Manzanilla de la Paz',
+            'nombre' =>  'LA MANZANILLA DE LA PAZ',
             'estado_id' => '14',
             'number' =>  '057',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mascota',
+            'nombre' =>  'MASCOTA',
             'estado_id' => '14',
             'number' =>  '058',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mazamitla',
+            'nombre' =>  'MAZAMITLA',
             'estado_id' => '14',
             'number' =>  '059',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mexticacán',
+            'nombre' =>  'MEXTICACÁN',
             'estado_id' => '14',
             'number' =>  '060',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mezquitic',
+            'nombre' =>  'MEZQUITIC',
             'estado_id' => '14',
             'number' =>  '061',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mixtlán',
+            'nombre' =>  'MIXTLÁN',
             'estado_id' => '14',
             'number' =>  '062',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocotlán',
+            'nombre' =>  'OCOTLÁN',
             'estado_id' => '14',
             'number' =>  '063',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ojuelos de Jalisco',
+            'nombre' =>  'OJUELOS DE JALISCO',
             'estado_id' => '14',
             'number' =>  '064',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pihuamo',
+            'nombre' =>  'PIHUAMO',
             'estado_id' => '14',
             'number' =>  '065',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Poncitlán',
+            'nombre' =>  'PONCITLÁN',
             'estado_id' => '14',
             'number' =>  '066',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Puerto Vallarta',
+            'nombre' =>  'PUERTO VALLARTA',
             'estado_id' => '14',
             'number' =>  '067',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Purificación',
+            'nombre' =>  'VILLA PURIFICACIÓN',
             'estado_id' => '14',
             'number' =>  '068',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Quitupan',
+            'nombre' =>  'QUITUPAN',
             'estado_id' => '14',
             'number' =>  '069',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Salto',
+            'nombre' =>  'EL SALTO',
             'estado_id' => '14',
             'number' =>  '070',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Cristóbal de la Barranca',
+            'nombre' =>  'SAN CRISTÓBAL DE LA BARRANCA',
             'estado_id' => '14',
             'number' =>  '071',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Diego de Alejandría',
+            'nombre' =>  'SAN DIEGO DE ALEJANDRÍA',
             'estado_id' => '14',
             'number' =>  '072',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan de los Lagos',
+            'nombre' =>  'SAN JUAN DE LOS LAGOS',
             'estado_id' => '14',
             'number' =>  '073',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Julián',
+            'nombre' =>  'SAN JULIÁN',
             'estado_id' => '14',
             'number' =>  '074',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Marcos',
+            'nombre' =>  'SAN MARCOS',
             'estado_id' => '14',
             'number' =>  '075',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Martín de Bolaños',
+            'nombre' =>  'SAN MARTÍN DE BOLAÑOS',
             'estado_id' => '14',
             'number' =>  '076',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Martín Hidalgo',
+            'nombre' =>  'SAN MARTÍN HIDALGO',
             'estado_id' => '14',
             'number' =>  '077',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel el Alto',
+            'nombre' =>  'SAN MIGUEL EL ALTO',
             'estado_id' => '14',
             'number' =>  '078',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Gómez Farías',
+            'nombre' =>  'GÓMEZ FARÍAS',
             'estado_id' => '14',
             'number' =>  '079',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Sebastián del Oeste',
+            'nombre' =>  'SAN SEBASTIÁN DEL OESTE',
             'estado_id' => '14',
             'number' =>  '080',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María de los Ángeles',
+            'nombre' =>  'SANTA MARÍA DE LOS ÁNGELES',
             'estado_id' => '14',
             'number' =>  '081',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sayula',
+            'nombre' =>  'SAYULA',
             'estado_id' => '14',
             'number' =>  '082',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tala',
+            'nombre' =>  'TALA',
             'estado_id' => '14',
             'number' =>  '083',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Talpa de Allende',
+            'nombre' =>  'TALPA DE ALLENDE',
             'estado_id' => '14',
             'number' =>  '084',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tamazula de Gordiano',
+            'nombre' =>  'TAMAZULA DE GORDIANO',
             'estado_id' => '14',
             'number' =>  '085',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tapalpa',
+            'nombre' =>  'TAPALPA',
             'estado_id' => '14',
             'number' =>  '086',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tecalitlán',
+            'nombre' =>  'TECALITLÁN',
             'estado_id' => '14',
             'number' =>  '087',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tecolotlán',
+            'nombre' =>  'TECOLOTLÁN',
             'estado_id' => '14',
             'number' =>  '088',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Techaluta de Montenegro',
+            'nombre' =>  'TECHALUTA DE MONTENEGRO',
             'estado_id' => '14',
             'number' =>  '089',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tenamaxtlán',
+            'nombre' =>  'TENAMAXTLÁN',
             'estado_id' => '14',
             'number' =>  '090',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teocaltiche',
+            'nombre' =>  'TEOCALTICHE',
             'estado_id' => '14',
             'number' =>  '091',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teocuitatlán de Corona',
+            'nombre' =>  'TEOCUITATLÁN DE CORONA',
             'estado_id' => '14',
             'number' =>  '092',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepatitlán de Morelos',
+            'nombre' =>  'TEPATITLÁN DE MORELOS',
             'estado_id' => '14',
             'number' =>  '093',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tequila',
+            'nombre' =>  'TEQUILA',
             'estado_id' => '14',
             'number' =>  '094',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teuchitlán',
+            'nombre' =>  'TEUCHITLÁN',
             'estado_id' => '14',
             'number' =>  '095',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tizapán el Alto',
+            'nombre' =>  'TIZAPÁN EL ALTO',
             'estado_id' => '14',
             'number' =>  '096',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlajomulco de Zúñiga',
+            'nombre' =>  'TLAJOMULCO DE ZÚÑIGA',
             'estado_id' => '14',
             'number' =>  '097',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Tlaquepaque',
+            'nombre' =>  'SAN PEDRO TLAQUEPAQUE',
             'estado_id' => '14',
             'number' =>  '098',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tolimán',
+            'nombre' =>  'TOLIMÁN',
             'estado_id' => '14',
             'number' =>  '099',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tomatlán',
+            'nombre' =>  'TOMATLÁN',
             'estado_id' => '14',
             'number' =>  '100',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tonalá',
+            'nombre' =>  'TONALÁ',
             'estado_id' => '14',
             'number' =>  '101',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tonaya',
+            'nombre' =>  'TONAYA',
             'estado_id' => '14',
             'number' =>  '102',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tonila',
+            'nombre' =>  'TONILA',
             'estado_id' => '14',
             'number' =>  '103',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Totatiche',
+            'nombre' =>  'TOTATICHE',
             'estado_id' => '14',
             'number' =>  '104',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tototlán',
+            'nombre' =>  'TOTOTLÁN',
             'estado_id' => '14',
             'number' =>  '105',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tuxcacuesco',
+            'nombre' =>  'TUXCACUESCO',
             'estado_id' => '14',
             'number' =>  '106',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tuxcueca',
+            'nombre' =>  'TUXCUECA',
             'estado_id' => '14',
             'number' =>  '107',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tuxpan',
+            'nombre' =>  'TUXPAN',
             'estado_id' => '14',
             'number' =>  '108',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Unión de San Antonio',
+            'nombre' =>  'UNIÓN DE SAN ANTONIO',
             'estado_id' => '14',
             'number' =>  '109',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Unión de Tula',
+            'nombre' =>  'UNIÓN DE TULA',
             'estado_id' => '14',
             'number' =>  '110',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Valle de Guadalupe',
+            'nombre' =>  'VALLE DE GUADALUPE',
             'estado_id' => '14',
             'number' =>  '111',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Valle de Juárez',
+            'nombre' =>  'VALLE DE JUÁREZ',
             'estado_id' => '14',
             'number' =>  '112',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Gabriel',
+            'nombre' =>  'SAN GABRIEL',
             'estado_id' => '14',
             'number' =>  '113',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Corona',
+            'nombre' =>  'VILLA CORONA',
             'estado_id' => '14',
             'number' =>  '114',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Guerrero',
+            'nombre' =>  'VILLA GUERRERO',
             'estado_id' => '14',
             'number' =>  '115',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Hidalgo',
+            'nombre' =>  'VILLA HIDALGO',
             'estado_id' => '14',
             'number' =>  '116',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cañadas de Obregón',
+            'nombre' =>  'CAÑADAS DE OBREGÓN',
             'estado_id' => '14',
             'number' =>  '117',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yahualica de González Gallo',
+            'nombre' =>  'YAHUALICA DE GONZÁLEZ GALLO',
             'estado_id' => '14',
             'number' =>  '118',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zacoalco de Torres',
+            'nombre' =>  'ZACOALCO DE TORRES',
             'estado_id' => '14',
             'number' =>  '119',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zapopan',
+            'nombre' =>  'ZAPOPAN',
             'estado_id' => '14',
             'number' =>  '120',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zapotiltic',
+            'nombre' =>  'ZAPOTILTIC',
             'estado_id' => '14',
             'number' =>  '121',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zapotitlán de Vadillo',
+            'nombre' =>  'ZAPOTITLÁN DE VADILLO',
             'estado_id' => '14',
             'number' =>  '122',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zapotlán del Rey',
+            'nombre' =>  'ZAPOTLÁN DEL REY',
             'estado_id' => '14',
             'number' =>  '123',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zapotlanejo',
+            'nombre' =>  'ZAPOTLANEJO',
             'estado_id' => '14',
             'number' =>  '124',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Ignacio Cerro Gordo',
+            'nombre' =>  'SAN IGNACIO CERRO GORDO',
             'estado_id' => '14',
             'number' =>  '125',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acambay de Ruíz Castañeda',
+            'nombre' =>  'ACAMBAY DE RUÍZ CASTAÑEDA',
             'estado_id' => '15',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acolman',
+            'nombre' =>  'ACOLMAN',
             'estado_id' => '15',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Aculco',
+            'nombre' =>  'ACULCO',
             'estado_id' => '15',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Almoloya de Alquisiras',
+            'nombre' =>  'ALMOLOYA DE ALQUISIRAS',
             'estado_id' => '15',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Almoloya de Juárez',
+            'nombre' =>  'ALMOLOYA DE JUÁREZ',
             'estado_id' => '15',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Almoloya del Río',
+            'nombre' =>  'ALMOLOYA DEL RÍO',
             'estado_id' => '15',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amanalco',
+            'nombre' =>  'AMANALCO',
             'estado_id' => '15',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amatepec',
+            'nombre' =>  'AMATEPEC',
             'estado_id' => '15',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amecameca',
+            'nombre' =>  'AMECAMECA',
             'estado_id' => '15',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Apaxco',
+            'nombre' =>  'APAXCO',
             'estado_id' => '15',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atenco',
+            'nombre' =>  'ATENCO',
             'estado_id' => '15',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atizapán',
+            'nombre' =>  'ATIZAPÁN',
             'estado_id' => '15',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atizapán de Zaragoza',
+            'nombre' =>  'ATIZAPÁN DE ZARAGOZA',
             'estado_id' => '15',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atlacomulco',
+            'nombre' =>  'ATLACOMULCO',
             'estado_id' => '15',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atlautla',
+            'nombre' =>  'ATLAUTLA',
             'estado_id' => '15',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Axapusco',
+            'nombre' =>  'AXAPUSCO',
             'estado_id' => '15',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ayapango',
+            'nombre' =>  'AYAPANGO',
             'estado_id' => '15',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Calimaya',
+            'nombre' =>  'CALIMAYA',
             'estado_id' => '15',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Capulhuac',
+            'nombre' =>  'CAPULHUAC',
             'estado_id' => '15',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coacalco de Berriozábal',
+            'nombre' =>  'COACALCO DE BERRIOZÁBAL',
             'estado_id' => '15',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coatepec Harinas',
+            'nombre' =>  'COATEPEC HARINAS',
             'estado_id' => '15',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cocotitlán',
+            'nombre' =>  'COCOTITLÁN',
             'estado_id' => '15',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coyotepec',
+            'nombre' =>  'COYOTEPEC',
             'estado_id' => '15',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuautitlán',
+            'nombre' =>  'CUAUTITLÁN',
             'estado_id' => '15',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chalco',
+            'nombre' =>  'CHALCO',
             'estado_id' => '15',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chapa de Mota',
+            'nombre' =>  'CHAPA DE MOTA',
             'estado_id' => '15',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chapultepec',
+            'nombre' =>  'CHAPULTEPEC',
             'estado_id' => '15',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chiautla',
+            'nombre' =>  'CHIAUTLA',
             'estado_id' => '15',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chicoloapan',
+            'nombre' =>  'CHICOLOAPAN',
             'estado_id' => '15',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chiconcuac',
+            'nombre' =>  'CHICONCUAC',
             'estado_id' => '15',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chimalhuacán',
+            'nombre' =>  'CHIMALHUACÁN',
             'estado_id' => '15',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Donato Guerra',
+            'nombre' =>  'DONATO GUERRA',
             'estado_id' => '15',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ecatepec de Morelos',
+            'nombre' =>  'ECATEPEC DE MORELOS',
             'estado_id' => '15',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ecatzingo',
+            'nombre' =>  'ECATZINGO',
             'estado_id' => '15',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huehuetoca',
+            'nombre' =>  'HUEHUETOCA',
             'estado_id' => '15',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hueypoxtla',
+            'nombre' =>  'HUEYPOXTLA',
             'estado_id' => '15',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huixquilucan',
+            'nombre' =>  'HUIXQUILUCAN',
             'estado_id' => '15',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Isidro Fabela',
+            'nombre' =>  'ISIDRO FABELA',
             'estado_id' => '15',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtapaluca',
+            'nombre' =>  'IXTAPALUCA',
             'estado_id' => '15',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtapan de la Sal',
+            'nombre' =>  'IXTAPAN DE LA SAL',
             'estado_id' => '15',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtapan del Oro',
+            'nombre' =>  'IXTAPAN DEL ORO',
             'estado_id' => '15',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtlahuaca',
+            'nombre' =>  'IXTLAHUACA',
             'estado_id' => '15',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xalatlaco',
+            'nombre' =>  'XALATLACO',
             'estado_id' => '15',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jaltenco',
+            'nombre' =>  'JALTENCO',
             'estado_id' => '15',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jilotepec',
+            'nombre' =>  'JILOTEPEC',
             'estado_id' => '15',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jilotzingo',
+            'nombre' =>  'JILOTZINGO',
             'estado_id' => '15',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jiquipilco',
+            'nombre' =>  'JIQUIPILCO',
             'estado_id' => '15',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jocotitlán',
+            'nombre' =>  'JOCOTITLÁN',
             'estado_id' => '15',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Joquicingo',
+            'nombre' =>  'JOQUICINGO',
             'estado_id' => '15',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juchitepec',
+            'nombre' =>  'JUCHITEPEC',
             'estado_id' => '15',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Lerma',
+            'nombre' =>  'LERMA',
             'estado_id' => '15',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Malinalco',
+            'nombre' =>  'MALINALCO',
             'estado_id' => '15',
             'number' =>  '052',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Melchor Ocampo',
+            'nombre' =>  'MELCHOR OCAMPO',
             'estado_id' => '15',
             'number' =>  '053',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Metepec',
+            'nombre' =>  'METEPEC',
             'estado_id' => '15',
             'number' =>  '054',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mexicaltzingo',
+            'nombre' =>  'MEXICALTZINGO',
             'estado_id' => '15',
             'number' =>  '055',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Morelos',
+            'nombre' =>  'MORELOS',
             'estado_id' => '15',
             'number' =>  '056',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Naucalpan de Juárez',
+            'nombre' =>  'NAUCALPAN DE JUÁREZ',
             'estado_id' => '15',
             'number' =>  '057',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nezahualcóyotl',
+            'nombre' =>  'NEZAHUALCÓYOTL',
             'estado_id' => '15',
             'number' =>  '058',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nextlalpan',
+            'nombre' =>  'NEXTLALPAN',
             'estado_id' => '15',
             'number' =>  '059',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nicolás Romero',
+            'nombre' =>  'NICOLÁS ROMERO',
             'estado_id' => '15',
             'number' =>  '060',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nopaltepec',
+            'nombre' =>  'NOPALTEPEC',
             'estado_id' => '15',
             'number' =>  '061',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocoyoacac',
+            'nombre' =>  'OCOYOACAC',
             'estado_id' => '15',
             'number' =>  '062',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocuilan',
+            'nombre' =>  'OCUILAN',
             'estado_id' => '15',
             'number' =>  '063',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Oro',
+            'nombre' =>  'EL ORO',
             'estado_id' => '15',
             'number' =>  '064',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Otumba',
+            'nombre' =>  'OTUMBA',
             'estado_id' => '15',
             'number' =>  '065',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Otzoloapan',
+            'nombre' =>  'OTZOLOAPAN',
             'estado_id' => '15',
             'number' =>  '066',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Otzolotepec',
+            'nombre' =>  'OTZOLOTEPEC',
             'estado_id' => '15',
             'number' =>  '067',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ozumba',
+            'nombre' =>  'OZUMBA',
             'estado_id' => '15',
             'number' =>  '068',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Papalotla',
+            'nombre' =>  'PAPALOTLA',
             'estado_id' => '15',
             'number' =>  '069',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Paz',
+            'nombre' =>  'LA PAZ',
             'estado_id' => '15',
             'number' =>  '070',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Polotitlán',
+            'nombre' =>  'POLOTITLÁN',
             'estado_id' => '15',
             'number' =>  '071',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rayón',
+            'nombre' =>  'RAYÓN',
             'estado_id' => '15',
             'number' =>  '072',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Antonio la Isla',
+            'nombre' =>  'SAN ANTONIO LA ISLA',
             'estado_id' => '15',
             'number' =>  '073',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Felipe del Progreso',
+            'nombre' =>  'SAN FELIPE DEL PROGRESO',
             'estado_id' => '15',
             'number' =>  '074',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Martín de las Pirámides',
+            'nombre' =>  'SAN MARTÍN DE LAS PIRÁMIDES',
             'estado_id' => '15',
             'number' =>  '075',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Mateo Atenco',
+            'nombre' =>  'SAN MATEO ATENCO',
             'estado_id' => '15',
             'number' =>  '076',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Simón de Guerrero',
+            'nombre' =>  'SAN SIMÓN DE GUERRERO',
             'estado_id' => '15',
             'number' =>  '077',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Tomás',
+            'nombre' =>  'SANTO TOMÁS',
             'estado_id' => '15',
             'number' =>  '078',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Soyaniquilpan de Juárez',
+            'nombre' =>  'SOYANIQUILPAN DE JUÁREZ',
             'estado_id' => '15',
             'number' =>  '079',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sultepec',
+            'nombre' =>  'SULTEPEC',
             'estado_id' => '15',
             'number' =>  '080',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tecámac',
+            'nombre' =>  'TECÁMAC',
             'estado_id' => '15',
             'number' =>  '081',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tejupilco',
+            'nombre' =>  'TEJUPILCO',
             'estado_id' => '15',
             'number' =>  '082',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Temamatla',
+            'nombre' =>  'TEMAMATLA',
             'estado_id' => '15',
             'number' =>  '083',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Temascalapa',
+            'nombre' =>  'TEMASCALAPA',
             'estado_id' => '15',
             'number' =>  '084',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Temascalcingo',
+            'nombre' =>  'TEMASCALCINGO',
             'estado_id' => '15',
             'number' =>  '085',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Temascaltepec',
+            'nombre' =>  'TEMASCALTEPEC',
             'estado_id' => '15',
             'number' =>  '086',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Temoaya',
+            'nombre' =>  'TEMOAYA',
             'estado_id' => '15',
             'number' =>  '087',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tenancingo',
+            'nombre' =>  'TENANCINGO',
             'estado_id' => '15',
             'number' =>  '088',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tenango del Aire',
+            'nombre' =>  'TENANGO DEL AIRE',
             'estado_id' => '15',
             'number' =>  '089',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tenango del Valle',
+            'nombre' =>  'TENANGO DEL VALLE',
             'estado_id' => '15',
             'number' =>  '090',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teoloyucan',
+            'nombre' =>  'TEOLOYUCAN',
             'estado_id' => '15',
             'number' =>  '091',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teotihuacán',
+            'nombre' =>  'TEOTIHUACÁN',
             'estado_id' => '15',
             'number' =>  '092',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepetlaoxtoc',
+            'nombre' =>  'TEPETLAOXTOC',
             'estado_id' => '15',
             'number' =>  '093',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepetlixpa',
+            'nombre' =>  'TEPETLIXPA',
             'estado_id' => '15',
             'number' =>  '094',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepotzotlán',
+            'nombre' =>  'TEPOTZOTLÁN',
             'estado_id' => '15',
             'number' =>  '095',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tequixquiac',
+            'nombre' =>  'TEQUIXQUIAC',
             'estado_id' => '15',
             'number' =>  '096',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Texcaltitlán',
+            'nombre' =>  'TEXCALTITLÁN',
             'estado_id' => '15',
             'number' =>  '097',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Texcalyacac',
+            'nombre' =>  'TEXCALYACAC',
             'estado_id' => '15',
             'number' =>  '098',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Texcoco',
+            'nombre' =>  'TEXCOCO',
             'estado_id' => '15',
             'number' =>  '099',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tezoyuca',
+            'nombre' =>  'TEZOYUCA',
             'estado_id' => '15',
             'number' =>  '100',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tianguistenco',
+            'nombre' =>  'TIANGUISTENCO',
             'estado_id' => '15',
             'number' =>  '101',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Timilpan',
+            'nombre' =>  'TIMILPAN',
             'estado_id' => '15',
             'number' =>  '102',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlalmanalco',
+            'nombre' =>  'TLALMANALCO',
             'estado_id' => '15',
             'number' =>  '103',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlalnepantla de Baz',
+            'nombre' =>  'TLALNEPANTLA DE BAZ',
             'estado_id' => '15',
             'number' =>  '104',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlatlaya',
+            'nombre' =>  'TLATLAYA',
             'estado_id' => '15',
             'number' =>  '105',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Toluca',
+            'nombre' =>  'TOLUCA',
             'estado_id' => '15',
             'number' =>  '106',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tonatico',
+            'nombre' =>  'TONATICO',
             'estado_id' => '15',
             'number' =>  '107',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tultepec',
+            'nombre' =>  'TULTEPEC',
             'estado_id' => '15',
             'number' =>  '108',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tultitlán',
+            'nombre' =>  'TULTITLÁN',
             'estado_id' => '15',
             'number' =>  '109',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Valle de Bravo',
+            'nombre' =>  'VALLE DE BRAVO',
             'estado_id' => '15',
             'number' =>  '110',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa de Allende',
+            'nombre' =>  'VILLA DE ALLENDE',
             'estado_id' => '15',
             'number' =>  '111',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa del Carbón',
+            'nombre' =>  'VILLA DEL CARBÓN',
             'estado_id' => '15',
             'number' =>  '112',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Guerrero',
+            'nombre' =>  'VILLA GUERRERO',
             'estado_id' => '15',
             'number' =>  '113',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Victoria',
+            'nombre' =>  'VILLA VICTORIA',
             'estado_id' => '15',
             'number' =>  '114',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xonacatlán',
+            'nombre' =>  'XONACATLÁN',
             'estado_id' => '15',
             'number' =>  '115',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zacazonapan',
+            'nombre' =>  'ZACAZONAPAN',
             'estado_id' => '15',
             'number' =>  '116',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zacualpan',
+            'nombre' =>  'ZACUALPAN',
             'estado_id' => '15',
             'number' =>  '117',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zinacantepec',
+            'nombre' =>  'ZINACANTEPEC',
             'estado_id' => '15',
             'number' =>  '118',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zumpahuacán',
+            'nombre' =>  'ZUMPAHUACÁN',
             'estado_id' => '15',
             'number' =>  '119',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zumpango',
+            'nombre' =>  'ZUMPANGO',
             'estado_id' => '15',
             'number' =>  '120',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuautitlán Izcalli',
+            'nombre' =>  'CUAUTITLÁN IZCALLI',
             'estado_id' => '15',
             'number' =>  '121',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Valle de Chalco Solidaridad',
+            'nombre' =>  'VALLE DE CHALCO SOLIDARIDAD',
             'estado_id' => '15',
             'number' =>  '122',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Luvianos',
+            'nombre' =>  'LUVIANOS',
             'estado_id' => '15',
             'number' =>  '123',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San José del Rincón',
+            'nombre' =>  'SAN JOSÉ DEL RINCÓN',
             'estado_id' => '15',
             'number' =>  '124',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tonanitla',
+            'nombre' =>  'TONANITLA',
             'estado_id' => '15',
             'number' =>  '125',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acuitzio',
+            'nombre' =>  'ACUITZIO',
             'estado_id' => '16',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Aguililla',
+            'nombre' =>  'AGUILILLA',
             'estado_id' => '16',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Álvaro Obregón',
+            'nombre' =>  'ÁLVARO OBREGÓN',
             'estado_id' => '16',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Angamacutiro',
+            'nombre' =>  'ANGAMACUTIRO',
             'estado_id' => '16',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Angangueo',
+            'nombre' =>  'ANGANGUEO',
             'estado_id' => '16',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Apatzingán',
+            'nombre' =>  'APATZINGÁN',
             'estado_id' => '16',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Aporo',
+            'nombre' =>  'APORO',
             'estado_id' => '16',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Aquila',
+            'nombre' =>  'AQUILA',
             'estado_id' => '16',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ario',
+            'nombre' =>  'ARIO',
             'estado_id' => '16',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Arteaga',
+            'nombre' =>  'ARTEAGA',
             'estado_id' => '16',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Briseñas',
+            'nombre' =>  'BRISEÑAS',
             'estado_id' => '16',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Buenavista',
+            'nombre' =>  'BUENAVISTA',
             'estado_id' => '16',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Carácuaro',
+            'nombre' =>  'CARÁCUARO',
             'estado_id' => '16',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coahuayana',
+            'nombre' =>  'COAHUAYANA',
             'estado_id' => '16',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coalcomán de Vázquez Pallares',
+            'nombre' =>  'COALCOMÁN DE VÁZQUEZ PALLARES',
             'estado_id' => '16',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coeneo',
+            'nombre' =>  'COENEO',
             'estado_id' => '16',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Contepec',
+            'nombre' =>  'CONTEPEC',
             'estado_id' => '16',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Copándaro',
+            'nombre' =>  'COPÁNDARO',
             'estado_id' => '16',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cotija',
+            'nombre' =>  'COTIJA',
             'estado_id' => '16',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuitzeo',
+            'nombre' =>  'CUITZEO',
             'estado_id' => '16',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Charapan',
+            'nombre' =>  'CHARAPAN',
             'estado_id' => '16',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Charo',
+            'nombre' =>  'CHARO',
             'estado_id' => '16',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chavinda',
+            'nombre' =>  'CHAVINDA',
             'estado_id' => '16',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cherán',
+            'nombre' =>  'CHERÁN',
             'estado_id' => '16',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chilchota',
+            'nombre' =>  'CHILCHOTA',
             'estado_id' => '16',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chinicuila',
+            'nombre' =>  'CHINICUILA',
             'estado_id' => '16',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chucándiro',
+            'nombre' =>  'CHUCÁNDIRO',
             'estado_id' => '16',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Churintzio',
+            'nombre' =>  'CHURINTZIO',
             'estado_id' => '16',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Churumuco',
+            'nombre' =>  'CHURUMUCO',
             'estado_id' => '16',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ecuandureo',
+            'nombre' =>  'ECUANDUREO',
             'estado_id' => '16',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Epitacio Huerta',
+            'nombre' =>  'EPITACIO HUERTA',
             'estado_id' => '16',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Erongarícuaro',
+            'nombre' =>  'ERONGARÍCUARO',
             'estado_id' => '16',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Gabriel Zamora',
+            'nombre' =>  'GABRIEL ZAMORA',
             'estado_id' => '16',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hidalgo',
+            'nombre' =>  'HIDALGO',
             'estado_id' => '16',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Huacana',
+            'nombre' =>  'LA HUACANA',
             'estado_id' => '16',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huandacareo',
+            'nombre' =>  'HUANDACAREO',
             'estado_id' => '16',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huaniqueo',
+            'nombre' =>  'HUANIQUEO',
             'estado_id' => '16',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huetamo',
+            'nombre' =>  'HUETAMO',
             'estado_id' => '16',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huiramba',
+            'nombre' =>  'HUIRAMBA',
             'estado_id' => '16',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Indaparapeo',
+            'nombre' =>  'INDAPARAPEO',
             'estado_id' => '16',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Irimbo',
+            'nombre' =>  'IRIMBO',
             'estado_id' => '16',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtlán',
+            'nombre' =>  'IXTLÁN',
             'estado_id' => '16',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jacona',
+            'nombre' =>  'JACONA',
             'estado_id' => '16',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jiménez',
+            'nombre' =>  'JIMÉNEZ',
             'estado_id' => '16',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jiquilpan',
+            'nombre' =>  'JIQUILPAN',
             'estado_id' => '16',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juárez',
+            'nombre' =>  'JUÁREZ',
             'estado_id' => '16',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jungapeo',
+            'nombre' =>  'JUNGAPEO',
             'estado_id' => '16',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Lagunillas',
+            'nombre' =>  'LAGUNILLAS',
             'estado_id' => '16',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Madero',
+            'nombre' =>  'MADERO',
             'estado_id' => '16',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Maravatío',
+            'nombre' =>  'MARAVATÍO',
             'estado_id' => '16',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Marcos Castellanos',
+            'nombre' =>  'MARCOS CASTELLANOS',
             'estado_id' => '16',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Lázaro Cárdenas',
+            'nombre' =>  'LÁZARO CÁRDENAS',
             'estado_id' => '16',
             'number' =>  '052',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Morelia',
+            'nombre' =>  'MORELIA',
             'estado_id' => '16',
             'number' =>  '053',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Morelos',
+            'nombre' =>  'MORELOS',
             'estado_id' => '16',
             'number' =>  '054',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Múgica',
+            'nombre' =>  'MÚGICA',
             'estado_id' => '16',
             'number' =>  '055',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nahuatzen',
+            'nombre' =>  'NAHUATZEN',
             'estado_id' => '16',
             'number' =>  '056',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nocupétaro',
+            'nombre' =>  'NOCUPÉTARO',
             'estado_id' => '16',
             'number' =>  '057',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nuevo Parangaricutiro',
+            'nombre' =>  'NUEVO PARANGARICUTIRO',
             'estado_id' => '16',
             'number' =>  '058',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nuevo Urecho',
+            'nombre' =>  'NUEVO URECHO',
             'estado_id' => '16',
             'number' =>  '059',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Numarán',
+            'nombre' =>  'NUMARÁN',
             'estado_id' => '16',
             'number' =>  '060',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocampo',
+            'nombre' =>  'OCAMPO',
             'estado_id' => '16',
             'number' =>  '061',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pajacuarán',
+            'nombre' =>  'PAJACUARÁN',
             'estado_id' => '16',
             'number' =>  '062',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Panindícuaro',
+            'nombre' =>  'PANINDÍCUARO',
             'estado_id' => '16',
             'number' =>  '063',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Parácuaro',
+            'nombre' =>  'PARÁCUARO',
             'estado_id' => '16',
             'number' =>  '064',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Paracho',
+            'nombre' =>  'PARACHO',
             'estado_id' => '16',
             'number' =>  '065',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pátzcuaro',
+            'nombre' =>  'PÁTZCUARO',
             'estado_id' => '16',
             'number' =>  '066',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Penjamillo',
+            'nombre' =>  'PENJAMILLO',
             'estado_id' => '16',
             'number' =>  '067',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Peribán',
+            'nombre' =>  'PERIBÁN',
             'estado_id' => '16',
             'number' =>  '068',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Piedad',
+            'nombre' =>  'LA PIEDAD',
             'estado_id' => '16',
             'number' =>  '069',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Purépero',
+            'nombre' =>  'PURÉPERO',
             'estado_id' => '16',
             'number' =>  '070',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Puruándiro',
+            'nombre' =>  'PURUÁNDIRO',
             'estado_id' => '16',
             'number' =>  '071',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Queréndaro',
+            'nombre' =>  'QUERÉNDARO',
             'estado_id' => '16',
             'number' =>  '072',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Quiroga',
+            'nombre' =>  'QUIROGA',
             'estado_id' => '16',
             'number' =>  '073',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cojumatlán de Régules',
+            'nombre' =>  'COJUMATLÁN DE RÉGULES',
             'estado_id' => '16',
             'number' =>  '074',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Los Reyes',
+            'nombre' =>  'LOS REYES',
             'estado_id' => '16',
             'number' =>  '075',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sahuayo',
+            'nombre' =>  'SAHUAYO',
             'estado_id' => '16',
             'number' =>  '076',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Lucas',
+            'nombre' =>  'SAN LUCAS',
             'estado_id' => '16',
             'number' =>  '077',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Ana Maya',
+            'nombre' =>  'SANTA ANA MAYA',
             'estado_id' => '16',
             'number' =>  '078',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Salvador Escalante',
+            'nombre' =>  'SALVADOR ESCALANTE',
             'estado_id' => '16',
             'number' =>  '079',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Senguio',
+            'nombre' =>  'SENGUIO',
             'estado_id' => '16',
             'number' =>  '080',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Susupuato',
+            'nombre' =>  'SUSUPUATO',
             'estado_id' => '16',
             'number' =>  '081',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tacámbaro',
+            'nombre' =>  'TACÁMBARO',
             'estado_id' => '16',
             'number' =>  '082',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tancítaro',
+            'nombre' =>  'TANCÍTARO',
             'estado_id' => '16',
             'number' =>  '083',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tangamandapio',
+            'nombre' =>  'TANGAMANDAPIO',
             'estado_id' => '16',
             'number' =>  '084',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tangancícuaro',
+            'nombre' =>  'TANGANCÍCUARO',
             'estado_id' => '16',
             'number' =>  '085',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tanhuato',
+            'nombre' =>  'TANHUATO',
             'estado_id' => '16',
             'number' =>  '086',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Taretan',
+            'nombre' =>  'TARETAN',
             'estado_id' => '16',
             'number' =>  '087',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tarímbaro',
+            'nombre' =>  'TARÍMBARO',
             'estado_id' => '16',
             'number' =>  '088',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepalcatepec',
+            'nombre' =>  'TEPALCATEPEC',
             'estado_id' => '16',
             'number' =>  '089',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tingambato',
+            'nombre' =>  'TINGAMBATO',
             'estado_id' => '16',
             'number' =>  '090',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tingüindín',
+            'nombre' =>  'TINGÜINDÍN',
             'estado_id' => '16',
             'number' =>  '091',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tiquicheo de Nicolás Romero',
+            'nombre' =>  'TIQUICHEO DE NICOLÁS ROMERO',
             'estado_id' => '16',
             'number' =>  '092',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlalpujahua',
+            'nombre' =>  'TLALPUJAHUA',
             'estado_id' => '16',
             'number' =>  '093',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlazazalca',
+            'nombre' =>  'TLAZAZALCA',
             'estado_id' => '16',
             'number' =>  '094',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tocumbo',
+            'nombre' =>  'TOCUMBO',
             'estado_id' => '16',
             'number' =>  '095',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tumbiscatío',
+            'nombre' =>  'TUMBISCATÍO',
             'estado_id' => '16',
             'number' =>  '096',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Turicato',
+            'nombre' =>  'TURICATO',
             'estado_id' => '16',
             'number' =>  '097',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tuxpan',
+            'nombre' =>  'TUXPAN',
             'estado_id' => '16',
             'number' =>  '098',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tuzantla',
+            'nombre' =>  'TUZANTLA',
             'estado_id' => '16',
             'number' =>  '099',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tzintzuntzan',
+            'nombre' =>  'TZINTZUNTZAN',
             'estado_id' => '16',
             'number' =>  '100',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tzitzio',
+            'nombre' =>  'TZITZIO',
             'estado_id' => '16',
             'number' =>  '101',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Uruapan',
+            'nombre' =>  'URUAPAN',
             'estado_id' => '16',
             'number' =>  '102',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Venustiano Carranza',
+            'nombre' =>  'VENUSTIANO CARRANZA',
             'estado_id' => '16',
             'number' =>  '103',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villamar',
+            'nombre' =>  'VILLAMAR',
             'estado_id' => '16',
             'number' =>  '104',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Vista Hermosa',
+            'nombre' =>  'VISTA HERMOSA',
             'estado_id' => '16',
             'number' =>  '105',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yurécuaro',
+            'nombre' =>  'YURÉCUARO',
             'estado_id' => '16',
             'number' =>  '106',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zacapu',
+            'nombre' =>  'ZACAPU',
             'estado_id' => '16',
             'number' =>  '107',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zamora',
+            'nombre' =>  'ZAMORA',
             'estado_id' => '16',
             'number' =>  '108',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zináparo',
+            'nombre' =>  'ZINÁPARO',
             'estado_id' => '16',
             'number' =>  '109',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zinapécuaro',
+            'nombre' =>  'ZINAPÉCUARO',
             'estado_id' => '16',
             'number' =>  '110',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ziracuaretiro',
+            'nombre' =>  'ZIRACUARETIRO',
             'estado_id' => '16',
             'number' =>  '111',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zitácuaro',
+            'nombre' =>  'ZITÁCUARO',
             'estado_id' => '16',
             'number' =>  '112',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'José Sixto Verduzco',
+            'nombre' =>  'JOSÉ SIXTO VERDUZCO',
             'estado_id' => '16',
             'number' =>  '113',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amacuzac',
+            'nombre' =>  'AMACUZAC',
             'estado_id' => '17',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atlatlahucan',
+            'nombre' =>  'ATLATLAHUCAN',
             'estado_id' => '17',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Axochiapan',
+            'nombre' =>  'AXOCHIAPAN',
             'estado_id' => '17',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ayala',
+            'nombre' =>  'AYALA',
             'estado_id' => '17',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coatlán del Río',
+            'nombre' =>  'COATLÁN DEL RÍO',
             'estado_id' => '17',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuautla',
+            'nombre' =>  'CUAUTLA',
             'estado_id' => '17',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuernavaca',
+            'nombre' =>  'CUERNAVACA',
             'estado_id' => '17',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Emiliano Zapata',
+            'nombre' =>  'EMILIANO ZAPATA',
             'estado_id' => '17',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huitzilac',
+            'nombre' =>  'HUITZILAC',
             'estado_id' => '17',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jantetelco',
+            'nombre' =>  'JANTETELCO',
             'estado_id' => '17',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jiutepec',
+            'nombre' =>  'JIUTEPEC',
             'estado_id' => '17',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jojutla',
+            'nombre' =>  'JOJUTLA',
             'estado_id' => '17',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jonacatepec',
+            'nombre' =>  'JONACATEPEC',
             'estado_id' => '17',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mazatepec',
+            'nombre' =>  'MAZATEPEC',
             'estado_id' => '17',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Miacatlán',
+            'nombre' =>  'MIACATLÁN',
             'estado_id' => '17',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocuituco',
+            'nombre' =>  'OCUITUCO',
             'estado_id' => '17',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Puente de Ixtla',
+            'nombre' =>  'PUENTE DE IXTLA',
             'estado_id' => '17',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Temixco',
+            'nombre' =>  'TEMIXCO',
             'estado_id' => '17',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepalcingo',
+            'nombre' =>  'TEPALCINGO',
             'estado_id' => '17',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepoztlán',
+            'nombre' =>  'TEPOZTLÁN',
             'estado_id' => '17',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tetecala',
+            'nombre' =>  'TETECALA',
             'estado_id' => '17',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tetela del Volcán',
+            'nombre' =>  'TETELA DEL VOLCÁN',
             'estado_id' => '17',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlalnepantla',
+            'nombre' =>  'TLALNEPANTLA',
             'estado_id' => '17',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlaltizapán de Zapata',
+            'nombre' =>  'TLALTIZAPÁN DE ZAPATA',
             'estado_id' => '17',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlaquiltenango',
+            'nombre' =>  'TLAQUILTENANGO',
             'estado_id' => '17',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlayacapan',
+            'nombre' =>  'TLAYACAPAN',
             'estado_id' => '17',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Totolapan',
+            'nombre' =>  'TOTOLAPAN',
             'estado_id' => '17',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xochitepec',
+            'nombre' =>  'XOCHITEPEC',
             'estado_id' => '17',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yautepec',
+            'nombre' =>  'YAUTEPEC',
             'estado_id' => '17',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yecapixtla',
+            'nombre' =>  'YECAPIXTLA',
             'estado_id' => '17',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zacatepec',
+            'nombre' =>  'ZACATEPEC',
             'estado_id' => '17',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zacualpan de Amilpas',
+            'nombre' =>  'ZACUALPAN DE AMILPAS',
             'estado_id' => '17',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Temoac',
+            'nombre' =>  'TEMOAC',
             'estado_id' => '17',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acaponeta',
+            'nombre' =>  'ACAPONETA',
             'estado_id' => '18',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ahuacatlán',
+            'nombre' =>  'AHUACATLÁN',
             'estado_id' => '18',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amatlán de Cañas',
+            'nombre' =>  'AMATLÁN DE CAÑAS',
             'estado_id' => '18',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Compostela',
+            'nombre' =>  'COMPOSTELA',
             'estado_id' => '18',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huajicori',
+            'nombre' =>  'HUAJICORI',
             'estado_id' => '18',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtlán del Río',
+            'nombre' =>  'IXTLÁN DEL RÍO',
             'estado_id' => '18',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jala',
+            'nombre' =>  'JALA',
             'estado_id' => '18',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xalisco',
+            'nombre' =>  'XALISCO',
             'estado_id' => '18',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Del Nayar',
+            'nombre' =>  'DEL NAYAR',
             'estado_id' => '18',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rosamorada',
+            'nombre' =>  'ROSAMORADA',
             'estado_id' => '18',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ruíz',
+            'nombre' =>  'RUÍZ',
             'estado_id' => '18',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Blas',
+            'nombre' =>  'SAN BLAS',
             'estado_id' => '18',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Lagunillas',
+            'nombre' =>  'SAN PEDRO LAGUNILLAS',
             'estado_id' => '18',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María del Oro',
+            'nombre' =>  'SANTA MARÍA DEL ORO',
             'estado_id' => '18',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Ixcuintla',
+            'nombre' =>  'SANTIAGO IXCUINTLA',
             'estado_id' => '18',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tecuala',
+            'nombre' =>  'TECUALA',
             'estado_id' => '18',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepic',
+            'nombre' =>  'TEPIC',
             'estado_id' => '18',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tuxpan',
+            'nombre' =>  'TUXPAN',
             'estado_id' => '18',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Yesca',
+            'nombre' =>  'LA YESCA',
             'estado_id' => '18',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bahía de Banderas',
+            'nombre' =>  'BAHÍA DE BANDERAS',
             'estado_id' => '18',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Abasolo',
+            'nombre' =>  'ABASOLO',
             'estado_id' => '19',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Agualeguas',
+            'nombre' =>  'AGUALEGUAS',
             'estado_id' => '19',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Los Aldamas',
+            'nombre' =>  'LOS ALDAMAS',
             'estado_id' => '19',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Allende',
+            'nombre' =>  'ALLENDE',
             'estado_id' => '19',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Anáhuac',
+            'nombre' =>  'ANÁHUAC',
             'estado_id' => '19',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Apodaca',
+            'nombre' =>  'APODACA',
             'estado_id' => '19',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Aramberri',
+            'nombre' =>  'ARAMBERRI',
             'estado_id' => '19',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bustamante',
+            'nombre' =>  'BUSTAMANTE',
             'estado_id' => '19',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cadereyta Jiménez',
+            'nombre' =>  'CADEREYTA JIMÉNEZ',
             'estado_id' => '19',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Carmen',
+            'nombre' =>  'EL CARMEN',
             'estado_id' => '19',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cerralvo',
+            'nombre' =>  'CERRALVO',
             'estado_id' => '19',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ciénega de Flores',
+            'nombre' =>  'CIÉNEGA DE FLORES',
             'estado_id' => '19',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'China',
+            'nombre' =>  'CHINA',
             'estado_id' => '19',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Doctor Arroyo',
+            'nombre' =>  'DOCTOR ARROYO',
             'estado_id' => '19',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Doctor Coss',
+            'nombre' =>  'DOCTOR COSS',
             'estado_id' => '19',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Doctor González',
+            'nombre' =>  'DOCTOR GONZÁLEZ',
             'estado_id' => '19',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Galeana',
+            'nombre' =>  'GALEANA',
             'estado_id' => '19',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'García',
+            'nombre' =>  'GARCÍA',
             'estado_id' => '19',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Garza García',
+            'nombre' =>  'SAN PEDRO GARZA GARCÍA',
             'estado_id' => '19',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'General Bravo',
+            'nombre' =>  'GENERAL BRAVO',
             'estado_id' => '19',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'General Escobedo',
+            'nombre' =>  'GENERAL ESCOBEDO',
             'estado_id' => '19',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'General Terán',
+            'nombre' =>  'GENERAL TERÁN',
             'estado_id' => '19',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'General Treviño',
+            'nombre' =>  'GENERAL TREVIÑO',
             'estado_id' => '19',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'General Zaragoza',
+            'nombre' =>  'GENERAL ZARAGOZA',
             'estado_id' => '19',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'General Zuazua',
+            'nombre' =>  'GENERAL ZUAZUA',
             'estado_id' => '19',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guadalupe',
+            'nombre' =>  'GUADALUPE',
             'estado_id' => '19',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Los Herreras',
+            'nombre' =>  'LOS HERRERAS',
             'estado_id' => '19',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Higueras',
+            'nombre' =>  'HIGUERAS',
             'estado_id' => '19',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hualahuises',
+            'nombre' =>  'HUALAHUISES',
             'estado_id' => '19',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Iturbide',
+            'nombre' =>  'ITURBIDE',
             'estado_id' => '19',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juárez',
+            'nombre' =>  'JUÁREZ',
             'estado_id' => '19',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Lampazos de Naranjo',
+            'nombre' =>  'LAMPAZOS DE NARANJO',
             'estado_id' => '19',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Linares',
+            'nombre' =>  'LINARES',
             'estado_id' => '19',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Marín',
+            'nombre' =>  'MARÍN',
             'estado_id' => '19',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Melchor Ocampo',
+            'nombre' =>  'MELCHOR OCAMPO',
             'estado_id' => '19',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mier y Noriega',
+            'nombre' =>  'MIER Y NORIEGA',
             'estado_id' => '19',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mina',
+            'nombre' =>  'MINA',
             'estado_id' => '19',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Montemorelos',
+            'nombre' =>  'MONTEMORELOS',
             'estado_id' => '19',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Monterrey',
+            'nombre' =>  'MONTERREY',
             'estado_id' => '19',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Parás',
+            'nombre' =>  'PARÁS',
             'estado_id' => '19',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pesquería',
+            'nombre' =>  'PESQUERÍA',
             'estado_id' => '19',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Los Ramones',
+            'nombre' =>  'LOS RAMONES',
             'estado_id' => '19',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rayones',
+            'nombre' =>  'RAYONES',
             'estado_id' => '19',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sabinas Hidalgo',
+            'nombre' =>  'SABINAS HIDALGO',
             'estado_id' => '19',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Salinas Victoria',
+            'nombre' =>  'SALINAS VICTORIA',
             'estado_id' => '19',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Nicolás de los Garza',
+            'nombre' =>  'SAN NICOLÁS DE LOS GARZA',
             'estado_id' => '19',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hidalgo',
+            'nombre' =>  'HIDALGO',
             'estado_id' => '19',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina',
+            'nombre' =>  'SANTA CATARINA',
             'estado_id' => '19',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago',
+            'nombre' =>  'SANTIAGO',
             'estado_id' => '19',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Vallecillo',
+            'nombre' =>  'VALLECILLO',
             'estado_id' => '19',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villaldama',
+            'nombre' =>  'VILLALDAMA',
             'estado_id' => '19',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Abejones',
+            'nombre' =>  'ABEJONES',
             'estado_id' => '20',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acatlán de Pérez Figueroa',
+            'nombre' =>  'ACATLÁN DE PÉREZ FIGUEROA',
             'estado_id' => '20',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Asunción Cacalotepec',
+            'nombre' =>  'ASUNCIÓN CACALOTEPEC',
             'estado_id' => '20',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Asunción Cuyotepeji',
+            'nombre' =>  'ASUNCIÓN CUYOTEPEJI',
             'estado_id' => '20',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Asunción Ixtaltepec',
+            'nombre' =>  'ASUNCIÓN IXTALTEPEC',
             'estado_id' => '20',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Asunción Nochixtlán',
+            'nombre' =>  'ASUNCIÓN NOCHIXTLÁN',
             'estado_id' => '20',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Asunción Ocotlán',
+            'nombre' =>  'ASUNCIÓN OCOTLÁN',
             'estado_id' => '20',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Asunción Tlacolulita',
+            'nombre' =>  'ASUNCIÓN TLACOLULITA',
             'estado_id' => '20',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ayotzintepec',
+            'nombre' =>  'AYOTZINTEPEC',
             'estado_id' => '20',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Barrio de la Soledad',
+            'nombre' =>  'EL BARRIO DE LA SOLEDAD',
             'estado_id' => '20',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Calihualá',
+            'nombre' =>  'CALIHUALÁ',
             'estado_id' => '20',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Candelaria Loxicha',
+            'nombre' =>  'CANDELARIA LOXICHA',
             'estado_id' => '20',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ciénega de Zimatlán',
+            'nombre' =>  'CIÉNEGA DE ZIMATLÁN',
             'estado_id' => '20',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ciudad Ixtepec',
+            'nombre' =>  'CIUDAD IXTEPEC',
             'estado_id' => '20',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coatecas Altas',
+            'nombre' =>  'COATECAS ALTAS',
             'estado_id' => '20',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coicoyán de las Flores',
+            'nombre' =>  'COICOYÁN DE LAS FLORES',
             'estado_id' => '20',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Compañía',
+            'nombre' =>  'LA COMPAÑÍA',
             'estado_id' => '20',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Concepción Buenavista',
+            'nombre' =>  'CONCEPCIÓN BUENAVISTA',
             'estado_id' => '20',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Concepción Pápalo',
+            'nombre' =>  'CONCEPCIÓN PÁPALO',
             'estado_id' => '20',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Constancia del Rosario',
+            'nombre' =>  'CONSTANCIA DEL ROSARIO',
             'estado_id' => '20',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cosolapa',
+            'nombre' =>  'COSOLAPA',
             'estado_id' => '20',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cosoltepec',
+            'nombre' =>  'COSOLTEPEC',
             'estado_id' => '20',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuilápam de Guerrero',
+            'nombre' =>  'CUILÁPAM DE GUERRERO',
             'estado_id' => '20',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuyamecalco Villa de Zaragoza',
+            'nombre' =>  'CUYAMECALCO VILLA DE ZARAGOZA',
             'estado_id' => '20',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chahuites',
+            'nombre' =>  'CHAHUITES',
             'estado_id' => '20',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chalcatongo de Hidalgo',
+            'nombre' =>  'CHALCATONGO DE HIDALGO',
             'estado_id' => '20',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chiquihuitlán de Benito Juárez',
+            'nombre' =>  'CHIQUIHUITLÁN DE BENITO JUÁREZ',
             'estado_id' => '20',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Heroica Ciudad de Ejutla de Crespo',
+            'nombre' =>  'HEROICA CIUDAD DE EJUTLA DE CRESPO',
             'estado_id' => '20',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Eloxochitlán de Flores Magón',
+            'nombre' =>  'ELOXOCHITLÁN DE FLORES MAGÓN',
             'estado_id' => '20',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Espinal',
+            'nombre' =>  'EL ESPINAL',
             'estado_id' => '20',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tamazulápam del Espíritu Santo',
+            'nombre' =>  'TAMAZULÁPAM DEL ESPÍRITU SANTO',
             'estado_id' => '20',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Fresnillo de Trujano',
+            'nombre' =>  'FRESNILLO DE TRUJANO',
             'estado_id' => '20',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guadalupe Etla',
+            'nombre' =>  'GUADALUPE ETLA',
             'estado_id' => '20',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guadalupe de Ramírez',
+            'nombre' =>  'GUADALUPE DE RAMÍREZ',
             'estado_id' => '20',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guelatao de Juárez',
+            'nombre' =>  'GUELATAO DE JUÁREZ',
             'estado_id' => '20',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guevea de Humboldt',
+            'nombre' =>  'GUEVEA DE HUMBOLDT',
             'estado_id' => '20',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mesones Hidalgo',
+            'nombre' =>  'MESONES HIDALGO',
             'estado_id' => '20',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Hidalgo',
+            'nombre' =>  'VILLA HIDALGO',
             'estado_id' => '20',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Heroica Ciudad de Huajuapan de León',
+            'nombre' =>  'HEROICA CIUDAD DE HUAJUAPAN DE LEÓN',
             'estado_id' => '20',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huautepec',
+            'nombre' =>  'HUAUTEPEC',
             'estado_id' => '20',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huautla de Jiménez',
+            'nombre' =>  'HUAUTLA DE JIMÉNEZ',
             'estado_id' => '20',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtlán de Juárez',
+            'nombre' =>  'IXTLÁN DE JUÁREZ',
             'estado_id' => '20',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Heroica Ciudad de Juchitán de Zaragoza',
+            'nombre' =>  'HEROICA CIUDAD DE JUCHITÁN DE ZARAGOZA',
             'estado_id' => '20',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Loma Bonita',
+            'nombre' =>  'LOMA BONITA',
             'estado_id' => '20',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Magdalena Apasco',
+            'nombre' =>  'MAGDALENA APASCO',
             'estado_id' => '20',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Magdalena Jaltepec',
+            'nombre' =>  'MAGDALENA JALTEPEC',
             'estado_id' => '20',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Magdalena Jicotlán',
+            'nombre' =>  'SANTA MAGDALENA JICOTLÁN',
             'estado_id' => '20',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Magdalena Mixtepec',
+            'nombre' =>  'MAGDALENA MIXTEPEC',
             'estado_id' => '20',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Magdalena Ocotlán',
+            'nombre' =>  'MAGDALENA OCOTLÁN',
             'estado_id' => '20',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Magdalena Peñasco',
+            'nombre' =>  'MAGDALENA PEÑASCO',
             'estado_id' => '20',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Magdalena Teitipac',
+            'nombre' =>  'MAGDALENA TEITIPAC',
             'estado_id' => '20',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Magdalena Tequisistlán',
+            'nombre' =>  'MAGDALENA TEQUISISTLÁN',
             'estado_id' => '20',
             'number' =>  '052',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Magdalena Tlacotepec',
+            'nombre' =>  'MAGDALENA TLACOTEPEC',
             'estado_id' => '20',
             'number' =>  '053',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Magdalena Zahuatlán',
+            'nombre' =>  'MAGDALENA ZAHUATLÁN',
             'estado_id' => '20',
             'number' =>  '054',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mariscala de Juárez',
+            'nombre' =>  'MARISCALA DE JUÁREZ',
             'estado_id' => '20',
             'number' =>  '055',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mártires de Tacubaya',
+            'nombre' =>  'MÁRTIRES DE TACUBAYA',
             'estado_id' => '20',
             'number' =>  '056',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Matías Romero Avendaño',
+            'nombre' =>  'MATÍAS ROMERO AVENDAÑO',
             'estado_id' => '20',
             'number' =>  '057',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mazatlán Villa de Flores',
+            'nombre' =>  'MAZATLÁN VILLA DE FLORES',
             'estado_id' => '20',
             'number' =>  '058',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Miahuatlán de Porfirio Díaz',
+            'nombre' =>  'MIAHUATLÁN DE PORFIRIO DÍAZ',
             'estado_id' => '20',
             'number' =>  '059',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mixistlán de la Reforma',
+            'nombre' =>  'MIXISTLÁN DE LA REFORMA',
             'estado_id' => '20',
             'number' =>  '060',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Monjas',
+            'nombre' =>  'MONJAS',
             'estado_id' => '20',
             'number' =>  '061',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Natividad',
+            'nombre' =>  'NATIVIDAD',
             'estado_id' => '20',
             'number' =>  '062',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nazareno Etla',
+            'nombre' =>  'NAZARENO ETLA',
             'estado_id' => '20',
             'number' =>  '063',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nejapa de Madero',
+            'nombre' =>  'NEJAPA DE MADERO',
             'estado_id' => '20',
             'number' =>  '064',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixpantepec Nieves',
+            'nombre' =>  'IXPANTEPEC NIEVES',
             'estado_id' => '20',
             'number' =>  '065',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Niltepec',
+            'nombre' =>  'SANTIAGO NILTEPEC',
             'estado_id' => '20',
             'number' =>  '066',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Oaxaca de Juárez',
+            'nombre' =>  'OAXACA DE JUÁREZ',
             'estado_id' => '20',
             'number' =>  '067',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocotlán de Morelos',
+            'nombre' =>  'OCOTLÁN DE MORELOS',
             'estado_id' => '20',
             'number' =>  '068',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Pe',
+            'nombre' =>  'LA PE',
             'estado_id' => '20',
             'number' =>  '069',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pinotepa de Don Luis',
+            'nombre' =>  'PINOTEPA DE DON LUIS',
             'estado_id' => '20',
             'number' =>  '070',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pluma Hidalgo',
+            'nombre' =>  'PLUMA HIDALGO',
             'estado_id' => '20',
             'number' =>  '071',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San José del Progreso',
+            'nombre' =>  'SAN JOSÉ DEL PROGRESO',
             'estado_id' => '20',
             'number' =>  '072',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Putla Villa de Guerrero',
+            'nombre' =>  'PUTLA VILLA DE GUERRERO',
             'estado_id' => '20',
             'number' =>  '073',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina Quioquitani',
+            'nombre' =>  'SANTA CATARINA QUIOQUITANI',
             'estado_id' => '20',
             'number' =>  '074',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Reforma de Pineda',
+            'nombre' =>  'REFORMA DE PINEDA',
             'estado_id' => '20',
             'number' =>  '075',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Reforma',
+            'nombre' =>  'LA REFORMA',
             'estado_id' => '20',
             'number' =>  '076',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Reyes Etla',
+            'nombre' =>  'REYES ETLA',
             'estado_id' => '20',
             'number' =>  '077',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rojas de Cuauhtémoc',
+            'nombre' =>  'ROJAS DE CUAUHTÉMOC',
             'estado_id' => '20',
             'number' =>  '078',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Salina Cruz',
+            'nombre' =>  'SALINA CRUZ',
             'estado_id' => '20',
             'number' =>  '079',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Agustín Amatengo',
+            'nombre' =>  'SAN AGUSTÍN AMATENGO',
             'estado_id' => '20',
             'number' =>  '080',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Agustín Atenango',
+            'nombre' =>  'SAN AGUSTÍN ATENANGO',
             'estado_id' => '20',
             'number' =>  '081',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Agustín Chayuco',
+            'nombre' =>  'SAN AGUSTÍN CHAYUCO',
             'estado_id' => '20',
             'number' =>  '082',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Agustín de las Juntas',
+            'nombre' =>  'SAN AGUSTÍN DE LAS JUNTAS',
             'estado_id' => '20',
             'number' =>  '083',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Agustín Etla',
+            'nombre' =>  'SAN AGUSTÍN ETLA',
             'estado_id' => '20',
             'number' =>  '084',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Agustín Loxicha',
+            'nombre' =>  'SAN AGUSTÍN LOXICHA',
             'estado_id' => '20',
             'number' =>  '085',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Agustín Tlacotepec',
+            'nombre' =>  'SAN AGUSTÍN TLACOTEPEC',
             'estado_id' => '20',
             'number' =>  '086',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Agustín Yatareni',
+            'nombre' =>  'SAN AGUSTÍN YATARENI',
             'estado_id' => '20',
             'number' =>  '087',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Cabecera Nueva',
+            'nombre' =>  'SAN ANDRÉS CABECERA NUEVA',
             'estado_id' => '20',
             'number' =>  '088',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Dinicuiti',
+            'nombre' =>  'SAN ANDRÉS DINICUITI',
             'estado_id' => '20',
             'number' =>  '089',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Huaxpaltepec',
+            'nombre' =>  'SAN ANDRÉS HUAXPALTEPEC',
             'estado_id' => '20',
             'number' =>  '090',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Huayápam',
+            'nombre' =>  'SAN ANDRÉS HUAYÁPAM',
             'estado_id' => '20',
             'number' =>  '091',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Ixtlahuaca',
+            'nombre' =>  'SAN ANDRÉS IXTLAHUACA',
             'estado_id' => '20',
             'number' =>  '092',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Lagunas',
+            'nombre' =>  'SAN ANDRÉS LAGUNAS',
             'estado_id' => '20',
             'number' =>  '093',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Nuxiño',
+            'nombre' =>  'SAN ANDRÉS NUXIÑO',
             'estado_id' => '20',
             'number' =>  '094',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Paxtlán',
+            'nombre' =>  'SAN ANDRÉS PAXTLÁN',
             'estado_id' => '20',
             'number' =>  '095',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Sinaxtla',
+            'nombre' =>  'SAN ANDRÉS SINAXTLA',
             'estado_id' => '20',
             'number' =>  '096',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Solaga',
+            'nombre' =>  'SAN ANDRÉS SOLAGA',
             'estado_id' => '20',
             'number' =>  '097',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Teotilálpam',
+            'nombre' =>  'SAN ANDRÉS TEOTILÁLPAM',
             'estado_id' => '20',
             'number' =>  '098',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Tepetlapa',
+            'nombre' =>  'SAN ANDRÉS TEPETLAPA',
             'estado_id' => '20',
             'number' =>  '099',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Yaá',
+            'nombre' =>  'SAN ANDRÉS YAÁ',
             'estado_id' => '20',
             'number' =>  '100',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Zabache',
+            'nombre' =>  'SAN ANDRÉS ZABACHE',
             'estado_id' => '20',
             'number' =>  '101',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Zautla',
+            'nombre' =>  'SAN ANDRÉS ZAUTLA',
             'estado_id' => '20',
             'number' =>  '102',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Antonino Castillo Velasco',
+            'nombre' =>  'SAN ANTONINO CASTILLO VELASCO',
             'estado_id' => '20',
             'number' =>  '103',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Antonino el Alto',
+            'nombre' =>  'SAN ANTONINO EL ALTO',
             'estado_id' => '20',
             'number' =>  '104',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Antonino Monte Verde',
+            'nombre' =>  'SAN ANTONINO MONTE VERDE',
             'estado_id' => '20',
             'number' =>  '105',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Antonio Acutla',
+            'nombre' =>  'SAN ANTONIO ACUTLA',
             'estado_id' => '20',
             'number' =>  '106',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Antonio de la Cal',
+            'nombre' =>  'SAN ANTONIO DE LA CAL',
             'estado_id' => '20',
             'number' =>  '107',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Antonio Huitepec',
+            'nombre' =>  'SAN ANTONIO HUITEPEC',
             'estado_id' => '20',
             'number' =>  '108',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Antonio Nanahuatípam',
+            'nombre' =>  'SAN ANTONIO NANAHUATÍPAM',
             'estado_id' => '20',
             'number' =>  '109',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Antonio Sinicahua',
+            'nombre' =>  'SAN ANTONIO SINICAHUA',
             'estado_id' => '20',
             'number' =>  '110',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Antonio Tepetlapa',
+            'nombre' =>  'SAN ANTONIO TEPETLAPA',
             'estado_id' => '20',
             'number' =>  '111',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Baltazar Chichicápam',
+            'nombre' =>  'SAN BALTAZAR CHICHICÁPAM',
             'estado_id' => '20',
             'number' =>  '112',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Baltazar Loxicha',
+            'nombre' =>  'SAN BALTAZAR LOXICHA',
             'estado_id' => '20',
             'number' =>  '113',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Baltazar Yatzachi el Bajo',
+            'nombre' =>  'SAN BALTAZAR YATZACHI EL BAJO',
             'estado_id' => '20',
             'number' =>  '114',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Bartolo Coyotepec',
+            'nombre' =>  'SAN BARTOLO COYOTEPEC',
             'estado_id' => '20',
             'number' =>  '115',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Bartolomé Ayautla',
+            'nombre' =>  'SAN BARTOLOMÉ AYAUTLA',
             'estado_id' => '20',
             'number' =>  '116',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Bartolomé Loxicha',
+            'nombre' =>  'SAN BARTOLOMÉ LOXICHA',
             'estado_id' => '20',
             'number' =>  '117',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Bartolomé Quialana',
+            'nombre' =>  'SAN BARTOLOMÉ QUIALANA',
             'estado_id' => '20',
             'number' =>  '118',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Bartolomé Yucuañe',
+            'nombre' =>  'SAN BARTOLOMÉ YUCUAÑE',
             'estado_id' => '20',
             'number' =>  '119',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Bartolomé Zoogocho',
+            'nombre' =>  'SAN BARTOLOMÉ ZOOGOCHO',
             'estado_id' => '20',
             'number' =>  '120',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Bartolo Soyaltepec',
+            'nombre' =>  'SAN BARTOLO SOYALTEPEC',
             'estado_id' => '20',
             'number' =>  '121',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Bartolo Yautepec',
+            'nombre' =>  'SAN BARTOLO YAUTEPEC',
             'estado_id' => '20',
             'number' =>  '122',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Bernardo Mixtepec',
+            'nombre' =>  'SAN BERNARDO MIXTEPEC',
             'estado_id' => '20',
             'number' =>  '123',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Blas Atempa',
+            'nombre' =>  'SAN BLAS ATEMPA',
             'estado_id' => '20',
             'number' =>  '124',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Carlos Yautepec',
+            'nombre' =>  'SAN CARLOS YAUTEPEC',
             'estado_id' => '20',
             'number' =>  '125',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Cristóbal Amatlán',
+            'nombre' =>  'SAN CRISTÓBAL AMATLÁN',
             'estado_id' => '20',
             'number' =>  '126',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Cristóbal Amoltepec',
+            'nombre' =>  'SAN CRISTÓBAL AMOLTEPEC',
             'estado_id' => '20',
             'number' =>  '127',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Cristóbal Lachirioag',
+            'nombre' =>  'SAN CRISTÓBAL LACHIRIOAG',
             'estado_id' => '20',
             'number' =>  '128',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Cristóbal Suchixtlahuaca',
+            'nombre' =>  'SAN CRISTÓBAL SUCHIXTLAHUACA',
             'estado_id' => '20',
             'number' =>  '129',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Dionisio del Mar',
+            'nombre' =>  'SAN DIONISIO DEL MAR',
             'estado_id' => '20',
             'number' =>  '130',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Dionisio Ocotepec',
+            'nombre' =>  'SAN DIONISIO OCOTEPEC',
             'estado_id' => '20',
             'number' =>  '131',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Dionisio Ocotlán',
+            'nombre' =>  'SAN DIONISIO OCOTLÁN',
             'estado_id' => '20',
             'number' =>  '132',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Esteban Atatlahuca',
+            'nombre' =>  'SAN ESTEBAN ATATLAHUCA',
             'estado_id' => '20',
             'number' =>  '133',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Felipe Jalapa de Díaz',
+            'nombre' =>  'SAN FELIPE JALAPA DE DÍAZ',
             'estado_id' => '20',
             'number' =>  '134',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Felipe Tejalápam',
+            'nombre' =>  'SAN FELIPE TEJALÁPAM',
             'estado_id' => '20',
             'number' =>  '135',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Felipe Usila',
+            'nombre' =>  'SAN FELIPE USILA',
             'estado_id' => '20',
             'number' =>  '136',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Cahuacuá',
+            'nombre' =>  'SAN FRANCISCO CAHUACUÁ',
             'estado_id' => '20',
             'number' =>  '137',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Cajonos',
+            'nombre' =>  'SAN FRANCISCO CAJONOS',
             'estado_id' => '20',
             'number' =>  '138',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Chapulapa',
+            'nombre' =>  'SAN FRANCISCO CHAPULAPA',
             'estado_id' => '20',
             'number' =>  '139',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Chindúa',
+            'nombre' =>  'SAN FRANCISCO CHINDÚA',
             'estado_id' => '20',
             'number' =>  '140',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco del Mar',
+            'nombre' =>  'SAN FRANCISCO DEL MAR',
             'estado_id' => '20',
             'number' =>  '141',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Huehuetlán',
+            'nombre' =>  'SAN FRANCISCO HUEHUETLÁN',
             'estado_id' => '20',
             'number' =>  '142',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Ixhuatán',
+            'nombre' =>  'SAN FRANCISCO IXHUATÁN',
             'estado_id' => '20',
             'number' =>  '143',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Jaltepetongo',
+            'nombre' =>  'SAN FRANCISCO JALTEPETONGO',
             'estado_id' => '20',
             'number' =>  '144',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Lachigoló',
+            'nombre' =>  'SAN FRANCISCO LACHIGOLÓ',
             'estado_id' => '20',
             'number' =>  '145',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Logueche',
+            'nombre' =>  'SAN FRANCISCO LOGUECHE',
             'estado_id' => '20',
             'number' =>  '146',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Nuxaño',
+            'nombre' =>  'SAN FRANCISCO NUXAÑO',
             'estado_id' => '20',
             'number' =>  '147',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Ozolotepec',
+            'nombre' =>  'SAN FRANCISCO OZOLOTEPEC',
             'estado_id' => '20',
             'number' =>  '148',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Sola',
+            'nombre' =>  'SAN FRANCISCO SOLA',
             'estado_id' => '20',
             'number' =>  '149',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Telixtlahuaca',
+            'nombre' =>  'SAN FRANCISCO TELIXTLAHUACA',
             'estado_id' => '20',
             'number' =>  '150',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Teopan',
+            'nombre' =>  'SAN FRANCISCO TEOPAN',
             'estado_id' => '20',
             'number' =>  '151',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Tlapancingo',
+            'nombre' =>  'SAN FRANCISCO TLAPANCINGO',
             'estado_id' => '20',
             'number' =>  '152',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Gabriel Mixtepec',
+            'nombre' =>  'SAN GABRIEL MIXTEPEC',
             'estado_id' => '20',
             'number' =>  '153',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Ildefonso Amatlán',
+            'nombre' =>  'SAN ILDEFONSO AMATLÁN',
             'estado_id' => '20',
             'number' =>  '154',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Ildefonso Sola',
+            'nombre' =>  'SAN ILDEFONSO SOLA',
             'estado_id' => '20',
             'number' =>  '155',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Ildefonso Villa Alta',
+            'nombre' =>  'SAN ILDEFONSO VILLA ALTA',
             'estado_id' => '20',
             'number' =>  '156',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Jacinto Amilpas',
+            'nombre' =>  'SAN JACINTO AMILPAS',
             'estado_id' => '20',
             'number' =>  '157',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Jacinto Tlacotepec',
+            'nombre' =>  'SAN JACINTO TLACOTEPEC',
             'estado_id' => '20',
             'number' =>  '158',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Jerónimo Coatlán',
+            'nombre' =>  'SAN JERÓNIMO COATLÁN',
             'estado_id' => '20',
             'number' =>  '159',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Jerónimo Silacayoapilla',
+            'nombre' =>  'SAN JERÓNIMO SILACAYOAPILLA',
             'estado_id' => '20',
             'number' =>  '160',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Jerónimo Sosola',
+            'nombre' =>  'SAN JERÓNIMO SOSOLA',
             'estado_id' => '20',
             'number' =>  '161',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Jerónimo Taviche',
+            'nombre' =>  'SAN JERÓNIMO TAVICHE',
             'estado_id' => '20',
             'number' =>  '162',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Jerónimo Tecóatl',
+            'nombre' =>  'SAN JERÓNIMO TECÓATL',
             'estado_id' => '20',
             'number' =>  '163',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Jorge Nuchita',
+            'nombre' =>  'SAN JORGE NUCHITA',
             'estado_id' => '20',
             'number' =>  '164',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San José Ayuquila',
+            'nombre' =>  'SAN JOSÉ AYUQUILA',
             'estado_id' => '20',
             'number' =>  '165',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San José Chiltepec',
+            'nombre' =>  'SAN JOSÉ CHILTEPEC',
             'estado_id' => '20',
             'number' =>  '166',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San José del Peñasco',
+            'nombre' =>  'SAN JOSÉ DEL PEÑASCO',
             'estado_id' => '20',
             'number' =>  '167',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San José Estancia Grande',
+            'nombre' =>  'SAN JOSÉ ESTANCIA GRANDE',
             'estado_id' => '20',
             'number' =>  '168',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San José Independencia',
+            'nombre' =>  'SAN JOSÉ INDEPENDENCIA',
             'estado_id' => '20',
             'number' =>  '169',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San José Lachiguiri',
+            'nombre' =>  'SAN JOSÉ LACHIGUIRI',
             'estado_id' => '20',
             'number' =>  '170',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San José Tenango',
+            'nombre' =>  'SAN JOSÉ TENANGO',
             'estado_id' => '20',
             'number' =>  '171',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Achiutla',
+            'nombre' =>  'SAN JUAN ACHIUTLA',
             'estado_id' => '20',
             'number' =>  '172',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Atepec',
+            'nombre' =>  'SAN JUAN ATEPEC',
             'estado_id' => '20',
             'number' =>  '173',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ánimas Trujano',
+            'nombre' =>  'ÁNIMAS TRUJANO',
             'estado_id' => '20',
             'number' =>  '174',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Bautista Atatlahuca',
+            'nombre' =>  'SAN JUAN BAUTISTA ATATLAHUCA',
             'estado_id' => '20',
             'number' =>  '175',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Bautista Coixtlahuaca',
+            'nombre' =>  'SAN JUAN BAUTISTA COIXTLAHUACA',
             'estado_id' => '20',
             'number' =>  '176',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Bautista Cuicatlán',
+            'nombre' =>  'SAN JUAN BAUTISTA CUICATLÁN',
             'estado_id' => '20',
             'number' =>  '177',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Bautista Guelache',
+            'nombre' =>  'SAN JUAN BAUTISTA GUELACHE',
             'estado_id' => '20',
             'number' =>  '178',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Bautista Jayacatlán',
+            'nombre' =>  'SAN JUAN BAUTISTA JAYACATLÁN',
             'estado_id' => '20',
             'number' =>  '179',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Bautista Lo de Soto',
+            'nombre' =>  'SAN JUAN BAUTISTA LO DE SOTO',
             'estado_id' => '20',
             'number' =>  '180',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Bautista Suchitepec',
+            'nombre' =>  'SAN JUAN BAUTISTA SUCHITEPEC',
             'estado_id' => '20',
             'number' =>  '181',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Bautista Tlacoatzintepec',
+            'nombre' =>  'SAN JUAN BAUTISTA TLACOATZINTEPEC',
             'estado_id' => '20',
             'number' =>  '182',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Bautista Tlachichilco',
+            'nombre' =>  'SAN JUAN BAUTISTA TLACHICHILCO',
             'estado_id' => '20',
             'number' =>  '183',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Bautista Tuxtepec',
+            'nombre' =>  'SAN JUAN BAUTISTA TUXTEPEC',
             'estado_id' => '20',
             'number' =>  '184',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Cacahuatepec',
+            'nombre' =>  'SAN JUAN CACAHUATEPEC',
             'estado_id' => '20',
             'number' =>  '185',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Cieneguilla',
+            'nombre' =>  'SAN JUAN CIENEGUILLA',
             'estado_id' => '20',
             'number' =>  '186',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Coatzóspam',
+            'nombre' =>  'SAN JUAN COATZÓSPAM',
             'estado_id' => '20',
             'number' =>  '187',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Colorado',
+            'nombre' =>  'SAN JUAN COLORADO',
             'estado_id' => '20',
             'number' =>  '188',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Comaltepec',
+            'nombre' =>  'SAN JUAN COMALTEPEC',
             'estado_id' => '20',
             'number' =>  '189',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Cotzocón',
+            'nombre' =>  'SAN JUAN COTZOCÓN',
             'estado_id' => '20',
             'number' =>  '190',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Chicomezúchil',
+            'nombre' =>  'SAN JUAN CHICOMEZÚCHIL',
             'estado_id' => '20',
             'number' =>  '191',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Chilateca',
+            'nombre' =>  'SAN JUAN CHILATECA',
             'estado_id' => '20',
             'number' =>  '192',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan del Estado',
+            'nombre' =>  'SAN JUAN DEL ESTADO',
             'estado_id' => '20',
             'number' =>  '193',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan del Río',
+            'nombre' =>  'SAN JUAN DEL RÍO',
             'estado_id' => '20',
             'number' =>  '194',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Diuxi',
+            'nombre' =>  'SAN JUAN DIUXI',
             'estado_id' => '20',
             'number' =>  '195',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Evangelista Analco',
+            'nombre' =>  'SAN JUAN EVANGELISTA ANALCO',
             'estado_id' => '20',
             'number' =>  '196',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Guelavía',
+            'nombre' =>  'SAN JUAN GUELAVÍA',
             'estado_id' => '20',
             'number' =>  '197',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Guichicovi',
+            'nombre' =>  'SAN JUAN GUICHICOVI',
             'estado_id' => '20',
             'number' =>  '198',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Ihualtepec',
+            'nombre' =>  'SAN JUAN IHUALTEPEC',
             'estado_id' => '20',
             'number' =>  '199',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Juquila Mixes',
+            'nombre' =>  'SAN JUAN JUQUILA MIXES',
             'estado_id' => '20',
             'number' =>  '200',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Juquila Vijanos',
+            'nombre' =>  'SAN JUAN JUQUILA VIJANOS',
             'estado_id' => '20',
             'number' =>  '201',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Lachao',
+            'nombre' =>  'SAN JUAN LACHAO',
             'estado_id' => '20',
             'number' =>  '202',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Lachigalla',
+            'nombre' =>  'SAN JUAN LACHIGALLA',
             'estado_id' => '20',
             'number' =>  '203',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Lajarcia',
+            'nombre' =>  'SAN JUAN LAJARCIA',
             'estado_id' => '20',
             'number' =>  '204',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Lalana',
+            'nombre' =>  'SAN JUAN LALANA',
             'estado_id' => '20',
             'number' =>  '205',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan de los Cués',
+            'nombre' =>  'SAN JUAN DE LOS CUÉS',
             'estado_id' => '20',
             'number' =>  '206',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Mazatlán',
+            'nombre' =>  'SAN JUAN MAZATLÁN',
             'estado_id' => '20',
             'number' =>  '207',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Mixtepec',
+            'nombre' =>  'SAN JUAN MIXTEPEC',
             'estado_id' => '20',
             'number' =>  '208',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Mixtepec',
+            'nombre' =>  'SAN JUAN MIXTEPEC',
             'estado_id' => '20',
             'number' =>  '209',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Ñumí',
+            'nombre' =>  'SAN JUAN ÑUMÍ',
             'estado_id' => '20',
             'number' =>  '210',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Ozolotepec',
+            'nombre' =>  'SAN JUAN OZOLOTEPEC',
             'estado_id' => '20',
             'number' =>  '211',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Petlapa',
+            'nombre' =>  'SAN JUAN PETLAPA',
             'estado_id' => '20',
             'number' =>  '212',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Quiahije',
+            'nombre' =>  'SAN JUAN QUIAHIJE',
             'estado_id' => '20',
             'number' =>  '213',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Quiotepec',
+            'nombre' =>  'SAN JUAN QUIOTEPEC',
             'estado_id' => '20',
             'number' =>  '214',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Sayultepec',
+            'nombre' =>  'SAN JUAN SAYULTEPEC',
             'estado_id' => '20',
             'number' =>  '215',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Tabaá',
+            'nombre' =>  'SAN JUAN TABAÁ',
             'estado_id' => '20',
             'number' =>  '216',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Tamazola',
+            'nombre' =>  'SAN JUAN TAMAZOLA',
             'estado_id' => '20',
             'number' =>  '217',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Teita',
+            'nombre' =>  'SAN JUAN TEITA',
             'estado_id' => '20',
             'number' =>  '218',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Teitipac',
+            'nombre' =>  'SAN JUAN TEITIPAC',
             'estado_id' => '20',
             'number' =>  '219',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Tepeuxila',
+            'nombre' =>  'SAN JUAN TEPEUXILA',
             'estado_id' => '20',
             'number' =>  '220',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Teposcolula',
+            'nombre' =>  'SAN JUAN TEPOSCOLULA',
             'estado_id' => '20',
             'number' =>  '221',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Yaeé',
+            'nombre' =>  'SAN JUAN YAEÉ',
             'estado_id' => '20',
             'number' =>  '222',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Yatzona',
+            'nombre' =>  'SAN JUAN YATZONA',
             'estado_id' => '20',
             'number' =>  '223',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Yucuita',
+            'nombre' =>  'SAN JUAN YUCUITA',
             'estado_id' => '20',
             'number' =>  '224',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Lorenzo',
+            'nombre' =>  'SAN LORENZO',
             'estado_id' => '20',
             'number' =>  '225',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Lorenzo Albarradas',
+            'nombre' =>  'SAN LORENZO ALBARRADAS',
             'estado_id' => '20',
             'number' =>  '226',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Lorenzo Cacaotepec',
+            'nombre' =>  'SAN LORENZO CACAOTEPEC',
             'estado_id' => '20',
             'number' =>  '227',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Lorenzo Cuaunecuiltitla',
+            'nombre' =>  'SAN LORENZO CUAUNECUILTITLA',
             'estado_id' => '20',
             'number' =>  '228',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Lorenzo Texmelúcan',
+            'nombre' =>  'SAN LORENZO TEXMELÚCAN',
             'estado_id' => '20',
             'number' =>  '229',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Lorenzo Victoria',
+            'nombre' =>  'SAN LORENZO VICTORIA',
             'estado_id' => '20',
             'number' =>  '230',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Lucas Camotlán',
+            'nombre' =>  'SAN LUCAS CAMOTLÁN',
             'estado_id' => '20',
             'number' =>  '231',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Lucas Ojitlán',
+            'nombre' =>  'SAN LUCAS OJITLÁN',
             'estado_id' => '20',
             'number' =>  '232',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Lucas Quiaviní',
+            'nombre' =>  'SAN LUCAS QUIAVINÍ',
             'estado_id' => '20',
             'number' =>  '233',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Lucas Zoquiápam',
+            'nombre' =>  'SAN LUCAS ZOQUIÁPAM',
             'estado_id' => '20',
             'number' =>  '234',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Luis Amatlán',
+            'nombre' =>  'SAN LUIS AMATLÁN',
             'estado_id' => '20',
             'number' =>  '235',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Marcial Ozolotepec',
+            'nombre' =>  'SAN MARCIAL OZOLOTEPEC',
             'estado_id' => '20',
             'number' =>  '236',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Marcos Arteaga',
+            'nombre' =>  'SAN MARCOS ARTEAGA',
             'estado_id' => '20',
             'number' =>  '237',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Martín de los Cansecos',
+            'nombre' =>  'SAN MARTÍN DE LOS CANSECOS',
             'estado_id' => '20',
             'number' =>  '238',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Martín Huamelúlpam',
+            'nombre' =>  'SAN MARTÍN HUAMELÚLPAM',
             'estado_id' => '20',
             'number' =>  '239',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Martín Itunyoso',
+            'nombre' =>  'SAN MARTÍN ITUNYOSO',
             'estado_id' => '20',
             'number' =>  '240',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Martín Lachilá',
+            'nombre' =>  'SAN MARTÍN LACHILÁ',
             'estado_id' => '20',
             'number' =>  '241',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Martín Peras',
+            'nombre' =>  'SAN MARTÍN PERAS',
             'estado_id' => '20',
             'number' =>  '242',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Martín Tilcajete',
+            'nombre' =>  'SAN MARTÍN TILCAJETE',
             'estado_id' => '20',
             'number' =>  '243',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Martín Toxpalan',
+            'nombre' =>  'SAN MARTÍN TOXPALAN',
             'estado_id' => '20',
             'number' =>  '244',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Martín Zacatepec',
+            'nombre' =>  'SAN MARTÍN ZACATEPEC',
             'estado_id' => '20',
             'number' =>  '245',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Mateo Cajonos',
+            'nombre' =>  'SAN MATEO CAJONOS',
             'estado_id' => '20',
             'number' =>  '246',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Capulálpam de Méndez',
+            'nombre' =>  'CAPULÁLPAM DE MÉNDEZ',
             'estado_id' => '20',
             'number' =>  '247',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Mateo del Mar',
+            'nombre' =>  'SAN MATEO DEL MAR',
             'estado_id' => '20',
             'number' =>  '248',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Mateo Yoloxochitlán',
+            'nombre' =>  'SAN MATEO YOLOXOCHITLÁN',
             'estado_id' => '20',
             'number' =>  '249',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Mateo Etlatongo',
+            'nombre' =>  'SAN MATEO ETLATONGO',
             'estado_id' => '20',
             'number' =>  '250',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Mateo Nejápam',
+            'nombre' =>  'SAN MATEO NEJÁPAM',
             'estado_id' => '20',
             'number' =>  '251',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Mateo Peñasco',
+            'nombre' =>  'SAN MATEO PEÑASCO',
             'estado_id' => '20',
             'number' =>  '252',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Mateo Piñas',
+            'nombre' =>  'SAN MATEO PIÑAS',
             'estado_id' => '20',
             'number' =>  '253',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Mateo Río Hondo',
+            'nombre' =>  'SAN MATEO RÍO HONDO',
             'estado_id' => '20',
             'number' =>  '254',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Mateo Sindihui',
+            'nombre' =>  'SAN MATEO SINDIHUI',
             'estado_id' => '20',
             'number' =>  '255',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Mateo Tlapiltepec',
+            'nombre' =>  'SAN MATEO TLAPILTEPEC',
             'estado_id' => '20',
             'number' =>  '256',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Melchor Betaza',
+            'nombre' =>  'SAN MELCHOR BETAZA',
             'estado_id' => '20',
             'number' =>  '257',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Achiutla',
+            'nombre' =>  'SAN MIGUEL ACHIUTLA',
             'estado_id' => '20',
             'number' =>  '258',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Ahuehuetitlán',
+            'nombre' =>  'SAN MIGUEL AHUEHUETITLÁN',
             'estado_id' => '20',
             'number' =>  '259',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Aloápam',
+            'nombre' =>  'SAN MIGUEL ALOÁPAM',
             'estado_id' => '20',
             'number' =>  '260',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Amatitlán',
+            'nombre' =>  'SAN MIGUEL AMATITLÁN',
             'estado_id' => '20',
             'number' =>  '261',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Amatlán',
+            'nombre' =>  'SAN MIGUEL AMATLÁN',
             'estado_id' => '20',
             'number' =>  '262',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Coatlán',
+            'nombre' =>  'SAN MIGUEL COATLÁN',
             'estado_id' => '20',
             'number' =>  '263',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Chicahua',
+            'nombre' =>  'SAN MIGUEL CHICAHUA',
             'estado_id' => '20',
             'number' =>  '264',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Chimalapa',
+            'nombre' =>  'SAN MIGUEL CHIMALAPA',
             'estado_id' => '20',
             'number' =>  '265',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel del Puerto',
+            'nombre' =>  'SAN MIGUEL DEL PUERTO',
             'estado_id' => '20',
             'number' =>  '266',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel del Río',
+            'nombre' =>  'SAN MIGUEL DEL RÍO',
             'estado_id' => '20',
             'number' =>  '267',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Ejutla',
+            'nombre' =>  'SAN MIGUEL EJUTLA',
             'estado_id' => '20',
             'number' =>  '268',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel el Grande',
+            'nombre' =>  'SAN MIGUEL EL GRANDE',
             'estado_id' => '20',
             'number' =>  '269',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Huautla',
+            'nombre' =>  'SAN MIGUEL HUAUTLA',
             'estado_id' => '20',
             'number' =>  '270',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Mixtepec',
+            'nombre' =>  'SAN MIGUEL MIXTEPEC',
             'estado_id' => '20',
             'number' =>  '271',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Panixtlahuaca',
+            'nombre' =>  'SAN MIGUEL PANIXTLAHUACA',
             'estado_id' => '20',
             'number' =>  '272',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Peras',
+            'nombre' =>  'SAN MIGUEL PERAS',
             'estado_id' => '20',
             'number' =>  '273',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Piedras',
+            'nombre' =>  'SAN MIGUEL PIEDRAS',
             'estado_id' => '20',
             'number' =>  '274',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Quetzaltepec',
+            'nombre' =>  'SAN MIGUEL QUETZALTEPEC',
             'estado_id' => '20',
             'number' =>  '275',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Santa Flor',
+            'nombre' =>  'SAN MIGUEL SANTA FLOR',
             'estado_id' => '20',
             'number' =>  '276',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Sola de Vega',
+            'nombre' =>  'VILLA SOLA DE VEGA',
             'estado_id' => '20',
             'number' =>  '277',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Soyaltepec',
+            'nombre' =>  'SAN MIGUEL SOYALTEPEC',
             'estado_id' => '20',
             'number' =>  '278',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Suchixtepec',
+            'nombre' =>  'SAN MIGUEL SUCHIXTEPEC',
             'estado_id' => '20',
             'number' =>  '279',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Talea de Castro',
+            'nombre' =>  'VILLA TALEA DE CASTRO',
             'estado_id' => '20',
             'number' =>  '280',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Tecomatlán',
+            'nombre' =>  'SAN MIGUEL TECOMATLÁN',
             'estado_id' => '20',
             'number' =>  '281',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Tenango',
+            'nombre' =>  'SAN MIGUEL TENANGO',
             'estado_id' => '20',
             'number' =>  '282',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Tequixtepec',
+            'nombre' =>  'SAN MIGUEL TEQUIXTEPEC',
             'estado_id' => '20',
             'number' =>  '283',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Tilquiápam',
+            'nombre' =>  'SAN MIGUEL TILQUIÁPAM',
             'estado_id' => '20',
             'number' =>  '284',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Tlacamama',
+            'nombre' =>  'SAN MIGUEL TLACAMAMA',
             'estado_id' => '20',
             'number' =>  '285',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Tlacotepec',
+            'nombre' =>  'SAN MIGUEL TLACOTEPEC',
             'estado_id' => '20',
             'number' =>  '286',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Tulancingo',
+            'nombre' =>  'SAN MIGUEL TULANCINGO',
             'estado_id' => '20',
             'number' =>  '287',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Yotao',
+            'nombre' =>  'SAN MIGUEL YOTAO',
             'estado_id' => '20',
             'number' =>  '288',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Nicolás',
+            'nombre' =>  'SAN NICOLÁS',
             'estado_id' => '20',
             'number' =>  '289',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Nicolás Hidalgo',
+            'nombre' =>  'SAN NICOLÁS HIDALGO',
             'estado_id' => '20',
             'number' =>  '290',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pablo Coatlán',
+            'nombre' =>  'SAN PABLO COATLÁN',
             'estado_id' => '20',
             'number' =>  '291',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pablo Cuatro Venados',
+            'nombre' =>  'SAN PABLO CUATRO VENADOS',
             'estado_id' => '20',
             'number' =>  '292',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pablo Etla',
+            'nombre' =>  'SAN PABLO ETLA',
             'estado_id' => '20',
             'number' =>  '293',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pablo Huitzo',
+            'nombre' =>  'SAN PABLO HUITZO',
             'estado_id' => '20',
             'number' =>  '294',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pablo Huixtepec',
+            'nombre' =>  'SAN PABLO HUIXTEPEC',
             'estado_id' => '20',
             'number' =>  '295',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pablo Macuiltianguis',
+            'nombre' =>  'SAN PABLO MACUILTIANGUIS',
             'estado_id' => '20',
             'number' =>  '296',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pablo Tijaltepec',
+            'nombre' =>  'SAN PABLO TIJALTEPEC',
             'estado_id' => '20',
             'number' =>  '297',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pablo Villa de Mitla',
+            'nombre' =>  'SAN PABLO VILLA DE MITLA',
             'estado_id' => '20',
             'number' =>  '298',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pablo Yaganiza',
+            'nombre' =>  'SAN PABLO YAGANIZA',
             'estado_id' => '20',
             'number' =>  '299',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Amuzgos',
+            'nombre' =>  'SAN PEDRO AMUZGOS',
             'estado_id' => '20',
             'number' =>  '300',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Apóstol',
+            'nombre' =>  'SAN PEDRO APÓSTOL',
             'estado_id' => '20',
             'number' =>  '301',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Atoyac',
+            'nombre' =>  'SAN PEDRO ATOYAC',
             'estado_id' => '20',
             'number' =>  '302',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Cajonos',
+            'nombre' =>  'SAN PEDRO CAJONOS',
             'estado_id' => '20',
             'number' =>  '303',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Coxcaltepec Cántaros',
+            'nombre' =>  'SAN PEDRO COXCALTEPEC CÁNTAROS',
             'estado_id' => '20',
             'number' =>  '304',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Comitancillo',
+            'nombre' =>  'SAN PEDRO COMITANCILLO',
             'estado_id' => '20',
             'number' =>  '305',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro el Alto',
+            'nombre' =>  'SAN PEDRO EL ALTO',
             'estado_id' => '20',
             'number' =>  '306',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Huamelula',
+            'nombre' =>  'SAN PEDRO HUAMELULA',
             'estado_id' => '20',
             'number' =>  '307',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Huilotepec',
+            'nombre' =>  'SAN PEDRO HUILOTEPEC',
             'estado_id' => '20',
             'number' =>  '308',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Ixcatlán',
+            'nombre' =>  'SAN PEDRO IXCATLÁN',
             'estado_id' => '20',
             'number' =>  '309',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Ixtlahuaca',
+            'nombre' =>  'SAN PEDRO IXTLAHUACA',
             'estado_id' => '20',
             'number' =>  '310',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Jaltepetongo',
+            'nombre' =>  'SAN PEDRO JALTEPETONGO',
             'estado_id' => '20',
             'number' =>  '311',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Jicayán',
+            'nombre' =>  'SAN PEDRO JICAYÁN',
             'estado_id' => '20',
             'number' =>  '312',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Jocotipac',
+            'nombre' =>  'SAN PEDRO JOCOTIPAC',
             'estado_id' => '20',
             'number' =>  '313',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Juchatengo',
+            'nombre' =>  'SAN PEDRO JUCHATENGO',
             'estado_id' => '20',
             'number' =>  '314',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Mártir',
+            'nombre' =>  'SAN PEDRO MÁRTIR',
             'estado_id' => '20',
             'number' =>  '315',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Mártir Quiechapa',
+            'nombre' =>  'SAN PEDRO MÁRTIR QUIECHAPA',
             'estado_id' => '20',
             'number' =>  '316',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Mártir Yucuxaco',
+            'nombre' =>  'SAN PEDRO MÁRTIR YUCUXACO',
             'estado_id' => '20',
             'number' =>  '317',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Mixtepec',
+            'nombre' =>  'SAN PEDRO MIXTEPEC',
             'estado_id' => '20',
             'number' =>  '318',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Mixtepec',
+            'nombre' =>  'SAN PEDRO MIXTEPEC',
             'estado_id' => '20',
             'number' =>  '319',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Molinos',
+            'nombre' =>  'SAN PEDRO MOLINOS',
             'estado_id' => '20',
             'number' =>  '320',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Nopala',
+            'nombre' =>  'SAN PEDRO NOPALA',
             'estado_id' => '20',
             'number' =>  '321',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Ocopetatillo',
+            'nombre' =>  'SAN PEDRO OCOPETATILLO',
             'estado_id' => '20',
             'number' =>  '322',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Ocotepec',
+            'nombre' =>  'SAN PEDRO OCOTEPEC',
             'estado_id' => '20',
             'number' =>  '323',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Pochutla',
+            'nombre' =>  'SAN PEDRO POCHUTLA',
             'estado_id' => '20',
             'number' =>  '324',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Quiatoni',
+            'nombre' =>  'SAN PEDRO QUIATONI',
             'estado_id' => '20',
             'number' =>  '325',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Sochiápam',
+            'nombre' =>  'SAN PEDRO SOCHIÁPAM',
             'estado_id' => '20',
             'number' =>  '326',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Tapanatepec',
+            'nombre' =>  'SAN PEDRO TAPANATEPEC',
             'estado_id' => '20',
             'number' =>  '327',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Taviche',
+            'nombre' =>  'SAN PEDRO TAVICHE',
             'estado_id' => '20',
             'number' =>  '328',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Teozacoalco',
+            'nombre' =>  'SAN PEDRO TEOZACOALCO',
             'estado_id' => '20',
             'number' =>  '329',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Teutila',
+            'nombre' =>  'SAN PEDRO TEUTILA',
             'estado_id' => '20',
             'number' =>  '330',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Tidaá',
+            'nombre' =>  'SAN PEDRO TIDAÁ',
             'estado_id' => '20',
             'number' =>  '331',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Topiltepec',
+            'nombre' =>  'SAN PEDRO TOPILTEPEC',
             'estado_id' => '20',
             'number' =>  '332',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Totolápam',
+            'nombre' =>  'SAN PEDRO TOTOLÁPAM',
             'estado_id' => '20',
             'number' =>  '333',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa de Tututepec de Melchor Ocampo',
+            'nombre' =>  'VILLA DE TUTUTEPEC DE MELCHOR OCAMPO',
             'estado_id' => '20',
             'number' =>  '334',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Yaneri',
+            'nombre' =>  'SAN PEDRO YANERI',
             'estado_id' => '20',
             'number' =>  '335',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Yólox',
+            'nombre' =>  'SAN PEDRO YÓLOX',
             'estado_id' => '20',
             'number' =>  '336',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro y San Pablo Ayutla',
+            'nombre' =>  'SAN PEDRO Y SAN PABLO AYUTLA',
             'estado_id' => '20',
             'number' =>  '337',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa de Etla',
+            'nombre' =>  'VILLA DE ETLA',
             'estado_id' => '20',
             'number' =>  '338',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro y San Pablo Teposcolula',
+            'nombre' =>  'SAN PEDRO Y SAN PABLO TEPOSCOLULA',
             'estado_id' => '20',
             'number' =>  '339',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro y San Pablo Tequixtepec',
+            'nombre' =>  'SAN PEDRO Y SAN PABLO TEQUIXTEPEC',
             'estado_id' => '20',
             'number' =>  '340',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Yucunama',
+            'nombre' =>  'SAN PEDRO YUCUNAMA',
             'estado_id' => '20',
             'number' =>  '341',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Raymundo Jalpan',
+            'nombre' =>  'SAN RAYMUNDO JALPAN',
             'estado_id' => '20',
             'number' =>  '342',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Sebastián Abasolo',
+            'nombre' =>  'SAN SEBASTIÁN ABASOLO',
             'estado_id' => '20',
             'number' =>  '343',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Sebastián Coatlán',
+            'nombre' =>  'SAN SEBASTIÁN COATLÁN',
             'estado_id' => '20',
             'number' =>  '344',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Sebastián Ixcapa',
+            'nombre' =>  'SAN SEBASTIÁN IXCAPA',
             'estado_id' => '20',
             'number' =>  '345',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Sebastián Nicananduta',
+            'nombre' =>  'SAN SEBASTIÁN NICANANDUTA',
             'estado_id' => '20',
             'number' =>  '346',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Sebastián Río Hondo',
+            'nombre' =>  'SAN SEBASTIÁN RÍO HONDO',
             'estado_id' => '20',
             'number' =>  '347',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Sebastián Tecomaxtlahuaca',
+            'nombre' =>  'SAN SEBASTIÁN TECOMAXTLAHUACA',
             'estado_id' => '20',
             'number' =>  '348',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Sebastián Teitipac',
+            'nombre' =>  'SAN SEBASTIÁN TEITIPAC',
             'estado_id' => '20',
             'number' =>  '349',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Sebastián Tutla',
+            'nombre' =>  'SAN SEBASTIÁN TUTLA',
             'estado_id' => '20',
             'number' =>  '350',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Simón Almolongas',
+            'nombre' =>  'SAN SIMÓN ALMOLONGAS',
             'estado_id' => '20',
             'number' =>  '351',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Simón Zahuatlán',
+            'nombre' =>  'SAN SIMÓN ZAHUATLÁN',
             'estado_id' => '20',
             'number' =>  '352',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Ana',
+            'nombre' =>  'SANTA ANA',
             'estado_id' => '20',
             'number' =>  '353',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Ana Ateixtlahuaca',
+            'nombre' =>  'SANTA ANA ATEIXTLAHUACA',
             'estado_id' => '20',
             'number' =>  '354',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Ana Cuauhtémoc',
+            'nombre' =>  'SANTA ANA CUAUHTÉMOC',
             'estado_id' => '20',
             'number' =>  '355',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Ana del Valle',
+            'nombre' =>  'SANTA ANA DEL VALLE',
             'estado_id' => '20',
             'number' =>  '356',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Ana Tavela',
+            'nombre' =>  'SANTA ANA TAVELA',
             'estado_id' => '20',
             'number' =>  '357',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Ana Tlapacoyan',
+            'nombre' =>  'SANTA ANA TLAPACOYAN',
             'estado_id' => '20',
             'number' =>  '358',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Ana Yareni',
+            'nombre' =>  'SANTA ANA YARENI',
             'estado_id' => '20',
             'number' =>  '359',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Ana Zegache',
+            'nombre' =>  'SANTA ANA ZEGACHE',
             'estado_id' => '20',
             'number' =>  '360',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catalina Quierí',
+            'nombre' =>  'SANTA CATALINA QUIERÍ',
             'estado_id' => '20',
             'number' =>  '361',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina Cuixtla',
+            'nombre' =>  'SANTA CATARINA CUIXTLA',
             'estado_id' => '20',
             'number' =>  '362',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina Ixtepeji',
+            'nombre' =>  'SANTA CATARINA IXTEPEJI',
             'estado_id' => '20',
             'number' =>  '363',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina Juquila',
+            'nombre' =>  'SANTA CATARINA JUQUILA',
             'estado_id' => '20',
             'number' =>  '364',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina Lachatao',
+            'nombre' =>  'SANTA CATARINA LACHATAO',
             'estado_id' => '20',
             'number' =>  '365',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina Loxicha',
+            'nombre' =>  'SANTA CATARINA LOXICHA',
             'estado_id' => '20',
             'number' =>  '366',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina Mechoacán',
+            'nombre' =>  'SANTA CATARINA MECHOACÁN',
             'estado_id' => '20',
             'number' =>  '367',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina Minas',
+            'nombre' =>  'SANTA CATARINA MINAS',
             'estado_id' => '20',
             'number' =>  '368',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina Quiané',
+            'nombre' =>  'SANTA CATARINA QUIANÉ',
             'estado_id' => '20',
             'number' =>  '369',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina Tayata',
+            'nombre' =>  'SANTA CATARINA TAYATA',
             'estado_id' => '20',
             'number' =>  '370',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina Ticuá',
+            'nombre' =>  'SANTA CATARINA TICUÁ',
             'estado_id' => '20',
             'number' =>  '371',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina Yosonotú',
+            'nombre' =>  'SANTA CATARINA YOSONOTÚ',
             'estado_id' => '20',
             'number' =>  '372',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina Zapoquila',
+            'nombre' =>  'SANTA CATARINA ZAPOQUILA',
             'estado_id' => '20',
             'number' =>  '373',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz Acatepec',
+            'nombre' =>  'SANTA CRUZ ACATEPEC',
             'estado_id' => '20',
             'number' =>  '374',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz Amilpas',
+            'nombre' =>  'SANTA CRUZ AMILPAS',
             'estado_id' => '20',
             'number' =>  '375',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz de Bravo',
+            'nombre' =>  'SANTA CRUZ DE BRAVO',
             'estado_id' => '20',
             'number' =>  '376',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz Itundujia',
+            'nombre' =>  'SANTA CRUZ ITUNDUJIA',
             'estado_id' => '20',
             'number' =>  '377',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz Mixtepec',
+            'nombre' =>  'SANTA CRUZ MIXTEPEC',
             'estado_id' => '20',
             'number' =>  '378',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz Nundaco',
+            'nombre' =>  'SANTA CRUZ NUNDACO',
             'estado_id' => '20',
             'number' =>  '379',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz Papalutla',
+            'nombre' =>  'SANTA CRUZ PAPALUTLA',
             'estado_id' => '20',
             'number' =>  '380',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz Tacache de Mina',
+            'nombre' =>  'SANTA CRUZ TACACHE DE MINA',
             'estado_id' => '20',
             'number' =>  '381',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz Tacahua',
+            'nombre' =>  'SANTA CRUZ TACAHUA',
             'estado_id' => '20',
             'number' =>  '382',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz Tayata',
+            'nombre' =>  'SANTA CRUZ TAYATA',
             'estado_id' => '20',
             'number' =>  '383',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz Xitla',
+            'nombre' =>  'SANTA CRUZ XITLA',
             'estado_id' => '20',
             'number' =>  '384',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz Xoxocotlán',
+            'nombre' =>  'SANTA CRUZ XOXOCOTLÁN',
             'estado_id' => '20',
             'number' =>  '385',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz Zenzontepec',
+            'nombre' =>  'SANTA CRUZ ZENZONTEPEC',
             'estado_id' => '20',
             'number' =>  '386',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Gertrudis',
+            'nombre' =>  'SANTA GERTRUDIS',
             'estado_id' => '20',
             'number' =>  '387',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Inés del Monte',
+            'nombre' =>  'SANTA INÉS DEL MONTE',
             'estado_id' => '20',
             'number' =>  '388',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Inés Yatzeche',
+            'nombre' =>  'SANTA INÉS YATZECHE',
             'estado_id' => '20',
             'number' =>  '389',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Lucía del Camino',
+            'nombre' =>  'SANTA LUCÍA DEL CAMINO',
             'estado_id' => '20',
             'number' =>  '390',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Lucía Miahuatlán',
+            'nombre' =>  'SANTA LUCÍA MIAHUATLÁN',
             'estado_id' => '20',
             'number' =>  '391',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Lucía Monteverde',
+            'nombre' =>  'SANTA LUCÍA MONTEVERDE',
             'estado_id' => '20',
             'number' =>  '392',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Lucía Ocotlán',
+            'nombre' =>  'SANTA LUCÍA OCOTLÁN',
             'estado_id' => '20',
             'number' =>  '393',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Alotepec',
+            'nombre' =>  'SANTA MARÍA ALOTEPEC',
             'estado_id' => '20',
             'number' =>  '394',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Apazco',
+            'nombre' =>  'SANTA MARÍA APAZCO',
             'estado_id' => '20',
             'number' =>  '395',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María la Asunción',
+            'nombre' =>  'SANTA MARÍA LA ASUNCIÓN',
             'estado_id' => '20',
             'number' =>  '396',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Heroica Ciudad de Tlaxiaco',
+            'nombre' =>  'HEROICA CIUDAD DE TLAXIACO',
             'estado_id' => '20',
             'number' =>  '397',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ayoquezco de Aldama',
+            'nombre' =>  'AYOQUEZCO DE ALDAMA',
             'estado_id' => '20',
             'number' =>  '398',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Atzompa',
+            'nombre' =>  'SANTA MARÍA ATZOMPA',
             'estado_id' => '20',
             'number' =>  '399',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Camotlán',
+            'nombre' =>  'SANTA MARÍA CAMOTLÁN',
             'estado_id' => '20',
             'number' =>  '400',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Colotepec',
+            'nombre' =>  'SANTA MARÍA COLOTEPEC',
             'estado_id' => '20',
             'number' =>  '401',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Cortijo',
+            'nombre' =>  'SANTA MARÍA CORTIJO',
             'estado_id' => '20',
             'number' =>  '402',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Coyotepec',
+            'nombre' =>  'SANTA MARÍA COYOTEPEC',
             'estado_id' => '20',
             'number' =>  '403',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Chachoápam',
+            'nombre' =>  'SANTA MARÍA CHACHOÁPAM',
             'estado_id' => '20',
             'number' =>  '404',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa de Chilapa de Díaz',
+            'nombre' =>  'VILLA DE CHILAPA DE DÍAZ',
             'estado_id' => '20',
             'number' =>  '405',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Chilchotla',
+            'nombre' =>  'SANTA MARÍA CHILCHOTLA',
             'estado_id' => '20',
             'number' =>  '406',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Chimalapa',
+            'nombre' =>  'SANTA MARÍA CHIMALAPA',
             'estado_id' => '20',
             'number' =>  '407',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María del Rosario',
+            'nombre' =>  'SANTA MARÍA DEL ROSARIO',
             'estado_id' => '20',
             'number' =>  '408',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María del Tule',
+            'nombre' =>  'SANTA MARÍA DEL TULE',
             'estado_id' => '20',
             'number' =>  '409',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Ecatepec',
+            'nombre' =>  'SANTA MARÍA ECATEPEC',
             'estado_id' => '20',
             'number' =>  '410',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Guelacé',
+            'nombre' =>  'SANTA MARÍA GUELACÉ',
             'estado_id' => '20',
             'number' =>  '411',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Guienagati',
+            'nombre' =>  'SANTA MARÍA GUIENAGATI',
             'estado_id' => '20',
             'number' =>  '412',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Huatulco',
+            'nombre' =>  'SANTA MARÍA HUATULCO',
             'estado_id' => '20',
             'number' =>  '413',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Huazolotitlán',
+            'nombre' =>  'SANTA MARÍA HUAZOLOTITLÁN',
             'estado_id' => '20',
             'number' =>  '414',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Ipalapa',
+            'nombre' =>  'SANTA MARÍA IPALAPA',
             'estado_id' => '20',
             'number' =>  '415',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Ixcatlán',
+            'nombre' =>  'SANTA MARÍA IXCATLÁN',
             'estado_id' => '20',
             'number' =>  '416',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Jacatepec',
+            'nombre' =>  'SANTA MARÍA JACATEPEC',
             'estado_id' => '20',
             'number' =>  '417',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Jalapa del Marqués',
+            'nombre' =>  'SANTA MARÍA JALAPA DEL MARQUÉS',
             'estado_id' => '20',
             'number' =>  '418',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Jaltianguis',
+            'nombre' =>  'SANTA MARÍA JALTIANGUIS',
             'estado_id' => '20',
             'number' =>  '419',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Lachixío',
+            'nombre' =>  'SANTA MARÍA LACHIXÍO',
             'estado_id' => '20',
             'number' =>  '420',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Mixtequilla',
+            'nombre' =>  'SANTA MARÍA MIXTEQUILLA',
             'estado_id' => '20',
             'number' =>  '421',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Nativitas',
+            'nombre' =>  'SANTA MARÍA NATIVITAS',
             'estado_id' => '20',
             'number' =>  '422',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Nduayaco',
+            'nombre' =>  'SANTA MARÍA NDUAYACO',
             'estado_id' => '20',
             'number' =>  '423',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Ozolotepec',
+            'nombre' =>  'SANTA MARÍA OZOLOTEPEC',
             'estado_id' => '20',
             'number' =>  '424',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Pápalo',
+            'nombre' =>  'SANTA MARÍA PÁPALO',
             'estado_id' => '20',
             'number' =>  '425',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Peñoles',
+            'nombre' =>  'SANTA MARÍA PEÑOLES',
             'estado_id' => '20',
             'number' =>  '426',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Petapa',
+            'nombre' =>  'SANTA MARÍA PETAPA',
             'estado_id' => '20',
             'number' =>  '427',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Quiegolani',
+            'nombre' =>  'SANTA MARÍA QUIEGOLANI',
             'estado_id' => '20',
             'number' =>  '428',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Sola',
+            'nombre' =>  'SANTA MARÍA SOLA',
             'estado_id' => '20',
             'number' =>  '429',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Tataltepec',
+            'nombre' =>  'SANTA MARÍA TATALTEPEC',
             'estado_id' => '20',
             'number' =>  '430',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Tecomavaca',
+            'nombre' =>  'SANTA MARÍA TECOMAVACA',
             'estado_id' => '20',
             'number' =>  '431',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Temaxcalapa',
+            'nombre' =>  'SANTA MARÍA TEMAXCALAPA',
             'estado_id' => '20',
             'number' =>  '432',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Temaxcaltepec',
+            'nombre' =>  'SANTA MARÍA TEMAXCALTEPEC',
             'estado_id' => '20',
             'number' =>  '433',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Teopoxco',
+            'nombre' =>  'SANTA MARÍA TEOPOXCO',
             'estado_id' => '20',
             'number' =>  '434',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Tepantlali',
+            'nombre' =>  'SANTA MARÍA TEPANTLALI',
             'estado_id' => '20',
             'number' =>  '435',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Texcatitlán',
+            'nombre' =>  'SANTA MARÍA TEXCATITLÁN',
             'estado_id' => '20',
             'number' =>  '436',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Tlahuitoltepec',
+            'nombre' =>  'SANTA MARÍA TLAHUITOLTEPEC',
             'estado_id' => '20',
             'number' =>  '437',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Tlalixtac',
+            'nombre' =>  'SANTA MARÍA TLALIXTAC',
             'estado_id' => '20',
             'number' =>  '438',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Tonombreca',
+            'nombre' =>  'SANTA MARÍA TOnombreCA',
             'estado_id' => '20',
             'number' =>  '439',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Totolapilla',
+            'nombre' =>  'SANTA MARÍA TOTOLAPILLA',
             'estado_id' => '20',
             'number' =>  '440',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Xadani',
+            'nombre' =>  'SANTA MARÍA XADANI',
             'estado_id' => '20',
             'number' =>  '441',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Yalina',
+            'nombre' =>  'SANTA MARÍA YALINA',
             'estado_id' => '20',
             'number' =>  '442',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Yavesía',
+            'nombre' =>  'SANTA MARÍA YAVESÍA',
             'estado_id' => '20',
             'number' =>  '443',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Yolotepec',
+            'nombre' =>  'SANTA MARÍA YOLOTEPEC',
             'estado_id' => '20',
             'number' =>  '444',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Yosoyúa',
+            'nombre' =>  'SANTA MARÍA YOSOYÚA',
             'estado_id' => '20',
             'number' =>  '445',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Yucuhiti',
+            'nombre' =>  'SANTA MARÍA YUCUHITI',
             'estado_id' => '20',
             'number' =>  '446',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Zacatepec',
+            'nombre' =>  'SANTA MARÍA ZACATEPEC',
             'estado_id' => '20',
             'number' =>  '447',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Zaniza',
+            'nombre' =>  'SANTA MARÍA ZANIZA',
             'estado_id' => '20',
             'number' =>  '448',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María Zoquitlán',
+            'nombre' =>  'SANTA MARÍA ZOQUITLÁN',
             'estado_id' => '20',
             'number' =>  '449',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Amoltepec',
+            'nombre' =>  'SANTIAGO AMOLTEPEC',
             'estado_id' => '20',
             'number' =>  '450',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Apoala',
+            'nombre' =>  'SANTIAGO APOALA',
             'estado_id' => '20',
             'number' =>  '451',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Apóstol',
+            'nombre' =>  'SANTIAGO APÓSTOL',
             'estado_id' => '20',
             'number' =>  '452',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Astata',
+            'nombre' =>  'SANTIAGO ASTATA',
             'estado_id' => '20',
             'number' =>  '453',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Atitlán',
+            'nombre' =>  'SANTIAGO ATITLÁN',
             'estado_id' => '20',
             'number' =>  '454',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Ayuquililla',
+            'nombre' =>  'SANTIAGO AYUQUILILLA',
             'estado_id' => '20',
             'number' =>  '455',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Cacaloxtepec',
+            'nombre' =>  'SANTIAGO CACALOXTEPEC',
             'estado_id' => '20',
             'number' =>  '456',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Camotlán',
+            'nombre' =>  'SANTIAGO CAMOTLÁN',
             'estado_id' => '20',
             'number' =>  '457',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Comaltepec',
+            'nombre' =>  'SANTIAGO COMALTEPEC',
             'estado_id' => '20',
             'number' =>  '458',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Chazumba',
+            'nombre' =>  'SANTIAGO CHAZUMBA',
             'estado_id' => '20',
             'number' =>  '459',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Choápam',
+            'nombre' =>  'SANTIAGO CHOÁPAM',
             'estado_id' => '20',
             'number' =>  '460',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago del Río',
+            'nombre' =>  'SANTIAGO DEL RÍO',
             'estado_id' => '20',
             'number' =>  '461',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Huajolotitlán',
+            'nombre' =>  'SANTIAGO HUAJOLOTITLÁN',
             'estado_id' => '20',
             'number' =>  '462',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Huauclilla',
+            'nombre' =>  'SANTIAGO HUAUCLILLA',
             'estado_id' => '20',
             'number' =>  '463',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Ihuitlán Plumas',
+            'nombre' =>  'SANTIAGO IHUITLÁN PLUMAS',
             'estado_id' => '20',
             'number' =>  '464',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Ixcuintepec',
+            'nombre' =>  'SANTIAGO IXCUINTEPEC',
             'estado_id' => '20',
             'number' =>  '465',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Ixtayutla',
+            'nombre' =>  'SANTIAGO IXTAYUTLA',
             'estado_id' => '20',
             'number' =>  '466',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Jamiltepec',
+            'nombre' =>  'SANTIAGO JAMILTEPEC',
             'estado_id' => '20',
             'number' =>  '467',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Jocotepec',
+            'nombre' =>  'SANTIAGO JOCOTEPEC',
             'estado_id' => '20',
             'number' =>  '468',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Juxtlahuaca',
+            'nombre' =>  'SANTIAGO JUXTLAHUACA',
             'estado_id' => '20',
             'number' =>  '469',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Lachiguiri',
+            'nombre' =>  'SANTIAGO LACHIGUIRI',
             'estado_id' => '20',
             'number' =>  '470',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Lalopa',
+            'nombre' =>  'SANTIAGO LALOPA',
             'estado_id' => '20',
             'number' =>  '471',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Laollaga',
+            'nombre' =>  'SANTIAGO LAOLLAGA',
             'estado_id' => '20',
             'number' =>  '472',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Laxopa',
+            'nombre' =>  'SANTIAGO LAXOPA',
             'estado_id' => '20',
             'number' =>  '473',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Llano Grande',
+            'nombre' =>  'SANTIAGO LLANO GRANDE',
             'estado_id' => '20',
             'number' =>  '474',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Matatlán',
+            'nombre' =>  'SANTIAGO MATATLÁN',
             'estado_id' => '20',
             'number' =>  '475',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Miltepec',
+            'nombre' =>  'SANTIAGO MILTEPEC',
             'estado_id' => '20',
             'number' =>  '476',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Minas',
+            'nombre' =>  'SANTIAGO MINAS',
             'estado_id' => '20',
             'number' =>  '477',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Nacaltepec',
+            'nombre' =>  'SANTIAGO NACALTEPEC',
             'estado_id' => '20',
             'number' =>  '478',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Nejapilla',
+            'nombre' =>  'SANTIAGO NEJAPILLA',
             'estado_id' => '20',
             'number' =>  '479',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Nundiche',
+            'nombre' =>  'SANTIAGO NUNDICHE',
             'estado_id' => '20',
             'number' =>  '480',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Nuyoó',
+            'nombre' =>  'SANTIAGO NUYOÓ',
             'estado_id' => '20',
             'number' =>  '481',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Pinotepa Nacional',
+            'nombre' =>  'SANTIAGO PINOTEPA NACIONAL',
             'estado_id' => '20',
             'number' =>  '482',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Suchilquitongo',
+            'nombre' =>  'SANTIAGO SUCHILQUITONGO',
             'estado_id' => '20',
             'number' =>  '483',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Tamazola',
+            'nombre' =>  'SANTIAGO TAMAZOLA',
             'estado_id' => '20',
             'number' =>  '484',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Tapextla',
+            'nombre' =>  'SANTIAGO TAPEXTLA',
             'estado_id' => '20',
             'number' =>  '485',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Tejúpam de la Unión',
+            'nombre' =>  'VILLA TEJÚPAM DE LA UNIÓN',
             'estado_id' => '20',
             'number' =>  '486',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Tenango',
+            'nombre' =>  'SANTIAGO TENANGO',
             'estado_id' => '20',
             'number' =>  '487',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Tepetlapa',
+            'nombre' =>  'SANTIAGO TEPETLAPA',
             'estado_id' => '20',
             'number' =>  '488',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Tetepec',
+            'nombre' =>  'SANTIAGO TETEPEC',
             'estado_id' => '20',
             'number' =>  '489',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Texcalcingo',
+            'nombre' =>  'SANTIAGO TEXCALCINGO',
             'estado_id' => '20',
             'number' =>  '490',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Textitlán',
+            'nombre' =>  'SANTIAGO TEXTITLÁN',
             'estado_id' => '20',
             'number' =>  '491',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Tilantongo',
+            'nombre' =>  'SANTIAGO TILANTONGO',
             'estado_id' => '20',
             'number' =>  '492',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Tillo',
+            'nombre' =>  'SANTIAGO TILLO',
             'estado_id' => '20',
             'number' =>  '493',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Tlazoyaltepec',
+            'nombre' =>  'SANTIAGO TLAZOYALTEPEC',
             'estado_id' => '20',
             'number' =>  '494',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Xanica',
+            'nombre' =>  'SANTIAGO XANICA',
             'estado_id' => '20',
             'number' =>  '495',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Xiacuí',
+            'nombre' =>  'SANTIAGO XIACUÍ',
             'estado_id' => '20',
             'number' =>  '496',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Yaitepec',
+            'nombre' =>  'SANTIAGO YAITEPEC',
             'estado_id' => '20',
             'number' =>  '497',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Yaveo',
+            'nombre' =>  'SANTIAGO YAVEO',
             'estado_id' => '20',
             'number' =>  '498',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Yolomécatl',
+            'nombre' =>  'SANTIAGO YOLOMÉCATL',
             'estado_id' => '20',
             'number' =>  '499',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Yosondúa',
+            'nombre' =>  'SANTIAGO YOSONDÚA',
             'estado_id' => '20',
             'number' =>  '500',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Yucuyachi',
+            'nombre' =>  'SANTIAGO YUCUYACHI',
             'estado_id' => '20',
             'number' =>  '501',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Zacatepec',
+            'nombre' =>  'SANTIAGO ZACATEPEC',
             'estado_id' => '20',
             'number' =>  '502',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Zoochila',
+            'nombre' =>  'SANTIAGO ZOOCHILA',
             'estado_id' => '20',
             'number' =>  '503',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nuevo Zoquiápam',
+            'nombre' =>  'NUEVO ZOQUIÁPAM',
             'estado_id' => '20',
             'number' =>  '504',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Ingenio',
+            'nombre' =>  'SANTO DOMINGO INGENIO',
             'estado_id' => '20',
             'number' =>  '505',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Albarradas',
+            'nombre' =>  'SANTO DOMINGO ALBARRADAS',
             'estado_id' => '20',
             'number' =>  '506',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Armenta',
+            'nombre' =>  'SANTO DOMINGO ARMENTA',
             'estado_id' => '20',
             'number' =>  '507',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Chihuitán',
+            'nombre' =>  'SANTO DOMINGO CHIHUITÁN',
             'estado_id' => '20',
             'number' =>  '508',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo de Morelos',
+            'nombre' =>  'SANTO DOMINGO DE MORELOS',
             'estado_id' => '20',
             'number' =>  '509',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Ixcatlán',
+            'nombre' =>  'SANTO DOMINGO IXCATLÁN',
             'estado_id' => '20',
             'number' =>  '510',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Nuxaá',
+            'nombre' =>  'SANTO DOMINGO NUXAÁ',
             'estado_id' => '20',
             'number' =>  '511',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Ozolotepec',
+            'nombre' =>  'SANTO DOMINGO OZOLOTEPEC',
             'estado_id' => '20',
             'number' =>  '512',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Petapa',
+            'nombre' =>  'SANTO DOMINGO PETAPA',
             'estado_id' => '20',
             'number' =>  '513',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Roayaga',
+            'nombre' =>  'SANTO DOMINGO ROAYAGA',
             'estado_id' => '20',
             'number' =>  '514',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Tehuantepec',
+            'nombre' =>  'SANTO DOMINGO TEHUANTEPEC',
             'estado_id' => '20',
             'number' =>  '515',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Teojomulco',
+            'nombre' =>  'SANTO DOMINGO TEOJOMULCO',
             'estado_id' => '20',
             'number' =>  '516',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Tepuxtepec',
+            'nombre' =>  'SANTO DOMINGO TEPUXTEPEC',
             'estado_id' => '20',
             'number' =>  '517',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Tlatayápam',
+            'nombre' =>  'SANTO DOMINGO TLATAYÁPAM',
             'estado_id' => '20',
             'number' =>  '518',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Tomaltepec',
+            'nombre' =>  'SANTO DOMINGO TOMALTEPEC',
             'estado_id' => '20',
             'number' =>  '519',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Tonalá',
+            'nombre' =>  'SANTO DOMINGO TONALÁ',
             'estado_id' => '20',
             'number' =>  '520',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Tonaltepec',
+            'nombre' =>  'SANTO DOMINGO TONALTEPEC',
             'estado_id' => '20',
             'number' =>  '521',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Xagacía',
+            'nombre' =>  'SANTO DOMINGO XAGACÍA',
             'estado_id' => '20',
             'number' =>  '522',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Yanhuitlán',
+            'nombre' =>  'SANTO DOMINGO YANHUITLÁN',
             'estado_id' => '20',
             'number' =>  '523',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Yodohino',
+            'nombre' =>  'SANTO DOMINGO YODOHINO',
             'estado_id' => '20',
             'number' =>  '524',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo Zanatepec',
+            'nombre' =>  'SANTO DOMINGO ZANATEPEC',
             'estado_id' => '20',
             'number' =>  '525',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santos Reyes Nopala',
+            'nombre' =>  'SANTOS REYES NOPALA',
             'estado_id' => '20',
             'number' =>  '526',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santos Reyes Pápalo',
+            'nombre' =>  'SANTOS REYES PÁPALO',
             'estado_id' => '20',
             'number' =>  '527',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santos Reyes Tepejillo',
+            'nombre' =>  'SANTOS REYES TEPEJILLO',
             'estado_id' => '20',
             'number' =>  '528',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santos Reyes Yucuná',
+            'nombre' =>  'SANTOS REYES YUCUNÁ',
             'estado_id' => '20',
             'number' =>  '529',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Tomás Jalieza',
+            'nombre' =>  'SANTO TOMÁS JALIEZA',
             'estado_id' => '20',
             'number' =>  '530',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Tomás Mazaltepec',
+            'nombre' =>  'SANTO TOMÁS MAZALTEPEC',
             'estado_id' => '20',
             'number' =>  '531',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Tomás Ocotepec',
+            'nombre' =>  'SANTO TOMÁS OCOTEPEC',
             'estado_id' => '20',
             'number' =>  '532',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Tomás Tamazulapan',
+            'nombre' =>  'SANTO TOMÁS TAMAZULAPAN',
             'estado_id' => '20',
             'number' =>  '533',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Vicente Coatlán',
+            'nombre' =>  'SAN VICENTE COATLÁN',
             'estado_id' => '20',
             'number' =>  '534',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Vicente Lachixío',
+            'nombre' =>  'SAN VICENTE LACHIXÍO',
             'estado_id' => '20',
             'number' =>  '535',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Vicente Nuñú',
+            'nombre' =>  'SAN VICENTE NUÑÚ',
             'estado_id' => '20',
             'number' =>  '536',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Silacayoápam',
+            'nombre' =>  'SILACAYOÁPAM',
             'estado_id' => '20',
             'number' =>  '537',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sitio de Xitlapehua',
+            'nombre' =>  'SITIO DE XITLAPEHUA',
             'estado_id' => '20',
             'number' =>  '538',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Soledad Etla',
+            'nombre' =>  'SOLEDAD ETLA',
             'estado_id' => '20',
             'number' =>  '539',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa de Tamazulápam del Progreso',
+            'nombre' =>  'VILLA DE TAMAZULÁPAM DEL PROGRESO',
             'estado_id' => '20',
             'number' =>  '540',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tanetze de Zaragoza',
+            'nombre' =>  'TANETZE DE ZARAGOZA',
             'estado_id' => '20',
             'number' =>  '541',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Taniche',
+            'nombre' =>  'TANICHE',
             'estado_id' => '20',
             'number' =>  '542',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tataltepec de Valdés',
+            'nombre' =>  'TATALTEPEC DE VALDÉS',
             'estado_id' => '20',
             'number' =>  '543',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teococuilco de Marcos Pérez',
+            'nombre' =>  'TEOCOCUILCO DE MARCOS PÉREZ',
             'estado_id' => '20',
             'number' =>  '544',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teotitlán de Flores Magón',
+            'nombre' =>  'TEOTITLÁN DE FLORES MAGÓN',
             'estado_id' => '20',
             'number' =>  '545',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teotitlán del Valle',
+            'nombre' =>  'TEOTITLÁN DEL VALLE',
             'estado_id' => '20',
             'number' =>  '546',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teotongo',
+            'nombre' =>  'TEOTONGO',
             'estado_id' => '20',
             'number' =>  '547',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepelmeme Villa de Morelos',
+            'nombre' =>  'TEPELMEME VILLA DE MORELOS',
             'estado_id' => '20',
             'number' =>  '548',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Heroica Villa Tezoatlán de Segura y Luna. Cuna de la Independencia de Oaxaca',
+            'nombre' =>  'HEROICA VILLA TEZOATLÁN DE SEGURA Y LUNA. CUNA DE LA INDEPENDENCIA DE OAXACA',
             'estado_id' => '20',
             'number' =>  '549',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Jerónimo Tlacochahuaya',
+            'nombre' =>  'SAN JERÓNIMO TLACOCHAHUAYA',
             'estado_id' => '20',
             'number' =>  '550',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlacolula de Matamoros',
+            'nombre' =>  'TLACOLULA DE MATAMOROS',
             'estado_id' => '20',
             'number' =>  '551',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlacotepec Plumas',
+            'nombre' =>  'TLACOTEPEC PLUMAS',
             'estado_id' => '20',
             'number' =>  '552',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlalixtac de Cabrera',
+            'nombre' =>  'TLALIXTAC DE CABRERA',
             'estado_id' => '20',
             'number' =>  '553',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Totontepec Villa de Morelos',
+            'nombre' =>  'TOTONTEPEC VILLA DE MORELOS',
             'estado_id' => '20',
             'number' =>  '554',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Trinidad Zaachila',
+            'nombre' =>  'TRINIDAD ZAACHILA',
             'estado_id' => '20',
             'number' =>  '555',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Trinidad Vista Hermosa',
+            'nombre' =>  'LA TRINIDAD VISTA HERMOSA',
             'estado_id' => '20',
             'number' =>  '556',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Unión Hidalgo',
+            'nombre' =>  'UNIÓN HIDALGO',
             'estado_id' => '20',
             'number' =>  '557',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Valerio Trujano',
+            'nombre' =>  'VALERIO TRUJANO',
             'estado_id' => '20',
             'number' =>  '558',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Bautista Valle Nacional',
+            'nombre' =>  'SAN JUAN BAUTISTA VALLE NACIONAL',
             'estado_id' => '20',
             'number' =>  '559',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Díaz Ordaz',
+            'nombre' =>  'VILLA DÍAZ ORDAZ',
             'estado_id' => '20',
             'number' =>  '560',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yaxe',
+            'nombre' =>  'YAXE',
             'estado_id' => '20',
             'number' =>  '561',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Magdalena Yodocono de Porfirio Díaz',
+            'nombre' =>  'MAGDALENA YODOCONO DE PORFIRIO DÍAZ',
             'estado_id' => '20',
             'number' =>  '562',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yogana',
+            'nombre' =>  'YOGANA',
             'estado_id' => '20',
             'number' =>  '563',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yutanduchi de Guerrero',
+            'nombre' =>  'YUTANDUCHI DE GUERRERO',
             'estado_id' => '20',
             'number' =>  '564',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa de Zaachila',
+            'nombre' =>  'VILLA DE ZAACHILA',
             'estado_id' => '20',
             'number' =>  '565',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Mateo Yucutindoo',
+            'nombre' =>  'SAN MATEO YUCUTINDOO',
             'estado_id' => '20',
             'number' =>  '566',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zapotitlán Lagunas',
+            'nombre' =>  'ZAPOTITLÁN LAGUNAS',
             'estado_id' => '20',
             'number' =>  '567',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zapotitlán Palmas',
+            'nombre' =>  'ZAPOTITLÁN PALMAS',
             'estado_id' => '20',
             'number' =>  '568',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Inés de Zaragoza',
+            'nombre' =>  'SANTA INÉS DE ZARAGOZA',
             'estado_id' => '20',
             'number' =>  '569',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zimatlán de Álvarez',
+            'nombre' =>  'ZIMATLÁN DE ÁLVAREZ',
             'estado_id' => '20',
             'number' =>  '570',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acajete',
+            'nombre' =>  'ACAJETE',
             'estado_id' => '21',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acateno',
+            'nombre' =>  'ACATENO',
             'estado_id' => '21',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acatlán',
+            'nombre' =>  'ACATLÁN',
             'estado_id' => '21',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acatzingo',
+            'nombre' =>  'ACATZINGO',
             'estado_id' => '21',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acteopan',
+            'nombre' =>  'ACTEOPAN',
             'estado_id' => '21',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ahuacatlán',
+            'nombre' =>  'AHUACATLÁN',
             'estado_id' => '21',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ahuatlán',
+            'nombre' =>  'AHUATLÁN',
             'estado_id' => '21',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ahuazotepec',
+            'nombre' =>  'AHUAZOTEPEC',
             'estado_id' => '21',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ahuehuetitla',
+            'nombre' =>  'AHUEHUETITLA',
             'estado_id' => '21',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ajalpan',
+            'nombre' =>  'AJALPAN',
             'estado_id' => '21',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Albino Zertuche',
+            'nombre' =>  'ALBINO ZERTUCHE',
             'estado_id' => '21',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Aljojuca',
+            'nombre' =>  'ALJOJUCA',
             'estado_id' => '21',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Altepexi',
+            'nombre' =>  'ALTEPEXI',
             'estado_id' => '21',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amixtlán',
+            'nombre' =>  'AMIXTLÁN',
             'estado_id' => '21',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amozoc',
+            'nombre' =>  'AMOZOC',
             'estado_id' => '21',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Aquixtla',
+            'nombre' =>  'AQUIXTLA',
             'estado_id' => '21',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atempan',
+            'nombre' =>  'ATEMPAN',
             'estado_id' => '21',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atexcal',
+            'nombre' =>  'ATEXCAL',
             'estado_id' => '21',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atlixco',
+            'nombre' =>  'ATLIXCO',
             'estado_id' => '21',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atoyatempan',
+            'nombre' =>  'ATOYATEMPAN',
             'estado_id' => '21',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atzala',
+            'nombre' =>  'ATZALA',
             'estado_id' => '21',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atzitzihuacán',
+            'nombre' =>  'ATZITZIHUACÁN',
             'estado_id' => '21',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atzitzintla',
+            'nombre' =>  'ATZITZINTLA',
             'estado_id' => '21',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Axutla',
+            'nombre' =>  'AXUTLA',
             'estado_id' => '21',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ayotoxco de Guerrero',
+            'nombre' =>  'AYOTOXCO DE GUERRERO',
             'estado_id' => '21',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Calpan',
+            'nombre' =>  'CALPAN',
             'estado_id' => '21',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Caltepec',
+            'nombre' =>  'CALTEPEC',
             'estado_id' => '21',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Camocuautla',
+            'nombre' =>  'CAMOCUAUTLA',
             'estado_id' => '21',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Caxhuacan',
+            'nombre' =>  'CAXHUACAN',
             'estado_id' => '21',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coatepec',
+            'nombre' =>  'COATEPEC',
             'estado_id' => '21',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coatzingo',
+            'nombre' =>  'COATZINGO',
             'estado_id' => '21',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cohetzala',
+            'nombre' =>  'COHETZALA',
             'estado_id' => '21',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cohuecan',
+            'nombre' =>  'COHUECAN',
             'estado_id' => '21',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coronango',
+            'nombre' =>  'CORONANGO',
             'estado_id' => '21',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coxcatlán',
+            'nombre' =>  'COXCATLÁN',
             'estado_id' => '21',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coyomeapan',
+            'nombre' =>  'COYOMEAPAN',
             'estado_id' => '21',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coyotepec',
+            'nombre' =>  'COYOTEPEC',
             'estado_id' => '21',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuapiaxtla de Madero',
+            'nombre' =>  'CUAPIAXTLA DE MADERO',
             'estado_id' => '21',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuautempan',
+            'nombre' =>  'CUAUTEMPAN',
             'estado_id' => '21',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuautinchán',
+            'nombre' =>  'CUAUTINCHÁN',
             'estado_id' => '21',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuautlancingo',
+            'nombre' =>  'CUAUTLANCINGO',
             'estado_id' => '21',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuayuca de Andrade',
+            'nombre' =>  'CUAYUCA DE ANDRADE',
             'estado_id' => '21',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuetzalan del Progreso',
+            'nombre' =>  'CUETZALAN DEL PROGRESO',
             'estado_id' => '21',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuyoaco',
+            'nombre' =>  'CUYOACO',
             'estado_id' => '21',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chalchicomula de Sesma',
+            'nombre' =>  'CHALCHICOMULA DE SESMA',
             'estado_id' => '21',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chapulco',
+            'nombre' =>  'CHAPULCO',
             'estado_id' => '21',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chiautla',
+            'nombre' =>  'CHIAUTLA',
             'estado_id' => '21',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chiautzingo',
+            'nombre' =>  'CHIAUTZINGO',
             'estado_id' => '21',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chiconcuautla',
+            'nombre' =>  'CHICONCUAUTLA',
             'estado_id' => '21',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chichiquila',
+            'nombre' =>  'CHICHIQUILA',
             'estado_id' => '21',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chietla',
+            'nombre' =>  'CHIETLA',
             'estado_id' => '21',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chigmecatitlán',
+            'nombre' =>  'CHIGMECATITLÁN',
             'estado_id' => '21',
             'number' =>  '052',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chignahuapan',
+            'nombre' =>  'CHIGNAHUAPAN',
             'estado_id' => '21',
             'number' =>  '053',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chignautla',
+            'nombre' =>  'CHIGNAUTLA',
             'estado_id' => '21',
             'number' =>  '054',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chila',
+            'nombre' =>  'CHILA',
             'estado_id' => '21',
             'number' =>  '055',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chila de la Sal',
+            'nombre' =>  'CHILA DE LA SAL',
             'estado_id' => '21',
             'number' =>  '056',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Honey',
+            'nombre' =>  'HONEY',
             'estado_id' => '21',
             'number' =>  '057',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chilchotla',
+            'nombre' =>  'CHILCHOTLA',
             'estado_id' => '21',
             'number' =>  '058',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chinantla',
+            'nombre' =>  'CHINANTLA',
             'estado_id' => '21',
             'number' =>  '059',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Domingo Arenas',
+            'nombre' =>  'DOMINGO ARENAS',
             'estado_id' => '21',
             'number' =>  '060',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Eloxochitlán',
+            'nombre' =>  'ELOXOCHITLÁN',
             'estado_id' => '21',
             'number' =>  '061',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Epatlán',
+            'nombre' =>  'EPATLÁN',
             'estado_id' => '21',
             'number' =>  '062',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Esperanza',
+            'nombre' =>  'ESPERANZA',
             'estado_id' => '21',
             'number' =>  '063',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Francisco Z. Mena',
+            'nombre' =>  'FRANCISCO Z. MENA',
             'estado_id' => '21',
             'number' =>  '064',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'General Felipe Ángeles',
+            'nombre' =>  'GENERAL FELIPE ÁNGELES',
             'estado_id' => '21',
             'number' =>  '065',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guadalupe',
+            'nombre' =>  'GUADALUPE',
             'estado_id' => '21',
             'number' =>  '066',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guadalupe Victoria',
+            'nombre' =>  'GUADALUPE VICTORIA',
             'estado_id' => '21',
             'number' =>  '067',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hermenegildo Galeana',
+            'nombre' =>  'HERMENEGILDO GALEANA',
             'estado_id' => '21',
             'number' =>  '068',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huaquechula',
+            'nombre' =>  'HUAQUECHULA',
             'estado_id' => '21',
             'number' =>  '069',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huatlatlauca',
+            'nombre' =>  'HUATLATLAUCA',
             'estado_id' => '21',
             'number' =>  '070',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huauchinango',
+            'nombre' =>  'HUAUCHINANGO',
             'estado_id' => '21',
             'number' =>  '071',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huehuetla',
+            'nombre' =>  'HUEHUETLA',
             'estado_id' => '21',
             'number' =>  '072',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huehuetlán el Chico',
+            'nombre' =>  'HUEHUETLÁN EL CHICO',
             'estado_id' => '21',
             'number' =>  '073',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huejotzingo',
+            'nombre' =>  'HUEJOTZINGO',
             'estado_id' => '21',
             'number' =>  '074',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hueyapan',
+            'nombre' =>  'HUEYAPAN',
             'estado_id' => '21',
             'number' =>  '075',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hueytamalco',
+            'nombre' =>  'HUEYTAMALCO',
             'estado_id' => '21',
             'number' =>  '076',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hueytlalpan',
+            'nombre' =>  'HUEYTLALPAN',
             'estado_id' => '21',
             'number' =>  '077',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huitzilan de Serdán',
+            'nombre' =>  'HUITZILAN DE SERDÁN',
             'estado_id' => '21',
             'number' =>  '078',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huitziltepec',
+            'nombre' =>  'HUITZILTEPEC',
             'estado_id' => '21',
             'number' =>  '079',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atlequizayan',
+            'nombre' =>  'ATLEQUIZAYAN',
             'estado_id' => '21',
             'number' =>  '080',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixcamilpa de Guerrero',
+            'nombre' =>  'IXCAMILPA DE GUERRERO',
             'estado_id' => '21',
             'number' =>  '081',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixcaquixtla',
+            'nombre' =>  'IXCAQUIXTLA',
             'estado_id' => '21',
             'number' =>  '082',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtacamaxtitlán',
+            'nombre' =>  'IXTACAMAXTITLÁN',
             'estado_id' => '21',
             'number' =>  '083',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtepec',
+            'nombre' =>  'IXTEPEC',
             'estado_id' => '21',
             'number' =>  '084',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Izúcar de Matamoros',
+            'nombre' =>  'IZÚCAR DE MATAMOROS',
             'estado_id' => '21',
             'number' =>  '085',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jalpan',
+            'nombre' =>  'JALPAN',
             'estado_id' => '21',
             'number' =>  '086',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jolalpan',
+            'nombre' =>  'JOLALPAN',
             'estado_id' => '21',
             'number' =>  '087',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jonotla',
+            'nombre' =>  'JONOTLA',
             'estado_id' => '21',
             'number' =>  '088',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jopala',
+            'nombre' =>  'JOPALA',
             'estado_id' => '21',
             'number' =>  '089',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juan C. Bonilla',
+            'nombre' =>  'JUAN C. BONILLA',
             'estado_id' => '21',
             'number' =>  '090',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juan Galindo',
+            'nombre' =>  'JUAN GALINDO',
             'estado_id' => '21',
             'number' =>  '091',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juan N. Méndez',
+            'nombre' =>  'JUAN N. MÉNDEZ',
             'estado_id' => '21',
             'number' =>  '092',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Lafragua',
+            'nombre' =>  'LAFRAGUA',
             'estado_id' => '21',
             'number' =>  '093',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Libres',
+            'nombre' =>  'LIBRES',
             'estado_id' => '21',
             'number' =>  '094',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Magdalena Tlatlauquitepec',
+            'nombre' =>  'LA MAGDALENA TLATLAUQUITEPEC',
             'estado_id' => '21',
             'number' =>  '095',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mazapiltepec de Juárez',
+            'nombre' =>  'MAZAPILTEPEC DE JUÁREZ',
             'estado_id' => '21',
             'number' =>  '096',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mixtla',
+            'nombre' =>  'MIXTLA',
             'estado_id' => '21',
             'number' =>  '097',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Molcaxac',
+            'nombre' =>  'MOLCAXAC',
             'estado_id' => '21',
             'number' =>  '098',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cañada Morelos',
+            'nombre' =>  'CAÑADA MORELOS',
             'estado_id' => '21',
             'number' =>  '099',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Naupan',
+            'nombre' =>  'NAUPAN',
             'estado_id' => '21',
             'number' =>  '100',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nauzontla',
+            'nombre' =>  'NAUZONTLA',
             'estado_id' => '21',
             'number' =>  '101',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nealtican',
+            'nombre' =>  'NEALTICAN',
             'estado_id' => '21',
             'number' =>  '102',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nicolás Bravo',
+            'nombre' =>  'NICOLÁS BRAVO',
             'estado_id' => '21',
             'number' =>  '103',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nopalucan',
+            'nombre' =>  'NOPALUCAN',
             'estado_id' => '21',
             'number' =>  '104',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocotepec',
+            'nombre' =>  'OCOTEPEC',
             'estado_id' => '21',
             'number' =>  '105',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocoyucan',
+            'nombre' =>  'OCOYUCAN',
             'estado_id' => '21',
             'number' =>  '106',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Olintla',
+            'nombre' =>  'OLINTLA',
             'estado_id' => '21',
             'number' =>  '107',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Oriental',
+            'nombre' =>  'ORIENTAL',
             'estado_id' => '21',
             'number' =>  '108',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pahuatlán',
+            'nombre' =>  'PAHUATLÁN',
             'estado_id' => '21',
             'number' =>  '109',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Palmar de Bravo',
+            'nombre' =>  'PALMAR DE BRAVO',
             'estado_id' => '21',
             'number' =>  '110',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pantepec',
+            'nombre' =>  'PANTEPEC',
             'estado_id' => '21',
             'number' =>  '111',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Petlalcingo',
+            'nombre' =>  'PETLALCINGO',
             'estado_id' => '21',
             'number' =>  '112',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Piaxtla',
+            'nombre' =>  'PIAXTLA',
             'estado_id' => '21',
             'number' =>  '113',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Puebla',
+            'nombre' =>  'PUEBLA',
             'estado_id' => '21',
             'number' =>  '114',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Quecholac',
+            'nombre' =>  'QUECHOLAC',
             'estado_id' => '21',
             'number' =>  '115',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Quimixtlán',
+            'nombre' =>  'QUIMIXTLÁN',
             'estado_id' => '21',
             'number' =>  '116',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rafael Lara Grajales',
+            'nombre' =>  'RAFAEL LARA GRAJALES',
             'estado_id' => '21',
             'number' =>  '117',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Los Reyes de Juárez',
+            'nombre' =>  'LOS REYES DE JUÁREZ',
             'estado_id' => '21',
             'number' =>  '118',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Cholula',
+            'nombre' =>  'SAN ANDRÉS CHOLULA',
             'estado_id' => '21',
             'number' =>  '119',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Antonio Cañada',
+            'nombre' =>  'SAN ANTONIO CAÑADA',
             'estado_id' => '21',
             'number' =>  '120',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Diego la Mesa Tochimiltzingo',
+            'nombre' =>  'SAN DIEGO LA MESA TOCHIMILTZINGO',
             'estado_id' => '21',
             'number' =>  '121',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Felipe Teotlalcingo',
+            'nombre' =>  'SAN FELIPE TEOTLALCINGO',
             'estado_id' => '21',
             'number' =>  '122',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Felipe Tepatlán',
+            'nombre' =>  'SAN FELIPE TEPATLÁN',
             'estado_id' => '21',
             'number' =>  '123',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Gabriel Chilac',
+            'nombre' =>  'SAN GABRIEL CHILAC',
             'estado_id' => '21',
             'number' =>  '124',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Gregorio Atzompa',
+            'nombre' =>  'SAN GREGORIO ATZOMPA',
             'estado_id' => '21',
             'number' =>  '125',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Jerónimo Tecuanipan',
+            'nombre' =>  'SAN JERÓNIMO TECUANIPAN',
             'estado_id' => '21',
             'number' =>  '126',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Jerónimo Xayacatlán',
+            'nombre' =>  'SAN JERÓNIMO XAYACATLÁN',
             'estado_id' => '21',
             'number' =>  '127',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San José Chiapa',
+            'nombre' =>  'SAN JOSÉ CHIAPA',
             'estado_id' => '21',
             'number' =>  '128',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San José Miahuatlán',
+            'nombre' =>  'SAN JOSÉ MIAHUATLÁN',
             'estado_id' => '21',
             'number' =>  '129',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Atenco',
+            'nombre' =>  'SAN JUAN ATENCO',
             'estado_id' => '21',
             'number' =>  '130',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Atzompa',
+            'nombre' =>  'SAN JUAN ATZOMPA',
             'estado_id' => '21',
             'number' =>  '131',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Martín Texmelucan',
+            'nombre' =>  'SAN MARTÍN TEXMELUCAN',
             'estado_id' => '21',
             'number' =>  '132',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Martín Totoltepec',
+            'nombre' =>  'SAN MARTÍN TOTOLTEPEC',
             'estado_id' => '21',
             'number' =>  '133',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Matías Tlalancaleca',
+            'nombre' =>  'SAN MATÍAS TLALANCALECA',
             'estado_id' => '21',
             'number' =>  '134',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Ixitlán',
+            'nombre' =>  'SAN MIGUEL IXITLÁN',
             'estado_id' => '21',
             'number' =>  '135',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel Xoxtla',
+            'nombre' =>  'SAN MIGUEL XOXTLA',
             'estado_id' => '21',
             'number' =>  '136',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Nicolás Buenos Aires',
+            'nombre' =>  'SAN NICOLÁS BUENOS AIRES',
             'estado_id' => '21',
             'number' =>  '137',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Nicolás de los Ranchos',
+            'nombre' =>  'SAN NICOLÁS DE LOS RANCHOS',
             'estado_id' => '21',
             'number' =>  '138',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pablo Anicano',
+            'nombre' =>  'SAN PABLO ANICANO',
             'estado_id' => '21',
             'number' =>  '139',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Cholula',
+            'nombre' =>  'SAN PEDRO CHOLULA',
             'estado_id' => '21',
             'number' =>  '140',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro Yeloixtlahuaca',
+            'nombre' =>  'SAN PEDRO YELOIXTLAHUACA',
             'estado_id' => '21',
             'number' =>  '141',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Salvador el Seco',
+            'nombre' =>  'SAN SALVADOR EL SECO',
             'estado_id' => '21',
             'number' =>  '142',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Salvador el Verde',
+            'nombre' =>  'SAN SALVADOR EL VERDE',
             'estado_id' => '21',
             'number' =>  '143',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Salvador Huixcolotla',
+            'nombre' =>  'SAN SALVADOR HUIXCOLOTLA',
             'estado_id' => '21',
             'number' =>  '144',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Sebastián Tlacotepec',
+            'nombre' =>  'SAN SEBASTIÁN TLACOTEPEC',
             'estado_id' => '21',
             'number' =>  '145',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina Tlaltempan',
+            'nombre' =>  'SANTA CATARINA TLALTEMPAN',
             'estado_id' => '21',
             'number' =>  '146',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Inés Ahuatempan',
+            'nombre' =>  'SANTA INÉS AHUATEMPAN',
             'estado_id' => '21',
             'number' =>  '147',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Isabel Cholula',
+            'nombre' =>  'SANTA ISABEL CHOLULA',
             'estado_id' => '21',
             'number' =>  '148',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Miahuatlán',
+            'nombre' =>  'SANTIAGO MIAHUATLÁN',
             'estado_id' => '21',
             'number' =>  '149',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huehuetlán el Grande',
+            'nombre' =>  'HUEHUETLÁN EL GRANDE',
             'estado_id' => '21',
             'number' =>  '150',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Tomás Hueyotlipan',
+            'nombre' =>  'SANTO TOMÁS HUEYOTLIPAN',
             'estado_id' => '21',
             'number' =>  '151',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Soltepec',
+            'nombre' =>  'SOLTEPEC',
             'estado_id' => '21',
             'number' =>  '152',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tecali de Herrera',
+            'nombre' =>  'TECALI DE HERRERA',
             'estado_id' => '21',
             'number' =>  '153',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tecamachalco',
+            'nombre' =>  'TECAMACHALCO',
             'estado_id' => '21',
             'number' =>  '154',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tecomatlán',
+            'nombre' =>  'TECOMATLÁN',
             'estado_id' => '21',
             'number' =>  '155',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tehuacán',
+            'nombre' =>  'TEHUACÁN',
             'estado_id' => '21',
             'number' =>  '156',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tehuitzingo',
+            'nombre' =>  'TEHUITZINGO',
             'estado_id' => '21',
             'number' =>  '157',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tenampulco',
+            'nombre' =>  'TENAMPULCO',
             'estado_id' => '21',
             'number' =>  '158',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teopantlán',
+            'nombre' =>  'TEOPANTLÁN',
             'estado_id' => '21',
             'number' =>  '159',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teotlalco',
+            'nombre' =>  'TEOTLALCO',
             'estado_id' => '21',
             'number' =>  '160',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepanco de López',
+            'nombre' =>  'TEPANCO DE LÓPEZ',
             'estado_id' => '21',
             'number' =>  '161',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepango de Rodríguez',
+            'nombre' =>  'TEPANGO DE RODRÍGUEZ',
             'estado_id' => '21',
             'number' =>  '162',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepatlaxco de Hidalgo',
+            'nombre' =>  'TEPATLAXCO DE HIDALGO',
             'estado_id' => '21',
             'number' =>  '163',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepeaca',
+            'nombre' =>  'TEPEACA',
             'estado_id' => '21',
             'number' =>  '164',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepemaxalco',
+            'nombre' =>  'TEPEMAXALCO',
             'estado_id' => '21',
             'number' =>  '165',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepeojuma',
+            'nombre' =>  'TEPEOJUMA',
             'estado_id' => '21',
             'number' =>  '166',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepetzintla',
+            'nombre' =>  'TEPETZINTLA',
             'estado_id' => '21',
             'number' =>  '167',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepexco',
+            'nombre' =>  'TEPEXCO',
             'estado_id' => '21',
             'number' =>  '168',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepexi de Rodríguez',
+            'nombre' =>  'TEPEXI DE RODRÍGUEZ',
             'estado_id' => '21',
             'number' =>  '169',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepeyahualco',
+            'nombre' =>  'TEPEYAHUALCO',
             'estado_id' => '21',
             'number' =>  '170',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepeyahualco de Cuauhtémoc',
+            'nombre' =>  'TEPEYAHUALCO DE CUAUHTÉMOC',
             'estado_id' => '21',
             'number' =>  '171',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tetela de Ocampo',
+            'nombre' =>  'TETELA DE OCAMPO',
             'estado_id' => '21',
             'number' =>  '172',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teteles de Avila Castillo',
+            'nombre' =>  'TETELES DE AVILA CASTILLO',
             'estado_id' => '21',
             'number' =>  '173',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teziutlán',
+            'nombre' =>  'TEZIUTLÁN',
             'estado_id' => '21',
             'number' =>  '174',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tianguismanalco',
+            'nombre' =>  'TIANGUISMANALCO',
             'estado_id' => '21',
             'number' =>  '175',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tilapa',
+            'nombre' =>  'TILAPA',
             'estado_id' => '21',
             'number' =>  '176',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlacotepec de Benito Juárez',
+            'nombre' =>  'TLACOTEPEC DE BENITO JUÁREZ',
             'estado_id' => '21',
             'number' =>  '177',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlacuilotepec',
+            'nombre' =>  'TLACUILOTEPEC',
             'estado_id' => '21',
             'number' =>  '178',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlachichuca',
+            'nombre' =>  'TLACHICHUCA',
             'estado_id' => '21',
             'number' =>  '179',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlahuapan',
+            'nombre' =>  'TLAHUAPAN',
             'estado_id' => '21',
             'number' =>  '180',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlaltenango',
+            'nombre' =>  'TLALTENANGO',
             'estado_id' => '21',
             'number' =>  '181',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlanepantla',
+            'nombre' =>  'TLANEPANTLA',
             'estado_id' => '21',
             'number' =>  '182',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlaola',
+            'nombre' =>  'TLAOLA',
             'estado_id' => '21',
             'number' =>  '183',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlapacoya',
+            'nombre' =>  'TLAPACOYA',
             'estado_id' => '21',
             'number' =>  '184',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlapanalá',
+            'nombre' =>  'TLAPANALÁ',
             'estado_id' => '21',
             'number' =>  '185',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlatlauquitepec',
+            'nombre' =>  'TLATLAUQUITEPEC',
             'estado_id' => '21',
             'number' =>  '186',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlaxco',
+            'nombre' =>  'TLAXCO',
             'estado_id' => '21',
             'number' =>  '187',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tochimilco',
+            'nombre' =>  'TOCHIMILCO',
             'estado_id' => '21',
             'number' =>  '188',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tochtepec',
+            'nombre' =>  'TOCHTEPEC',
             'estado_id' => '21',
             'number' =>  '189',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Totoltepec de Guerrero',
+            'nombre' =>  'TOTOLTEPEC DE GUERRERO',
             'estado_id' => '21',
             'number' =>  '190',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tulcingo',
+            'nombre' =>  'TULCINGO',
             'estado_id' => '21',
             'number' =>  '191',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tuzamapan de Galeana',
+            'nombre' =>  'TUZAMAPAN DE GALEANA',
             'estado_id' => '21',
             'number' =>  '192',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tzicatlacoyan',
+            'nombre' =>  'TZICATLACOYAN',
             'estado_id' => '21',
             'number' =>  '193',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Venustiano Carranza',
+            'nombre' =>  'VENUSTIANO CARRANZA',
             'estado_id' => '21',
             'number' =>  '194',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Vicente Guerrero',
+            'nombre' =>  'VICENTE GUERRERO',
             'estado_id' => '21',
             'number' =>  '195',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xayacatlán de Bravo',
+            'nombre' =>  'XAYACATLÁN DE BRAVO',
             'estado_id' => '21',
             'number' =>  '196',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xicotepec',
+            'nombre' =>  'XICOTEPEC',
             'estado_id' => '21',
             'number' =>  '197',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xicotlán',
+            'nombre' =>  'XICOTLÁN',
             'estado_id' => '21',
             'number' =>  '198',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xiutetelco',
+            'nombre' =>  'XIUTETELCO',
             'estado_id' => '21',
             'number' =>  '199',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xochiapulco',
+            'nombre' =>  'XOCHIAPULCO',
             'estado_id' => '21',
             'number' =>  '200',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xochiltepec',
+            'nombre' =>  'XOCHILTEPEC',
             'estado_id' => '21',
             'number' =>  '201',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xochitlán de Vicente Suárez',
+            'nombre' =>  'XOCHITLÁN DE VICENTE SUÁREZ',
             'estado_id' => '21',
             'number' =>  '202',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xochitlán Todos Santos',
+            'nombre' =>  'XOCHITLÁN TODOS SANTOS',
             'estado_id' => '21',
             'number' =>  '203',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yaonáhuac',
+            'nombre' =>  'YAONÁHUAC',
             'estado_id' => '21',
             'number' =>  '204',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yehualtepec',
+            'nombre' =>  'YEHUALTEPEC',
             'estado_id' => '21',
             'number' =>  '205',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zacapala',
+            'nombre' =>  'ZACAPALA',
             'estado_id' => '21',
             'number' =>  '206',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zacapoaxtla',
+            'nombre' =>  'ZACAPOAXTLA',
             'estado_id' => '21',
             'number' =>  '207',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zacatlán',
+            'nombre' =>  'ZACATLÁN',
             'estado_id' => '21',
             'number' =>  '208',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zapotitlán',
+            'nombre' =>  'ZAPOTITLÁN',
             'estado_id' => '21',
             'number' =>  '209',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zapotitlán de Méndez',
+            'nombre' =>  'ZAPOTITLÁN DE MÉNDEZ',
             'estado_id' => '21',
             'number' =>  '210',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zaragoza',
+            'nombre' =>  'ZARAGOZA',
             'estado_id' => '21',
             'number' =>  '211',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zautla',
+            'nombre' =>  'ZAUTLA',
             'estado_id' => '21',
             'number' =>  '212',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zihuateutla',
+            'nombre' =>  'ZIHUATEUTLA',
             'estado_id' => '21',
             'number' =>  '213',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zinacatepec',
+            'nombre' =>  'ZINACATEPEC',
             'estado_id' => '21',
             'number' =>  '214',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zongozotla',
+            'nombre' =>  'ZONGOZOTLA',
             'estado_id' => '21',
             'number' =>  '215',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zoquiapan',
+            'nombre' =>  'ZOQUIAPAN',
             'estado_id' => '21',
             'number' =>  '216',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zoquitlán',
+            'nombre' =>  'ZOQUITLÁN',
             'estado_id' => '21',
             'number' =>  '217',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amealco de Bonfil',
+            'nombre' =>  'AMEALCO DE BONFIL',
             'estado_id' => '22',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pinal de Amoles',
+            'nombre' =>  'PINAL DE AMOLES',
             'estado_id' => '22',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Arroyo Seco',
+            'nombre' =>  'ARROYO SECO',
             'estado_id' => '22',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cadereyta de Montes',
+            'nombre' =>  'CADEREYTA DE MONTES',
             'estado_id' => '22',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Colón',
+            'nombre' =>  'COLÓN',
             'estado_id' => '22',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Corregidora',
+            'nombre' =>  'CORREGIDORA',
             'estado_id' => '22',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ezequiel Montes',
+            'nombre' =>  'EZEQUIEL MONTES',
             'estado_id' => '22',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huimilpan',
+            'nombre' =>  'HUIMILPAN',
             'estado_id' => '22',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jalpan de Serra',
+            'nombre' =>  'JALPAN DE SERRA',
             'estado_id' => '22',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Landa de Matamoros',
+            'nombre' =>  'LANDA DE MATAMOROS',
             'estado_id' => '22',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Marqués',
+            'nombre' =>  'EL MARQUÉS',
             'estado_id' => '22',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pedro Escobedo',
+            'nombre' =>  'PEDRO ESCOBEDO',
             'estado_id' => '22',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Peñamiller',
+            'nombre' =>  'PEÑAMILLER',
             'estado_id' => '22',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Querétaro',
+            'nombre' =>  'QUERÉTARO',
             'estado_id' => '22',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Joaquín',
+            'nombre' =>  'SAN JOAQUÍN',
             'estado_id' => '22',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan del Río',
+            'nombre' =>  'SAN JUAN DEL RÍO',
             'estado_id' => '22',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tequisquiapan',
+            'nombre' =>  'TEQUISQUIAPAN',
             'estado_id' => '22',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tolimán',
+            'nombre' =>  'TOLIMÁN',
             'estado_id' => '22',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cozumel',
+            'nombre' =>  'COZUMEL',
             'estado_id' => '23',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Felipe Carrillo Puerto',
+            'nombre' =>  'FELIPE CARRILLO PUERTO',
             'estado_id' => '23',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Isla Mujeres',
+            'nombre' =>  'ISLA MUJERES',
             'estado_id' => '23',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Othón P. Blanco',
+            'nombre' =>  'OTHÓN P. BLANCO',
             'estado_id' => '23',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Benito Juárez',
+            'nombre' =>  'BENITO JUÁREZ',
             'estado_id' => '23',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'José María Morelos',
+            'nombre' =>  'JOSÉ MARÍA MORELOS',
             'estado_id' => '23',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Lázaro Cárdenas',
+            'nombre' =>  'LÁZARO CÁRDENAS',
             'estado_id' => '23',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Solidaridad',
+            'nombre' =>  'SOLIDARIDAD',
             'estado_id' => '23',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tulum',
+            'nombre' =>  'TULUM',
             'estado_id' => '23',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bacalar',
+            'nombre' =>  'BACALAR',
             'estado_id' => '23',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ahualulco',
+            'nombre' =>  'AHUALULCO',
             'estado_id' => '24',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Alaquines',
+            'nombre' =>  'ALAQUINES',
             'estado_id' => '24',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Aquismón',
+            'nombre' =>  'AQUISMÓN',
             'estado_id' => '24',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Armadillo de los Infante',
+            'nombre' =>  'ARMADILLO DE LOS INFANTE',
             'estado_id' => '24',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cárdenas',
+            'nombre' =>  'CÁRDENAS',
             'estado_id' => '24',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Catorce',
+            'nombre' =>  'CATORCE',
             'estado_id' => '24',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cedral',
+            'nombre' =>  'CEDRAL',
             'estado_id' => '24',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cerritos',
+            'nombre' =>  'CERRITOS',
             'estado_id' => '24',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cerro de San Pedro',
+            'nombre' =>  'CERRO DE SAN PEDRO',
             'estado_id' => '24',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ciudad del Maíz',
+            'nombre' =>  'CIUDAD DEL MAÍZ',
             'estado_id' => '24',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ciudad Fernández',
+            'nombre' =>  'CIUDAD FERNÁNDEZ',
             'estado_id' => '24',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tancanhuitz',
+            'nombre' =>  'TANCANHUITZ',
             'estado_id' => '24',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ciudad Valles',
+            'nombre' =>  'CIUDAD VALLES',
             'estado_id' => '24',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coxcatlán',
+            'nombre' =>  'COXCATLÁN',
             'estado_id' => '24',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Charcas',
+            'nombre' =>  'CHARCAS',
             'estado_id' => '24',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ebano',
+            'nombre' =>  'EBANO',
             'estado_id' => '24',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guadalcázar',
+            'nombre' =>  'GUADALCÁZAR',
             'estado_id' => '24',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huehuetlán',
+            'nombre' =>  'HUEHUETLÁN',
             'estado_id' => '24',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Lagunillas',
+            'nombre' =>  'LAGUNILLAS',
             'estado_id' => '24',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Matehuala',
+            'nombre' =>  'MATEHUALA',
             'estado_id' => '24',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mexquitic de Carmona',
+            'nombre' =>  'MEXQUITIC DE CARMONA',
             'estado_id' => '24',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Moctezuma',
+            'nombre' =>  'MOCTEZUMA',
             'estado_id' => '24',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rayón',
+            'nombre' =>  'RAYÓN',
             'estado_id' => '24',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rioverde',
+            'nombre' =>  'RIOVERDE',
             'estado_id' => '24',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Salinas',
+            'nombre' =>  'SALINAS',
             'estado_id' => '24',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Antonio',
+            'nombre' =>  'SAN ANTONIO',
             'estado_id' => '24',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Ciro de Acosta',
+            'nombre' =>  'SAN CIRO DE ACOSTA',
             'estado_id' => '24',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Luis Potosí',
+            'nombre' =>  'SAN LUIS POTOSÍ',
             'estado_id' => '24',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Martín Chalchicuautla',
+            'nombre' =>  'SAN MARTÍN CHALCHICUAUTLA',
             'estado_id' => '24',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Nicolás Tolentino',
+            'nombre' =>  'SAN NICOLÁS TOLENTINO',
             'estado_id' => '24',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina',
+            'nombre' =>  'SANTA CATARINA',
             'estado_id' => '24',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María del Río',
+            'nombre' =>  'SANTA MARÍA DEL RÍO',
             'estado_id' => '24',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santo Domingo',
+            'nombre' =>  'SANTO DOMINGO',
             'estado_id' => '24',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Vicente Tancuayalab',
+            'nombre' =>  'SAN VICENTE TANCUAYALAB',
             'estado_id' => '24',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Soledad de Graciano Sánchez',
+            'nombre' =>  'SOLEDAD DE GRACIANO SÁNCHEZ',
             'estado_id' => '24',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tamasopo',
+            'nombre' =>  'TAMASOPO',
             'estado_id' => '24',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tamazunchale',
+            'nombre' =>  'TAMAZUNCHALE',
             'estado_id' => '24',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tampacán',
+            'nombre' =>  'TAMPACÁN',
             'estado_id' => '24',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tampamolón Corona',
+            'nombre' =>  'TAMPAMOLÓN CORONA',
             'estado_id' => '24',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tamuín',
+            'nombre' =>  'TAMUÍN',
             'estado_id' => '24',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tanlajás',
+            'nombre' =>  'TANLAJÁS',
             'estado_id' => '24',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tanquián de Escobedo',
+            'nombre' =>  'TANQUIÁN DE ESCOBEDO',
             'estado_id' => '24',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tierra Nueva',
+            'nombre' =>  'TIERRA NUEVA',
             'estado_id' => '24',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Vanegas',
+            'nombre' =>  'VANEGAS',
             'estado_id' => '24',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Venado',
+            'nombre' =>  'VENADO',
             'estado_id' => '24',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa de Arriaga',
+            'nombre' =>  'VILLA DE ARRIAGA',
             'estado_id' => '24',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa de Guadalupe',
+            'nombre' =>  'VILLA DE GUADALUPE',
             'estado_id' => '24',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa de la Paz',
+            'nombre' =>  'VILLA DE LA PAZ',
             'estado_id' => '24',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa de Ramos',
+            'nombre' =>  'VILLA DE RAMOS',
             'estado_id' => '24',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa de Reyes',
+            'nombre' =>  'VILLA DE REYES',
             'estado_id' => '24',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Hidalgo',
+            'nombre' =>  'VILLA HIDALGO',
             'estado_id' => '24',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Juárez',
+            'nombre' =>  'VILLA JUÁREZ',
             'estado_id' => '24',
             'number' =>  '052',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Axtla de Terrazas',
+            'nombre' =>  'AXTLA DE TERRAZAS',
             'estado_id' => '24',
             'number' =>  '053',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xilitla',
+            'nombre' =>  'XILITLA',
             'estado_id' => '24',
             'number' =>  '054',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zaragoza',
+            'nombre' =>  'ZARAGOZA',
             'estado_id' => '24',
             'number' =>  '055',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa de Arista',
+            'nombre' =>  'VILLA DE ARISTA',
             'estado_id' => '24',
             'number' =>  '056',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Matlapa',
+            'nombre' =>  'MATLAPA',
             'estado_id' => '24',
             'number' =>  '057',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Naranjo',
+            'nombre' =>  'EL NARANJO',
             'estado_id' => '24',
             'number' =>  '058',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ahome',
+            'nombre' =>  'AHOME',
             'estado_id' => '25',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Angostura',
+            'nombre' =>  'ANGOSTURA',
             'estado_id' => '25',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Badiraguato',
+            'nombre' =>  'BADIRAGUATO',
             'estado_id' => '25',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Concordia',
+            'nombre' =>  'CONCORDIA',
             'estado_id' => '25',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cosalá',
+            'nombre' =>  'COSALÁ',
             'estado_id' => '25',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Culiacán',
+            'nombre' =>  'CULIACÁN',
             'estado_id' => '25',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Choix',
+            'nombre' =>  'CHOIX',
             'estado_id' => '25',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Elota',
+            'nombre' =>  'ELOTA',
             'estado_id' => '25',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Escuinapa',
+            'nombre' =>  'ESCUINAPA',
             'estado_id' => '25',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Fuerte',
+            'nombre' =>  'EL FUERTE',
             'estado_id' => '25',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guasave',
+            'nombre' =>  'GUASAVE',
             'estado_id' => '25',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mazatlán',
+            'nombre' =>  'MAZATLÁN',
             'estado_id' => '25',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mocorito',
+            'nombre' =>  'MOCORITO',
             'estado_id' => '25',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rosario',
+            'nombre' =>  'ROSARIO',
             'estado_id' => '25',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Salvador Alvarado',
+            'nombre' =>  'SALVADOR ALVARADO',
             'estado_id' => '25',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Ignacio',
+            'nombre' =>  'SAN IGNACIO',
             'estado_id' => '25',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sinaloa',
+            'nombre' =>  'SINALOA',
             'estado_id' => '25',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Navolato',
+            'nombre' =>  'NAVOLATO',
             'estado_id' => '25',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Aconchi',
+            'nombre' =>  'ACONCHI',
             'estado_id' => '26',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Agua Prieta',
+            'nombre' =>  'AGUA PRIETA',
             'estado_id' => '26',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Alamos',
+            'nombre' =>  'ALAMOS',
             'estado_id' => '26',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Altar',
+            'nombre' =>  'ALTAR',
             'estado_id' => '26',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Arivechi',
+            'nombre' =>  'ARIVECHI',
             'estado_id' => '26',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Arizpe',
+            'nombre' =>  'ARIZPE',
             'estado_id' => '26',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atil',
+            'nombre' =>  'ATIL',
             'estado_id' => '26',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bacadéhuachi',
+            'nombre' =>  'BACADÉHUACHI',
             'estado_id' => '26',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bacanora',
+            'nombre' =>  'BACANORA',
             'estado_id' => '26',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bacerac',
+            'nombre' =>  'BACERAC',
             'estado_id' => '26',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bacoachi',
+            'nombre' =>  'BACOACHI',
             'estado_id' => '26',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bácum',
+            'nombre' =>  'BÁCUM',
             'estado_id' => '26',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Banámichi',
+            'nombre' =>  'BANÁMICHI',
             'estado_id' => '26',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Baviácora',
+            'nombre' =>  'BAVIÁCORA',
             'estado_id' => '26',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bavispe',
+            'nombre' =>  'BAVISPE',
             'estado_id' => '26',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Benjamín Hill',
+            'nombre' =>  'BENJAMÍN HILL',
             'estado_id' => '26',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Caborca',
+            'nombre' =>  'CABORCA',
             'estado_id' => '26',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cajeme',
+            'nombre' =>  'CAJEME',
             'estado_id' => '26',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cananea',
+            'nombre' =>  'CANANEA',
             'estado_id' => '26',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Carbó',
+            'nombre' =>  'CARBÓ',
             'estado_id' => '26',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Colorada',
+            'nombre' =>  'LA COLORADA',
             'estado_id' => '26',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cucurpe',
+            'nombre' =>  'CUCURPE',
             'estado_id' => '26',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cumpas',
+            'nombre' =>  'CUMPAS',
             'estado_id' => '26',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Divisaderos',
+            'nombre' =>  'DIVISADEROS',
             'estado_id' => '26',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Empalme',
+            'nombre' =>  'EMPALME',
             'estado_id' => '26',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Etchojoa',
+            'nombre' =>  'ETCHOJOA',
             'estado_id' => '26',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Fronteras',
+            'nombre' =>  'FRONTERAS',
             'estado_id' => '26',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Granados',
+            'nombre' =>  'GRANADOS',
             'estado_id' => '26',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guaymas',
+            'nombre' =>  'GUAYMAS',
             'estado_id' => '26',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hermosillo',
+            'nombre' =>  'HERMOSILLO',
             'estado_id' => '26',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huachinera',
+            'nombre' =>  'HUACHINERA',
             'estado_id' => '26',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huásabas',
+            'nombre' =>  'HUÁSABAS',
             'estado_id' => '26',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huatabampo',
+            'nombre' =>  'HUATABAMPO',
             'estado_id' => '26',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huépac',
+            'nombre' =>  'HUÉPAC',
             'estado_id' => '26',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Imuris',
+            'nombre' =>  'IMURIS',
             'estado_id' => '26',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Magdalena',
+            'nombre' =>  'MAGDALENA',
             'estado_id' => '26',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mazatán',
+            'nombre' =>  'MAZATÁN',
             'estado_id' => '26',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Moctezuma',
+            'nombre' =>  'MOCTEZUMA',
             'estado_id' => '26',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Naco',
+            'nombre' =>  'NACO',
             'estado_id' => '26',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nácori Chico',
+            'nombre' =>  'NÁCORI CHICO',
             'estado_id' => '26',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nacozari de García',
+            'nombre' =>  'NACOZARI DE GARCÍA',
             'estado_id' => '26',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Navojoa',
+            'nombre' =>  'NAVOJOA',
             'estado_id' => '26',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nogales',
+            'nombre' =>  'NOGALES',
             'estado_id' => '26',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Onavas',
+            'nombre' =>  'ONAVAS',
             'estado_id' => '26',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Opodepe',
+            'nombre' =>  'OPODEPE',
             'estado_id' => '26',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Oquitoa',
+            'nombre' =>  'OQUITOA',
             'estado_id' => '26',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pitiquito',
+            'nombre' =>  'PITIQUITO',
             'estado_id' => '26',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Puerto Peñasco',
+            'nombre' =>  'PUERTO PEÑASCO',
             'estado_id' => '26',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Quiriego',
+            'nombre' =>  'QUIRIEGO',
             'estado_id' => '26',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rayón',
+            'nombre' =>  'RAYÓN',
             'estado_id' => '26',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rosario',
+            'nombre' =>  'ROSARIO',
             'estado_id' => '26',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sahuaripa',
+            'nombre' =>  'SAHUARIPA',
             'estado_id' => '26',
             'number' =>  '052',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Felipe de Jesús',
+            'nombre' =>  'SAN FELIPE DE JESÚS',
             'estado_id' => '26',
             'number' =>  '053',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Javier',
+            'nombre' =>  'SAN JAVIER',
             'estado_id' => '26',
             'number' =>  '054',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Luis Río Colorado',
+            'nombre' =>  'SAN LUIS RÍO COLORADO',
             'estado_id' => '26',
             'number' =>  '055',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Miguel de Horcasitas',
+            'nombre' =>  'SAN MIGUEL DE HORCASITAS',
             'estado_id' => '26',
             'number' =>  '056',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pedro de la Cueva',
+            'nombre' =>  'SAN PEDRO DE LA CUEVA',
             'estado_id' => '26',
             'number' =>  '057',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Ana',
+            'nombre' =>  'SANTA ANA',
             'estado_id' => '26',
             'number' =>  '058',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz',
+            'nombre' =>  'SANTA CRUZ',
             'estado_id' => '26',
             'number' =>  '059',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sáric',
+            'nombre' =>  'SÁRIC',
             'estado_id' => '26',
             'number' =>  '060',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Soyopa',
+            'nombre' =>  'SOYOPA',
             'estado_id' => '26',
             'number' =>  '061',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Suaqui Grande',
+            'nombre' =>  'SUAQUI GRANDE',
             'estado_id' => '26',
             'number' =>  '062',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepache',
+            'nombre' =>  'TEPACHE',
             'estado_id' => '26',
             'number' =>  '063',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Trincheras',
+            'nombre' =>  'TRINCHERAS',
             'estado_id' => '26',
             'number' =>  '064',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tubutama',
+            'nombre' =>  'TUBUTAMA',
             'estado_id' => '26',
             'number' =>  '065',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ures',
+            'nombre' =>  'URES',
             'estado_id' => '26',
             'number' =>  '066',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Hidalgo',
+            'nombre' =>  'VILLA HIDALGO',
             'estado_id' => '26',
             'number' =>  '067',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Pesqueira',
+            'nombre' =>  'VILLA PESQUEIRA',
             'estado_id' => '26',
             'number' =>  '068',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yécora',
+            'nombre' =>  'YÉCORA',
             'estado_id' => '26',
             'number' =>  '069',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'General Plutarco Elías Calles',
+            'nombre' =>  'GENERAL PLUTARCO ELÍAS CALLES',
             'estado_id' => '26',
             'number' =>  '070',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Benito Juárez',
+            'nombre' =>  'BENITO JUÁREZ',
             'estado_id' => '26',
             'number' =>  '071',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Ignacio Río Muerto',
+            'nombre' =>  'SAN IGNACIO RÍO MUERTO',
             'estado_id' => '26',
             'number' =>  '072',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Balancán',
+            'nombre' =>  'BALANCÁN',
             'estado_id' => '27',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cárdenas',
+            'nombre' =>  'CÁRDENAS',
             'estado_id' => '27',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Centla',
+            'nombre' =>  'CENTLA',
             'estado_id' => '27',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Centro',
+            'nombre' =>  'CENTRO',
             'estado_id' => '27',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Comalcalco',
+            'nombre' =>  'COMALCALCO',
             'estado_id' => '27',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cunduacán',
+            'nombre' =>  'CUNDUACÁN',
             'estado_id' => '27',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Emiliano Zapata',
+            'nombre' =>  'EMILIANO ZAPATA',
             'estado_id' => '27',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huimanguillo',
+            'nombre' =>  'HUIMANGUILLO',
             'estado_id' => '27',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jalapa',
+            'nombre' =>  'JALAPA',
             'estado_id' => '27',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jalpa de Méndez',
+            'nombre' =>  'JALPA DE MÉNDEZ',
             'estado_id' => '27',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jonuta',
+            'nombre' =>  'JONUTA',
             'estado_id' => '27',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Macuspana',
+            'nombre' =>  'MACUSPANA',
             'estado_id' => '27',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nacajuca',
+            'nombre' =>  'NACAJUCA',
             'estado_id' => '27',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Paraíso',
+            'nombre' =>  'PARAÍSO',
             'estado_id' => '27',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tacotalpa',
+            'nombre' =>  'TACOTALPA',
             'estado_id' => '27',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teapa',
+            'nombre' =>  'TEAPA',
             'estado_id' => '27',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tenosique',
+            'nombre' =>  'TENOSIQUE',
             'estado_id' => '27',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Abasolo',
+            'nombre' =>  'ABASOLO',
             'estado_id' => '28',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Aldama',
+            'nombre' =>  'ALDAMA',
             'estado_id' => '28',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Altamira',
+            'nombre' =>  'ALTAMIRA',
             'estado_id' => '28',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Antiguo Morelos',
+            'nombre' =>  'ANTIGUO MORELOS',
             'estado_id' => '28',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Burgos',
+            'nombre' =>  'BURGOS',
             'estado_id' => '28',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bustamante',
+            'nombre' =>  'BUSTAMANTE',
             'estado_id' => '28',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Camargo',
+            'nombre' =>  'CAMARGO',
             'estado_id' => '28',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Casas',
+            'nombre' =>  'CASAS',
             'estado_id' => '28',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ciudad Madero',
+            'nombre' =>  'CIUDAD MADERO',
             'estado_id' => '28',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cruillas',
+            'nombre' =>  'CRUILLAS',
             'estado_id' => '28',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Gómez Farías',
+            'nombre' =>  'GÓMEZ FARÍAS',
             'estado_id' => '28',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'González',
+            'nombre' =>  'GONZÁLEZ',
             'estado_id' => '28',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Güémez',
+            'nombre' =>  'GÜÉMEZ',
             'estado_id' => '28',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guerrero',
+            'nombre' =>  'GUERRERO',
             'estado_id' => '28',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Gustavo Díaz Ordaz',
+            'nombre' =>  'GUSTAVO DÍAZ ORDAZ',
             'estado_id' => '28',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hidalgo',
+            'nombre' =>  'HIDALGO',
             'estado_id' => '28',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jaumave',
+            'nombre' =>  'JAUMAVE',
             'estado_id' => '28',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jiménez',
+            'nombre' =>  'JIMÉNEZ',
             'estado_id' => '28',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Llera',
+            'nombre' =>  'LLERA',
             'estado_id' => '28',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mainero',
+            'nombre' =>  'MAINERO',
             'estado_id' => '28',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Mante',
+            'nombre' =>  'EL MANTE',
             'estado_id' => '28',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Matamoros',
+            'nombre' =>  'MATAMOROS',
             'estado_id' => '28',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Méndez',
+            'nombre' =>  'MÉNDEZ',
             'estado_id' => '28',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mier',
+            'nombre' =>  'MIER',
             'estado_id' => '28',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Miguel Alemán',
+            'nombre' =>  'MIGUEL ALEMÁN',
             'estado_id' => '28',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Miquihuana',
+            'nombre' =>  'MIQUIHUANA',
             'estado_id' => '28',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nuevo Laredo',
+            'nombre' =>  'NUEVO LAREDO',
             'estado_id' => '28',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nuevo Morelos',
+            'nombre' =>  'NUEVO MORELOS',
             'estado_id' => '28',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ocampo',
+            'nombre' =>  'OCAMPO',
             'estado_id' => '28',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Padilla',
+            'nombre' =>  'PADILLA',
             'estado_id' => '28',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Palmillas',
+            'nombre' =>  'PALMILLAS',
             'estado_id' => '28',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Reynosa',
+            'nombre' =>  'REYNOSA',
             'estado_id' => '28',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Río Bravo',
+            'nombre' =>  'RÍO BRAVO',
             'estado_id' => '28',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Carlos',
+            'nombre' =>  'SAN CARLOS',
             'estado_id' => '28',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Fernando',
+            'nombre' =>  'SAN FERNANDO',
             'estado_id' => '28',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Nicolás',
+            'nombre' =>  'SAN NICOLÁS',
             'estado_id' => '28',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Soto la Marina',
+            'nombre' =>  'SOTO LA MARINA',
             'estado_id' => '28',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tampico',
+            'nombre' =>  'TAMPICO',
             'estado_id' => '28',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tula',
+            'nombre' =>  'TULA',
             'estado_id' => '28',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Valle Hermoso',
+            'nombre' =>  'VALLE HERMOSO',
             'estado_id' => '28',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Victoria',
+            'nombre' =>  'VICTORIA',
             'estado_id' => '28',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villagrán',
+            'nombre' =>  'VILLAGRÁN',
             'estado_id' => '28',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xicoténcatl',
+            'nombre' =>  'XICOTÉNCATL',
             'estado_id' => '28',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amaxac de Guerrero',
+            'nombre' =>  'AMAXAC DE GUERRERO',
             'estado_id' => '29',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Apetatitlán de Antonio Carvajal',
+            'nombre' =>  'APETATITLÁN DE ANTONIO CARVAJAL',
             'estado_id' => '29',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atlangatepec',
+            'nombre' =>  'ATLANGATEPEC',
             'estado_id' => '29',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atltzayanca',
+            'nombre' =>  'ATLTZAYANCA',
             'estado_id' => '29',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Apizaco',
+            'nombre' =>  'APIZACO',
             'estado_id' => '29',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Calpulalpan',
+            'nombre' =>  'CALPULALPAN',
             'estado_id' => '29',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Carmen Tequexquitla',
+            'nombre' =>  'EL CARMEN TEQUEXQUITLA',
             'estado_id' => '29',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuapiaxtla',
+            'nombre' =>  'CUAPIAXTLA',
             'estado_id' => '29',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuaxomulco',
+            'nombre' =>  'CUAXOMULCO',
             'estado_id' => '29',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chiautempan',
+            'nombre' =>  'CHIAUTEMPAN',
             'estado_id' => '29',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Muñoz de Domingo Arenas',
+            'nombre' =>  'MUÑOZ DE DOMINGO ARENAS',
             'estado_id' => '29',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Españita',
+            'nombre' =>  'ESPAÑITA',
             'estado_id' => '29',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huamantla',
+            'nombre' =>  'HUAMANTLA',
             'estado_id' => '29',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hueyotlipan',
+            'nombre' =>  'HUEYOTLIPAN',
             'estado_id' => '29',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtacuixtla de Mariano Matamoros',
+            'nombre' =>  'IXTACUIXTLA DE MARIANO MATAMOROS',
             'estado_id' => '29',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtenco',
+            'nombre' =>  'IXTENCO',
             'estado_id' => '29',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mazatecochco de José María Morelos',
+            'nombre' =>  'MAZATECOCHCO DE JOSÉ MARÍA MORELOS',
             'estado_id' => '29',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Contla de Juan Cuamatzi',
+            'nombre' =>  'CONTLA DE JUAN CUAMATZI',
             'estado_id' => '29',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepetitla de Lardizábal',
+            'nombre' =>  'TEPETITLA DE LARDIZÁBAL',
             'estado_id' => '29',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sanctórum de Lázaro Cárdenas',
+            'nombre' =>  'SANCTÓRUM DE LÁZARO CÁRDENAS',
             'estado_id' => '29',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nanacamilpa de Mariano Arista',
+            'nombre' =>  'NANACAMILPA DE MARIANO ARISTA',
             'estado_id' => '29',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acuamanala de Miguel Hidalgo',
+            'nombre' =>  'ACUAMANALA DE MIGUEL HIDALGO',
             'estado_id' => '29',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Natívitas',
+            'nombre' =>  'NATÍVITAS',
             'estado_id' => '29',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Panotla',
+            'nombre' =>  'PANOTLA',
             'estado_id' => '29',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Pablo del Monte',
+            'nombre' =>  'SAN PABLO DEL MONTE',
             'estado_id' => '29',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz Tlaxcala',
+            'nombre' =>  'SANTA CRUZ TLAXCALA',
             'estado_id' => '29',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tenancingo',
+            'nombre' =>  'TENANCINGO',
             'estado_id' => '29',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teolocholco',
+            'nombre' =>  'TEOLOCHOLCO',
             'estado_id' => '29',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepeyanco',
+            'nombre' =>  'TEPEYANCO',
             'estado_id' => '29',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Terrenate',
+            'nombre' =>  'TERRENATE',
             'estado_id' => '29',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tetla de la Solidaridad',
+            'nombre' =>  'TETLA DE LA SOLIDARIDAD',
             'estado_id' => '29',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tetlatlahuca',
+            'nombre' =>  'TETLATLAHUCA',
             'estado_id' => '29',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlaxcala',
+            'nombre' =>  'TLAXCALA',
             'estado_id' => '29',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlaxco',
+            'nombre' =>  'TLAXCO',
             'estado_id' => '29',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tocatlán',
+            'nombre' =>  'TOCATLÁN',
             'estado_id' => '29',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Totolac',
+            'nombre' =>  'TOTOLAC',
             'estado_id' => '29',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ziltlaltépec de Trinidad Sánchez Santos',
+            'nombre' =>  'ZILTLALTÉPEC DE TRINIDAD SÁNCHEZ SANTOS',
             'estado_id' => '29',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tzompantepec',
+            'nombre' =>  'TZOMPANTEPEC',
             'estado_id' => '29',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xaloztoc',
+            'nombre' =>  'XALOZTOC',
             'estado_id' => '29',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xaltocan',
+            'nombre' =>  'XALTOCAN',
             'estado_id' => '29',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Papalotla de Xicohténcatl',
+            'nombre' =>  'PAPALOTLA DE XICOHTÉNCATL',
             'estado_id' => '29',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xicohtzinco',
+            'nombre' =>  'XICOHTZINCO',
             'estado_id' => '29',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yauhquemehcan',
+            'nombre' =>  'YAUHQUEMEHCAN',
             'estado_id' => '29',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zacatelco',
+            'nombre' =>  'ZACATELCO',
             'estado_id' => '29',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Benito Juárez',
+            'nombre' =>  'BENITO JUÁREZ',
             'estado_id' => '29',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Emiliano Zapata',
+            'nombre' =>  'EMILIANO ZAPATA',
             'estado_id' => '29',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Lázaro Cárdenas',
+            'nombre' =>  'LÁZARO CÁRDENAS',
             'estado_id' => '29',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Magdalena Tlaltelulco',
+            'nombre' =>  'LA MAGDALENA TLALTELULCO',
             'estado_id' => '29',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Damián Texóloc',
+            'nombre' =>  'SAN DAMIÁN TEXÓLOC',
             'estado_id' => '29',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Francisco Tetlanohcan',
+            'nombre' =>  'SAN FRANCISCO TETLANOHCAN',
             'estado_id' => '29',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Jerónimo Zacualpan',
+            'nombre' =>  'SAN JERÓNIMO ZACUALPAN',
             'estado_id' => '29',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San José Teacalco',
+            'nombre' =>  'SAN JOSÉ TEACALCO',
             'estado_id' => '29',
             'number' =>  '052',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Huactzinco',
+            'nombre' =>  'SAN JUAN HUACTZINCO',
             'estado_id' => '29',
             'number' =>  '053',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Lorenzo Axocomanitla',
+            'nombre' =>  'SAN LORENZO AXOCOMANITLA',
             'estado_id' => '29',
             'number' =>  '054',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Lucas Tecopilco',
+            'nombre' =>  'SAN LUCAS TECOPILCO',
             'estado_id' => '29',
             'number' =>  '055',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Ana Nopalucan',
+            'nombre' =>  'SANTA ANA NOPALUCAN',
             'estado_id' => '29',
             'number' =>  '056',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Apolonia Teacalco',
+            'nombre' =>  'SANTA APOLONIA TEACALCO',
             'estado_id' => '29',
             'number' =>  '057',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Catarina Ayometla',
+            'nombre' =>  'SANTA CATARINA AYOMETLA',
             'estado_id' => '29',
             'number' =>  '058',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Cruz Quilehtla',
+            'nombre' =>  'SANTA CRUZ QUILEHTLA',
             'estado_id' => '29',
             'number' =>  '059',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Isabel Xiloxoxtla',
+            'nombre' =>  'SANTA ISABEL XILOXOXTLA',
             'estado_id' => '29',
             'number' =>  '060',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acajete',
+            'nombre' =>  'ACAJETE',
             'estado_id' => '30',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acatlán',
+            'nombre' =>  'ACATLÁN',
             'estado_id' => '30',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acayucan',
+            'nombre' =>  'ACAYUCAN',
             'estado_id' => '30',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Actopan',
+            'nombre' =>  'ACTOPAN',
             'estado_id' => '30',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acula',
+            'nombre' =>  'ACULA',
             'estado_id' => '30',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acultzingo',
+            'nombre' =>  'ACULTZINGO',
             'estado_id' => '30',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Camarón de Tejeda',
+            'nombre' =>  'CAMARÓN DE TEJEDA',
             'estado_id' => '30',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Alpatláhuac',
+            'nombre' =>  'ALPATLÁHUAC',
             'estado_id' => '30',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Alto Lucero de Gutiérrez Barrios',
+            'nombre' =>  'ALTO LUCERO DE GUTIÉRREZ BARRIOS',
             'estado_id' => '30',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Altotonga',
+            'nombre' =>  'ALTOTONGA',
             'estado_id' => '30',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Alvarado',
+            'nombre' =>  'ALVARADO',
             'estado_id' => '30',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amatitlán',
+            'nombre' =>  'AMATITLÁN',
             'estado_id' => '30',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Naranjos Amatlán',
+            'nombre' =>  'NARANJOS AMATLÁN',
             'estado_id' => '30',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Amatlán de los Reyes',
+            'nombre' =>  'AMATLÁN DE LOS REYES',
             'estado_id' => '30',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Angel R. Cabada',
+            'nombre' =>  'ANGEL R. CABADA',
             'estado_id' => '30',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Antigua',
+            'nombre' =>  'LA ANTIGUA',
             'estado_id' => '30',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Apazapan',
+            'nombre' =>  'APAZAPAN',
             'estado_id' => '30',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Aquila',
+            'nombre' =>  'AQUILA',
             'estado_id' => '30',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Astacinga',
+            'nombre' =>  'ASTACINGA',
             'estado_id' => '30',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atlahuilco',
+            'nombre' =>  'ATLAHUILCO',
             'estado_id' => '30',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atoyac',
+            'nombre' =>  'ATOYAC',
             'estado_id' => '30',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atzacan',
+            'nombre' =>  'ATZACAN',
             'estado_id' => '30',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atzalan',
+            'nombre' =>  'ATZALAN',
             'estado_id' => '30',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlaltetela',
+            'nombre' =>  'TLALTETELA',
             'estado_id' => '30',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ayahualulco',
+            'nombre' =>  'AYAHUALULCO',
             'estado_id' => '30',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Banderilla',
+            'nombre' =>  'BANDERILLA',
             'estado_id' => '30',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Benito Juárez',
+            'nombre' =>  'BENITO JUÁREZ',
             'estado_id' => '30',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Boca del Río',
+            'nombre' =>  'BOCA DEL RÍO',
             'estado_id' => '30',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Calcahualco',
+            'nombre' =>  'CALCAHUALCO',
             'estado_id' => '30',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Camerino Z. Mendoza',
+            'nombre' =>  'CAMERINO Z. MENDOZA',
             'estado_id' => '30',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Carrillo Puerto',
+            'nombre' =>  'CARRILLO PUERTO',
             'estado_id' => '30',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Catemaco',
+            'nombre' =>  'CATEMACO',
             'estado_id' => '30',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cazones de Herrera',
+            'nombre' =>  'CAZONES DE HERRERA',
             'estado_id' => '30',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cerro Azul',
+            'nombre' =>  'CERRO AZUL',
             'estado_id' => '30',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Citlaltépetl',
+            'nombre' =>  'CITLALTÉPETL',
             'estado_id' => '30',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coacoatzintla',
+            'nombre' =>  'COACOATZINTLA',
             'estado_id' => '30',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coahuitlán',
+            'nombre' =>  'COAHUITLÁN',
             'estado_id' => '30',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coatepec',
+            'nombre' =>  'COATEPEC',
             'estado_id' => '30',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coatzacoalcos',
+            'nombre' =>  'COATZACOALCOS',
             'estado_id' => '30',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coatzintla',
+            'nombre' =>  'COATZINTLA',
             'estado_id' => '30',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coetzala',
+            'nombre' =>  'COETZALA',
             'estado_id' => '30',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Colipa',
+            'nombre' =>  'COLIPA',
             'estado_id' => '30',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Comapa',
+            'nombre' =>  'COMAPA',
             'estado_id' => '30',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Córdoba',
+            'nombre' =>  'CÓRDOBA',
             'estado_id' => '30',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cosamaloapan de Carpio',
+            'nombre' =>  'COSAMALOAPAN DE CARPIO',
             'estado_id' => '30',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cosautlán de Carvajal',
+            'nombre' =>  'COSAUTLÁN DE CARVAJAL',
             'estado_id' => '30',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coscomatepec',
+            'nombre' =>  'COSCOMATEPEC',
             'estado_id' => '30',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cosoleacaque',
+            'nombre' =>  'COSOLEACAQUE',
             'estado_id' => '30',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cotaxtla',
+            'nombre' =>  'COTAXTLA',
             'estado_id' => '30',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coxquihui',
+            'nombre' =>  'COXQUIHUI',
             'estado_id' => '30',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Coyutla',
+            'nombre' =>  'COYUTLA',
             'estado_id' => '30',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuichapa',
+            'nombre' =>  'CUICHAPA',
             'estado_id' => '30',
             'number' =>  '052',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuitláhuac',
+            'nombre' =>  'CUITLÁHUAC',
             'estado_id' => '30',
             'number' =>  '053',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chacaltianguis',
+            'nombre' =>  'CHACALTIANGUIS',
             'estado_id' => '30',
             'number' =>  '054',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chalma',
+            'nombre' =>  'CHALMA',
             'estado_id' => '30',
             'number' =>  '055',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chiconombrel',
+            'nombre' =>  'CHICOnombreL',
             'estado_id' => '30',
             'number' =>  '056',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chiconquiaco',
+            'nombre' =>  'CHICONQUIACO',
             'estado_id' => '30',
             'number' =>  '057',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chicontepec',
+            'nombre' =>  'CHICONTEPEC',
             'estado_id' => '30',
             'number' =>  '058',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chinombreca',
+            'nombre' =>  'CHInombreCA',
             'estado_id' => '30',
             'number' =>  '059',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chinampa de Gorostiza',
+            'nombre' =>  'CHINAMPA DE GOROSTIZA',
             'estado_id' => '30',
             'number' =>  '060',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Las Choapas',
+            'nombre' =>  'LAS CHOAPAS',
             'estado_id' => '30',
             'number' =>  '061',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chocamán',
+            'nombre' =>  'CHOCAMÁN',
             'estado_id' => '30',
             'number' =>  '062',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chontla',
+            'nombre' =>  'CHONTLA',
             'estado_id' => '30',
             'number' =>  '063',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chumatlán',
+            'nombre' =>  'CHUMATLÁN',
             'estado_id' => '30',
             'number' =>  '064',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Emiliano Zapata',
+            'nombre' =>  'EMILIANO ZAPATA',
             'estado_id' => '30',
             'number' =>  '065',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Espinal',
+            'nombre' =>  'ESPINAL',
             'estado_id' => '30',
             'number' =>  '066',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Filomeno Mata',
+            'nombre' =>  'FILOMENO MATA',
             'estado_id' => '30',
             'number' =>  '067',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Fortín',
+            'nombre' =>  'FORTÍN',
             'estado_id' => '30',
             'number' =>  '068',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Gutiérrez Zamora',
+            'nombre' =>  'GUTIÉRREZ ZAMORA',
             'estado_id' => '30',
             'number' =>  '069',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hidalgotitlán',
+            'nombre' =>  'HIDALGOTITLÁN',
             'estado_id' => '30',
             'number' =>  '070',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huatusco',
+            'nombre' =>  'HUATUSCO',
             'estado_id' => '30',
             'number' =>  '071',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huayacocotla',
+            'nombre' =>  'HUAYACOCOTLA',
             'estado_id' => '30',
             'number' =>  '072',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hueyapan de Ocampo',
+            'nombre' =>  'HUEYAPAN DE OCAMPO',
             'estado_id' => '30',
             'number' =>  '073',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huiloapan de Cuauhtémoc',
+            'nombre' =>  'HUILOAPAN DE CUAUHTÉMOC',
             'estado_id' => '30',
             'number' =>  '074',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ignacio de la Llave',
+            'nombre' =>  'IGNACIO DE LA LLAVE',
             'estado_id' => '30',
             'number' =>  '075',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ilamatlán',
+            'nombre' =>  'ILAMATLÁN',
             'estado_id' => '30',
             'number' =>  '076',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Isla',
+            'nombre' =>  'ISLA',
             'estado_id' => '30',
             'number' =>  '077',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixcatepec',
+            'nombre' =>  'IXCATEPEC',
             'estado_id' => '30',
             'number' =>  '078',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixhuacán de los Reyes',
+            'nombre' =>  'IXHUACÁN DE LOS REYES',
             'estado_id' => '30',
             'number' =>  '079',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixhuatlán del Café',
+            'nombre' =>  'IXHUATLÁN DEL CAFÉ',
             'estado_id' => '30',
             'number' =>  '080',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixhuatlancillo',
+            'nombre' =>  'IXHUATLANCILLO',
             'estado_id' => '30',
             'number' =>  '081',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixhuatlán del Sureste',
+            'nombre' =>  'IXHUATLÁN DEL SURESTE',
             'estado_id' => '30',
             'number' =>  '082',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixhuatlán de Madero',
+            'nombre' =>  'IXHUATLÁN DE MADERO',
             'estado_id' => '30',
             'number' =>  '083',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixmatlahuacan',
+            'nombre' =>  'IXMATLAHUACAN',
             'estado_id' => '30',
             'number' =>  '084',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixtaczoquitlán',
+            'nombre' =>  'IXTACZOQUITLÁN',
             'estado_id' => '30',
             'number' =>  '085',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jalacingo',
+            'nombre' =>  'JALACINGO',
             'estado_id' => '30',
             'number' =>  '086',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xalapa',
+            'nombre' =>  'XALAPA',
             'estado_id' => '30',
             'number' =>  '087',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jalcomulco',
+            'nombre' =>  'JALCOMULCO',
             'estado_id' => '30',
             'number' =>  '088',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jáltipan',
+            'nombre' =>  'JÁLTIPAN',
             'estado_id' => '30',
             'number' =>  '089',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jamapa',
+            'nombre' =>  'JAMAPA',
             'estado_id' => '30',
             'number' =>  '090',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jesús Carranza',
+            'nombre' =>  'JESÚS CARRANZA',
             'estado_id' => '30',
             'number' =>  '091',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xico',
+            'nombre' =>  'XICO',
             'estado_id' => '30',
             'number' =>  '092',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jilotepec',
+            'nombre' =>  'JILOTEPEC',
             'estado_id' => '30',
             'number' =>  '093',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juan Rodríguez Clara',
+            'nombre' =>  'JUAN RODRÍGUEZ CLARA',
             'estado_id' => '30',
             'number' =>  '094',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juchique de Ferrer',
+            'nombre' =>  'JUCHIQUE DE FERRER',
             'estado_id' => '30',
             'number' =>  '095',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Landero y Coss',
+            'nombre' =>  'LANDERO Y COSS',
             'estado_id' => '30',
             'number' =>  '096',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Lerdo de Tejada',
+            'nombre' =>  'LERDO DE TEJADA',
             'estado_id' => '30',
             'number' =>  '097',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Magdalena',
+            'nombre' =>  'MAGDALENA',
             'estado_id' => '30',
             'number' =>  '098',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Maltrata',
+            'nombre' =>  'MALTRATA',
             'estado_id' => '30',
             'number' =>  '099',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Manlio Fabio Altamirano',
+            'nombre' =>  'MANLIO FABIO ALTAMIRANO',
             'estado_id' => '30',
             'number' =>  '100',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mariano Escobedo',
+            'nombre' =>  'MARIANO ESCOBEDO',
             'estado_id' => '30',
             'number' =>  '101',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Martínez de la Torre',
+            'nombre' =>  'MARTÍNEZ DE LA TORRE',
             'estado_id' => '30',
             'number' =>  '102',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mecatlán',
+            'nombre' =>  'MECATLÁN',
             'estado_id' => '30',
             'number' =>  '103',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mecayapan',
+            'nombre' =>  'MECAYAPAN',
             'estado_id' => '30',
             'number' =>  '104',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Medellín de Bravo',
+            'nombre' =>  'MEDELLÍN DE BRAVO',
             'estado_id' => '30',
             'number' =>  '105',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Miahuatlán',
+            'nombre' =>  'MIAHUATLÁN',
             'estado_id' => '30',
             'number' =>  '106',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Las Minas',
+            'nombre' =>  'LAS MINAS',
             'estado_id' => '30',
             'number' =>  '107',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Minatitlán',
+            'nombre' =>  'MINATITLÁN',
             'estado_id' => '30',
             'number' =>  '108',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Misantla',
+            'nombre' =>  'MISANTLA',
             'estado_id' => '30',
             'number' =>  '109',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mixtla de Altamirano',
+            'nombre' =>  'MIXTLA DE ALTAMIRANO',
             'estado_id' => '30',
             'number' =>  '110',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Moloacán',
+            'nombre' =>  'MOLOACÁN',
             'estado_id' => '30',
             'number' =>  '111',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Naolinco',
+            'nombre' =>  'NAOLINCO',
             'estado_id' => '30',
             'number' =>  '112',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Naranjal',
+            'nombre' =>  'NARANJAL',
             'estado_id' => '30',
             'number' =>  '113',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nautla',
+            'nombre' =>  'NAUTLA',
             'estado_id' => '30',
             'number' =>  '114',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nogales',
+            'nombre' =>  'NOGALES',
             'estado_id' => '30',
             'number' =>  '115',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Oluta',
+            'nombre' =>  'OLUTA',
             'estado_id' => '30',
             'number' =>  '116',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Omealca',
+            'nombre' =>  'OMEALCA',
             'estado_id' => '30',
             'number' =>  '117',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Orizaba',
+            'nombre' =>  'ORIZABA',
             'estado_id' => '30',
             'number' =>  '118',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Otatitlán',
+            'nombre' =>  'OTATITLÁN',
             'estado_id' => '30',
             'number' =>  '119',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Oteapan',
+            'nombre' =>  'OTEAPAN',
             'estado_id' => '30',
             'number' =>  '120',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ozuluama de Mascareñas',
+            'nombre' =>  'OZULUAMA DE MASCAREÑAS',
             'estado_id' => '30',
             'number' =>  '121',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pajapan',
+            'nombre' =>  'PAJAPAN',
             'estado_id' => '30',
             'number' =>  '122',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pánuco',
+            'nombre' =>  'PÁNUCO',
             'estado_id' => '30',
             'number' =>  '123',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Papantla',
+            'nombre' =>  'PAPANTLA',
             'estado_id' => '30',
             'number' =>  '124',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Paso del Macho',
+            'nombre' =>  'PASO DEL MACHO',
             'estado_id' => '30',
             'number' =>  '125',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Paso de Ovejas',
+            'nombre' =>  'PASO DE OVEJAS',
             'estado_id' => '30',
             'number' =>  '126',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'La Perla',
+            'nombre' =>  'LA PERLA',
             'estado_id' => '30',
             'number' =>  '127',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Perote',
+            'nombre' =>  'PEROTE',
             'estado_id' => '30',
             'number' =>  '128',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Platón Sánchez',
+            'nombre' =>  'PLATÓN SÁNCHEZ',
             'estado_id' => '30',
             'number' =>  '129',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Playa Vicente',
+            'nombre' =>  'PLAYA VICENTE',
             'estado_id' => '30',
             'number' =>  '130',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Poza Rica de Hidalgo',
+            'nombre' =>  'POZA RICA DE HIDALGO',
             'estado_id' => '30',
             'number' =>  '131',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Las Vigas de Ramírez',
+            'nombre' =>  'LAS VIGAS DE RAMÍREZ',
             'estado_id' => '30',
             'number' =>  '132',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pueblo Viejo',
+            'nombre' =>  'PUEBLO VIEJO',
             'estado_id' => '30',
             'number' =>  '133',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Puente Nacional',
+            'nombre' =>  'PUENTE NACIONAL',
             'estado_id' => '30',
             'number' =>  '134',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rafael Delgado',
+            'nombre' =>  'RAFAEL DELGADO',
             'estado_id' => '30',
             'number' =>  '135',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Rafael Lucio',
+            'nombre' =>  'RAFAEL LUCIO',
             'estado_id' => '30',
             'number' =>  '136',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Los Reyes',
+            'nombre' =>  'LOS REYES',
             'estado_id' => '30',
             'number' =>  '137',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Río Blanco',
+            'nombre' =>  'RÍO BLANCO',
             'estado_id' => '30',
             'number' =>  '138',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Saltabarranca',
+            'nombre' =>  'SALTABARRANCA',
             'estado_id' => '30',
             'number' =>  '139',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Tenejapan',
+            'nombre' =>  'SAN ANDRÉS TENEJAPAN',
             'estado_id' => '30',
             'number' =>  '140',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Andrés Tuxtla',
+            'nombre' =>  'SAN ANDRÉS TUXTLA',
             'estado_id' => '30',
             'number' =>  '141',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Juan Evangelista',
+            'nombre' =>  'SAN JUAN EVANGELISTA',
             'estado_id' => '30',
             'number' =>  '142',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Tuxtla',
+            'nombre' =>  'SANTIAGO TUXTLA',
             'estado_id' => '30',
             'number' =>  '143',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sayula de Alemán',
+            'nombre' =>  'SAYULA DE ALEMÁN',
             'estado_id' => '30',
             'number' =>  '144',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Soconusco',
+            'nombre' =>  'SOCONUSCO',
             'estado_id' => '30',
             'number' =>  '145',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sochiapa',
+            'nombre' =>  'SOCHIAPA',
             'estado_id' => '30',
             'number' =>  '146',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Soledad Atzompa',
+            'nombre' =>  'SOLEDAD ATZOMPA',
             'estado_id' => '30',
             'number' =>  '147',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Soledad de Doblado',
+            'nombre' =>  'SOLEDAD DE DOBLADO',
             'estado_id' => '30',
             'number' =>  '148',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Soteapan',
+            'nombre' =>  'SOTEAPAN',
             'estado_id' => '30',
             'number' =>  '149',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tamalín',
+            'nombre' =>  'TAMALÍN',
             'estado_id' => '30',
             'number' =>  '150',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tamiahua',
+            'nombre' =>  'TAMIAHUA',
             'estado_id' => '30',
             'number' =>  '151',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tampico Alto',
+            'nombre' =>  'TAMPICO ALTO',
             'estado_id' => '30',
             'number' =>  '152',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tancoco',
+            'nombre' =>  'TANCOCO',
             'estado_id' => '30',
             'number' =>  '153',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tantima',
+            'nombre' =>  'TANTIMA',
             'estado_id' => '30',
             'number' =>  '154',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tantoyuca',
+            'nombre' =>  'TANTOYUCA',
             'estado_id' => '30',
             'number' =>  '155',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tatatila',
+            'nombre' =>  'TATATILA',
             'estado_id' => '30',
             'number' =>  '156',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Castillo de Teayo',
+            'nombre' =>  'CASTILLO DE TEAYO',
             'estado_id' => '30',
             'number' =>  '157',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tecolutla',
+            'nombre' =>  'TECOLUTLA',
             'estado_id' => '30',
             'number' =>  '158',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tehuipango',
+            'nombre' =>  'TEHUIPANGO',
             'estado_id' => '30',
             'number' =>  '159',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Álamo Temapache',
+            'nombre' =>  'ÁLAMO TEMAPACHE',
             'estado_id' => '30',
             'number' =>  '160',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tempoal',
+            'nombre' =>  'TEMPOAL',
             'estado_id' => '30',
             'number' =>  '161',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tenampa',
+            'nombre' =>  'TENAMPA',
             'estado_id' => '30',
             'number' =>  '162',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tenochtitlán',
+            'nombre' =>  'TENOCHTITLÁN',
             'estado_id' => '30',
             'number' =>  '163',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teocelo',
+            'nombre' =>  'TEOCELO',
             'estado_id' => '30',
             'number' =>  '164',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepatlaxco',
+            'nombre' =>  'TEPATLAXCO',
             'estado_id' => '30',
             'number' =>  '165',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepetlán',
+            'nombre' =>  'TEPETLÁN',
             'estado_id' => '30',
             'number' =>  '166',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepetzintla',
+            'nombre' =>  'TEPETZINTLA',
             'estado_id' => '30',
             'number' =>  '167',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tequila',
+            'nombre' =>  'TEQUILA',
             'estado_id' => '30',
             'number' =>  '168',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'José Azueta',
+            'nombre' =>  'JOSÉ AZUETA',
             'estado_id' => '30',
             'number' =>  '169',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Texcatepec',
+            'nombre' =>  'TEXCATEPEC',
             'estado_id' => '30',
             'number' =>  '170',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Texhuacán',
+            'nombre' =>  'TEXHUACÁN',
             'estado_id' => '30',
             'number' =>  '171',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Texistepec',
+            'nombre' =>  'TEXISTEPEC',
             'estado_id' => '30',
             'number' =>  '172',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tezonapa',
+            'nombre' =>  'TEZONAPA',
             'estado_id' => '30',
             'number' =>  '173',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tierra Blanca',
+            'nombre' =>  'TIERRA BLANCA',
             'estado_id' => '30',
             'number' =>  '174',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tihuatlán',
+            'nombre' =>  'TIHUATLÁN',
             'estado_id' => '30',
             'number' =>  '175',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlacojalpan',
+            'nombre' =>  'TLACOJALPAN',
             'estado_id' => '30',
             'number' =>  '176',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlacolulan',
+            'nombre' =>  'TLACOLULAN',
             'estado_id' => '30',
             'number' =>  '177',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlacotalpan',
+            'nombre' =>  'TLACOTALPAN',
             'estado_id' => '30',
             'number' =>  '178',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlacotepec de Mejía',
+            'nombre' =>  'TLACOTEPEC DE MEJÍA',
             'estado_id' => '30',
             'number' =>  '179',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlachichilco',
+            'nombre' =>  'TLACHICHILCO',
             'estado_id' => '30',
             'number' =>  '180',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlalixcoyan',
+            'nombre' =>  'TLALIXCOYAN',
             'estado_id' => '30',
             'number' =>  '181',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlalnelhuayocan',
+            'nombre' =>  'TLALNELHUAYOCAN',
             'estado_id' => '30',
             'number' =>  '182',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlapacoyan',
+            'nombre' =>  'TLAPACOYAN',
             'estado_id' => '30',
             'number' =>  '183',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlaquilpa',
+            'nombre' =>  'TLAQUILPA',
             'estado_id' => '30',
             'number' =>  '184',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlilapan',
+            'nombre' =>  'TLILAPAN',
             'estado_id' => '30',
             'number' =>  '185',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tomatlán',
+            'nombre' =>  'TOMATLÁN',
             'estado_id' => '30',
             'number' =>  '186',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tonayán',
+            'nombre' =>  'TONAYÁN',
             'estado_id' => '30',
             'number' =>  '187',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Totutla',
+            'nombre' =>  'TOTUTLA',
             'estado_id' => '30',
             'number' =>  '188',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tuxpan',
+            'nombre' =>  'TUXPAN',
             'estado_id' => '30',
             'number' =>  '189',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tuxtilla',
+            'nombre' =>  'TUXTILLA',
             'estado_id' => '30',
             'number' =>  '190',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ursulo Galván',
+            'nombre' =>  'URSULO GALVÁN',
             'estado_id' => '30',
             'number' =>  '191',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Vega de Alatorre',
+            'nombre' =>  'VEGA DE ALATORRE',
             'estado_id' => '30',
             'number' =>  '192',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Veracruz',
+            'nombre' =>  'VERACRUZ',
             'estado_id' => '30',
             'number' =>  '193',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Aldama',
+            'nombre' =>  'VILLA ALDAMA',
             'estado_id' => '30',
             'number' =>  '194',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xoxocotla',
+            'nombre' =>  'XOXOCOTLA',
             'estado_id' => '30',
             'number' =>  '195',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yanga',
+            'nombre' =>  'YANGA',
             'estado_id' => '30',
             'number' =>  '196',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yecuatla',
+            'nombre' =>  'YECUATLA',
             'estado_id' => '30',
             'number' =>  '197',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zacualpan',
+            'nombre' =>  'ZACUALPAN',
             'estado_id' => '30',
             'number' =>  '198',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zaragoza',
+            'nombre' =>  'ZARAGOZA',
             'estado_id' => '30',
             'number' =>  '199',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zentla',
+            'nombre' =>  'ZENTLA',
             'estado_id' => '30',
             'number' =>  '200',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zongolica',
+            'nombre' =>  'ZONGOLICA',
             'estado_id' => '30',
             'number' =>  '201',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zontecomatlán de López y Fuentes',
+            'nombre' =>  'ZONTECOMATLÁN DE LÓPEZ Y FUENTES',
             'estado_id' => '30',
             'number' =>  '202',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zozocolco de Hidalgo',
+            'nombre' =>  'ZOZOCOLCO DE HIDALGO',
             'estado_id' => '30',
             'number' =>  '203',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Agua Dulce',
+            'nombre' =>  'AGUA DULCE',
             'estado_id' => '30',
             'number' =>  '204',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Higo',
+            'nombre' =>  'EL HIGO',
             'estado_id' => '30',
             'number' =>  '205',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nanchital de Lázaro Cárdenas del Río',
+            'nombre' =>  'NANCHITAL DE LÁZARO CÁRDENAS DEL RÍO',
             'estado_id' => '30',
             'number' =>  '206',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tres Valles',
+            'nombre' =>  'TRES VALLES',
             'estado_id' => '30',
             'number' =>  '207',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Carlos A. Carrillo',
+            'nombre' =>  'CARLOS A. CARRILLO',
             'estado_id' => '30',
             'number' =>  '208',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tatahuicapan de Juárez',
+            'nombre' =>  'TATAHUICAPAN DE JUÁREZ',
             'estado_id' => '30',
             'number' =>  '209',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Uxpanapa',
+            'nombre' =>  'UXPANAPA',
             'estado_id' => '30',
             'number' =>  '210',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Rafael',
+            'nombre' =>  'SAN RAFAEL',
             'estado_id' => '30',
             'number' =>  '211',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santiago Sochiapan',
+            'nombre' =>  'SANTIAGO SOCHIAPAN',
             'estado_id' => '30',
             'number' =>  '212',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Abalá',
+            'nombre' =>  'ABALÁ',
             'estado_id' => '31',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Acanceh',
+            'nombre' =>  'ACANCEH',
             'estado_id' => '31',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Akil',
+            'nombre' =>  'AKIL',
             'estado_id' => '31',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Baca',
+            'nombre' =>  'BACA',
             'estado_id' => '31',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Bokobá',
+            'nombre' =>  'BOKOBÁ',
             'estado_id' => '31',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Buctzotz',
+            'nombre' =>  'BUCTZOTZ',
             'estado_id' => '31',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cacalchén',
+            'nombre' =>  'CACALCHÉN',
             'estado_id' => '31',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Calotmul',
+            'nombre' =>  'CALOTMUL',
             'estado_id' => '31',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cansahcab',
+            'nombre' =>  'CANSAHCAB',
             'estado_id' => '31',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cantamayec',
+            'nombre' =>  'CANTAMAYEC',
             'estado_id' => '31',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Celestún',
+            'nombre' =>  'CELESTÚN',
             'estado_id' => '31',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cenotillo',
+            'nombre' =>  'CENOTILLO',
             'estado_id' => '31',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Conkal',
+            'nombre' =>  'CONKAL',
             'estado_id' => '31',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuncunul',
+            'nombre' =>  'CUNCUNUL',
             'estado_id' => '31',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuzamá',
+            'nombre' =>  'CUZAMÁ',
             'estado_id' => '31',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chacsinkín',
+            'nombre' =>  'CHACSINKÍN',
             'estado_id' => '31',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chankom',
+            'nombre' =>  'CHANKOM',
             'estado_id' => '31',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chapab',
+            'nombre' =>  'CHAPAB',
             'estado_id' => '31',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chemax',
+            'nombre' =>  'CHEMAX',
             'estado_id' => '31',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chicxulub Pueblo',
+            'nombre' =>  'CHICXULUB PUEBLO',
             'estado_id' => '31',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chichimilá',
+            'nombre' =>  'CHICHIMILÁ',
             'estado_id' => '31',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chikindzonot',
+            'nombre' =>  'CHIKINDZONOT',
             'estado_id' => '31',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chocholá',
+            'nombre' =>  'CHOCHOLÁ',
             'estado_id' => '31',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chumayel',
+            'nombre' =>  'CHUMAYEL',
             'estado_id' => '31',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Dzán',
+            'nombre' =>  'DZÁN',
             'estado_id' => '31',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Dzemul',
+            'nombre' =>  'DZEMUL',
             'estado_id' => '31',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Dzidzantún',
+            'nombre' =>  'DZIDZANTÚN',
             'estado_id' => '31',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Dzilam de Bravo',
+            'nombre' =>  'DZILAM DE BRAVO',
             'estado_id' => '31',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Dzilam González',
+            'nombre' =>  'DZILAM GONZÁLEZ',
             'estado_id' => '31',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Dzitás',
+            'nombre' =>  'DZITÁS',
             'estado_id' => '31',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Dzoncauich',
+            'nombre' =>  'DZONCAUICH',
             'estado_id' => '31',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Espita',
+            'nombre' =>  'ESPITA',
             'estado_id' => '31',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Halachó',
+            'nombre' =>  'HALACHÓ',
             'estado_id' => '31',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hocabá',
+            'nombre' =>  'HOCABÁ',
             'estado_id' => '31',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hoctún',
+            'nombre' =>  'HOCTÚN',
             'estado_id' => '31',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Homún',
+            'nombre' =>  'HOMÚN',
             'estado_id' => '31',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huhí',
+            'nombre' =>  'HUHÍ',
             'estado_id' => '31',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Hunucmá',
+            'nombre' =>  'HUNUCMÁ',
             'estado_id' => '31',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ixil',
+            'nombre' =>  'IXIL',
             'estado_id' => '31',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Izamal',
+            'nombre' =>  'IZAMAL',
             'estado_id' => '31',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Kanasín',
+            'nombre' =>  'KANASÍN',
             'estado_id' => '31',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Kantunil',
+            'nombre' =>  'KANTUNIL',
             'estado_id' => '31',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Kaua',
+            'nombre' =>  'KAUA',
             'estado_id' => '31',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Kinchil',
+            'nombre' =>  'KINCHIL',
             'estado_id' => '31',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Kopomá',
+            'nombre' =>  'KOPOMÁ',
             'estado_id' => '31',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mama',
+            'nombre' =>  'MAMA',
             'estado_id' => '31',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Maní',
+            'nombre' =>  'MANÍ',
             'estado_id' => '31',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Maxcanú',
+            'nombre' =>  'MAXCANÚ',
             'estado_id' => '31',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mayapán',
+            'nombre' =>  'MAYAPÁN',
             'estado_id' => '31',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mérida',
+            'nombre' =>  'MÉRIDA',
             'estado_id' => '31',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mocochá',
+            'nombre' =>  'MOCOCHÁ',
             'estado_id' => '31',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Motul',
+            'nombre' =>  'MOTUL',
             'estado_id' => '31',
             'number' =>  '052',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Muna',
+            'nombre' =>  'MUNA',
             'estado_id' => '31',
             'number' =>  '053',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Muxupip',
+            'nombre' =>  'MUXUPIP',
             'estado_id' => '31',
             'number' =>  '054',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Opichén',
+            'nombre' =>  'OPICHÉN',
             'estado_id' => '31',
             'number' =>  '055',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Oxkutzcab',
+            'nombre' =>  'OXKUTZCAB',
             'estado_id' => '31',
             'number' =>  '056',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Panabá',
+            'nombre' =>  'PANABÁ',
             'estado_id' => '31',
             'number' =>  '057',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Peto',
+            'nombre' =>  'PETO',
             'estado_id' => '31',
             'number' =>  '058',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Progreso',
+            'nombre' =>  'PROGRESO',
             'estado_id' => '31',
             'number' =>  '059',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Quintana Roo',
+            'nombre' =>  'QUINTANA ROO',
             'estado_id' => '31',
             'number' =>  '060',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Río Lagartos',
+            'nombre' =>  'RÍO LAGARTOS',
             'estado_id' => '31',
             'number' =>  '061',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sacalum',
+            'nombre' =>  'SACALUM',
             'estado_id' => '31',
             'number' =>  '062',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Samahil',
+            'nombre' =>  'SAMAHIL',
             'estado_id' => '31',
             'number' =>  '063',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sanahcat',
+            'nombre' =>  'SANAHCAT',
             'estado_id' => '31',
             'number' =>  '064',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'San Felipe',
+            'nombre' =>  'SAN FELIPE',
             'estado_id' => '31',
             'number' =>  '065',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa Elena',
+            'nombre' =>  'SANTA ELENA',
             'estado_id' => '31',
             'number' =>  '066',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Seyé',
+            'nombre' =>  'SEYÉ',
             'estado_id' => '31',
             'number' =>  '067',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sinanché',
+            'nombre' =>  'SINANCHÉ',
             'estado_id' => '31',
             'number' =>  '068',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sotuta',
+            'nombre' =>  'SOTUTA',
             'estado_id' => '31',
             'number' =>  '069',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sucilá',
+            'nombre' =>  'SUCILÁ',
             'estado_id' => '31',
             'number' =>  '070',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sudzal',
+            'nombre' =>  'SUDZAL',
             'estado_id' => '31',
             'number' =>  '071',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Suma',
+            'nombre' =>  'SUMA',
             'estado_id' => '31',
             'number' =>  '072',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tahdziú',
+            'nombre' =>  'TAHDZIÚ',
             'estado_id' => '31',
             'number' =>  '073',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tahmek',
+            'nombre' =>  'TAHMEK',
             'estado_id' => '31',
             'number' =>  '074',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teabo',
+            'nombre' =>  'TEABO',
             'estado_id' => '31',
             'number' =>  '075',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tecoh',
+            'nombre' =>  'TECOH',
             'estado_id' => '31',
             'number' =>  '076',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tekal de Venegas',
+            'nombre' =>  'TEKAL DE VENEGAS',
             'estado_id' => '31',
             'number' =>  '077',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tekantó',
+            'nombre' =>  'TEKANTÓ',
             'estado_id' => '31',
             'number' =>  '078',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tekax',
+            'nombre' =>  'TEKAX',
             'estado_id' => '31',
             'number' =>  '079',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tekit',
+            'nombre' =>  'TEKIT',
             'estado_id' => '31',
             'number' =>  '080',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tekom',
+            'nombre' =>  'TEKOM',
             'estado_id' => '31',
             'number' =>  '081',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Telchac Pueblo',
+            'nombre' =>  'TELCHAC PUEBLO',
             'estado_id' => '31',
             'number' =>  '082',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Telchac Puerto',
+            'nombre' =>  'TELCHAC PUERTO',
             'estado_id' => '31',
             'number' =>  '083',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Temax',
+            'nombre' =>  'TEMAX',
             'estado_id' => '31',
             'number' =>  '084',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Temozón',
+            'nombre' =>  'TEMOZÓN',
             'estado_id' => '31',
             'number' =>  '085',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepakán',
+            'nombre' =>  'TEPAKÁN',
             'estado_id' => '31',
             'number' =>  '086',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tetiz',
+            'nombre' =>  'TETIZ',
             'estado_id' => '31',
             'number' =>  '087',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teya',
+            'nombre' =>  'TEYA',
             'estado_id' => '31',
             'number' =>  '088',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ticul',
+            'nombre' =>  'TICUL',
             'estado_id' => '31',
             'number' =>  '089',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Timucuy',
+            'nombre' =>  'TIMUCUY',
             'estado_id' => '31',
             'number' =>  '090',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tinum',
+            'nombre' =>  'TINUM',
             'estado_id' => '31',
             'number' =>  '091',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tixcacalcupul',
+            'nombre' =>  'TIXCACALCUPUL',
             'estado_id' => '31',
             'number' =>  '092',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tixkokob',
+            'nombre' =>  'TIXKOKOB',
             'estado_id' => '31',
             'number' =>  '093',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tixmehuac',
+            'nombre' =>  'TIXMEHUAC',
             'estado_id' => '31',
             'number' =>  '094',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tixpéhual',
+            'nombre' =>  'TIXPÉHUAL',
             'estado_id' => '31',
             'number' =>  '095',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tizimín',
+            'nombre' =>  'TIZIMÍN',
             'estado_id' => '31',
             'number' =>  '096',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tunkás',
+            'nombre' =>  'TUNKÁS',
             'estado_id' => '31',
             'number' =>  '097',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tzucacab',
+            'nombre' =>  'TZUCACAB',
             'estado_id' => '31',
             'number' =>  '098',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Uayma',
+            'nombre' =>  'UAYMA',
             'estado_id' => '31',
             'number' =>  '099',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ucú',
+            'nombre' =>  'UCÚ',
             'estado_id' => '31',
             'number' =>  '100',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Umán',
+            'nombre' =>  'UMÁN',
             'estado_id' => '31',
             'number' =>  '101',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Valladolid',
+            'nombre' =>  'VALLADOLID',
             'estado_id' => '31',
             'number' =>  '102',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Xocchel',
+            'nombre' =>  'XOCCHEL',
             'estado_id' => '31',
             'number' =>  '103',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yaxcabá',
+            'nombre' =>  'YAXCABÁ',
             'estado_id' => '31',
             'number' =>  '104',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yaxkukul',
+            'nombre' =>  'YAXKUKUL',
             'estado_id' => '31',
             'number' =>  '105',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Yobaín',
+            'nombre' =>  'YOBAÍN',
             'estado_id' => '31',
             'number' =>  '106',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Apozol',
+            'nombre' =>  'APOZOL',
             'estado_id' => '32',
             'number' =>  '001',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Apulco',
+            'nombre' =>  'APULCO',
             'estado_id' => '32',
             'number' =>  '002',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Atolinga',
+            'nombre' =>  'ATOLINGA',
             'estado_id' => '32',
             'number' =>  '003',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Benito Juárez',
+            'nombre' =>  'BENITO JUÁREZ',
             'estado_id' => '32',
             'number' =>  '004',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Calera',
+            'nombre' =>  'CALERA',
             'estado_id' => '32',
             'number' =>  '005',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cañitas de Felipe Pescador',
+            'nombre' =>  'CAÑITAS DE FELIPE PESCADOR',
             'estado_id' => '32',
             'number' =>  '006',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Concepción del Oro',
+            'nombre' =>  'CONCEPCIÓN DEL ORO',
             'estado_id' => '32',
             'number' =>  '007',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Cuauhtémoc',
+            'nombre' =>  'CUAUHTÉMOC',
             'estado_id' => '32',
             'number' =>  '008',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Chalchihuites',
+            'nombre' =>  'CHALCHIHUITES',
             'estado_id' => '32',
             'number' =>  '009',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Fresnillo',
+            'nombre' =>  'FRESNILLO',
             'estado_id' => '32',
             'number' =>  '010',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Trinidad García de la Cadena',
+            'nombre' =>  'TRINIDAD GARCÍA DE LA CADENA',
             'estado_id' => '32',
             'number' =>  '011',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Genaro Codina',
+            'nombre' =>  'GENARO CODINA',
             'estado_id' => '32',
             'number' =>  '012',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'General Enrique Estrada',
+            'nombre' =>  'GENERAL ENRIQUE ESTRADA',
             'estado_id' => '32',
             'number' =>  '013',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'General Francisco R. Murguía',
+            'nombre' =>  'GENERAL FRANCISCO R. MURGUÍA',
             'estado_id' => '32',
             'number' =>  '014',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Plateado de Joaquín Amaro',
+            'nombre' =>  'EL PLATEADO DE JOAQUÍN AMARO',
             'estado_id' => '32',
             'number' =>  '015',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'General Pánfilo Natera',
+            'nombre' =>  'GENERAL PÁNFILO NATERA',
             'estado_id' => '32',
             'number' =>  '016',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Guadalupe',
+            'nombre' =>  'GUADALUPE',
             'estado_id' => '32',
             'number' =>  '017',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Huanusco',
+            'nombre' =>  'HUANUSCO',
             'estado_id' => '32',
             'number' =>  '018',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jalpa',
+            'nombre' =>  'JALPA',
             'estado_id' => '32',
             'number' =>  '019',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jerez',
+            'nombre' =>  'JEREZ',
             'estado_id' => '32',
             'number' =>  '020',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Jiménez del Teul',
+            'nombre' =>  'JIMÉNEZ DEL TEUL',
             'estado_id' => '32',
             'number' =>  '021',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juan Aldama',
+            'nombre' =>  'JUAN ALDAMA',
             'estado_id' => '32',
             'number' =>  '022',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Juchipila',
+            'nombre' =>  'JUCHIPILA',
             'estado_id' => '32',
             'number' =>  '023',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Loreto',
+            'nombre' =>  'LORETO',
             'estado_id' => '32',
             'number' =>  '024',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Luis Moya',
+            'nombre' =>  'LUIS MOYA',
             'estado_id' => '32',
             'number' =>  '025',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mazapil',
+            'nombre' =>  'MAZAPIL',
             'estado_id' => '32',
             'number' =>  '026',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Melchor Ocampo',
+            'nombre' =>  'MELCHOR OCAMPO',
             'estado_id' => '32',
             'number' =>  '027',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Mezquital del Oro',
+            'nombre' =>  'MEZQUITAL DEL ORO',
             'estado_id' => '32',
             'number' =>  '028',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Miguel Auza',
+            'nombre' =>  'MIGUEL AUZA',
             'estado_id' => '32',
             'number' =>  '029',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Momax',
+            'nombre' =>  'MOMAX',
             'estado_id' => '32',
             'number' =>  '030',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Monte Escobedo',
+            'nombre' =>  'MONTE ESCOBEDO',
             'estado_id' => '32',
             'number' =>  '031',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Morelos',
+            'nombre' =>  'MORELOS',
             'estado_id' => '32',
             'number' =>  '032',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Moyahua de Estrada',
+            'nombre' =>  'MOYAHUA DE ESTRADA',
             'estado_id' => '32',
             'number' =>  '033',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Nochistlán de Mejía',
+            'nombre' =>  'NOCHISTLÁN DE MEJÍA',
             'estado_id' => '32',
             'number' =>  '034',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Noria de Ángeles',
+            'nombre' =>  'NORIA DE ÁNGELES',
             'estado_id' => '32',
             'number' =>  '035',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Ojocaliente',
+            'nombre' =>  'OJOCALIENTE',
             'estado_id' => '32',
             'number' =>  '036',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pánuco',
+            'nombre' =>  'PÁNUCO',
             'estado_id' => '32',
             'number' =>  '037',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Pinos',
+            'nombre' =>  'PINOS',
             'estado_id' => '32',
             'number' =>  '038',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Río Grande',
+            'nombre' =>  'RÍO GRANDE',
             'estado_id' => '32',
             'number' =>  '039',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sain Alto',
+            'nombre' =>  'SAIN ALTO',
             'estado_id' => '32',
             'number' =>  '040',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'El Salvador',
+            'nombre' =>  'EL SALVADOR',
             'estado_id' => '32',
             'number' =>  '041',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Sombrerete',
+            'nombre' =>  'SOMBRERETE',
             'estado_id' => '32',
             'number' =>  '042',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Susticacán',
+            'nombre' =>  'SUSTICACÁN',
             'estado_id' => '32',
             'number' =>  '043',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tabasco',
+            'nombre' =>  'TABASCO',
             'estado_id' => '32',
             'number' =>  '044',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepechitlán',
+            'nombre' =>  'TEPECHITLÁN',
             'estado_id' => '32',
             'number' =>  '045',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tepetongo',
+            'nombre' =>  'TEPETONGO',
             'estado_id' => '32',
             'number' =>  '046',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Teúl de González Ortega',
+            'nombre' =>  'TEÚL DE GONZÁLEZ ORTEGA',
             'estado_id' => '32',
             'number' =>  '047',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Tlaltenango de Sánchez Román',
+            'nombre' =>  'TLALTENANGO DE SÁNCHEZ ROMÁN',
             'estado_id' => '32',
             'number' =>  '048',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Valparaíso',
+            'nombre' =>  'VALPARAÍSO',
             'estado_id' => '32',
             'number' =>  '049',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Vetagrande',
+            'nombre' =>  'VETAGRANDE',
             'estado_id' => '32',
             'number' =>  '050',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa de Cos',
+            'nombre' =>  'VILLA DE COS',
             'estado_id' => '32',
             'number' =>  '051',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa García',
+            'nombre' =>  'VILLA GARCÍA',
             'estado_id' => '32',
             'number' =>  '052',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa González Ortega',
+            'nombre' =>  'VILLA GONZÁLEZ ORTEGA',
             'estado_id' => '32',
             'number' =>  '053',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villa Hidalgo',
+            'nombre' =>  'VILLA HIDALGO',
             'estado_id' => '32',
             'number' =>  '054',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Villanueva',
+            'nombre' =>  'VILLANUEVA',
             'estado_id' => '32',
             'number' =>  '055',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Zacatecas',
+            'nombre' =>  'ZACATECAS',
             'estado_id' => '32',
             'number' =>  '056',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Trancoso',
+            'nombre' =>  'TRANCOSO',
             'estado_id' => '32',
             'number' =>  '057',
         ]);
         DB::table('municipios')->insert([
-            'nombre' =>  'Santa María de la Paz',
+            'nombre' =>  'SANTA MARÍA DE LA PAZ',
             'estado_id' => '32',
             'number' =>  '058',
         ]);

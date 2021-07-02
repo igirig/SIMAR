@@ -36,6 +36,7 @@ class CreateAllTables extends Migration
             $table->unsignedBigInteger('municipio_id');
             $table->foreign('municipio_id')->references('id')->on('municipios');
             $table->string('telefono');
+            $table->string('extension')->nullable(); //Extensión telefónica
             $table->string('correo');
             $table->timestamps();
         });
@@ -83,6 +84,7 @@ class CreateAllTables extends Migration
             $table->unsignedBigInteger('municipio_id');
             $table->foreign('municipio_id')->references('id')->on('municipios');
             $table->string('telefono');
+            $table->string('extension')->nullable(); //Extensión telefónica
             $table->string('correo');
             $table->timestamps();
         });
@@ -124,6 +126,7 @@ class CreateAllTables extends Migration
             $table->unsignedBigInteger('municipio_id');
             $table->foreign('municipio_id')->references('id')->on('municipios');
             $table->string('telefono');
+            $table->string('extension')->nullable(); //Extensión telefónica
             $table->string('correo');
             $table->timestamps();
         });
@@ -142,6 +145,7 @@ class CreateAllTables extends Migration
             $table->unsignedBigInteger('municipio_id');
             $table->foreign('municipio_id')->references('id')->on('municipios');
             $table->string('telefono'); //PREGUNTAR
+            $table->string('extension')->nullable(); //Extensión telefónica
             $table->string('correo'); //PREGUNTAR
             $table->timestamps();
         });

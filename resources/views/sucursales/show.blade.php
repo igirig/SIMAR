@@ -43,14 +43,14 @@
                                                     </tr>
                                                     <tr>
                                                         <th>Dirección</th>
-                                                        <td>{{ $sucursal->calle }} {{ $sucursal->noExterior }},
+                                                        <td>{{ $sucursal->calle }} #{{ $sucursal->noExterior }},
                                                             {{ $sucursal->noInterior }} Col. {{ $sucursal->colonia }} C.P.
                                                             {{ $sucursal->codigoPostal }}.
                                                             {{ $sucursal->estado_id }}, {{ $sucursal->municipio_id }} </td>
                                                     </tr>
                                                     <tr>
                                                         <th>Teléfono</th>
-                                                        <td>{{ $sucursal->telefono }}</td>
+                                                        <td>{{ $sucursal->telefono }} ext. {{ $sucursal->extension }}</td>
                                                     </tr>
                                                     <tr>
                                                         <th>Correo de Contacto</th>

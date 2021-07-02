@@ -26,92 +26,92 @@ class TestSeeder extends Seeder
 
 		DB::table('clases_residuo')->insert([
 			'id' => '1',
-			'nombre' =>  'Clase 3',
+			'nombre' =>  'CLASE 3',
 		]);
 
 		DB::table('clases_residuo')->insert([
 			'id' => '2',
-			'nombre' =>  'Clase 6.1',
+			'nombre' =>  'CLASE 6.1',
 		]);
 
 		DB::table('clases_residuo')->insert([
 			'id' => '3',
-			'nombre' =>  'Clase 6.2',
+			'nombre' =>  'CLASE 6.2',
 		]);
 
 		DB::table('clases_residuo')->insert([
 			'id' => '4',
-			'nombre' =>  'Clase 9',
+			'nombre' =>  'CLASE 9',
 		]);
 
 		DB::table('clases_residuo')->insert([
 			'id' => '5',
-			'nombre' =>  'Clase 10',
+			'nombre' =>  'CLASE 10',
 		]);
 
 		DB::table('clases_residuo')->insert([
 			'id' => '6',
-			'nombre' =>  'Clase 12',
+			'nombre' =>  'CLASE 12',
 		]);
 
 		DB::table('estados_residuo')->insert([
 			'id' => '1',
-			'nombre' =>  'Sólido',
+			'nombre' =>  'SÓLIDO',
 		]);
 
 		DB::table('estados_residuo')->insert([
 			'id' => '2',
-			'nombre' =>  'Líquido',
+			'nombre' =>  'LÍQUIDO',
 		]);
 
 		DB::table('estados_residuo')->insert([
 			'id' => '3',
-			'nombre' =>  'Gaseoso',
+			'nombre' =>  'GASEOSO',
 		]);
 
 		DB::table('tipos_vehiculo')->insert([
 			'id' => '1',
-			'nombre' =>  'Camión pesado',
+			'nombre' =>  'CAMIÓN PESADO',
 		]);
 
 		DB::table('tipos_vehiculo')->insert([
 			'id' => '2',
-			'nombre' =>  'Camión de volteo',
+			'nombre' =>  'CAMIÓN DE VOLTEO',
 		]);
 
 		DB::table('tipos_vehiculo')->insert([
 			'id' => '3',
-			'nombre' =>  'Semi-remolque',
+			'nombre' =>  'SEMI-REMOLQUE',
 		]);
 
 		DB::table('tipos_vehiculo')->insert([
 			'id' => '4',
-			'nombre' =>  'Remolque pesado',
+			'nombre' =>  'REMOLQUE PESADO',
 		]);
 
 		DB::table('capacidades_vehiculo')->insert([
 			'id' => '1',
-			'nombre' =>  '1 Tonelada',
+			'nombre' =>  '1 TONELADA',
 		]);
 
 		DB::table('capacidades_vehiculo')->insert([
 			'id' => '2',
-			'nombre' =>  '1.5 Toneladas',
+			'nombre' =>  '1.5 TONELADAS',
 		]);
 
 		DB::table('capacidades_vehiculo')->insert([
 			'id' => '3',
-			'nombre' =>  '2 Toneladas',
+			'nombre' =>  '2 TONELADAS',
 		]);
 
 		DB::table('capacidades_vehiculo')->insert([
 			'id' => '4',
-			'nombre' =>  '2.5 Toneladas',
+			'nombre' =>  '2.5 TONELADAS',
 		]);
 
 		DB::table('capacidades_vehiculo')->insert([
 			'id' => '5',
-			'nombre' =>  '3 Toneladas',
+			'nombre' =>  '3 TONELADAS',
 		]);
 
 		DB::table('formatos')->insert([
@@ -163,13 +163,13 @@ class TestSeeder extends Seeder
 			'cliente_id' => '1',
 			'nombre' =>  'INSTITUTO TECNOLÓGICO SUPERIOR DE XALAPA',
 			'noRegistroAmbiental' =>  'ITSX12345678',
-			'calle' =>  'Sección 5A Reserva Territorial',
-			'colonia' =>  'Santa Bárbara',
+			'calle' =>  'SECCIÓN 5A RESERVA TERRITORIAL',
+			'colonia' =>  'SANTA BÁRBARA',
 			'codigoPostal' =>  '91096',
 			'estado_id' =>  '30',
 			'municipio_id' =>  '2168',
 			'telefono' =>  '2281650525',
-			'correo' =>  'serviciosAmbientales@itsx.edu.mx',
+			'correo' =>  'serviciosambientales@itsx.edu.mx',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -179,14 +179,15 @@ class TestSeeder extends Seeder
 			'cliente_id' => '1',
 			'nombre' =>  'INSTITUTO TECNOLÓGICO DE VERACRUZ',
 			'noRegistroAmbiental' =>  'ITV123456789',
-			'calle' =>  'Av. Miguel Angel de Quevedo',
+			'calle' =>  'AV. MIGUEL ANGEL DE QUEVEDO',
 			'noExterior' =>  '2779',
-			'colonia' =>  'Formando Hogar',
+			'colonia' =>  'FORMANDO HOGAR',
 			'codigoPostal' =>  '91897',
 			'estado_id' =>  '30',
 			'municipio_id' =>  '2274',
 			'telefono' =>  '2299341500',
-			'correo' =>  'serviciosAmbientales@itv.edu.mx',
+			'extension' =>  '123',
+			'correo' =>  'serviciosambientales@itv.edu.mx',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -196,14 +197,14 @@ class TestSeeder extends Seeder
 			'cliente_id' => '2',
 			'nombre' =>  'DIVISIÓN ORIENTE S.E. XALAPA II',
 			'noRegistroAmbiental' =>  'DOSE23456789',
-			'calle' =>  'Adolfo López Mateos',
+			'calle' =>  'ADOLFO LÓPEZ MATEOS',
 			'noExterior' =>  '2779',
-			'colonia' =>  'Emiliano Zapata',
+			'colonia' =>  'EMILIANO ZAPATA',
 			'codigoPostal' =>  '91373',
 			'estado_id' =>  '30',
 			'municipio_id' =>  '2274',
 			'telefono' =>  '2211547662',
-			'correo' =>  'cfeXalapa2@live.com.mx',
+			'correo' =>  'cfexalapa2@live.com.mx',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -213,14 +214,15 @@ class TestSeeder extends Seeder
 			'cliente_id' => '2',
 			'nombre' =>  'BANDERILLA',
 			'noRegistroAmbiental' =>  'BAN4E3453789',
-			'calle' =>  'Miguel Hidalgo',
+			'calle' =>  'MIGUEL HIDALGO',
 			'noExterior' => '44',
-			'colonia' =>  '21 de Marzo',
+			'colonia' =>  '21 DE MARZO',
 			'codigoPostal' =>  '91231',
 			'estado_id' =>  '30',
 			'municipio_id' =>  '2107',
 			'telefono' =>  '2288524544',
-			'correo' =>  'cfeBanderilla@live.com.mx',
+			'extension' =>  '2131',
+			'correo' =>  'cfebanderilla@live.com.mx',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -236,7 +238,7 @@ class TestSeeder extends Seeder
 			'biologico' => '1',
 			'mezcla' => '0',
 			'noONU' => 'UN-3291',
-			'descripcion' => 'Desechos clínicos, N.E.P.',
+			'descripcion' => 'DESECHOS CLÍNICOS, N.E.P.',
 			'clase_id' =>  '3',
 			'materia_id' => '1',
 			'created_at' => Carbon::now(),
@@ -254,7 +256,7 @@ class TestSeeder extends Seeder
 			'biologico' => '1',
 			'mezcla' => '0',
 			'noONU' => 'UN-3291',
-			'descripcion' => 'Desechos clínicos, N.E.P.',
+			'descripcion' => 'DESECHOS CLÍNICOS, N.E.P.',
 			'clase_id' =>  '3',
 			'materia_id' => '1',
 			'created_at' => Carbon::now(),
@@ -272,7 +274,7 @@ class TestSeeder extends Seeder
 			'biologico' => '1',
 			'mezcla' => '0',
 			'noONU' => 'UN-3291',
-			'descripcion' => 'Desechos clínicos, N.E.P.',
+			'descripcion' => 'DESECHOS CLÍNICOS, N.E.P.',
 			'clase_id' =>  '3',
 			'materia_id' => '1',
 			'created_at' => Carbon::now(),
@@ -290,7 +292,7 @@ class TestSeeder extends Seeder
 			'biologico' => '1',
 			'mezcla' => '0',
 			'noONU' => 'UN-3291',
-			'descripcion' => 'Desechos clínicos, N.E.P.',
+			'descripcion' => 'DESECHOS CLÍNICOS, N.E.P.',
 			'clase_id' =>  '3',
 			'materia_id' => '1',
 			'created_at' => Carbon::now(),
@@ -308,7 +310,7 @@ class TestSeeder extends Seeder
 			'biologico' => '1',
 			'mezcla' => '0',
 			'noONU' => 'UN-3291',
-			'descripcion' => 'Desechos clínicos, N.E.P.',
+			'descripcion' => 'DESECHOS CLÍNICOS, N.E.P.',
 			'clase_id' =>  '3',
 			'materia_id' => '1',
 			'created_at' => Carbon::now(),
@@ -326,7 +328,7 @@ class TestSeeder extends Seeder
 			'biologico' => '0',
 			'mezcla' => '0',
 			'noONU' => 'UN-3082',
-			'descripcion' => 'Residuo Peligroso, Líquido, N.E.P.',
+			'descripcion' => 'RESIDUO PELIGROSO, SÓLIDO, N.E.P.',
 			'clase_id' =>  '4',
 			'materia_id' => '2',
 			'created_at' => Carbon::now(),
@@ -344,7 +346,7 @@ class TestSeeder extends Seeder
 			'biologico' => '0',
 			'mezcla' => '0',
 			'noONU' => 'UN-3077',
-			'descripcion' => 'Residuo Peligroso, Sólido, N.E.P.',
+			'descripcion' => 'RESIDUO PELIGROSO, SÓLIDO, N.E.P.',
 			'clase_id' =>  '4',
 			'materia_id' => '1',
 			'created_at' => Carbon::now(),
@@ -362,7 +364,7 @@ class TestSeeder extends Seeder
 			'biologico' => '0',
 			'mezcla' => '0',
 			'noONU' => 'UN-3077',
-			'descripcion' => 'Residuo Peligroso, Sólido, N.E.P.',
+			'descripcion' => 'RESIDUO PELIGROSO, SÓLIDO, N.E.P.',
 			'clase_id' =>  '4',
 			'materia_id' => '1',
 			'created_at' => Carbon::now(),
@@ -380,7 +382,7 @@ class TestSeeder extends Seeder
 			'biologico' => '0',
 			'mezcla' => '0',
 			'noONU' => 'UN-3077',
-			'descripcion' => 'Residuo Peligroso, Sólido, N.E.P.',
+			'descripcion' => 'RESIDUO PELIGROSO, SÓLIDO, N.E.P.',
 			'clase_id' =>  '4',
 			'materia_id' => '1',
 			'created_at' => Carbon::now(),
@@ -398,7 +400,7 @@ class TestSeeder extends Seeder
 			'biologico' => '0',
 			'mezcla' => '0',
 			'noONU' => 'UN-3082',
-			'descripcion' => 'Residuo Peligroso, Líquido, N.E.P.',
+			'descripcion' => 'RESIDUO PELIGROSO, LÍQUIDO, N.E.P.',
 			'clase_id' =>  '4',
 			'materia_id' => '2',
 			'created_at' => Carbon::now(),
@@ -679,14 +681,14 @@ class TestSeeder extends Seeder
 			'id' => '1',
 			'razonSocial' =>  'SISTEMAS EN MANEJO Y ADMINISTRACION DE RESIDUOS, S.A. DE C.V.',
 			'noRegistroAmbiental' =>  'SMAR12344567',
-			'calle' =>  'Av. Pipila',
+			'calle' =>  'AV. PIPILA',
 			'noExterior' =>  '271',
-			'colonia' =>  'José Cardel',
+			'colonia' =>  'JOSÉ CARDEL',
 			'codigoPostal' =>  '91097',
 			'estado_id' =>  '30',
 			'municipio_id' =>  '2168',
 			'telefono' =>  '2288244169',
-			'correo' =>  'grupoSimar@hotmail.com',
+			'correo' =>  'gruposimar@hotmail.com',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -695,14 +697,15 @@ class TestSeeder extends Seeder
 			'id' => '2',
 			'razonSocial' =>  'SISTEMAS DE RESIDUOS RENOBABLES, S.A. DE C.V.',
 			'noRegistroAmbiental' =>  'SRR012344567',
-			'calle' =>  'Juan Alberto Mendez',
+			'calle' =>  'JUAN ALBERTO MENDEZ',
 			'noExterior' =>  '27',
-			'colonia' =>  'Revolución',
+			'colonia' =>  'REVOLUCIÓN',
 			'codigoPostal' =>  '91077',
 			'estado_id' =>  '30',
 			'municipio_id' =>  '2168',
 			'telefono' =>  '2289464419',
-			'correo' =>  'renobablesRes@gmail.com',
+			'extension' =>  '49',
+			'correo' =>  'renobablesres@gmail.com',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -755,9 +758,9 @@ class TestSeeder extends Seeder
 			'id' => '1',
 			'razonSocial' =>  'ECOLTEC, S.A. DE C.V.',
 			'noRegistroAmbiental' =>  'ECO213945789',
-			'calle' =>  'Av. Fernando Gutierrez Barrios',
+			'calle' =>  'AV. FERNANDO GUTIERREZ BARRIOS',
 			'noExterior' =>  '742',
-			'colonia' =>  'Cruz Verde',
+			'colonia' =>  'CRUZ VERDE',
 			'codigoPostal' =>  '63192',
 			'estado_id' =>  '11',
 			'municipio_id' =>  '347',
@@ -771,14 +774,15 @@ class TestSeeder extends Seeder
 			'id' => '2',
 			'razonSocial' =>  'CONFINES ECOLÓGICOS, S.A. DE C.V.',
 			'noRegistroAmbiental' =>  'CESA43456789',
-			'calle' =>  'Guadalupe victoria',
+			'calle' =>  'GUADALUPE VICTORIA',
 			'noExterior' =>  '64',
-			'colonia' =>  'Tecamazuchitl',
+			'colonia' =>  'TECAMAZUCHITL',
 			'codigoPostal' =>  '92321',
 			'estado_id' =>  '13',
 			'municipio_id' =>  '482',
 			'telefono' =>  '2224335381',
-			'correo' =>  'confinesEcologicos@outlook.com',
+			'extension' =>  '562',
+			'correo' =>  'confinesecologicos@outlook.com',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -787,14 +791,14 @@ class TestSeeder extends Seeder
 			'id' => '1',
 			'razonSocial' =>  'AUTOBUSES DE ORIENTE ADO, S.A. DE C.V.',
 			'noEstacion' =>  'J01003',
-			'calle' =>  'Pineda',
+			'calle' =>  'PINEDA',
 			'noExterior' =>  '3242',
-			'colonia' =>  'Arquitectos',
+			'colonia' =>  'ARQUITECTOS',
 			'codigoPostal' =>  '92321',
 			'estado_id' =>  '30',
 			'municipio_id' =>  '2274',
 			'telefono' =>  '2227544563',
-			'correo' =>  'adoVeracruz@gmail.com',
+			'correo' =>  'adoveracruz@gmail.com',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);
@@ -803,14 +807,15 @@ class TestSeeder extends Seeder
 			'id' => '2',
 			'razonSocial' =>  'FERCHE GAS CONTEPEC, S.A. DE C.V.',
 			'noEstacion' =>  'J04122',
-			'calle' =>  'Miguel Alemán',
+			'calle' =>  'MIGUEL ALEMÁN',
 			'noExterior' =>  '843',
-			'colonia' =>  'Floresta',
+			'colonia' =>  'FLORESTA',
 			'codigoPostal' =>  '92321',
 			'estado_id' =>  '16',
 			'municipio_id' =>  '798',
 			'telefono' =>  '2364563642',
-			'correo' =>  'fercheGasContepec@live.com.mx',
+			'extension' =>  '5731',
+			'correo' =>  'ferchegascontepec@live.com.mx',
 			'created_at' => Carbon::now(),
 			'updated_at' => Carbon::now(),
 		]);

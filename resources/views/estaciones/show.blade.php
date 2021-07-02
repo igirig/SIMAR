@@ -39,14 +39,14 @@
                                                     </tr>
                                                     <tr>
                                                         <th>Dirección</th>
-                                                        <td>{{ $estacion->calle }} {{ $estacion->noExterior }},
+                                                        <td>{{ $estacion->calle }} #{{ $estacion->noExterior }},
                                                             {{ $estacion->noInterior }} Col. {{ $estacion->colonia }},
                                                             {{ $estacion->estado_id }}, {{ $estacion->municipio_id }} C.P.
                                                             {{ $estacion->codigoPostal }}</td>
                                                     </tr>
                                                     <tr>
                                                         <th>Teléfono</th>
-                                                        <td>{{ $estacion->telefono }}</td>
+                                                        <td>{{ $estacion->telefono }} ext. {{ $estacion->extension }}</td>
                                                     </tr>
                                                     <tr>
                                                         <th>Correo de Contacto</th>

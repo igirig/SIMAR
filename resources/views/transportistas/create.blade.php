@@ -2,22 +2,22 @@
 @section('scripts')
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
-        $(function(){
+        $(function() {
             $('#estado_id').on('change', estadoSeleccionado);
-        }) 
-        function estadoSeleccionado(){
+        })
+
+        function estadoSeleccionado() {
             var estado_id = $(this).val();
             //alert(estado_id); Llamada peticion AJAX
 
-            $.get('/api/estados/'+estado_id+'', function(data){
+            $.get('/api/estados/' + estado_id + '', function(data) {
                 var select = '<option value="">Seleccione el municipio...</option>';
-                for(var i=0; i<data.length; ++i){
-                    select+='<option value="'+data[i].id+'">'+data[i].nombre+'</option>';
+                for (var i = 0; i < data.length; ++i) {
+                    select += '<option value="' + data[i].id + '">' + data[i].nombre + '</option>';
                     $('#municipio_id').html(select);
                 }
             });
         }
-
     </script>
 @endsection
 @section('content')
@@ -160,7 +160,7 @@
                                             id="municipio_id">
                                             <option value="">Seleccione el municipio...</option>
                                             <!--Comienzo for each -->
-                                             {{-- @foreach ($municipios as $municipio)
+                                            {{-- @foreach ($municipios as $municipio)
                                                 <option value="{{ $municipio->id }}"
                                                     {{ old('municipio_id') == $municipio->id ? 'selected' : '' }}>
                                                     {{ $municipio->nombre }}</option>
@@ -189,6 +189,19 @@
                                 </div>
 
                                 <div class="row">
+                                    <label for="extension" class="col-sm-2 col-form-label">Extensión:</label>
+                                    <div class="col-sm-7">
+                                        <input type="tel" class="form-control" name="extension"
+                                            placeholder="Ingrese la Extensión..."
+                                            value="{{ old('extension') }}" maxlength="6">
+                                        @if ($errors->has('extension'))
+                                            <span class="error text-danger"
+                                                for="input-extension">{{ $errors->first('extension') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="row">
                                     <label for="correo" class="col-sm-2 col-form-label">Correo electrónico:</label>
                                     <div class="col-sm-7">
                                         <input type="email" class="form-control" name="correo"
@@ -203,7 +216,8 @@
                             </div>
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
-                                <a href="{{ route('transportistas.index') }}" class="btn btn-success mr-3">Volver al índice</a>
+                                <a href="{{ route('transportistas.index') }}" class="btn btn-success mr-3">Volver al
+                                    índice</a>
                                 <button type="submit" class="btn btn-warning">Guardar transportista</button>
                             </div>
                             <!--Fin del Footer-->

@@ -7,203 +7,203 @@ use Illuminate\Support\Facades\DB;
 
 class EstadosTableSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
-    public function run()
-    {
+	/**
+	 * Run the database seeds.
+	 *
+	 * @return void
+	 */
+	public function run()
+	{
 		DB::table('estados')->insert([
 			'id' => '01',
-			'nombre' =>  'Aguascalientes',
-			'abbrev' =>  'Ags.'
+			'nombre' =>  'AGUASCALIENTES',
+			'abbrev' =>  'AGS.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '02',
-			'nombre' =>  'Baja California',
+			'nombre' =>  'BAJA CALIFORNIA',
 			'abbrev' =>  'BC'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '03',
-			'nombre' =>  'Baja California Sur',
+			'nombre' =>  'BAJA CALIFORNIA SUR',
 			'abbrev' =>  'BCS'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '04',
-			'nombre' =>  'Campeche',
-			'abbrev' =>  'Camp.'
+			'nombre' =>  'CAMPECHE',
+			'abbrev' =>  'CAMP.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '05',
-			'nombre' =>  'Coahuila de Zaragoza',
-			'abbrev' =>  'Coah.'
+			'nombre' =>  'COAHUILA DE ZARAGOZA',
+			'abbrev' =>  'COAH.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '06',
-			'nombre' =>  'Colima',
-			'abbrev' =>  'Col.'
+			'nombre' =>  'COLIMA',
+			'abbrev' =>  'COL.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '07',
-			'nombre' =>  'Chiapas',
-			'abbrev' =>  'Chis.'
+			'nombre' =>  'CHIAPAS',
+			'abbrev' =>  'CHIS.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '08',
-			'nombre' =>  'Chihuahua',
-			'abbrev' =>  'Chih.'
+			'nombre' =>  'CHIHUAHUA',
+			'abbrev' =>  'CHIH.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '09',
-			'nombre' =>  'Ciudad de México',
+			'nombre' =>  'CIUDAD DE MÉXICO',
 			'abbrev' =>  'CDMX'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '10',
-			'nombre' =>  'Durango',
-			'abbrev' =>  'Dgo.'
+			'nombre' =>  'DURANGO',
+			'abbrev' =>  'DGO.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '11',
-			'nombre' =>  'Guanajuato',
-			'abbrev' =>  'Gto.'
+			'nombre' =>  'GUANAJUATO',
+			'abbrev' =>  'GTO.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '12',
-			'nombre' =>  'Guerrero',
-			'abbrev' =>  'Gro.'
+			'nombre' =>  'GUERRERO',
+			'abbrev' =>  'GRO.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '13',
-			'nombre' =>  'Hidalgo',
-			'abbrev' =>  'Hgo.'
+			'nombre' =>  'HIDALGO',
+			'abbrev' =>  'HGO.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '14',
-			'nombre' =>  'Jalisco',
-			'abbrev' =>  'Jal.'
+			'nombre' =>  'JALISCO',
+			'abbrev' =>  'JAL.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '15',
-			'nombre' =>  'México',
-			'abbrev' =>  'Mex.'
+			'nombre' =>  'MÉXICO',
+			'abbrev' =>  'MEX.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '16',
-			'nombre' =>  'Michoacán de Ocampo',
-			'abbrev' =>  'Mich.'
+			'nombre' =>  'MICHOACÁN DE OCAMPO',
+			'abbrev' =>  'MICH.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '17',
-			'nombre' =>  'Morelos',
-			'abbrev' =>  'Mor.'
+			'nombre' =>  'MORELOS',
+			'abbrev' =>  'MOR.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '18',
-			'nombre' =>  'Nayarit',
-			'abbrev' =>  'Nay.'
+			'nombre' =>  'NAYARIT',
+			'abbrev' =>  'NAY.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '19',
-			'nombre' =>  'Nuevo León',
+			'nombre' =>  'NUEVO LEÓN',
 			'abbrev' =>  'NL'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '20',
-			'nombre' =>  'Oaxaca',
-			'abbrev' =>  'Oax.'
+			'nombre' =>  'OAXACA',
+			'abbrev' =>  'OAX.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '21',
-			'nombre' =>  'Puebla',
-			'abbrev' =>  'Pue.'
+			'nombre' =>  'PUEBLA',
+			'abbrev' =>  'PUE.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '22',
-			'nombre' =>  'Querétaro',
-			'abbrev' =>  'Qro.'
+			'nombre' =>  'QUERÉTARO',
+			'abbrev' =>  'QRO.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '23',
-			'nombre' =>  'Quintana Roo',
-			'abbrev' =>  'Q. Roo'
+			'nombre' =>  'QUINTANA ROO',
+			'abbrev' =>  'Q. ROO'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '24',
-			'nombre' =>  'San Luis Potosí',
+			'nombre' =>  'SAN LUIS POTOSÍ',
 			'abbrev' =>  'SLP'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '25',
-			'nombre' =>  'Sinaloa',
-			'abbrev' =>  'Sin.'
+			'nombre' =>  'SINALOA',
+			'abbrev' =>  'SIN.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '26',
-			'nombre' =>  'Sonora',
-			'abbrev' =>  'Son.'
+			'nombre' =>  'SONORA',
+			'abbrev' =>  'SON.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '27',
-			'nombre' =>  'Tabasco',
-			'abbrev' =>  'Tab.'
+			'nombre' =>  'TABASCO',
+			'abbrev' =>  'TAB.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '28',
-			'nombre' =>  'Tamaulipas',
-			'abbrev' =>  'Tamps.'
+			'nombre' =>  'TAMAULIPAS',
+			'abbrev' =>  'TAMPS.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '29',
-			'nombre' =>  'Tlaxcala',
-			'abbrev' =>  'Tlax.'
+			'nombre' =>  'TLAXCALA',
+			'abbrev' =>  'TLAX.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '30',
-			'nombre' =>  'Veracruz de Ignacio de la Llave',
-			'abbrev' =>  'Ver.'
+			'nombre' =>  'VERACRUZ DE IGNACIO DE LA LLAVE',
+			'abbrev' =>  'VER.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '31',
-			'nombre' =>  'Yucatán',
-			'abbrev' =>  'Yuc.'
+			'nombre' =>  'YUCATÁN',
+			'abbrev' =>  'YUC.'
 
 		]);
 		DB::table('estados')->insert([
 			'id' => '32',
-			'nombre' =>  'Zacatecas',
-			'abbrev' =>  'Zac.'
+			'nombre' =>  'ZACATECAS',
+			'abbrev' =>  'ZAC.'
 		]);
-    }
+	}
 }
