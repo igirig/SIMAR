@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'users.index', 'titlePage' => 'Usuarios'] )
+@extends('layouts.main', ['activePage' => 'vehiculos.index', 'titlePage' => 'Vehiculos'] )
 @section('content')
     <div class="content">
         <div class="container-fluid">
@@ -8,7 +8,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-success">
-                                    <h4 class="card-title">Lista de usuarios</h4>
+                                    <h4 class="card-title">Lista de vehiculos</h4>
                                     <p class="card-category">Seleccione una acción...</p>
                                 </div>
                                 <div class="card-body">
@@ -20,34 +20,37 @@
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead class="text-primary">
-                                                <th>ID</th>
-                                                <th>Nombre</th>
-                                                <th>Correo</th>
-                                                <th>Fecha de Creación</th>
+                                                <th>Transportista</th>
+                                                <th>No Permiso SCT</th>
+                                                <th>Tipo de vehiculo</th>
+                                                <th>No de Placa</th>
                                                 <th class="text-right">Acciones</th>
                                             </thead>
                                             <tbody>
-                                                @foreach ($users as $user)
+                                                @foreach ($vehiculos as $vehiculo)
                                                     <tr>
-                                                        <td>{{ $user->id }}</td>
-                                                        <td>{{ $user->name }}</td>
-                                                        <td>{{ $user->email }}</td>
-                                                        <td>{{ $user->created_at }}</td>
+                                                        <td>{{ $vehiculo->transportista_id }}</td>
+                                                        <td>{{ $vehiculo->noPermisoSCT }}</td>
+                                                        <td>{{ $vehiculo->capacidad_id }}</td>
+                                                        <td>{{ $vehiculo->noPlaca }}</td>
                                                         <td class="td-actions text-right">
-                                                            <a href="{{ route('users.show', $user->id) }}"
-                                                                class="btn btn-info" title="Visualizar usuario"><i
+                                                            <a href="{{ route('vehiculos.show', $vehiculo->id) }}"
+                                                                class="btn btn-info" title="Visualizar vehiculo
+                                                                "><i
                                                                     class="material-icons">person</i></a>
-                                                            <a href="{{ route('users.edit', $user->id) }}"
-                                                                class="btn btn-warning" title="Editar usuario"><i
+                                                            <a href="{{ route('vehiculos.edit', $vehiculo->id) }}"
+                                                                class="btn btn-warning" title="Editar vehiculo
+                                                                "><i
                                                                     class="material-icons">edit</i></a>
-                                                            <form action="{{ route('users.destroy', $user->id) }}"
+                                                            <form action="{{ route('vehiculos.destroy', $vehiculo->id) }}"
                                                                 method="POST" style="display: inline-block;"
-                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar al usuario {{ $user->name }}?')">
+                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar esta vehiculo: {{ $vehiculo->transportista_id }}?')">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button class="btn btn-danger" type="submit"
                                                                     rel="tooltip"><i class="material-icons"
-                                                                        title="Eliminar usuario">close</i></button>
+                                                                        title="Eliminar vehiculo
+                                                                        ">close</i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -57,7 +60,11 @@
                                     </div>
                                 </div>
                                 <div class="card-footer mr-auto">
-                                    {{ $users->links() }}
+                                    {{ $vehiculos->links() }}
+                                </div>
+                                <div class="card-footer ml-auto mr-auto">
+                                    <a href="{{ route('vehiculos.create') }}" class="btn btn-warning mr-3">Crear
+                                        Planta</a>
                                 </div>
                             </div>
                         </div>

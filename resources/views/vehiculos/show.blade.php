@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'users', 'titlePage' => 'Usuario'])
+@extends('layouts.main', ['activePage' => 'vehiculos', 'titlePage' => 'Vehiculo'])
 @section('content')
     <div class="content">
         <div class="container-fluid">
@@ -6,8 +6,8 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header card-header-info">
-                            <h4 class="card-title">Detalles del usuario</h4>
-                            <p class="card-category">Vista detallada del usuario {{ $user->name }}...</p>
+                            <h4 class="card-title">Detalles del Vehiculo</h4>
+                            <p class="card-category">Vista detallada del vehículo con las placas {{ $vehiculo->noPlaca }}...</p>
                         </div>
                         <!--Body-->
                         <div class="card-body">
@@ -25,24 +25,35 @@
                                                 <tbody>
                                                     <tr>
                                                         <th>ID</th>
-                                                        <td>{{ $user->id }}</td>
+                                                        <td>{{ $vehiculo->id }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Name</th>
-                                                        <td>{{ $user->name }}</td>
+                                                        <th>Transportista</th>
+                                                        <td>{{ $vehiculo->transportista_id }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Email</th>
-                                                        <td><span class="badge badge-primary">{{ $user->email }}</span>
+                                                        <th>Número de Permiso de la SCT</th>
+                                                        <td><span
+                                                                class="badge badge-primary">{{ $vehiculo->noPermisoSCT }}</span>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Password</th>
-                                                        <td>{{ $user->password }}</td>
+                                                        <th>Tipo de vehiculo</th>
+                                                        <td>{{ $vehiculo->tipo_id }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Created at</th>
-                                                        <td><a href="#" target="_blank">{{ $user->created_at }}</a>
+                                                        <th>Capacidad del vehiculo</th>
+                                                        <td>{{ $vehiculo->capacidad_id }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Número de placa</th>
+                                                        <td><span
+                                                                class="badge badge-primary">{{ $vehiculo->noPlaca }}</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Ultima Modificación</th>
+                                                        <td>{{ $vehiculo->updated_at }}</a>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -50,17 +61,17 @@
                                         </div>
                                         <div class="card-footer">
                                             <div class="button-container">
-                                                <a href="{{ route('users.index') }}"
+                                                <a href="{{ route('vehiculos.index') }}"
                                                     class="btn btn-sm btn-success mr-3">Volver al índice</a>
-                                                <a href="{{ route('users.edit', $user->id) }}"
-                                                    class="btn btn-sm btn-warning mr-3">Editar usuario</a>
-                                                <form action="{{ route('users.destroy', $user->id) }}" method="POST"
+                                                <a href="{{ route('vehiculos.edit', $vehiculo->id) }}"
+                                                    class="btn btn-sm btn-warning mr-3">Editar Vehiculo</a>
+                                                <form action="{{ route('vehiculos.destroy', $vehiculo->id) }}" method="POST"
                                                     style="display: inline-block;"
-                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar al usuario {{ $user->name }}?')">
+                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar a la Vehiculo {{ $vehiculo->name }}?')">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button class="btn btn-sm btn-danger" type="submit"
-                                                        rel="tooltip">Eliminar Usuario</button>
+                                                        rel="tooltip">Eliminar Vehiculo</button>
                                                 </form>
                                             </div>
                                         </div>

@@ -99,32 +99,16 @@
                 </a>
             </li>
 
-            {{-- vehiculos --}}
+            {{-- Vehículos --}}
             <li
-                class="nav-item {{ $activePage == 'vehiculos.index' || $activePage == 'vehiculos.create' ? ' active' : '' }}">
-                <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample7" aria-expanded="false">
-                    <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
-                    <p>{{ __('vehiculos') }}
-                        <b class="caret"></b>
-                    </p>
+                class="nav-item{{ $activePage == 'vehiculos.index' || $activePage == 'vehiculos.create' ? ' active' : '' }}">
+                <a class="nav-link" href="{{ route('vehiculos.index') }}">
+                    <i class="material-icons">dashboard</i>
+                    <p>{{ __('Vehículos') }}</p>
                 </a>
-                <div class="collapse" id="laravelExample7">
-                    <ul class="nav">
-                        <li class="nav-item{{ $activePage == 'vehiculos.index' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('vehiculos.index') }}">
-                                <span class="sidebar-mini"> UP </span>
-                                <span class="sidebar-normal">{{ __('Lista de vehiculos') }} </span>
-                            </a>
-                        </li>
-                        <li class="nav-item{{ $activePage == 'vehiculos.create' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('vehiculos.create') }}">
-                                <span class="sidebar-mini"> UM </span>
-                                <span class="sidebar-normal"> {{ __('Crear un vehiculo') }} </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </li>
+
+
 
         </ul>
     </div>
