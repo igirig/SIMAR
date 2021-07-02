@@ -18,8 +18,6 @@
                 </a>
             </li>
 
-
-
             {{-- Documentos --}}
             <li class="nav-item{{ $activePage == 'manifiestos.create' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('manifiestos.create') }}">
@@ -107,8 +105,6 @@
                     <p>{{ __('Vehículos') }}</p>
                 </a>
             </li>
-
-
 
         </ul>
     </div>
