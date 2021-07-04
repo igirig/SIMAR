@@ -67,7 +67,7 @@
                                                     class="btn btn-sm btn-warning mr-3">Editar Vehiculo</a>
                                                 <form action="{{ route('vehiculos.destroy', $vehiculo->id) }}" method="POST"
                                                     style="display: inline-block;"
-                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar a la Vehiculo {{ $vehiculo->name }}?')">
+                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar el Vehiculo: {{ $vehiculo->noPlaca }}?')">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button class="btn btn-sm btn-danger" type="submit"

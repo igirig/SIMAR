@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="card-footer ml-auto mr-auto">
                                     <a href="{{ route('vehiculos.create') }}" class="btn btn-warning mr-3">Crear
-                                        Planta</a>
+                                        Vehículo</a>
                                 </div>
                             </div>
                         </div>

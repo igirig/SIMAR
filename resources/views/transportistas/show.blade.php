@@ -70,7 +70,7 @@
                                                     class="btn btn-sm btn-warning mr-3">Editar Transportista</a>
                                                 <form action="{{ route('transportistas.destroy', $transportista->id) }}" method="POST"
                                                     style="display: inline-block;"
-                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar este Transportista {{ $transportista->name }}?')">
+                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar este Transportista: {{ $transportista->razonSocial }}?')">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button class="btn btn-sm btn-danger" type="submit"

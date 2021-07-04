@@ -70,7 +70,7 @@
                                                     class="btn btn-sm btn-warning mr-3">Editar Planta</a>
                                                 <form action="{{ route('plantas.destroy', $planta->id) }}" method="POST"
                                                     style="display: inline-block;"
-                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar a la Planta {{ $planta->name }}?')">
+                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar la Planta: {{ $planta->razonSocial }}?')">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button class="btn btn-sm btn-danger" type="submit"

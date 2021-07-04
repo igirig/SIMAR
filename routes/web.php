@@ -75,6 +75,14 @@ Route::get('/vehiculos/{vehiculo}/edit', [App\Http\Controllers\VehiculoControlle
 Route::put('/vehiculos/{vehiculo}', [App\Http\Controllers\VehiculoController::class, 'update'])->name('vehiculos.update');
 Route::delete('/vehiculos/{vehiculo}', [App\Http\Controllers\VehiculoController::class, 'destroy'])->name('vehiculos.destroy');
 
+Route::get('/residuos/create', [App\Http\Controllers\ResiduoController::class, 'create'])->name('residuos.create');
+Route::post('/residuos', [App\Http\Controllers\ResiduoController::class, 'store'])->name('residuos.store');
+Route::get('/residuos', [App\Http\Controllers\ResiduoController::class, 'index'])->name('residuos.index');
+Route::get('/residuos/{residuo}', [App\Http\Controllers\ResiduoController::class, 'show'])->name('residuos.show');
+Route::get('/residuos/{residuo}/edit', [App\Http\Controllers\ResiduoController::class, 'edit'])->name('residuos.edit');
+Route::put('/residuos/{residuo}', [App\Http\Controllers\ResiduoController::class, 'update'])->name('residuos.update');
+Route::delete('/residuos/{residuo}', [App\Http\Controllers\ResiduoController::class, 'destroy'])->name('residuos.destroy');
+
 Route::get('/manifiestos/create', [App\Http\Controllers\ManifiestoController::class, 'create'])->name('manifiestos.create');
 Route::get('/manifiestos', [App\Http\Controllers\ManifiestoController::class, 'index'])->name('manifiestos.index');
 Route::post('/manifiestos', [App\Http\Controllers\ManifiestoController::class, 'store'])->name('manifiestos.store');

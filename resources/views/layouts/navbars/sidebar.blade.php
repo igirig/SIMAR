@@ -106,6 +106,15 @@
                 </a>
             </li>
 
+            {{-- Residuos --}}
+            <li
+                class="nav-item{{ $activePage == 'residuos.index' || $activePage == 'residuos.create' ? ' active' : '' }}">
+                <a class="nav-link" href="{{ route('residuos.index') }}">
+                    <i class="material-icons">dashboard</i>
+                    <p>{{ __('Residuos') }}</p>
+                </a>
+            </li>
+
         </ul>
     </div>
 </div>

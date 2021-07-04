@@ -70,7 +70,7 @@
                                                     class="btn btn-sm btn-warning mr-3">Editar Estacion</a>
                                                 <form action="{{ route('estaciones.destroy', $estacion->id) }}" method="POST"
                                                     style="display: inline-block;"
-                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar a la Estacion {{ $estacion->name }}?')">
+                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar la Estacion: {{ $estacion->razonSocial }}?')">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button class="btn btn-sm btn-danger" type="submit"

@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'users.index', 'titlePage' => 'Usuarios'] )
+@extends('layouts.main', ['activePage' => 'residuos.index', 'titlePage' => 'Residuos'] )
 @section('content')
     <div class="content">
         <div class="container-fluid">
@@ -8,7 +8,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-success">
-                                    <h4 class="card-title">Lista de usuarios</h4>
+                                    <h4 class="card-title">Lista de residuos</h4>
                                     <p class="card-category">Seleccione una acción...</p>
                                 </div>
                                 <div class="card-body">
@@ -20,34 +20,37 @@
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead class="text-primary">
-                                                <th>ID</th>
                                                 <th>Nombre</th>
-                                                <th>Correo</th>
-                                                <th>Fecha de Creación</th>
+                                                <th>No ONU</th>
+                                                <th>Clase</th>
+                                                <th>Estado</th>
                                                 <th class="text-right">Acciones</th>
                                             </thead>
                                             <tbody>
-                                                @foreach ($users as $user)
+                                                @foreach ($residuos as $residuo)
                                                     <tr>
-                                                        <td>{{ $user->id }}</td>
-                                                        <td>{{ $user->name }}</td>
-                                                        <td>{{ $user->email }}</td>
-                                                        <td>{{ $user->created_at }}</td>
+                                                        <td>{{ $residuo->nombre }}</td>
+                                                        <td>{{ $residuo->noONU }}</td>
+                                                        <td>{{ $residuo->clase_id }}</td>
+                                                        <td>{{ $residuo->materia_id }}</td>
                                                         <td class="td-actions text-right">
-                                                            <a href="{{ route('users.show', $user->id) }}"
-                                                                class="btn btn-info" title="Visualizar usuario"><i
+                                                            <a href="{{ route('residuos.show', $residuo->id) }}"
+                                                                class="btn btn-info" title="Visualizar residuo
+                                                                "><i
                                                                     class="material-icons">person</i></a>
-                                                            <a href="{{ route('users.edit', $user->id) }}"
-                                                                class="btn btn-warning" title="Editar usuario"><i
+                                                            <a href="{{ route('residuos.edit', $residuo->id) }}"
+                                                                class="btn btn-warning" title="Editar residuo
+                                                                "><i
                                                                     class="material-icons">edit</i></a>
-                                                            <form action="{{ route('users.destroy', $user->id) }}"
+                                                            <form action="{{ route('residuos.destroy', $residuo->id) }}"
                                                                 method="POST" style="display: inline-block;"
-                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar al usuario {{ $user->name }}?')">
+                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar esta residuo: {{ $residuo->nombre }}?')">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button class="btn btn-danger" type="submit"
                                                                     rel="tooltip"><i class="material-icons"
-                                                                        title="Eliminar usuario">close</i></button>
+                                                                        title="Eliminar residuo
+                                                                        ">close</i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -57,7 +60,11 @@
                                     </div>
                                 </div>
                                 <div class="card-footer mr-auto">
-                                    {{ $users->links() }}
+                                    {{ $residuos->links() }}
+                                </div>
+                                <div class="card-footer ml-auto mr-auto">
+                                    <a href="{{ route('residuos.create') }}" class="btn btn-warning mr-3">Crear
+                                        Residuo</a>
                                 </div>
                             </div>
                         </div>
