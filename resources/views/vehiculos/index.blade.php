@@ -44,7 +44,7 @@
                                                                     class="material-icons">edit</i></a>
                                                             <form action="{{ route('vehiculos.destroy', $vehiculo->id) }}"
                                                                 method="POST" style="display: inline-block;"
-                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar esta vehiculo: {{ $vehiculo->transportista_id }}?')">
+                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar esta vehiculo: {{ $vehiculo->noPlaca }}?')">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button class="btn btn-danger" type="submit"

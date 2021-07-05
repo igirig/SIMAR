@@ -18,8 +18,8 @@
                                     <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="nombre"
-                                            value="{{ old('nombre', $residuo->nombre) }}"
-                                            maxlength="5">
+                                            value="{{ old('nombre', $residuo->nombre) }}" maxlength="5"
+                                            onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('nombre'))
                                             <span class="error text-danger"
                                                 for="input-nombre">{{ $errors->first('nombre') }}</span>
@@ -31,7 +31,8 @@
                                     <label for="noONU" class="col-sm-2 col-form-label">Número de la ONU:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noONU"
-                                            value="{{ old('noONU', $residuo->noONU) }}" maxlength="7">
+                                            value="{{ old('noONU', $residuo->noONU) }}" maxlength="7"
+                                            onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noONU'))
                                             <span class="error text-danger"
                                                 for="input-noONU">{{ $errors->first('noONU') }}</span>
@@ -43,7 +44,8 @@
                                     <label for="descripcion" class="col-sm-2 col-form-label">Descripción:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="descripcion"
-                                            value="{{ old('descripcion', $residuo->descripcion) }}">
+                                            value="{{ old('descripcion', $residuo->descripcion) }}"
+                                            onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('descripcion'))
                                             <span class="error text-danger"
                                                 for="input-descripcion">{{ $errors->first('descripcion') }}</span>
@@ -55,8 +57,7 @@
                                     <label for="clase_id" class="col-sm-2 col-form-label">Clase:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="clase_id"
-                                            value="{{ old('clase_id', $residuo->clase_id) }}"
-                                            maxlength="5">
+                                            value="{{ old('clase_id', $residuo->clase_id) }}" maxlength="5">
                                         @if ($errors->has('clase_id'))
                                             <span class="error text-danger"
                                                 for="input-clase_id">{{ $errors->first('clase_id') }}</span>
@@ -68,8 +69,7 @@
                                     <label for="materia_id" class="col-sm-2 col-form-label">Estado:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="materia_id"
-                                            value="{{ old('materia_id', $residuo->materia_id) }}"
-                                            maxlength="5">
+                                            value="{{ old('materia_id', $residuo->materia_id) }}" maxlength="5">
                                         @if ($errors->has('materia_id'))
                                             <span class="error text-danger"
                                                 for="input-materia_id">{{ $errors->first('materia_id') }}</span>

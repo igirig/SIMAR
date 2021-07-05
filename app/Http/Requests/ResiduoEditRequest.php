@@ -24,7 +24,7 @@ class ResiduoEditRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombre' => ['required','min:3','unique:residuos,nombre,' . request()->route('residuo')->id],
+            'nombre' => ['required', 'min:3', 'unique:residuos,nombre,' . request()->route('residuo')->id],
             'corrosivo' => [''],
             'reactivo' => [''],
             'explosivo' => [''],
@@ -32,8 +32,8 @@ class ResiduoEditRequest extends FormRequest
             'inflamable' => [''],
             'biologico' => [''],
             'mezcla' => [''],
-            'noONU' => ['required','min:6','max:7'],
-            'descripcion' => ['required','min:3'],
+            'noONU' => ['required', 'min:6', 'max:7'],
+            'descripcion' => ['required', 'min:3'],
             'clase_id' => [''],
             'materia_id' => [''],
         ];

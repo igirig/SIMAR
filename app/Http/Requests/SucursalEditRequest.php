@@ -34,10 +34,11 @@ class SucursalEditRequest extends FormRequest
             ],
             'calle' => ['required', 'min:1', 'max:128'],
             'colonia' => ['required', 'min:3', 'max:128'],
-            'codigoPostal' => ['size:5'],
+            'codigoPostal' => ['required', 'digits:5', 'numeric'],
             'estado_id' => ['required'],
             'municipio_id' => ['required'],
-            'telefono' => ['min:10', 'max:13'],
+            'telefono' => ['required', 'digits:10', 'numeric'],
+            'extension' => ['numeric', 'nullable'],
             'correo' => ['required', 'email'],
         ];
     }

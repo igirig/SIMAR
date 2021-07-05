@@ -57,6 +57,7 @@ class PlantaController extends Controller
         'estado_id',
         'municipio_id',
         'telefono',
+        'extension',
         'correo',);
 
         $planta->update($data);

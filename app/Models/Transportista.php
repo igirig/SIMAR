@@ -26,6 +26,7 @@ class Transportista extends Authenticatable
         'estado_id',
         'municipio_id',
         'telefono',
+        'extension',
         'correo',
     ];
 

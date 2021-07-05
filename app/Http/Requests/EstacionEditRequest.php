@@ -25,17 +25,18 @@ class EstacionEditRequest extends FormRequest
     {
         $estacion = $this->route('estacion');
         return [
-            'razonSocial' => ['required','min:3','max:64','unique:estaciones,razonSocial,' . request()->route('estacion')->id],
-            'noEstacion' => ['required','min:6','max:13','unique:estaciones,noEstacion,' . request()->route('estacion')->id],
-            'calle' => ['required','min:1','max:64'],
-            'noExterior' => ['max:16'],
-            'noInterior' => ['max:16'],
-            'colonia' => ['required','min:1','max:64'],
-            'codigoPostal' => ['required','min:5','numeric'],
+            'razonSocial' => ['required', 'min:3', 'max:64', 'unique:estaciones,razonSocial,' . request()->route('estacion')->id],
+            'noEstacion' => ['required', 'min:6', 'max:13', 'unique:estaciones,noEstacion,' . request()->route('estacion')->id],
+            'calle' => ['required', 'min:1', 'max:64'],
+            'noExterior' => ['max:16', 'nullable'],
+            'noInterior' => ['max:16', 'nullable'],
+            'colonia' => ['required', 'min:1', 'max:64'],
+            'codigoPostal' => ['required', 'digits:5', 'numeric'],
             'estado_id' => [''],
             'municipio_id' => [''],
-            'telefono' => ['required','min:10','numeric'],
-            'correo' => ['required','email'],
+            'telefono' => ['required', 'digits:10', 'numeric'],
+            'extension' => ['numeric', 'nullable'],
+            'correo' => ['required', 'email'],
         ];
     }
 }

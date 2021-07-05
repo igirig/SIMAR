@@ -18,7 +18,8 @@
                                     <label for="razonSocial" class="col-sm-2 col-form-label">Razón Social:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="razonSocial"
-                                            value="{{ old('razonSocial', $planta->razonSocial) }}" autofocus>
+                                            value="{{ old('razonSocial', $planta->razonSocial) }}"
+                                            onkeyup="this.value = this.value.toUpperCase();" autofocus>
                                         @if ($errors->has('razonSocial'))
                                             <span class="error text-danger"
                                                 for="input-razonSocial">{{ $errors->first('razonSocial') }}</span>
@@ -27,10 +28,12 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="noRegistroAmbiental" class="col-sm-2 col-form-label">Número de registro ambiental:</label>
+                                    <label for="noRegistroAmbiental" class="col-sm-2 col-form-label">Número de registro
+                                        ambiental:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noRegistroAmbiental"
-                                            value="{{ old('noRegistroAmbiental', $planta->noRegistroAmbiental) }}" maxlength="12">
+                                            value="{{ old('noRegistroAmbiental', $planta->noRegistroAmbiental) }}"
+                                            maxlength="12" onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noRegistroAmbiental'))
                                             <span class="error text-danger"
                                                 for="input-noRegistroAmbiental">{{ $errors->first('noRegistroAmbiental') }}</span>
@@ -42,7 +45,8 @@
                                     <label for="calle" class="col-sm-2 col-form-label">Calle:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="calle"
-                                            value="{{ old('calle', $planta->calle) }}">
+                                            value="{{ old('calle', $planta->calle) }}"
+                                            onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('calle'))
                                             <span class="error text-danger"
                                                 for="input-calle">{{ $errors->first('calle') }}</span>
@@ -54,8 +58,8 @@
                                     <label for="noExterior" class="col-sm-2 col-form-label">Número exterior:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noExterior"
-                                            value="{{ old('noExterior', $planta->noExterior) }}"
-                                            maxlength="16">
+                                            value="{{ old('noExterior', $planta->noExterior) }}" maxlength="16"
+                                            onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noExterior'))
                                             <span class="error text-danger"
                                                 for="input-noExterior">{{ $errors->first('noExterior') }}</span>
@@ -67,8 +71,8 @@
                                     <label for="noInterior" class="col-sm-2 col-form-label">Número interior:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noInterior"
-                                            value="{{ old('noInterior', $planta->noInterior) }}"
-                                            maxlength="16">
+                                            value="{{ old('noInterior', $planta->noInterior) }}" maxlength="16"
+                                            onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noInterior'))
                                             <span class="error text-danger"
                                                 for="input-noInterior">{{ $errors->first('noInterior') }}</span>
@@ -80,7 +84,8 @@
                                     <label for="colonia" class="col-sm-2 col-form-label">Colonia:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="colonia"
-                                            value="{{ old('colonia', $planta->colonia) }}">
+                                            value="{{ old('colonia', $planta->colonia) }}"
+                                            onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('colonia'))
                                             <span class="error text-danger"
                                                 for="input-colonia">{{ $errors->first('colonia') }}</span>
@@ -92,8 +97,7 @@
                                     <label for="codigoPostal" class="col-sm-2 col-form-label">Código postal:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="codigoPostal"
-                                            value="{{ old('codigoPostal', $planta->codigoPostal) }}"
-                                            maxlength="5">
+                                            value="{{ old('codigoPostal', $planta->codigoPostal) }}" maxlength="5">
                                         @if ($errors->has('codigoPostal'))
                                             <span class="error text-danger"
                                                 for="input-codigoPostal">{{ $errors->first('codigoPostal') }}</span>
@@ -105,8 +109,7 @@
                                     <label for="estado_id" class="col-sm-2 col-form-label">Estado:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="estado_id"
-                                            value="{{ old('estado_id', $planta->estado_id) }}"
-                                            maxlength="5">
+                                            value="{{ old('estado_id', $planta->estado_id) }}" maxlength="5">
                                         @if ($errors->has('estado_id'))
                                             <span class="error text-danger"
                                                 for="input-estado_id">{{ $errors->first('estado_id') }}</span>
@@ -118,8 +121,7 @@
                                     <label for="municipio_id" class="col-sm-2 col-form-label">Municipio:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="municipio_id"
-                                            value="{{ old('municipio_id', $planta->municipio_id) }}"
-                                            maxlength="5">
+                                            value="{{ old('municipio_id', $planta->municipio_id) }}" maxlength="5">
                                         @if ($errors->has('municipio_id'))
                                             <span class="error text-danger"
                                                 for="input-municipio_id">{{ $errors->first('municipio_id') }}</span>
@@ -131,8 +133,7 @@
                                     <label for="telefono" class="col-sm-2 col-form-label">Teléfono:</label>
                                     <div class="col-sm-7">
                                         <input type="tel" class="form-control" name="telefono"
-                                            value="{{ old('telefono', $planta->telefono) }}"
-                                            maxlength="10">
+                                            value="{{ old('telefono', $planta->telefono) }}" maxlength="10">
                                         @if ($errors->has('telefono'))
                                             <span class="error text-danger"
                                                 for="input-telefono">{{ $errors->first('telefono') }}</span>
@@ -144,8 +145,7 @@
                                     <label for="extension" class="col-sm-2 col-form-label">Extensión:</label>
                                     <div class="col-sm-7">
                                         <input type="tel" class="form-control" name="extension"
-                                            value="{{ old('extension', $planta->extension) }}"
-                                            maxlength="6">
+                                            value="{{ old('extension', $planta->extension) }}" maxlength="6">
                                         @if ($errors->has('extension'))
                                             <span class="error text-danger"
                                                 for="input-extension">{{ $errors->first('extension') }}</span>
@@ -157,7 +157,8 @@
                                     <label for="correo" class="col-sm-2 col-form-label">Correo electrónico:</label>
                                     <div class="col-sm-7">
                                         <input type="email" class="form-control" name="correo"
-                                            value="{{ old('correo', $planta->correo) }}">
+                                            value="{{ old('correo', $planta->correo) }}"
+                                            onkeyup="this.value = this.value.toLowerCase();">
                                         @if ($errors->has('correo'))
                                             <span class="error text-danger"
                                                 for="input-email">{{ $errors->first('correo') }}</span>

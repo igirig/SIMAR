@@ -18,7 +18,7 @@
                                     <label for="razonSocial" class="col-sm-2 col-form-label">Nombre:</label>
                                     <div class="col-sm-9">
                                         <input type="text" class="form-control" name="razonSocial"
-                                            value="{{ old('razonSocial', $cliente->razonSocial) }}" autofocus>
+                                            value="{{ old('razonSocial', $cliente->razonSocial) }}" onkeyup="this.value = this.value.toUpperCase();" autofocus>
                                         @if ($errors->has('razonSocial'))
                                             <span class="error text-danger"
                                                 for="input-razonSocial">{{ $errors->first('razonSocial') }}</span>

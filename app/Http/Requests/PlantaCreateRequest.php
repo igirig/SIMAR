@@ -25,15 +25,16 @@ class PlantaCreateRequest extends FormRequest
     {
         return [
             'razonSocial' => 'required|min:3|max:64|unique:plantas',
-            'noRegistroAmbiental' => 'required|min:12|max:13|unique:plantas',
+            'noRegistroAmbiental' => 'required|size:12|unique:plantas',
             'calle' => 'required|min:1|max:64',
             'noExterior' => 'max:16',
             'noInterior' => 'max:16',
             'colonia' => 'required|min:1|max:64',
-            'codigoPostal' => 'required|min:5|numeric',
+            'codigoPostal' => 'required|digits:5|numeric',
             'estado_id' => 'required',
             'municipio_id' => 'required',
-            'telefono' => 'required|min:10|numeric',
+            'telefono' => 'required|digits:10|numeric',
+            'extension' => 'numeric',
             'correo' => 'required|email',
         ];
     }

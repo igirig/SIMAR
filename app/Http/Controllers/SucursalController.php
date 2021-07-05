@@ -58,6 +58,7 @@ class SucursalController extends Controller
         'estado_id',
         'municipio_id',
         'telefono',
+        'extension',
         'correo',);
 
         $sucursal->update($data);

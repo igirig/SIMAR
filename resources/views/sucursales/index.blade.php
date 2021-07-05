@@ -47,7 +47,7 @@
                                                             <form
                                                                 action="{{ route('sucursales.destroy', $sucursal->id) }}"
                                                                 method="POST" style="display: inline-block;"
-                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar esta sucursal {{ $sucursal->name }}?')">
+                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar esta sucursal {{ $sucursal->nombre }}?')">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button class="btn btn-danger" type="submit"

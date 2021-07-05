@@ -2,22 +2,22 @@
 @section('scripts')
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
-        $(function(){
+        $(function() {
             $('#estado_id').on('change', estadoSeleccionado);
-        }) 
-        function estadoSeleccionado(){
+        })
+
+        function estadoSeleccionado() {
             var estado_id = $(this).val();
             //alert(estado_id); Llamada peticion AJAX
 
-            $.get('/api/estados/'+estado_id+'', function(data){
+            $.get('/api/estados/' + estado_id + '', function(data) {
                 var select = '<option value="">Seleccione el municipio...</option>';
-                for(var i=0; i<data.length; ++i){
-                    select+='<option value="'+data[i].id+'">'+data[i].nombre+'</option>';
+                for (var i = 0; i < data.length; ++i) {
+                    select += '<option value="' + data[i].id + '">' + data[i].nombre + '</option>';
                     $('#municipio_id').html(select);
                 }
             });
         }
-
     </script>
 @endsection
 
@@ -62,7 +62,8 @@
                                     <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="nombre"
-                                            placeholder="Ingrese su Nombre" value="{{ old('nombre') }}" autofocus>
+                                            placeholder="Ingrese su Nombre" value="{{ old('nombre') }}"
+                                            onkeyup="this.value = this.value.toUpperCase();" autofocus>
                                         @if ($errors->has('nombre'))
                                             <span class="error text-danger"
                                                 for="input-nombre">{{ $errors->first('nombre') }}</span>
@@ -76,7 +77,8 @@
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noRegistroAmbiental"
                                             placeholder="Ingrese su Número de Registro Ambiental"
-                                            value="{{ old('noRegistroAmbiental') }}" maxlength="12">
+                                            value="{{ old('noRegistroAmbiental') }}" maxlength="12"
+                                            onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noRegistroAmbiental'))
                                             <span class="error text-danger"
                                                 for="input-noRegistroAmbiental">{{ $errors->first('noRegistroAmbiental') }}</span>
@@ -88,7 +90,8 @@
                                     <label for="calle" class="col-sm-2 col-form-label">Calle:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="calle"
-                                            placeholder="Ingrese la calle donde esta ubicada" value="{{ old('calle') }}">
+                                            placeholder="Ingrese la calle donde esta ubicada" value="{{ old('calle') }}"
+                                            onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('calle'))
                                             <span class="error text-danger"
                                                 for="input-calle">{{ $errors->first('calle') }}</span>
@@ -101,7 +104,8 @@
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noExterior"
                                             placeholder="Ingrese el número exterior donde esta ubicada (*)"
-                                            value="{{ old('noExterior') }}" maxlength="16">
+                                            value="{{ old('noExterior') }}" maxlength="16"
+                                            onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noExterior'))
                                             <span class="error text-danger"
                                                 for="input-noExterior">{{ $errors->first('noExterior') }}</span>
@@ -114,7 +118,8 @@
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noInterior"
                                             placeholder="Ingrese el número interior donde esta ubicada (*)"
-                                            value="{{ old('noInterior') }}" maxlength="16">
+                                            value="{{ old('noInterior') }}" maxlength="16"
+                                            onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noInterior'))
                                             <span class="error text-danger"
                                                 for="input-noInterior">{{ $errors->first('noInterior') }}</span>
@@ -127,7 +132,8 @@
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="colonia"
                                             placeholder="Ingrese la colonia donde esta ubicada"
-                                            value="{{ old('colonia') }}">
+                                            value="{{ old('colonia') }}"
+                                            onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('colonia'))
                                             <span class="error text-danger"
                                                 for="input-colonia">{{ $errors->first('colonia') }}</span>
@@ -183,7 +189,7 @@
                                             id="municipio_id">
                                             <option value="">Seleccione el municipio...</option>
                                             <!--Comienzo for each -->
-                                             {{-- @foreach ($municipios as $municipio)
+                                            {{-- @foreach ($municipios as $municipio)
                                                 <option value="{{ $municipio->id }}"
                                                     {{ old('municipio_id') == $municipio->id ? 'selected' : '' }}>
                                                     {{ $municipio->nombre }}</option>
@@ -215,8 +221,8 @@
                                     <label for="extension" class="col-sm-2 col-form-label">Extensión:</label>
                                     <div class="col-sm-7">
                                         <input type="tel" class="form-control" name="extension"
-                                            placeholder="Ingrese la Extensión..."
-                                            value="{{ old('extension') }}" maxlength="6">
+                                            placeholder="Ingrese la Extensión..." value="{{ old('extension') }}"
+                                            maxlength="6">
                                         @if ($errors->has('extension'))
                                             <span class="error text-danger"
                                                 for="input-extension">{{ $errors->first('extension') }}</span>
@@ -228,7 +234,8 @@
                                     <label for="correo" class="col-sm-2 col-form-label">Correo electrónico:</label>
                                     <div class="col-sm-7">
                                         <input type="email" class="form-control" name="correo"
-                                            placeholder="Ingrese su correo electrónico" value="{{ old('correo') }}">
+                                            placeholder="Ingrese su correo electrónico" value="{{ old('correo') }}"
+                                            onkeyup="this.value = this.value.toLowerCase();">
                                         @if ($errors->has('correo'))
                                             <span class="error text-danger"
                                                 for="input-email">{{ $errors->first('correo') }}</span>
@@ -239,8 +246,9 @@
                             </div>
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
-                                <a href="{{ route('sucursales.index') }}" class="btn btn-success mr-3">Volver al índice</a>
-                                <button type="submit" class="btn btn-warning">Guardar sucursal</button>
+                                <a href="{{ route('sucursales.index') }}" class="btn btn-success mr-3">Volver al
+                                    índice</a>
+                                <button type="submit" class="btn btn-warning">Guardar Sucursal</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

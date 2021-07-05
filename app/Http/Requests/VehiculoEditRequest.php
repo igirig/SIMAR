@@ -26,10 +26,10 @@ class VehiculoEditRequest extends FormRequest
         $vehiculo = $this->route('vehiculo');
         return [
             'transportista_id' => [''],
-            'noPermisoSCT' => ['required','min:9','unique:vehiculos,noPermisoSCT,' . request()->route('vehiculo')->id],
+            'noPermisoSCT' => ['required', 'size:9', 'unique:vehiculos,noPermisoSCT,' . request()->route('vehiculo')->id],
             'tipo_id' => [''],
             'capacidad_id' => [''],
-            'noPlaca' => ['required','min:6','max:7','unique:vehiculos,noPlaca,' . request()->route('vehiculo')->id],
+            'noPlaca' => ['required', 'min:6', 'max:7', 'unique:vehiculos,noPlaca,' . request()->route('vehiculo')->id],
         ];
     }
 }

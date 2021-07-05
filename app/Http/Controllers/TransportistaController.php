@@ -57,6 +57,7 @@ class TransportistaController extends Controller
         'estado_id',
         'municipio_id',
         'telefono',
+        'extension',
         'correo',);
 
         $transportista->update($data);

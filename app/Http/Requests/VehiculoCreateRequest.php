@@ -25,7 +25,7 @@ class VehiculoCreateRequest extends FormRequest
     {
         return [
             'transportista_id' => 'required',
-            'noPermisoSCT' => 'required|min:9|unique:vehiculos',
+            'noPermisoSCT' => 'required|size:9|unique:vehiculos',
             'tipo_id' => 'required',
             'capacidad_id' => 'required',
             'noPlaca' => 'required|min:6|max:7|unique:vehiculos',
