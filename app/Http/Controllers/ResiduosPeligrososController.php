@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\ResiduosPeligrosos;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Transportista;
+use App\Models\Residuo;
+use App\Models\Planta;
 
 class ResiduosPeligrososController extends Controller
 {
@@ -26,7 +29,12 @@ class ResiduosPeligrososController extends Controller
     public function create()
     {
         //
-        return view('manifiestos.MRP');
+        $plantas = Planta::all(['razonSocial', 'id']);
+        $residuos = Residuo::all(['nombre','id']);
+        $transportistas = Transportista::all(['razonSocial', 'id']);
+        $clientes = ResiduosPeligrosos::all(['razonSocial','id']);
+        
+        return view('manifiestos.MRP', compact('clientes', 'transportistas', 'plantas', 'residuos'));
     }
 
     /**

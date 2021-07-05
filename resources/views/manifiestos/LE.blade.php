@@ -25,12 +25,14 @@
                         </div>
                         <div class="card">
                             <div class="card-body">
-                                <form>
+                                <form method="POST" >
                                     <div class="form-group col-md-3">
                                         <label for="inputServiceStation">Razón social de la estación de servicio</label>
                                         <select id="inputServiceStation" class="form-control">
-                                          <option selected>Escoge...</option>
-                                          <option>...</option>
+                                          
+                                          @foreach ($items as $item)
+                                            <option value="{{ $item->id }}">{{ $item->razonSocial }}</option>
+                                          @endforeach
                                         </select>
                                       </div>
                             </div>

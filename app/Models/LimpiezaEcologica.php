@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class LimpiezaEcologica extends Model
 {
     use HasFactory;
+    protected $table = 'estaciones';
+    
 }

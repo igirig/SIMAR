@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class ResiduosManejoEspecial extends Model
 {
     use HasFactory;
+    protected $table = 'clientes';
 }
