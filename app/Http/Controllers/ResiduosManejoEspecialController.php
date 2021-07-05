@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\ResiduosManejoEspecial;
+use App\Models\Transportista;
+use App\Models\Planta;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Residuo;
 
 class ResiduosManejoEspecialController extends Controller
 {
@@ -25,8 +28,11 @@ class ResiduosManejoEspecialController extends Controller
      */
     public function create()
     {
-        //
-        return view('manifiestos.RME');
+        $clientes = ResiduosManejoEspecial::all(['razonSocial', 'id']);
+        $transportistas = Transportista::all(['razonSocial', 'id']);
+        $plantas = Planta::all(['razonSocial', 'id']);
+        $residuos = Residuo::all(['nombre','id']);
+        return view('manifiestos.RME', compact('clientes', 'transportistas', 'plantas', 'residuos'));
     }
 
     /**
@@ -84,4 +90,6 @@ class ResiduosManejoEspecialController extends Controller
     {
         //
     }
+
+    
 }

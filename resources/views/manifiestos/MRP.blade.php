@@ -29,37 +29,60 @@
                                     <div class="form-group col-md-3">
                                         <label for="inputServiceStation">Razón social del generador</label>
                                         <select id="inputServiceStation" class="form-control">
-                                          <option selected>Escoge...</option>
-                                          <option>...</option>
+                                          @foreach ($clientes as $cliente)
+                                            <option value="{{ $cliente->id }}">{{ $cliente->razonSocial }}</option>
+                                          @endforeach
                                         </select>
                                     </div>
                                     <div class="form-group col-md-3">
                                         <label for="inputServiceStation">Razón social del transportista</label>
                                         <select id="inputServiceStation" class="form-control">
-                                          <option selected>Escoge...</option>
-                                          <option>...</option>
+                                          @foreach ($transportistas as $transportista)
+                                            <option value="{{ $transportista->id }}">{{ $transportista->razonSocial }}</option>
+                                          @endforeach
                                         </select>
                                     </div>
                                       <div class="form-group col-md-3">
                                         <label for="inputServiceStation">Razón social del destinatario</label>
                                         <select id="inputServiceStation" class="form-control">
-                                          <option selected>Escoge...</option>
-                                          <option>...</option>
+                                          @foreach ($plantas as $planta)
+                                            <option value="{{ $planta->id }}">{{ $planta->razonSocial }}</option>
+                                          @endforeach
                                         </select>
                                     </div>
+
+
+                                    <div id='residuos' class='box-body'>
                                     <div class="form-group col-md-3">
                                         <label for="inputServiceStation">Residuo 0</label>
-                                        <select id="inputServiceStation" class="form-control">
-                                          <option selected>Escoge...</option>
-                                          <option>...</option>
+                                        <select id="inputServiceStation0" class="form-control">
+                                          @foreach ($residuos as $residuo)
+                                            <option value="{{ $residuo->id }}">{{ $residuo->nombre }}</option>
+                                          @endforeach
                                         </select>
-                                        <button type="button" class="btn btn-info btn-sm btn-round">Agregar residuo</button>
                                     </div>
+                                    
+                                  </div>
+                                    @section('scripts')
+                                      <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+                                      <script>
+                                        var i = 1;
+                                          function addResiduo(){
+                                            document.getElementById("residuos").innerHTML += 
+                                            "<div class='form-group col-md-3'><label for='inputServiceStation'>Residuo "+i+"</label><select id='inputServiceStation"+i+" ' class='form-control'>@foreach ($residuos as $residuo)<option value='{{ $residuo->id }}'>{{ $residuo->nombre }}</option>@endforeach</select></div>";
+                                            i++;
+                                          }
+                                      </script>
+                                    @endsection
+                                  <button type="button" class="btn btn-info btn-sm btn-round" id="buttonResiduoPlus" onclick="addResiduo()">Agregar residuo</button>
+
+
                                     <div class="form-group col-md-3">
                                         <label for="inputServiceStation">Razón social del centro de acopio</label>
                                         <select id="inputServiceStation" class="form-control">
-                                          <option selected>Escoge...</option>
-                                          <option>...</option>
+                                          @foreach ($residuos as $residuo)
+                                            <option value="{{ $residuo->id }}">{{ $residuo->razonSocial }}</option>
+                                          @endforeach
                                         </select>
                                     </div>
                                     

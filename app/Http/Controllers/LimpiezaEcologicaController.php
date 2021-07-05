@@ -15,7 +15,8 @@ class LimpiezaEcologicaController extends Controller
      */
     public function index()
     {
-        //
+        //$data = LimpiezaEcologica::all();
+        //return view('manifiestos.LE', compact('data'));
     }
 
     /**
@@ -25,8 +26,8 @@ class LimpiezaEcologicaController extends Controller
      */
     public function create()
     {
-        //
-        return view('manifiestos.LE');
+        $items = LimpiezaEcologica::all(['razonSocial', 'id']);
+        return view('manifiestos.LE', compact('items'));
     }
 
     /**
