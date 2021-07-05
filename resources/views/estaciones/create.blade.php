@@ -152,10 +152,6 @@
                                     </div>
                                 </div>
 
-                                {{-- <h1>
-                                    {{ $valor }}
-                                </h1> --}}
-
                                 <div class="row">
                                     <label for="municipio_id" class="col-sm-2 col-form-label">Municipio:</label>
                                     <div class="col-md-7">

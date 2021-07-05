@@ -46,7 +46,6 @@ class PlantaController extends Controller
 
     public function update(PlantaEditRequest $request, planta $planta)
     {
-
         $data = $request->only('razonSocial',
         'noRegistroAmbiental',
         'calle',
