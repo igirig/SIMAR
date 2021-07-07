@@ -106,14 +106,26 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="estado_id" class="col-sm-2 col-form-label">Estado:</label>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="estado_id"
-                                            value="{{ old('estado_id', $planta->estado_id) }}" maxlength="5">
-                                        @if ($errors->has('estado_id'))
-                                            <span class="error text-danger"
-                                                for="input-estado_id">{{ $errors->first('estado_id') }}</span>
-                                        @endif
+                                    <label for="municipio_id" class="col-sm-2 col-form-label">Municipio:</label>
+                                    <div class="col-md-7">
+                                        <select name="municipio_id"
+                                            class="form-control @error('municipio_id') is-invalid @enderror"
+                                            id="municipio_id">
+                                            <option value="">Seleccione el municipio...</option>
+                                            <!--Comienzo for each -->
+                                            @foreach ($municipios as $municipio)
+                                                <option value="{{ $municipio->id }}"
+                                                    {{ $planta->municipio_id == $municipio->id ? 'selected' : '' }}>
+                                                    {{ $municipio->nombre }}
+                                                </option>
+                                            @endforeach
+                                            <!--termino for each -->
+                                        </select>
+                                        @error('municipio_id')
+                                            <span class="invalid-feedback d-block" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                 </div>
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\PlantaCreateRequest;
 use App\Http\Requests\PlantaEditRequest;
 use App\Models\Planta;
+use App\Models\Municipio;
 use Illuminate\Support\Facades\DB;
 
 class PlantaController extends Controller
@@ -41,7 +42,9 @@ class PlantaController extends Controller
 
     public function edit(Planta $planta)
     {
-        return view('plantas.edit', compact('planta'));
+        $municipios = Municipio::all('nombre', 'id');
+        return view('plantas.edit', compact('planta', 'municipios'));
+        
     }
 
     public function update(PlantaEditRequest $request, planta $planta)
