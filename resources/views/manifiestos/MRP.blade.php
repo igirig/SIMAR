@@ -77,14 +77,7 @@
                                   <button type="button" class="btn btn-info btn-sm btn-round" id="buttonResiduoPlus" onclick="addResiduo()">Agregar residuo</button>
 
 
-                                    <div class="form-group col-md-3">
-                                        <label for="inputServiceStation">Razón social del centro de acopio</label>
-                                        <select id="inputServiceStation" class="form-control">
-                                          @foreach ($residuos as $residuo)
-                                            <option value="{{ $residuo->id }}">{{ $residuo->razonSocial }}</option>
-                                          @endforeach
-                                        </select>
-                                    </div>
+                                    
                                     
                             </div>
                             <button type="submit" class="btn btn-primary" >Crear</button>
