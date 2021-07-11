@@ -1,4 +1,25 @@
 @extends('layouts.main', ['activePage' => 'plantas.edit', 'titlePage' => 'Plantas'])
+@section('scripts')
+    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('#estado_id').on('change', estadoSeleccionado);
+        })
+
+        function estadoSeleccionado() {
+            var estado_id = $(this).val();
+            //alert(estado_id); Llamada peticion AJAX
+
+            $.get('/api/estados/' + estado_id + '', function(data) {
+                var select = '<option value="">Seleccione el municipio...</option>';
+                for (var i = 0; i < data.length; ++i) {
+                    select += '<option value="' + data[i].id + '">' + data[i].nombre + '</option>';
+                    $('#municipio_id').html(select);
+                }
+            });
+        }
+    </script>
+@endsection
 @section('content')
     <div class="content">
         <div class="container-fluid">
@@ -106,6 +127,29 @@
                                 </div>
 
                                 <div class="row">
+                                    <label for="estado_id" class="col-sm-2 col-form-label">Estado:</label>
+                                    <div class="col-md-7">
+                                        <select name="estado_id"
+                                            class="form-control @error('estado_id') is-invalid @enderror" id="estado_id">
+                                            <option value="">Seleccione el estado...</option>
+                                            <!--Comienzo for each -->
+                                            @foreach ($estados as $estado)
+                                                <option value="{{ $estado->id }}"
+                                                    {{ $planta->estado_id == $estado->id ? 'selected' : '' }}>
+                                                    {{ $estado->nombre }}
+                                                </option>
+                                            @endforeach
+                                            <!--termino for each -->
+                                        </select>
+                                        @error('estado_id')
+                                            <span class="invalid-feedback d-block" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+
+                                <div class="row">
                                     <label for="municipio_id" class="col-sm-2 col-form-label">Municipio:</label>
                                     <div class="col-md-7">
                                         <select name="municipio_id"
@@ -126,18 +170,6 @@
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <label for="municipio_id" class="col-sm-2 col-form-label">Municipio:</label>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="municipio_id"
-                                            value="{{ old('municipio_id', $planta->municipio_id) }}" maxlength="5">
-                                        @if ($errors->has('municipio_id'))
-                                            <span class="error text-danger"
-                                                for="input-municipio_id">{{ $errors->first('municipio_id') }}</span>
-                                        @endif
                                     </div>
                                 </div>
 

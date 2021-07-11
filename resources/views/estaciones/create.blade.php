@@ -31,6 +31,7 @@
                             <div class="card-header card-header-warning">
                                 <h4 class="card-title">Nueva estación</h4>
                                 <p class="card-category">Ingrese los datos de la estación....</p>
+                                <p class="card-category">(*)Opcional</p>
                             </div>
                             <div class="card-body">
 
@@ -159,13 +160,6 @@
                                             class="form-control @error('municipio_id') is-invalid @enderror"
                                             id="municipio_id">
                                             <option value="">Seleccione el municipio...</option>
-                                            <!--Comienzo for each -->
-                                            {{-- @foreach ($municipios as $municipio)
-                                                <option value="{{ $municipio->id }}"
-                                                    {{ old('municipio_id') == $municipio->id ? 'selected' : '' }}>
-                                                    {{ $municipio->nombre }}</option>
-                                            @endforeach --}}
-                                            <!--termino for each -->
                                         </select>
                                         @error('municipio_id')
                                             <span class="invalid-feedback d-block" role="alert">
@@ -192,7 +186,7 @@
                                     <label for="extension" class="col-sm-2 col-form-label">Extensión:</label>
                                     <div class="col-sm-7">
                                         <input type="tel" class="form-control" name="extension"
-                                            placeholder="Ingrese la Extensión..." value="{{ old('extension') }}"
+                                            placeholder="Ingrese la Extensión (*)" value="{{ old('extension') }}"
                                             maxlength="6">
                                         @if ($errors->has('extension'))
                                             <span class="error text-danger"

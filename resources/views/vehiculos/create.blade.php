@@ -17,7 +17,8 @@
                                     <label for="transportista_id" class="col-sm-2 col-form-label">Transportista:</label>
                                     <div class="col-md-7">
                                         <select name="transportista_id"
-                                            class="form-control @error('transportista_id') is-invalid @enderror" id="transportista_id">
+                                            class="form-control @error('transportista_id') is-invalid @enderror"
+                                            id="transportista_id">
                                             <option value="">Seleccione el transportista...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($transportistas as $transportista)
@@ -37,23 +38,25 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="noPermisoSCT" class="col-sm-2 col-form-label">Número de Permiso de la SCT:</label>
+                                    <label for="noPermisoSCT" class="col-sm-2 col-form-label">Número de Permiso de la
+                                        SCT:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noPermisoSCT"
                                             placeholder="Ingrese su Número de Permiso de la SCT"
-                                            value="{{ old('noPermisoSCT') }}" maxlength="9" onkeyup="this.value = this.value.toUpperCase();">
+                                            value="{{ old('noPermisoSCT') }}" maxlength="9"
+                                            onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noPermisoSCT'))
                                             <span class="error text-danger"
                                                 for="input-noPermisoSCT">{{ $errors->first('noPermisoSCT') }}</span>
                                         @endif
                                     </div>
                                 </div>
-                                
+
                                 <div class="row">
                                     <label for="tipo_id" class="col-sm-2 col-form-label">Tipo de vehículo:</label>
                                     <div class="col-md-7">
-                                        <select name="tipo_id"
-                                            class="form-control @error('tipo_id') is-invalid @enderror" id="tipo_id">
+                                        <select name="tipo_id" class="form-control @error('tipo_id') is-invalid @enderror"
+                                            id="tipo_id">
                                             <option value="">Seleccione el tipo de vehiculo...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($tipos as $tipo)
@@ -73,10 +76,12 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="capacidad_id" class="col-sm-2 col-form-label">Capacidad del vehículo:</label>
+                                    <label for="capacidad_id" class="col-sm-2 col-form-label">Capacidad del
+                                        vehículo:</label>
                                     <div class="col-md-7">
                                         <select name="capacidad_id"
-                                            class="form-control @error('capacidad_id') is-invalid @enderror" id="capacidad_id">
+                                            class="form-control @error('capacidad_id') is-invalid @enderror"
+                                            id="capacidad_id">
                                             <option value="">Seleccione el capacidad de vehiculo...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($capacidades as $capacidad)
@@ -96,12 +101,11 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="noPlaca" class="col-sm-2 col-form-label">Número de Registro
-                                        Ambiental:</label>
+                                    <label for="noPlaca" class="col-sm-2 col-form-label">Número de placa:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noPlaca"
-                                            placeholder="Ingrese su Número de Placa"
-                                            value="{{ old('noPlaca') }}" maxlength="7" onkeyup="this.value = this.value.toUpperCase();">
+                                            placeholder="Ingrese su Número de Placa" value="{{ old('noPlaca') }}"
+                                            maxlength="7" onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noPlaca'))
                                             <span class="error text-danger"
                                                 for="input-noPlaca">{{ $errors->first('noPlaca') }}</span>
@@ -112,7 +116,8 @@
                             </div>
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
-                                <a href="{{ route('vehiculos.index') }}" class="btn btn-success mr-3">Volver al índice</a>
+                                <a href="{{ route('vehiculos.index') }}" class="btn btn-success mr-3">Volver al
+                                    índice</a>
                                 <button type="submit" class="btn btn-warning">Guardar Vehículo</button>
                             </div>
                             <!--Fin del Footer-->

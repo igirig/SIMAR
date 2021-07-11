@@ -26,7 +26,6 @@
                                     </div>
                                 </div>
 
-
                                 {{-- BOTONES PARA RESIDUOS --}}
 
                                 <div class="row">

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\TransportistaCreateRequest;
 use App\Http\Requests\TransportistaEditRequest;
 use App\Models\Transportista;
+use App\Models\Estado;
+use App\Models\Municipio;
 use Illuminate\Support\Facades\DB;
 
 class TransportistaController extends Controller
@@ -15,7 +17,8 @@ class TransportistaController extends Controller
         return view('transportistas.index', compact('transportistas'));
     }
 
-    public function forStates($id){
+    public function forStates($id)
+    {
         return DB::table('municipios')->select('*')->where('estado_id', '=', $id)->orderBy('nombre')->get();
     }
 
@@ -41,24 +44,28 @@ class TransportistaController extends Controller
 
     public function edit(Transportista $transportista)
     {
-        return view('transportistas.edit', compact('transportista'));
+        $estados = Estado::all('nombre', 'id');
+        $municipios = Municipio::all('nombre', 'id');
+        return view('transportistas.edit', compact('transportista', 'estados', 'municipios'));
     }
 
     public function update(TransportistaEditRequest $request, transportista $transportista)
     {
 
-        $data = $request->only('razonSocial',
-        'noRegistroAmbiental',
-        'calle',
-        'noExterior',
-        'noInterior',
-        'colonia',
-        'codigoPostal',
-        'estado_id',
-        'municipio_id',
-        'telefono',
-        'extension',
-        'correo',);
+        $data = $request->only(
+            'razonSocial',
+            'noRegistroAmbiental',
+            'calle',
+            'noExterior',
+            'noInterior',
+            'colonia',
+            'codigoPostal',
+            'estado_id',
+            'municipio_id',
+            'telefono',
+            'extension',
+            'correo',
+        );
 
         $transportista->update($data);
         return redirect()->route('transportistas.show', $transportista->id)->with('success', 'Transportista actualizada correctamente');
