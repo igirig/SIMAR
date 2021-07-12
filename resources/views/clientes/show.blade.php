@@ -28,11 +28,11 @@
                                                         <td>{{ $cliente->id }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Razón Social</th>
+                                                        <th>Razón social</th>
                                                         <td>{{ $cliente->razonSocial }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Última Modificación</th>
+                                                        <th>Última modificación</th>
                                                         <td><a href="#" target="_blank">{{ $cliente->updated_at }}</a>
                                                         </td>
                                                     </tr>
@@ -47,7 +47,7 @@
                                                     class="btn btn-sm btn-warning mr-3">Editar cliente</a>
                                                 <form action="{{ route('clientes.destroy', $cliente->id) }}" method="POST"
                                                     style="display: inline-block;"
-                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar al cliente {{ $cliente->razonSocial }}?')">
+                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar este cliente: {{ $cliente->razonSocial }}?')">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button class="btn btn-sm btn-danger" type="submit"

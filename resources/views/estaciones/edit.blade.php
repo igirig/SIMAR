@@ -37,7 +37,7 @@
                             <div class="card-body">
 
                                 <div class="row">
-                                    <label for="razonSocial" class="col-sm-2 col-form-label">Razón Social:</label>
+                                    <label for="razonSocial" class="col-sm-2 col-form-label">Razón social:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="razonSocial"
                                             value="{{ old('razonSocial', $estacion->razonSocial) }}"
@@ -50,7 +50,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="noEstacion" class="col-sm-2 col-form-label">Número de Estación:</label>
+                                    <label for="noEstacion" class="col-sm-2 col-form-label">Número de estación:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noEstacion"
                                             value="{{ old('noEstacion', $estacion->noEstacion) }}" maxlength="12"
@@ -214,7 +214,7 @@
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
                                 <a href="{{ url()->previous() }}" class="btn btn-success mr-3">Volver</a>
-                                <button type="submit" class="btn btn-warning">Actualizar Estación</button>
+                                <button type="submit" class="btn btn-warning">Actualizar estación</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

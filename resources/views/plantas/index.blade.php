@@ -23,7 +23,7 @@
                                                 <th>Razón Social</th>
                                                 <th>NRA</th>
                                                 <th>Teléfono</th>
-                                                <th>Correo Electrónico</th>
+                                                <th>Correo electrónico</th>
                                                 <th class="text-right">Acciones</th>
                                             </thead>
                                             <tbody>
@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="card-footer ml-auto mr-auto">
                                     <a href="{{ route('plantas.create') }}" class="btn btn-warning mr-3">Crear
-                                        Planta</a>
+                                        planta de tratamiento</a>
                                 </div>
                             </div>
                         </div>

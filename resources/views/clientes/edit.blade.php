@@ -9,8 +9,8 @@
                         @method('PUT')
                         <div class="card">
                             <div class="card-header card-header-warning">
-                                <h4 class="card-title">Editar Cliente</h4>
-                                <p class="card-category">Edite los datos del Cliente {{ $cliente->razonSocial }}...</p>
+                                <h4 class="card-title">Editar cliente</h4>
+                                <p class="card-category">Edite los datos del cliente {{ $cliente->razonSocial }}...</p>
                             </div>
                             <div class="card-body">
 
@@ -30,7 +30,7 @@
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
                                 <a href="{{ url()->previous() }}" class="btn btn-success mr-3">Volver</a>
-                                <button type="submit" class="btn btn-warning">Actualizar Cliente</button>
+                                <button type="submit" class="btn btn-warning">Actualizar cliente</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

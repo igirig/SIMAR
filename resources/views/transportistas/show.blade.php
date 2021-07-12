@@ -28,11 +28,11 @@
                                                         <td>{{ $transportista->id }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Razón Social</th>
+                                                        <th>Razón social</th>
                                                         <td>{{ $transportista->razonSocial }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Número de Registro Ambiental</th>
+                                                        <th>Número de registro ambiental</th>
                                                         <td><span
                                                                 class="badge badge-primary">{{ $transportista->noRegistroAmbiental }}</span>
                                                         </td>
@@ -49,13 +49,13 @@
                                                         <td>{{ $transportista->telefono }} ext. {{ $transportista->extension }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Correo de Contacto</th>
+                                                        <th>Correo de contacto</th>
                                                         <td><a href="mailto:{{ $transportista->correo }}"
                                                                 title="Enviar correo a {{ $transportista->correo }}">{{ $transportista->correo }}</a>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Ultima Modificación</th>
+                                                        <th>Ultima modificación</th>
                                                         <td>{{ $transportista->updated_at }}</a>
                                                         </td>
                                                     </tr>
@@ -67,14 +67,14 @@
                                                 <a href="{{ route('transportistas.index') }}"
                                                     class="btn btn-sm btn-success mr-3">Volver al índice</a>
                                                 <a href="{{ route('transportistas.edit', $transportista->id) }}"
-                                                    class="btn btn-sm btn-warning mr-3">Editar Transportista</a>
+                                                    class="btn btn-sm btn-warning mr-3">Editar transportista</a>
                                                 <form action="{{ route('transportistas.destroy', $transportista->id) }}" method="POST"
                                                     style="display: inline-block;"
-                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar este Transportista: {{ $transportista->razonSocial }}?')">
+                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar este transportista: {{ $transportista->razonSocial }}?')">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button class="btn btn-sm btn-danger" type="submit"
-                                                        rel="tooltip">Eliminar Transportista</button>
+                                                        rel="tooltip">Eliminar transportista</button>
                                                 </form>
                                             </div>
                                         </div>

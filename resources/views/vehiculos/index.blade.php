@@ -8,7 +8,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-success">
-                                    <h4 class="card-title">Lista de vehiculos</h4>
+                                    <h4 class="card-title">Lista de vehículos</h4>
                                     <p class="card-category">Seleccione una acción...</p>
                                 </div>
                                 <div class="card-body">
@@ -21,9 +21,9 @@
                                         <table class="table">
                                             <thead class="text-primary">
                                                 <th>Transportista</th>
-                                                <th>No Permiso SCT</th>
-                                                <th>Tipo de vehiculo</th>
-                                                <th>No de Placa</th>
+                                                <th>No permiso SCT</th>
+                                                <th>Tipo de vehículo</th>
+                                                <th>No de placas</th>
                                                 <th class="text-right">Acciones</th>
                                             </thead>
                                             <tbody>
@@ -36,21 +36,18 @@
                                                         <td class="td-actions text-right">
                                                             <a href="{{ route('vehiculos.show', $vehiculo->id) }}"
                                                                 class="btn btn-info" title="Visualizar vehiculo
-                                                                "><i
-                                                                    class="material-icons">person</i></a>
+                                                                        "><i class="material-icons">person</i></a>
                                                             <a href="{{ route('vehiculos.edit', $vehiculo->id) }}"
                                                                 class="btn btn-warning" title="Editar vehiculo
-                                                                "><i
-                                                                    class="material-icons">edit</i></a>
+                                                                        "><i class="material-icons">edit</i></a>
                                                             <form action="{{ route('vehiculos.destroy', $vehiculo->id) }}"
                                                                 method="POST" style="display: inline-block;"
-                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar esta vehiculo: {{ $vehiculo->noPlaca }}?')">
+                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar este vehículo con el no. de placas: {{ $vehiculo->noPlaca }}?')">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button class="btn btn-danger" type="submit"
-                                                                    rel="tooltip"><i class="material-icons"
-                                                                        title="Eliminar vehiculo
-                                                                        ">close</i></button>
+                                                                    rel="tooltip"><i class="material-icons" title="Eliminar vehículo
+                                                                                ">close</i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -64,7 +61,7 @@
                                 </div>
                                 <div class="card-footer ml-auto mr-auto">
                                     <a href="{{ route('vehiculos.create') }}" class="btn btn-warning mr-3">Crear
-                                        Vehículo</a>
+                                        vehículo</a>
                                 </div>
                             </div>
                         </div>

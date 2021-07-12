@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'plantas', 'titlePage' => 'Planta'])
+@extends('layouts.main', ['activePage' => 'plantas', 'titlePage' => 'Plantas de tratamiento'])
 @section('content')
     <div class="content">
         <div class="container-fluid">
@@ -6,7 +6,7 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header card-header-info">
-                            <h4 class="card-title">Detalles de la Planta</h4>
+                            <h4 class="card-title">Detalles de la planta de tratemiento</h4>
                             <p class="card-category">Vista detallada de {{ $planta->razonSocial }}...</p>
                         </div>
                         <!--Body-->
@@ -28,11 +28,11 @@
                                                         <td>{{ $planta->id }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Razón Social</th>
+                                                        <th>Razón social</th>
                                                         <td>{{ $planta->razonSocial }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Número de Registro Ambiental</th>
+                                                        <th>Número de registro ambiental</th>
                                                         <td><span
                                                                 class="badge badge-primary">{{ $planta->noRegistroAmbiental }}</span>
                                                         </td>
@@ -49,13 +49,13 @@
                                                         <td>{{ $planta->telefono }} ext. {{ $planta->extension }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Correo de Contacto</th>
+                                                        <th>Correo de contacto</th>
                                                         <td><a href="mailto:{{ $planta->correo }}"
                                                                 title="Enviar correo a {{ $planta->correo }}">{{ $planta->correo }}</a>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Ultima Modificación</th>
+                                                        <th>Ultima modificación</th>
                                                         <td>{{ $planta->updated_at }}</a>
                                                         </td>
                                                     </tr>
@@ -67,14 +67,14 @@
                                                 <a href="{{ route('plantas.index') }}"
                                                     class="btn btn-sm btn-success mr-3">Volver al índice</a>
                                                 <a href="{{ route('plantas.edit', $planta->id) }}"
-                                                    class="btn btn-sm btn-warning mr-3">Editar Planta</a>
+                                                    class="btn btn-sm btn-warning mr-3">Editar planta de tratamiento</a>
                                                 <form action="{{ route('plantas.destroy', $planta->id) }}" method="POST"
                                                     style="display: inline-block;"
-                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar la Planta: {{ $planta->razonSocial }}?')">
+                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar esta planta de tratamiento: {{ $planta->razonSocial }}?')">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button class="btn btn-sm btn-danger" type="submit"
-                                                        rel="tooltip">Eliminar Planta</button>
+                                                        rel="tooltip">Eliminar planta de tratamiento</button>
                                                 </form>
                                             </div>
                                         </div>

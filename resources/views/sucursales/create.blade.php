@@ -63,7 +63,7 @@
                                     <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="nombre"
-                                            placeholder="Ingrese su Nombre" value="{{ old('nombre') }}"
+                                            placeholder="Ingrese su nombre" value="{{ old('nombre') }}"
                                             onkeyup="this.value = this.value.toUpperCase();" autofocus>
                                         @if ($errors->has('nombre'))
                                             <span class="error text-danger"
@@ -73,11 +73,11 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="noRegistroAmbiental" class="col-sm-2 col-form-label">Número de Registro
-                                        Ambiental:</label>
+                                    <label for="noRegistroAmbiental" class="col-sm-2 col-form-label">Número de registro
+                                        ambiental:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noRegistroAmbiental"
-                                            placeholder="Ingrese su Número de Registro Ambiental"
+                                            placeholder="Ingrese su número de registro ambiental"
                                             value="{{ old('noRegistroAmbiental') }}" maxlength="12"
                                             onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noRegistroAmbiental'))
@@ -146,7 +146,7 @@
                                     <label for="codigoPostal" class="col-sm-2 col-form-label">Código postal:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="codigoPostal"
-                                            placeholder="Ingrese el Código postal donde esta ubicada"
+                                            placeholder="Ingrese el código postal donde esta ubicada"
                                             value="{{ old('codigoPostal') }}" maxlength="5">
                                         @if ($errors->has('codigoPostal'))
                                             <span class="error text-danger"
@@ -198,7 +198,7 @@
                                     <label for="telefono" class="col-sm-2 col-form-label">Teléfono:</label>
                                     <div class="col-sm-7">
                                         <input type="tel" class="form-control" name="telefono"
-                                            placeholder="Ingrese el Teléfono donde esta ubicada"
+                                            placeholder="Ingrese el teléfono donde esta ubicada"
                                             value="{{ old('telefono') }}" maxlength="10">
                                         @if ($errors->has('telefono'))
                                             <span class="error text-danger"
@@ -211,7 +211,7 @@
                                     <label for="extension" class="col-sm-2 col-form-label">Extensión:</label>
                                     <div class="col-sm-7">
                                         <input type="tel" class="form-control" name="extension"
-                                            placeholder="Ingrese la Extensión (*)" value="{{ old('extension') }}"
+                                            placeholder="Ingrese la extensión (*)" value="{{ old('extension') }}"
                                             maxlength="6">
                                         @if ($errors->has('extension'))
                                             <span class="error text-danger"
@@ -238,7 +238,7 @@
                             <div class="card-footer ml-auto mr-auto">
                                 <a href="{{ route('sucursales.index') }}" class="btn btn-success mr-3">Volver al
                                     índice</a>
-                                <button type="submit" class="btn btn-warning">Guardar Sucursal</button>
+                                <button type="submit" class="btn btn-warning">Guardar sucursal</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

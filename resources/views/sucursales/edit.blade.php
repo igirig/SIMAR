@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'sucursales.edit', 'titlePage' => 'sucursales'])
+@extends('layouts.main', ['activePage' => 'sucursales.edit', 'titlePage' => 'Sucursales'])
 @section('scripts')
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
@@ -48,7 +48,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="nombre" class="col-sm-2 col-form-label">Razón Social:</label>
+                                    <label for="nombre" class="col-sm-2 col-form-label">Razón social:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="nombre"
                                             value="{{ old('nombre', $sucursal->nombre) }}"
@@ -226,7 +226,7 @@
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
                                 <a href="{{ url()->previous() }}" class="btn btn-success mr-3">Volver</a>
-                                <button type="submit" class="btn btn-warning">Actualizar Sucursal</button>
+                                <button type="submit" class="btn btn-warning">Actualizar sucursal</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

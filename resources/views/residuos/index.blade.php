@@ -23,7 +23,7 @@
                                                 <th>Nombre</th>
                                                 <th>No ONU</th>
                                                 <th>Clase</th>
-                                                <th>Estado</th>
+                                                <th>Estado de la materia</th>
                                                 <th class="text-right">Acciones</th>
                                             </thead>
                                             <tbody>
@@ -44,7 +44,7 @@
                                                                     class="material-icons">edit</i></a>
                                                             <form action="{{ route('residuos.destroy', $residuo->id) }}"
                                                                 method="POST" style="display: inline-block;"
-                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar esta residuo: {{ $residuo->nombre }}?')">
+                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar este residuo: {{ $residuo->nombre }}?')">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button class="btn btn-danger" type="submit"
@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="card-footer ml-auto mr-auto">
                                     <a href="{{ route('residuos.create') }}" class="btn btn-warning mr-3">Crear
-                                        Residuo</a>
+                                        residuo</a>
                                 </div>
                             </div>
                         </div>

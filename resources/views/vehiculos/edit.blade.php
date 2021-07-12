@@ -9,8 +9,8 @@
                         @method('PUT')
                         <div class="card">
                             <div class="card-header card-header-warning">
-                                <h4 class="card-title">Editar Vehiculo</h4>
-                                <p class="card-category">Edite los datos del Vehiculo con la placa
+                                <h4 class="card-title">Editar vehículo</h4>
+                                <p class="card-category">Edite los datos del vehículo con el no. de placas
                                     {{ $vehiculo->noPlaca }}...</p>
                             </div>
                             <div class="card-body">
@@ -68,7 +68,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="noPlaca" class="col-sm-2 col-form-label">Número de placa:</label>
+                                    <label for="noPlaca" class="col-sm-2 col-form-label">Número de placas:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noPlaca"
                                             value="{{ old('noPlaca', $vehiculo->noPlaca) }}" maxlength="7"
@@ -84,7 +84,7 @@
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
                                 <a href="{{ url()->previous() }}" class="btn btn-success mr-3">Volver</a>
-                                <button type="submit" class="btn btn-warning">Actualizar Vehículo</button>
+                                <button type="submit" class="btn btn-warning">Actualizar vehículo</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

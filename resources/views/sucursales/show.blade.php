@@ -6,7 +6,7 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header card-header-info">
-                            <h4 class="card-title">Detalles de la Sucursal</h4>
+                            <h4 class="card-title">Detalles de la sucursal</h4>
                             <p class="card-category">Vista detallada de la Sucursal {{ $sucursal->nombre }}...</p>
                         </div>
                         <!--Body-->
@@ -36,7 +36,7 @@
                                                         <td>{{ $sucursal->nombre }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Número de Registro Ambiental</th>
+                                                        <th>Número de registro ambiental</th>
                                                         <td><span
                                                                 class="badge badge-primary">{{ $sucursal->noRegistroAmbiental }}</span>
                                                         </td>
@@ -53,13 +53,13 @@
                                                         <td>{{ $sucursal->telefono }} ext. {{ $sucursal->extension }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Correo de Contacto</th>
+                                                        <th>Correo de contacto</th>
                                                         <td><a href="mailto:{{ $sucursal->correo }}"
                                                                 title="Enviar correo a {{ $sucursal->correo }}">{{ $sucursal->correo }}</a>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Ultima Modificación</th>
+                                                        <th>Ultima modificación</th>
                                                         <td>{{ $sucursal->updated_at }}</a>
                                                         </td>
                                                     </tr>
@@ -71,14 +71,14 @@
                                                 <a href="{{ route('sucursales.index') }}"
                                                     class="btn btn-sm btn-success mr-3">Volver al índice</a>
                                                 <a href="{{ route('sucursales.edit', $sucursal->id) }}"
-                                                    class="btn btn-sm btn-warning mr-3">Editar Sucursal</a>
+                                                    class="btn btn-sm btn-warning mr-3">Editar sucursal</a>
                                                 <form action="{{ route('sucursales.destroy', $sucursal->id) }}" method="POST"
                                                     style="display: inline-block;"
-                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar esta Sucursal: {{ $sucursal->nombre }}?')">
+                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar esta sucursal: {{ $sucursal->nombre }}?')">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button class="btn btn-sm btn-danger" type="submit"
-                                                        rel="tooltip">Eliminar Sucursal</button>
+                                                        rel="tooltip">Eliminar sucursal</button>
                                                 </form>
                                             </div>
                                         </div>

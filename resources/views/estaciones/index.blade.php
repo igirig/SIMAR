@@ -20,10 +20,10 @@
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead class="text-primary">
-                                                <th>Razón Social</th>
-                                                <th>Número de Estación</th>
+                                                <th>Razón social</th>
+                                                <th>Número de estación</th>
                                                 <th>Teléfono</th>
-                                                <th>Correo Electrónico</th>
+                                                <th>Correo electrónico</th>
                                                 <th class="text-right">Acciones</th>
                                             </thead>
                                             <tbody>

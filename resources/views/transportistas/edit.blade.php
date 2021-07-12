@@ -31,14 +31,14 @@
                         @method('PUT')
                         <div class="card">
                             <div class="card-header card-header-warning">
-                                <h4 class="card-title">Editar Transportista</h4>
-                                <p class="card-category">Edite los datos del Transportista
+                                <h4 class="card-title">Editar transportista</h4>
+                                <p class="card-category">Edite los datos del transportista
                                     {{ $transportista->razonSocial }}...</p>
                             </div>
                             <div class="card-body">
 
                                 <div class="row">
-                                    <label for="razonSocial" class="col-sm-2 col-form-label">Razón Social:</label>
+                                    <label for="razonSocial" class="col-sm-2 col-form-label">Razón social:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="razonSocial"
                                             value="{{ old('razonSocial', $transportista->razonSocial) }}"
@@ -217,7 +217,7 @@
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
                                 <a href="{{ url()->previous() }}" class="btn btn-success mr-3">Volver</a>
-                                <button type="submit" class="btn btn-warning">Actualizar Transportista</button>
+                                <button type="submit" class="btn btn-warning">Actualizar transportista</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

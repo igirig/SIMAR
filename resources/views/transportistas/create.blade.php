@@ -36,10 +36,10 @@
                             <div class="card-body">
 
                                 <div class="row">
-                                    <label for="razonSocial" class="col-sm-2 col-form-label">Razón Social:</label>
+                                    <label for="razonSocial" class="col-sm-2 col-form-label">Razón social:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="razonSocial"
-                                            placeholder="Ingrese su Razón Social" value="{{ old('razonSocial') }}"
+                                            placeholder="Ingrese su razón social" value="{{ old('razonSocial') }}"
                                             onkeyup="this.value = this.value.toUpperCase();" autofocus>
                                         @if ($errors->has('razonSocial'))
                                             <span class="error text-danger"
@@ -49,11 +49,11 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="noRegistroAmbiental" class="col-sm-2 col-form-label">Número de Registro
-                                        Ambiental:</label>
+                                    <label for="noRegistroAmbiental" class="col-sm-2 col-form-label">Número de registro
+                                        ambiental:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noRegistroAmbiental"
-                                            placeholder="Ingrese su Número de Registro Ambiental"
+                                            placeholder="Ingrese su número de registro ambiental"
                                             value="{{ old('noRegistroAmbiental') }}" maxlength="12"
                                             onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noRegistroAmbiental'))
@@ -67,7 +67,7 @@
                                     <label for="calle" class="col-sm-2 col-form-label">Calle:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="calle"
-                                            placeholder="Ingrese la calle donde esta ubicada" value="{{ old('calle') }}"
+                                            placeholder="Ingrese la calle donde esta ubicado" value="{{ old('calle') }}"
                                             onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('calle'))
                                             <span class="error text-danger"
@@ -80,7 +80,7 @@
                                     <label for="noExterior" class="col-sm-2 col-form-label">Número exterior:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noExterior"
-                                            placeholder="Ingrese el número exterior donde esta ubicada (*)"
+                                            placeholder="Ingrese el número exterior donde esta ubicado (*)"
                                             value="{{ old('noExterior') }}" maxlength="16"
                                             onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noExterior'))
@@ -94,7 +94,7 @@
                                     <label for="noInterior" class="col-sm-2 col-form-label">Número interior:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noInterior"
-                                            placeholder="Ingrese el número interior donde esta ubicada (*)"
+                                            placeholder="Ingrese el número interior donde esta ubicado (*)"
                                             value="{{ old('noInterior') }}" maxlength="16"
                                             onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noInterior'))
@@ -108,7 +108,7 @@
                                     <label for="colonia" class="col-sm-2 col-form-label">Colonia:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="colonia"
-                                            placeholder="Ingrese la colonia donde esta ubicada"
+                                            placeholder="Ingrese la colonia donde esta ubicado"
                                             value="{{ old('colonia') }}"
                                             onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('colonia'))
@@ -122,7 +122,7 @@
                                     <label for="codigoPostal" class="col-sm-2 col-form-label">Código postal:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="codigoPostal"
-                                            placeholder="Ingrese el Código postal donde esta ubicada"
+                                            placeholder="Ingrese el Código postal donde esta ubicado"
                                             value="{{ old('codigoPostal') }}" maxlength="5">
                                         @if ($errors->has('codigoPostal'))
                                             <span class="error text-danger"
@@ -174,7 +174,7 @@
                                     <label for="telefono" class="col-sm-2 col-form-label">Teléfono:</label>
                                     <div class="col-sm-7">
                                         <input type="tel" class="form-control" name="telefono"
-                                            placeholder="Ingrese el Teléfono donde esta ubicada"
+                                            placeholder="Ingrese el teléfono donde esta ubicado"
                                             value="{{ old('telefono') }}" maxlength="10">
                                         @if ($errors->has('telefono'))
                                             <span class="error text-danger"
@@ -187,7 +187,7 @@
                                     <label for="extension" class="col-sm-2 col-form-label">Extensión:</label>
                                     <div class="col-sm-7">
                                         <input type="tel" class="form-control" name="extension"
-                                            placeholder="Ingrese la Extensión (*)" value="{{ old('extension') }}"
+                                            placeholder="Ingrese la extensión (*)" value="{{ old('extension') }}"
                                             maxlength="6">
                                         @if ($errors->has('extension'))
                                             <span class="error text-danger"
@@ -201,7 +201,7 @@
                                     <div class="col-sm-7">
                                         <input type="email" class="form-control" name="correo"
                                             placeholder="Ingrese su correo electrónico" value="{{ old('correo') }}"
-                                            onkeyup="this.value = this.value.toUpperCase();">
+                                            onkeyup="this.value = this.value.toLowerCase();">
                                         @if ($errors->has('correo'))
                                             <span class="error text-danger"
                                                 for="input-email">{{ $errors->first('correo') }}</span>
@@ -214,7 +214,7 @@
                             <div class="card-footer ml-auto mr-auto">
                                 <a href="{{ route('transportistas.index') }}" class="btn btn-success mr-3">Volver al
                                     índice</a>
-                                <button type="submit" class="btn btn-warning">Guardar Transportista</button>
+                                <button type="submit" class="btn btn-warning">Guardar transportista</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

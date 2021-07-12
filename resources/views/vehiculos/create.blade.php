@@ -8,8 +8,8 @@
                         @csrf
                         <div class="card">
                             <div class="card-header card-header-warning">
-                                <h4 class="card-title">Nueva vehiculo</h4>
-                                <p class="card-category">Ingrese los datos de la vehiculo...</p>
+                                <h4 class="card-title">Nuevo vehículo</h4>
+                                <p class="card-category">Ingrese los datos del vehículo...</p>
                             </div>
                             <div class="card-body">
 
@@ -38,7 +38,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="noPermisoSCT" class="col-sm-2 col-form-label">Número de Permiso de la
+                                    <label for="noPermisoSCT" class="col-sm-2 col-form-label">Número de permiso de la
                                         SCT:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noPermisoSCT"
@@ -57,7 +57,7 @@
                                     <div class="col-md-7">
                                         <select name="tipo_id" class="form-control @error('tipo_id') is-invalid @enderror"
                                             id="tipo_id">
-                                            <option value="">Seleccione el tipo de vehiculo...</option>
+                                            <option value="">Seleccione el tipo de vehículo...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($tipos as $tipo)
                                                 <option value="{{ $tipo->id }}"
@@ -82,7 +82,7 @@
                                         <select name="capacidad_id"
                                             class="form-control @error('capacidad_id') is-invalid @enderror"
                                             id="capacidad_id">
-                                            <option value="">Seleccione el capacidad de vehiculo...</option>
+                                            <option value="">Seleccione el capacidad de vehículo...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($capacidades as $capacidad)
                                                 <option value="{{ $capacidad->id }}"
@@ -101,7 +101,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="noPlaca" class="col-sm-2 col-form-label">Número de placa:</label>
+                                    <label for="noPlaca" class="col-sm-2 col-form-label">Número de placas:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noPlaca"
                                             placeholder="Ingrese su Número de Placa" value="{{ old('noPlaca') }}"
@@ -118,7 +118,7 @@
                             <div class="card-footer ml-auto mr-auto">
                                 <a href="{{ route('vehiculos.index') }}" class="btn btn-success mr-3">Volver al
                                     índice</a>
-                                <button type="submit" class="btn btn-warning">Guardar Vehículo</button>
+                                <button type="submit" class="btn btn-warning">Guardar vehículo</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

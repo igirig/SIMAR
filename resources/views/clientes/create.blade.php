@@ -8,7 +8,7 @@
                         @csrf
                         <div class="card">
                             <div class="card-header card-header-warning">
-                                <h4 class="card-title">Nuevo Cliente</h4>
+                                <h4 class="card-title">Nuevo cliente</h4>
                                 <p class="card-category">Ingrese los datos del cliente...</p>
                             </div>
                             <div class="card-body">
@@ -28,7 +28,7 @@
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
                                 <a href="{{ route('clientes.index') }}" class="btn btn-success mr-3">Volver al índice</a>
-                                <button type="submit" class="btn btn-warning">Guardar Cliente</button>
+                                <button type="submit" class="btn btn-warning">Guardar cliente</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

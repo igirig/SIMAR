@@ -6,8 +6,9 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header card-header-info">
-                            <h4 class="card-title">Detalles del Vehiculo</h4>
-                            <p class="card-category">Vista detallada del vehículo con las placas {{ $vehiculo->noPlaca }}...</p>
+                            <h4 class="card-title">Detalles del vehículo</h4>
+                            <p class="card-category">Vista detallada del vehículo con el no. de placas
+                                {{ $vehiculo->noPlaca }}...</p>
                         </div>
                         <!--Body-->
                         <div class="card-body">
@@ -38,21 +39,21 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Tipo de vehiculo</th>
+                                                        <th>Tipo de vehículo</th>
                                                         <td>{{ $vehiculo->tipo_id }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Capacidad del vehiculo</th>
+                                                        <th>Capacidad del vehículo</th>
                                                         <td>{{ $vehiculo->capacidad_id }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Número de placa</th>
+                                                        <th>Número de placas</th>
                                                         <td><span
                                                                 class="badge badge-primary">{{ $vehiculo->noPlaca }}</span>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Ultima Modificación</th>
+                                                        <th>Ultima modificación</th>
                                                         <td>{{ $vehiculo->updated_at }}</a>
                                                         </td>
                                                     </tr>
@@ -64,10 +65,10 @@
                                                 <a href="{{ route('vehiculos.index') }}"
                                                     class="btn btn-sm btn-success mr-3">Volver al índice</a>
                                                 <a href="{{ route('vehiculos.edit', $vehiculo->id) }}"
-                                                    class="btn btn-sm btn-warning mr-3">Editar Vehiculo</a>
-                                                <form action="{{ route('vehiculos.destroy', $vehiculo->id) }}" method="POST"
-                                                    style="display: inline-block;"
-                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar el Vehiculo: {{ $vehiculo->noPlaca }}?')">
+                                                    class="btn btn-sm btn-warning mr-3">Editar vehículo</a>
+                                                <form action="{{ route('vehiculos.destroy', $vehiculo->id) }}"
+                                                    method="POST" style="display: inline-block;"
+                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar este vehículo con el no. de placas: {{ $vehiculo->noPlaca }}?')">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button class="btn btn-sm btn-danger" type="submit"

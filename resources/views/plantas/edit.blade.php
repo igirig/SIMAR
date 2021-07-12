@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'plantas.edit', 'titlePage' => 'Plantas'])
+@extends('layouts.main', ['activePage' => 'plantas.edit', 'titlePage' => 'Plantas de tratamiento'])
 @section('scripts')
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
@@ -30,13 +30,14 @@
                         @method('PUT')
                         <div class="card">
                             <div class="card-header card-header-warning">
-                                <h4 class="card-title">Editar Planta</h4>
-                                <p class="card-category">Edite los datos de la Planta {{ $planta->razonSocial }}...</p>
+                                <h4 class="card-title">Editar planta de tratamiento</h4>
+                                <p class="card-category">Edite los datos de la planta de tratamiento
+                                    {{ $planta->razonSocial }}...</p>
                             </div>
                             <div class="card-body">
 
                                 <div class="row">
-                                    <label for="razonSocial" class="col-sm-2 col-form-label">Razón Social:</label>
+                                    <label for="razonSocial" class="col-sm-2 col-form-label">Razón social:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="razonSocial"
                                             value="{{ old('razonSocial', $planta->razonSocial) }}"
@@ -214,7 +215,7 @@
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
                                 <a href="{{ url()->previous() }}" class="btn btn-success mr-3">Volver</a>
-                                <button type="submit" class="btn btn-warning">Actualizar Planta</button>
+                                <button type="submit" class="btn btn-warning">Actualizar planta de tratamiento</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

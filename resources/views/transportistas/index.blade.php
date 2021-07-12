@@ -23,7 +23,7 @@
                                                 <th>Razón Social</th>
                                                 <th>NRA</th>
                                                 <th>Teléfono</th>
-                                                <th>Correo Electrónico</th>
+                                                <th>Correo electrónico</th>
                                                 <th class="text-right">Acciones</th>
                                             </thead>
                                             <tbody>
@@ -45,7 +45,7 @@
                                                             <form
                                                                 action="{{ route('transportistas.destroy', $transportista->id) }}"
                                                                 method="POST" style="display: inline-block;"
-                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar esta transportista: {{ $transportista->razonSocial }}?')">
+                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar este transportista: {{ $transportista->razonSocial }}?')">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button class="btn btn-danger" type="submit"
@@ -64,7 +64,7 @@
                                 </div>
                                 <div class="card-footer ml-auto mr-auto">
                                     <a href="{{ route('transportistas.create') }}" class="btn btn-warning mr-3">Crear
-                                        Transportista</a>
+                                        transportista</a>
                                 </div>
                             </div>
                         </div>
