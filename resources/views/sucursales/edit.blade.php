@@ -36,14 +36,25 @@
                             <div class="card-body">
 
                                 <div class="row">
-                                    <label for="cliente_id" class="col-sm-2 col-form-label">Cliente:</label>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="cliente_id"
-                                            value="{{ old('cliente_id', $sucursal->cliente_id) }}" maxlength="5">
-                                        @if ($errors->has('cliente_id'))
-                                            <span class="error text-danger"
-                                                for="input-cliente_id">{{ $errors->first('cliente_id') }}</span>
-                                        @endif
+                                    <label for="cliente_id" class="col-sm-2 col-form-label">Clase:</label>
+                                    <div class="col-md-7">
+                                        <select name="cliente_id" class="form-control @error('cliente_id') is-invalid @enderror"
+                                            id="cliente_id">
+                                            <option value="">Seleccione el cliente...</option>
+                                            <!--Comienzo for each -->
+                                            @foreach ($clientes as $cliente)
+                                                <option value="{{ $cliente->id }}"
+                                                    {{ $sucursal->cliente_id == $cliente->id ? 'selected' : '' }}>
+                                                    {{ $cliente->razonSocial }}</option>
+                                                <?php $valor = $cliente->id; ?>
+                                            @endforeach
+                                            <!--termino for each -->
+                                        </select>
+                                        @error('cliente_id')
+                                            <span class="invalid-feedback d-block" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                 </div>
 

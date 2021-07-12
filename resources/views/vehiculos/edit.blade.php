@@ -16,15 +16,25 @@
                             <div class="card-body">
 
                                 <div class="row">
-                                    <label for="transportista_id" class="col-sm-2 col-form-label">Transportista:</label>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="transportista_id"
-                                            value="{{ old('transportista_id', $vehiculo->transportista_id) }}"
-                                            maxlength="5">
-                                        @if ($errors->has('transportista_id'))
-                                            <span class="error text-danger"
-                                                for="input-transportista_id">{{ $errors->first('transportista_id') }}</span>
-                                        @endif
+                                    <label for="transportista_id" class="col-sm-2 col-form-label">Clase:</label>
+                                    <div class="col-md-7">
+                                        <select name="transportista_id" class="form-control @error('transportista_id') is-invalid @enderror"
+                                            id="transportista_id">
+                                            <option value="">Seleccione el transportista...</option>
+                                            <!--Comienzo for each -->
+                                            @foreach ($transportistas as $transportista)
+                                                <option value="{{ $transportista->id }}"
+                                                    {{ $vehiculo->transportista_id == $transportista->id ? 'selected' : '' }}>
+                                                    {{ $transportista->razonSocial }}</option>
+                                                <?php $valor = $transportista->id; ?>
+                                            @endforeach
+                                            <!--termino for each -->
+                                        </select>
+                                        @error('transportista_id')
+                                            <span class="invalid-feedback d-block" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                 </div>
 
@@ -43,27 +53,48 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="tipo_id" class="col-sm-2 col-form-label">Tipo de vehículo:</label>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="tipo_id"
-                                            value="{{ old('tipo_id', $vehiculo->tipo_id) }}" maxlength="5">
-                                        @if ($errors->has('tipo_id'))
-                                            <span class="error text-danger"
-                                                for="input-tipo_id">{{ $errors->first('tipo_id') }}</span>
-                                        @endif
+                                    <label for="tipo_id" class="col-sm-2 col-form-label">Clase:</label>
+                                    <div class="col-md-7">
+                                        <select name="tipo_id" class="form-control @error('tipo_id') is-invalid @enderror"
+                                            id="tipo_id">
+                                            <option value="">Seleccione el tipo...</option>
+                                            <!--Comienzo for each -->
+                                            @foreach ($tipos as $tipo)
+                                                <option value="{{ $tipo->id }}"
+                                                    {{ $vehiculo->tipo_id == $tipo->id ? 'selected' : '' }}>
+                                                    {{ $tipo->nombre }}</option>
+                                                <?php $valor = $tipo->id; ?>
+                                            @endforeach
+                                            <!--termino for each -->
+                                        </select>
+                                        @error('tipo_id')
+                                            <span class="invalid-feedback d-block" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <label for="capacidad_id" class="col-sm-2 col-form-label">Capacidad del
-                                        vehículo:</label>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="capacidad_id"
-                                            value="{{ old('capacidad_id', $vehiculo->capacidad_id) }}" maxlength="5">
-                                        @if ($errors->has('capacidad_id'))
-                                            <span class="error text-danger"
-                                                for="input-capacidad_id">{{ $errors->first('capacidad_id') }}</span>
-                                        @endif
+                                    <label for="capacidad_id" class="col-sm-2 col-form-label">Clase:</label>
+                                    <div class="col-md-7">
+                                        <select name="capacidad_id" class="form-control @error('capacidad_id') is-invalid @enderror"
+                                            id="capacidad_id">
+                                            <option value="">Seleccione el capacidad...</option>
+                                            <!--Comienzo for each -->
+                                            @foreach ($capacidades as $capacidad)
+                                                <option value="{{ $capacidad->id }}"
+                                                    {{ $vehiculo->capacidad_id == $capacidad->id ? 'selected' : '' }}>
+                                                    {{ $capacidad->nombre }}</option>
+                                                <?php $valor = $capacidad->id; ?>
+                                            @endforeach
+                                            <!--termino for each -->
+                                        </select>
+                                        @error('capacidad_id')
+                                            <span class="invalid-feedback d-block" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                 </div>
 

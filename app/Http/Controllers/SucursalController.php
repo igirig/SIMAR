@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\SucursalCreateRequest;
 use App\Http\Requests\SucursalEditRequest;
 use App\Models\Sucursal;
+use App\Models\Cliente;
 use App\Models\Estado;
 use App\Models\Municipio;
 use Illuminate\Support\Facades\DB;
@@ -24,7 +25,7 @@ class SucursalController extends Controller
 
     public function create()
     {
-        $clientes = DB::table('clientes')->get();
+        $clientes = DB::table('clientes')->orderBy('id')->get();
         $estados = DB::table('estados')->get();
         $municipios = DB::table('municipios')->get();
 
@@ -45,9 +46,10 @@ class SucursalController extends Controller
 
     public function edit(Sucursal $sucursal)
     {
+        $clientes = Cliente::all('razonSocial', 'id');
         $estados = Estado::all('nombre', 'id');
         $municipios = Municipio::all('nombre', 'id');
-        return view('sucursales.edit', compact('sucursal', 'estados', 'municipios'));
+        return view('sucursales.edit', compact('sucursal', 'clientes', 'estados', 'municipios'));
     }
 
     public function update(SucursalEditRequest $request, Sucursal $sucursal)
