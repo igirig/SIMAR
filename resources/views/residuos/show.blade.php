@@ -6,7 +6,7 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header card-header-info">
-                            <h4 class="card-title">Detalles del Residuo</h4>
+                            <h4 class="card-title">Detalles del residuo</h4>
                             <p class="card-category">Vista detallada del vehículo con las placas {{ $residuo->noPlaca }}...</p>
                         </div>
                         <!--Body-->
@@ -93,7 +93,7 @@
                                                         <td>{{ $residuo->materia_id }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Ultima Modificación</th>
+                                                        <th>Ultima modificación</th>
                                                         <td>{{ $residuo->updated_at }}</a>
                                                         </td>
                                                     </tr>
@@ -105,14 +105,14 @@
                                                 <a href="{{ route('residuos.index') }}"
                                                     class="btn btn-sm btn-success mr-3">Volver al índice</a>
                                                 <a href="{{ route('residuos.edit', $residuo->id) }}"
-                                                    class="btn btn-sm btn-warning mr-3">Editar Residuo</a>
+                                                    class="btn btn-sm btn-warning mr-3">Editar residuo</a>
                                                 <form action="{{ route('residuos.destroy', $residuo->id) }}" method="POST"
                                                     style="display: inline-block;"
-                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar el Residuo: {{ $residuo->nombre }}?')">
+                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar este residuo: {{ $residuo->nombre }}?')">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button class="btn btn-sm btn-danger" type="submit"
-                                                        rel="tooltip">Eliminar Residuo</button>
+                                                        rel="tooltip">Eliminar residuo</button>
                                                 </form>
                                             </div>
                                         </div>

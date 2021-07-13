@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'plantas.create', 'titlePage' => 'Plantas'])
+@extends('layouts.main', ['activePage' => 'plantas.create', 'titlePage' => 'Plantas de tratamiento'])
 @section('scripts')
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
@@ -29,16 +29,17 @@
                         @csrf
                         <div class="card">
                             <div class="card-header card-header-warning">
-                                <h4 class="card-title">Nueva planta</h4>
-                                <p class="card-category">Ingrese los datos de la planta...</p>
+                                <h4 class="card-title">Nueva planta de tratamiento</h4>
+                                <p class="card-category">Ingrese los datos de la planta de tratamiento...</p>
+                                <p class="card-category">(*)Opcional</p>
                             </div>
                             <div class="card-body">
 
                                 <div class="row">
-                                    <label for="razonSocial" class="col-sm-2 col-form-label">Razón Social:</label>
+                                    <label for="razonSocial" class="col-sm-2 col-form-label">Razón social:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="razonSocial"
-                                            placeholder="Ingrese su Razón Social" value="{{ old('razonSocial') }}"
+                                            placeholder="Ingrese su razón Social" value="{{ old('razonSocial') }}"
                                             autofocus onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('razonSocial'))
                                             <span class="error text-danger"
@@ -48,11 +49,11 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="noRegistroAmbiental" class="col-sm-2 col-form-label">Número de Registro
-                                        Ambiental:</label>
+                                    <label for="noRegistroAmbiental" class="col-sm-2 col-form-label">Número de registro
+                                        ambiental:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noRegistroAmbiental"
-                                            placeholder="Ingrese su Número de Registro Ambiental"
+                                            placeholder="Ingrese su número de registro ambiental"
                                             value="{{ old('noRegistroAmbiental') }}" maxlength="12"
                                             onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noRegistroAmbiental'))
@@ -121,7 +122,7 @@
                                     <label for="codigoPostal" class="col-sm-2 col-form-label">Código postal:</label>
                                     <div class="col-sm-7">
                                         <input type="postal-code" class="form-control" name="codigoPostal"
-                                            placeholder="Ingrese el Código postal donde esta ubicada"
+                                            placeholder="Ingrese el código postal donde esta ubicada"
                                             value="{{ old('codigoPostal') }}" maxlength="5">
                                         @if ($errors->has('codigoPostal'))
                                             <span class="error text-danger"
@@ -153,10 +154,6 @@
                                     </div>
                                 </div>
 
-                                {{-- <h1>
-                                    {{ $valor }}
-                                </h1> --}}
-
                                 <div class="row">
                                     <label for="municipio_id" class="col-sm-2 col-form-label">Municipio:</label>
                                     <div class="col-md-7">
@@ -164,13 +161,6 @@
                                             class="form-control @error('municipio_id') is-invalid @enderror"
                                             id="municipio_id">
                                             <option value="">Seleccione el municipio...</option>
-                                            <!--Comienzo for each -->
-                                            {{-- @foreach ($municipios as $municipio)
-                                                <option value="{{ $municipio->id }}"
-                                                    {{ old('municipio_id') == $municipio->id ? 'selected' : '' }}>
-                                                    {{ $municipio->nombre }}</option>
-                                            @endforeach --}}
-                                            <!--termino for each -->
                                         </select>
                                         @error('municipio_id')
                                             <span class="invalid-feedback d-block" role="alert">
@@ -184,7 +174,7 @@
                                     <label for="telefono" class="col-sm-2 col-form-label">Teléfono:</label>
                                     <div class="col-sm-7">
                                         <input type="tel" class="form-control" name="telefono"
-                                            placeholder="Ingrese el Teléfono (Especificar extensión en dicho caso)"
+                                            placeholder="Ingrese el teléfono donde esta ubicada"
                                             value="{{ old('telefono') }}" maxlength="10">
                                         @if ($errors->has('telefono'))
                                             <span class="error text-danger"
@@ -197,7 +187,7 @@
                                     <label for="extension" class="col-sm-2 col-form-label">Extensión:</label>
                                     <div class="col-sm-7">
                                         <input type="tel" class="form-control" name="extension"
-                                            placeholder="Ingrese la Extensión..." value="{{ old('extension') }}"
+                                            placeholder="Ingrese la extensión (*)" value="{{ old('extension') }}"
                                             maxlength="6">
                                         @if ($errors->has('extension'))
                                             <span class="error text-danger"
@@ -223,7 +213,7 @@
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
                                 <a href="{{ route('plantas.index') }}" class="btn btn-success mr-3">Volver al índice</a>
-                                <button type="submit" class="btn btn-warning">Guardar planta</button>
+                                <button type="submit" class="btn btn-warning">Guardar planta de tratamiento</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

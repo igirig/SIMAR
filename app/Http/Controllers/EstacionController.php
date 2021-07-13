@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\EstacionCreateRequest;
 use App\Http\Requests\EstacionEditRequest;
 use App\Models\Estacion;
+use App\Models\Estado;
+use App\Models\Municipio;
 use Illuminate\Support\Facades\DB;
 
 class EstacionController extends Controller
@@ -15,7 +17,8 @@ class EstacionController extends Controller
         return view('estaciones.index', compact('estaciones'));
     }
 
-    public function forStates($id){
+    public function forStates($id)
+    {
         return DB::table('municipios')->select('*')->where('estado_id', '=', $id)->orderBy('nombre')->get();
     }
 
@@ -41,24 +44,28 @@ class EstacionController extends Controller
 
     public function edit(Estacion $estacion)
     {
-        return view('estaciones.edit', compact('estacion'));
+        $estados = Estado::all('nombre', 'id');
+        $municipios = Municipio::all('nombre', 'id');
+        return view('estaciones.edit', compact('estacion', 'estados', 'municipios'));
     }
 
     public function update(EstacionEditRequest $request, estacion $estacion)
     {
 
-        $data = $request->only('razonSocial',
-        'noEstacion',
-        'calle',
-        'noExterior',
-        'noInterior',
-        'colonia',
-        'codigoPostal',
-        'estado_id',
-        'municipio_id',
-        'telefono',
-        'extension',
-        'correo',);
+        $data = $request->only(
+            'razonSocial',
+            'noEstacion',
+            'calle',
+            'noExterior',
+            'noInterior',
+            'colonia',
+            'codigoPostal',
+            'estado_id',
+            'municipio_id',
+            'telefono',
+            'extension',
+            'correo',
+        );
 
         $estacion->update($data);
         return redirect()->route('estaciones.show', $estacion->id)->with('success', 'Estacion actualizada correctamente');

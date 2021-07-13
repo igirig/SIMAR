@@ -18,7 +18,7 @@
                                     <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="nombre"
-                                            value="{{ old('nombre', $residuo->nombre) }}" maxlength="5"
+                                            value="{{ old('nombre', $residuo->nombre) }}"
                                             onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('nombre'))
                                             <span class="error text-danger"
@@ -31,7 +31,7 @@
                                     <label for="noONU" class="col-sm-2 col-form-label">Número de la ONU:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noONU"
-                                            value="{{ old('noONU', $residuo->noONU) }}" maxlength="7"
+                                            value="{{ old('noONU', $residuo->noONU) }}" maxlength="6"
                                             onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noONU'))
                                             <span class="error text-danger"
@@ -55,25 +55,47 @@
 
                                 <div class="row">
                                     <label for="clase_id" class="col-sm-2 col-form-label">Clase:</label>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="clase_id"
-                                            value="{{ old('clase_id', $residuo->clase_id) }}" maxlength="5">
-                                        @if ($errors->has('clase_id'))
-                                            <span class="error text-danger"
-                                                for="input-clase_id">{{ $errors->first('clase_id') }}</span>
-                                        @endif
+                                    <div class="col-md-7">
+                                        <select name="clase_id" class="form-control @error('clase_id') is-invalid @enderror"
+                                            id="clase_id">
+                                            <option value="">Seleccione el clase...</option>
+                                            <!--Comienzo for each -->
+                                            @foreach ($clases as $clase)
+                                                <option value="{{ $clase->id }}"
+                                                    {{ $residuo->clase_id == $clase->id ? 'selected' : '' }}>
+                                                    {{ $clase->nombre }}</option>
+                                                <?php $valor = $clase->id; ?>
+                                            @endforeach
+                                            <!--termino for each -->
+                                        </select>
+                                        @error('clase_id')
+                                            <span class="invalid-feedback d-block" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <label for="materia_id" class="col-sm-2 col-form-label">Estado:</label>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="materia_id"
-                                            value="{{ old('materia_id', $residuo->materia_id) }}" maxlength="5">
-                                        @if ($errors->has('materia_id'))
-                                            <span class="error text-danger"
-                                                for="input-materia_id">{{ $errors->first('materia_id') }}</span>
-                                        @endif
+                                    <label for="materia_id" class="col-sm-2 col-form-label">Estado de la materia:</label>
+                                    <div class="col-md-7">
+                                        <select name="materia_id"
+                                            class="form-control @error('materia_id') is-invalid @enderror" id="materia_id">
+                                            <option value="">Seleccione la materia...</option>
+                                            <!--Comienzo for each -->
+                                            @foreach ($materias as $materia)
+                                                <option value="{{ $materia->id }}"
+                                                    {{ $residuo->materia_id == $materia->id ? 'selected' : '' }}>
+                                                    {{ $materia->nombre }}</option>
+                                                <?php $valor = $materia->id; ?>
+                                            @endforeach
+                                            <!--termino for each -->
+                                        </select>
+                                        @error('materia_id')
+                                            <span class="invalid-feedback d-block" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                 </div>
 
@@ -81,7 +103,7 @@
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
                                 <a href="{{ url()->previous() }}" class="btn btn-success mr-3">Volver</a>
-                                <button type="submit" class="btn btn-warning">Actualizar Residuo</button>
+                                <button type="submit" class="btn btn-warning">Actualizar residuo</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

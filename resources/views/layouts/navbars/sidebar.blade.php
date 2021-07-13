@@ -21,7 +21,9 @@
             {{-- Documentos --}}
             <li class="nav-item{{ $activePage == 'manifiestos.create' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('manifiestos.create') }}">
-                    <i class="material-icons">person</i>
+                    <i class="material-icons">description</i>
+                    {{-- Ícono desde una imagen
+                    <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i> --}}
                     <p>{{ __('Crear documento') }}</p>
                 </a>
             </li>
@@ -29,7 +31,7 @@
             {{-- Usuarios --}}
             <li class="nav-item {{ $activePage == 'users.index' || $activePage == 'users.create' ? ' active' : '' }}">
                 <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample" aria-expanded="false">
-                    <i><img style="width:25px" src="{{ asset('img/laravel.svg') }}"></i>
+                    <i class="material-icons">account_circle</i>
                     <p>{{ __('Usuarios') }}
                         <b class="caret"></b>
                     </p>
@@ -38,13 +40,17 @@
                     <ul class="nav">
                         <li class="nav-item{{ $activePage == 'users.index' ? ' active' : '' }}">
                             <a class="nav-link" href="{{ route('users.index') }}">
-                                <span class="sidebar-mini"> UP </span>
+                                <span class="sidebar-mini">
+                                    <i class="material-icons">contacts</i>
+                                </span>
                                 <span class="sidebar-normal">{{ __('Lista de usuarios') }} </span>
                             </a>
                         </li>
                         <li class="nav-item{{ $activePage == 'users.create' ? ' active' : '' }}">
                             <a class="nav-link" href="{{ route('users.create') }}">
-                                <span class="sidebar-mini"> UM </span>
+                                <span class="sidebar-mini">
+                                    <i class="material-icons">person_add</i>
+                                </span>
                                 <span class="sidebar-normal"> {{ __('Crear un usuario') }} </span>
                             </a>
                         </li>
@@ -56,7 +62,7 @@
             <li
                 class="nav-item {{ $activePage == 'clientes.index' || $activePage == 'clientes.create' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('clientes.index') }}">
-                    <i class="material-icons">dashboard</i>
+                    <i class="material-icons">apartment</i>
                     <p>{{ __('Clientes') }}</p>
                 </a>
             </li>
@@ -65,17 +71,17 @@
             <li
                 class="nav-item{{ $activePage == 'sucursales.index' || $activePage == 'sucursales.create' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('sucursales.index') }}">
-                    <i class="material-icons">dashboard</i>
+                    <i class="material-icons">store</i>
                     <p>{{ __('Sucursales') }}</p>
                 </a>
             </li>
 
-            {{-- Plantas --}}
+            {{-- Plantas de tratamiento --}}
             <li
                 class="nav-item {{ $activePage == 'plantas.index' || $activePage == 'plantas.create' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('plantas.index') }}">
-                    <i class="material-icons">dashboard</i>
-                    <p>{{ __('Plantas') }}</p>
+                    <i class="material-icons">recycling</i>
+                    <p>{{ __('Plantas de tratamiento') }}</p>
                 </a>
             </li>
 
@@ -83,7 +89,7 @@
             <li
                 class="nav-item{{ $activePage == 'estaciones.index' || $activePage == 'estaciones.create' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('estaciones.index') }}">
-                    <i class="material-icons">dashboard</i>
+                    <i class="material-icons">local_gas_station</i>
                     <p>{{ __('Estaciones') }}</p>
                 </a>
             </li>
@@ -92,7 +98,7 @@
             <li
                 class="nav-item{{ $activePage == 'transportistas.index' || $activePage == 'transportistas.create' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('transportistas.index') }}">
-                    <i class="material-icons">dashboard</i>
+                    <i class="material-icons">emoji_transportation</i>
                     <p>{{ __('Transportistas') }}</p>
                 </a>
             </li>
@@ -101,7 +107,7 @@
             <li
                 class="nav-item{{ $activePage == 'vehiculos.index' || $activePage == 'vehiculos.create' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('vehiculos.index') }}">
-                    <i class="material-icons">dashboard</i>
+                    <i class="material-icons">local_shipping</i>
                     <p>{{ __('Vehículos') }}</p>
                 </a>
             </li>
@@ -110,7 +116,7 @@
             <li
                 class="nav-item{{ $activePage == 'residuos.index' || $activePage == 'residuos.create' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('residuos.index') }}">
-                    <i class="material-icons">dashboard</i>
+                    <i class="material-icons">delete</i>
                     <p>{{ __('Residuos') }}</p>
                 </a>
             </li>

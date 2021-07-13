@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ResiduoCreateRequest;
 use App\Http\Requests\ResiduoEditRequest;
 use App\Models\Residuo;
+use App\Models\Clase_residuo;
+use App\Models\Estado_residuo;
 use Illuminate\Support\Facades\DB;
 
 class ResiduoController extends Controller
@@ -37,7 +39,9 @@ class ResiduoController extends Controller
 
     public function edit(Residuo $residuo)
     {
-        return view('residuos.edit', compact('residuo'));
+        $clases = Clase_residuo::all('nombre', 'id');
+        $materias = Estado_residuo::all('nombre', 'id');
+        return view('residuos.edit', compact('residuo', 'clases', 'materias'));
     }
 
     public function update(ResiduoEditRequest $request, residuo $residuo)

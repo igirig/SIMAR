@@ -17,7 +17,7 @@
                                     <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="nombre"
-                                            placeholder="Ingrese su Número de Permiso de la SCT"
+                                            placeholder="Ingrese su nombre"
                                             value="{{ old('nombre') }}" onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('nombre'))
                                             <span class="error text-danger"
@@ -25,7 +25,6 @@
                                         @endif
                                     </div>
                                 </div>
-
 
                                 {{-- BOTONES PARA RESIDUOS --}}
 
@@ -109,7 +108,7 @@
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noONU"
                                             placeholder="Ingrese su Número de la ONU" value="{{ old('noONU') }}"
-                                            maxlength="7" onkeyup="this.value = this.value.toUpperCase();">
+                                            maxlength="6" onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noONU'))
                                             <span class="error text-danger"
                                                 for="input-noONU">{{ $errors->first('noONU') }}</span>
@@ -154,7 +153,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="materia_id" class="col-sm-2 col-form-label">Estado:</label>
+                                    <label for="materia_id" class="col-sm-2 col-form-label">Estado de la materia:</label>
                                     <div class="col-md-7">
                                         <select name="materia_id"
                                             class="form-control @error('materia_id') is-invalid @enderror" id="materia_id">
@@ -180,7 +179,7 @@
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
                                 <a href="{{ route('residuos.index') }}" class="btn btn-success mr-3">Volver al índice</a>
-                                <button type="submit" class="btn btn-warning">Guardar Residuo</button>
+                                <button type="submit" class="btn btn-warning">Guardar residuo</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

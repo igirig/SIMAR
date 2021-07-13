@@ -1,4 +1,25 @@
-@extends('layouts.main', ['activePage' => 'sucursales.edit', 'titlePage' => 'sucursales'])
+@extends('layouts.main', ['activePage' => 'sucursales.edit', 'titlePage' => 'Sucursales'])
+@section('scripts')
+    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('#estado_id').on('change', estadoSeleccionado);
+        })
+
+        function estadoSeleccionado() {
+            var estado_id = $(this).val();
+            //alert(estado_id); Llamada peticion AJAX
+
+            $.get('/api/estados/' + estado_id + '', function(data) {
+                var select = '<option value="">Seleccione el municipio...</option>';
+                for (var i = 0; i < data.length; ++i) {
+                    select += '<option value="' + data[i].id + '">' + data[i].nombre + '</option>';
+                    $('#municipio_id').html(select);
+                }
+            });
+        }
+    </script>
+@endsection
 @section('content')
     <div class="content">
         <div class="container-fluid">
@@ -15,19 +36,30 @@
                             <div class="card-body">
 
                                 <div class="row">
-                                    <label for="cliente_id" class="col-sm-2 col-form-label">Cliente:</label>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="cliente_id"
-                                            value="{{ old('cliente_id', $sucursal->cliente_id) }}" maxlength="5">
-                                        @if ($errors->has('cliente_id'))
-                                            <span class="error text-danger"
-                                                for="input-cliente_id">{{ $errors->first('cliente_id') }}</span>
-                                        @endif
+                                    <label for="cliente_id" class="col-sm-2 col-form-label">Clase:</label>
+                                    <div class="col-md-7">
+                                        <select name="cliente_id" class="form-control @error('cliente_id') is-invalid @enderror"
+                                            id="cliente_id">
+                                            <option value="">Seleccione el cliente...</option>
+                                            <!--Comienzo for each -->
+                                            @foreach ($clientes as $cliente)
+                                                <option value="{{ $cliente->id }}"
+                                                    {{ $sucursal->cliente_id == $cliente->id ? 'selected' : '' }}>
+                                                    {{ $cliente->razonSocial }}</option>
+                                                <?php $valor = $cliente->id; ?>
+                                            @endforeach
+                                            <!--termino for each -->
+                                        </select>
+                                        @error('cliente_id')
+                                            <span class="invalid-feedback d-block" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <label for="nombre" class="col-sm-2 col-form-label">Razón Social:</label>
+                                    <label for="nombre" class="col-sm-2 col-form-label">Razón social:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="nombre"
                                             value="{{ old('nombre', $sucursal->nombre) }}"
@@ -119,25 +151,48 @@
 
                                 <div class="row">
                                     <label for="estado_id" class="col-sm-2 col-form-label">Estado:</label>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="estado_id"
-                                            value="{{ old('estado_id', $sucursal->estado_id) }}" maxlength="5">
-                                        @if ($errors->has('estado_id'))
-                                            <span class="error text-danger"
-                                                for="input-estado_id">{{ $errors->first('estado_id') }}</span>
-                                        @endif
+                                    <div class="col-md-7">
+                                        <select name="estado_id"
+                                            class="form-control @error('estado_id') is-invalid @enderror" id="estado_id">
+                                            <option value="">Seleccione el estado...</option>
+                                            <!--Comienzo for each -->
+                                            @foreach ($estados as $estado)
+                                                <option value="{{ $estado->id }}"
+                                                    {{ $sucursal->estado_id == $estado->id ? 'selected' : '' }}>
+                                                    {{ $estado->nombre }}
+                                                </option>
+                                            @endforeach
+                                            <!--termino for each -->
+                                        </select>
+                                        @error('estado_id')
+                                            <span class="invalid-feedback d-block" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <label for="municipio_id" class="col-sm-2 col-form-label">Municipio:</label>
-                                    <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="municipio_id"
-                                            value="{{ old('municipio_id', $sucursal->municipio_id) }}" maxlength="5">
-                                        @if ($errors->has('municipio_id'))
-                                            <span class="error text-danger"
-                                                for="input-municipio_id">{{ $errors->first('municipio_id') }}</span>
-                                        @endif
+                                    <div class="col-md-7">
+                                        <select name="municipio_id"
+                                            class="form-control @error('municipio_id') is-invalid @enderror"
+                                            id="municipio_id">
+                                            <option value="">Seleccione el municipio...</option>
+                                            <!--Comienzo for each -->
+                                            @foreach ($municipios as $municipio)
+                                                <option value="{{ $municipio->id }}"
+                                                    {{ $sucursal->municipio_id == $municipio->id ? 'selected' : '' }}>
+                                                    {{ $municipio->nombre }}
+                                                </option>
+                                            @endforeach
+                                            <!--termino for each -->
+                                        </select>
+                                        @error('municipio_id')
+                                            <span class="invalid-feedback d-block" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                 </div>
 
@@ -182,7 +237,7 @@
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
                                 <a href="{{ url()->previous() }}" class="btn btn-success mr-3">Volver</a>
-                                <button type="submit" class="btn btn-warning">Actualizar Sucursal</button>
+                                <button type="submit" class="btn btn-warning">Actualizar sucursal</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

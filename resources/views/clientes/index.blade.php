@@ -21,7 +21,7 @@
                                         <table class="table">
                                             <thead class="text-primary">
                                                 <th>Razón social</th>
-                                                <th>Última Modificación</th>
+                                                <th>Última modificación</th>
                                                 <th class="text-right">Acciones</th>
                                             </thead>
                                             <tbody>
@@ -38,7 +38,7 @@
                                                                     class="material-icons">edit</i></a>
                                                             <form action="{{ route('clientes.destroy', $cliente->id) }}"
                                                                 method="POST" style="display: inline-block;"
-                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar al cliente {{ $cliente->razonSocial }}?')">
+                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar este cliente: {{ $cliente->razonSocial }}?')">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button class="btn btn-danger" type="submit"
@@ -57,7 +57,7 @@
                                 </div>
                                 <div class="card-footer ml-auto mr-auto">
                                     <a href="{{ route('clientes.create') }}" class="btn btn-warning mr-3">Crear
-                                        Cliente</a>
+                                        cliente</a>
                                 </div>
                             </div>
                         </div>

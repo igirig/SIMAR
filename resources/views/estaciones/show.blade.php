@@ -6,7 +6,7 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header card-header-info">
-                            <h4 class="card-title">Detalles de la Estacion</h4>
+                            <h4 class="card-title">Detalles de la estación</h4>
                             <p class="card-category">Vista detallada de {{ $estacion->razonSocial }}...</p>
                         </div>
                         <!--Body-->
@@ -28,11 +28,11 @@
                                                         <td>{{ $estacion->id }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Razón Social</th>
+                                                        <th>Razón social</th>
                                                         <td>{{ $estacion->razonSocial }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Número de Registro Ambiental</th>
+                                                        <th>Número de registro ambiental</th>
                                                         <td><span
                                                                 class="badge badge-primary">{{ $estacion->noEstacion }}</span>
                                                         </td>
@@ -49,13 +49,13 @@
                                                         <td>{{ $estacion->telefono }} ext. {{ $estacion->extension }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Correo de Contacto</th>
+                                                        <th>Correo de contacto</th>
                                                         <td><a href="mailto:{{ $estacion->correo }}"
                                                                 title="Enviar correo a {{ $estacion->correo }}">{{ $estacion->correo }}</a>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Ultima Modificación</th>
+                                                        <th>Ultima modificación</th>
                                                         <td>{{ $estacion->updated_at }}</a>
                                                         </td>
                                                     </tr>
@@ -67,14 +67,14 @@
                                                 <a href="{{ route('estaciones.index') }}"
                                                     class="btn btn-sm btn-success mr-3">Volver al índice</a>
                                                 <a href="{{ route('estaciones.edit', $estacion->id) }}"
-                                                    class="btn btn-sm btn-warning mr-3">Editar Estacion</a>
+                                                    class="btn btn-sm btn-warning mr-3">Editar estación</a>
                                                 <form action="{{ route('estaciones.destroy', $estacion->id) }}" method="POST"
                                                     style="display: inline-block;"
-                                                    onsubmit="return confirm('¿Esta seguro que desea eliminar la Estacion: {{ $estacion->razonSocial }}?')">
+                                                    onsubmit="return confirm('¿Está seguro que desea eliminar esta estación: {{ $estacion->razonSocial }}?')">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button class="btn btn-sm btn-danger" type="submit"
-                                                        rel="tooltip">Eliminar Estacion</button>
+                                                        rel="tooltip">Eliminar estación</button>
                                                 </form>
                                             </div>
                                         </div>
