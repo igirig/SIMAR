@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '4aead9915e5395c91f92c33a2ed7d5309e414245',
+    'reference' => '5de8f10b37cb3c01ca8a1be3e174c33a922892a1',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -481,7 +481,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '4aead9915e5395c91f92c33a2ed7d5309e414245',
+      'reference' => '5de8f10b37cb3c01ca8a1be3e174c33a922892a1',
     ),
     'laravel/sail' => 
     array (
@@ -536,6 +536,33 @@
       array (
       ),
       'reference' => '3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3',
+    ),
+    'mikehaertl/php-pdftk' => 
+    array (
+      'pretty_version' => '0.10.1',
+      'version' => '0.10.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '01bb1d8ea52ea36809f306213dcc57f9f517c5ff',
+    ),
+    'mikehaertl/php-shellcommand' => 
+    array (
+      'pretty_version' => '1.6.4',
+      'version' => '1.6.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3488d7803df1e8f1a343d3d0ca452d527ad8d5e5',
+    ),
+    'mikehaertl/php-tmpfile' => 
+    array (
+      'pretty_version' => '1.2.1',
+      'version' => '1.2.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '70a5b70b17bc0d9666388e6a551ecc93d0b40a10',
     ),
     'mockery/mockery' => 
     array (

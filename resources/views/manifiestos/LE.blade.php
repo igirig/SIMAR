@@ -1,5 +1,6 @@
 @extends('layouts.main', ['activePage' => 'manifiestos.index', 'titlePage' => 'Manifiestos'])
 @section('content')
+<script src="{{ asset('js/plugins/sweetalert2.js')}}"></script>
 
 <div class="content">
     <div class="container-fluid">
@@ -25,16 +26,17 @@
                         </div>
                         <div class="card">
                             <div class="card-body">
-                                <form method="POST" >
-                                    <div class="form-group col-md-3">
-                                        <label for="inputServiceStation">Razón social de la estación de servicio</label>
-                                        <select id="inputServiceStation" class="form-control">
-                                          
-                                          @foreach ($items as $item)
-                                            <option value="{{ $item->id }}">{{ $item->razonSocial }}</option>
-                                          @endforeach
-                                        </select>
-                                      </div>
+                                <form method="POST" action="{{ route('LE.store') }}">
+                                  @csrf
+                                  <div class="form-group col-md-3">
+                                    <label for="inputServiceStation">Razón social de la estación de servicio</label>
+                                    <select name="inputServiceStation" id="inputServiceStation" class="form-control">
+                                      <option value="">Escoge una opción...</option>
+                                      @foreach ($items as $item)
+                                        <option value="{{ $item->id }}">{{ $item->razonSocial }}</option>
+                                      @endforeach
+                                    </select>
+                                  </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Crear</button>
                         </div>
@@ -47,6 +49,16 @@
     
 
 </div>
+
+@if(session('error'))
+<script type="application/javascript">
+  swal({
+     title: '{{session('error')}}',
+     text: '¡Operación erronea!',
+     icon: 'error'
+     });
+</script>
+@endif
 
 
 
