@@ -1,18 +1,5 @@
 <p align="center"><a href="http://gruposimar.com.mx" target="_blank"><img src="http://gruposimar.com.mx/wp-content/uploads/2018/05/grupo-simar.png" width="400"></a></p>
 
-
-
-## VERSIONES UTILIZADAS:
-
-PHP: php-7.3.25-Win32-VC15-x64
-
-APACHE: httpd-2.4.35-win63-VC15
-
-MYSQL: mysql-5.7.24-winx64
-
-NODE: node-v14.15.4-win-x64
-
-
 ## Acerca de SIAPA
 
 SIAPA es un sistema web basado en Laravel, creado para uso de la empresa SIMAR.
@@ -28,6 +15,22 @@ SIAPA cuenta con las siguientes funciones:
 
 SIAPA es un sistema muy intuitivo, realmente no se necesitan mayores explicaciones más haya de explorar la interfaz del sistema.
 
+## Requisitos
+
+Se necesita instalar las siguientes aplicaciones y servicios para que el sistema funcione correctamente:
+- [Laragon Full](https://laragon.org/download/).
+- [PDFkt Server](https://www.pdflabs.com/tools/pdftk-server/).
+
+## VERSIONES UTILIZADAS:
+
+- [PHP](https://www.php.net/downloads): 7.3.25
+- [Apache](https://httpd.apache.org/download.cgi): 2.4.35
+- [Laragon Full](https://laragon.org/download/): 4.0.16
+- [MySQL](https://dev.mysql.com/downloads/mysql/): 5.7.24
+- [Node JS](https://nodejs.org/es/download/): v14.16.1
+- [Composer](https://getcomposer.org/download/): 2.0.9
+- [Laravel](https://laravel.com/): 8.25.0
+- [Heidi SQL](https://www.heidisql.com/download.php): 11.2.0.6213
 
 ## Licencias
 
