@@ -1,4 +1,4 @@
-<p align="center"><a href="http://gruposimar.com.mx" target="_blank"><img src="public\img\logoSimar.png" width="200"></a></p>
+<p align="center"><a href="http://gruposimar.com.mx" target="_blank"><img src="http://gruposimar.com.mx/wp-content/uploads/2018/05/grupo-simar.png" width="200"></a></p>
 
 
 
@@ -32,5 +32,7 @@ SIAPA es un sistema muy intuitivo, realmente no se necesitan mayores explicacion
 ## Licencias
 
 The Creative Tim theme and tools are open-sourced software licensed under the [Freelancer License](https://www.creative-tim.com/license).
+
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
 The PDFtk Server system is open-sourced software licensed under the [GPL license](https://www.pdflabs.com/docs/pdftk-license/gnu_general_public_license_2.txt)
