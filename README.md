@@ -1,4 +1,4 @@
-<p align="center"><a href="http://gruposimar.com.mx" target="_blank"><img src="http://gruposimar.com.mx/wp-content/uploads/2018/05/grupo-simar.png" width="200"></a></p>
+<p align="center"><a href="http://gruposimar.com.mx" target="_blank"><img src="http://gruposimar.com.mx/wp-content/uploads/2018/05/grupo-simar.png" width="400"></a></p>
 
 
 
