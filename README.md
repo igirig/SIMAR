@@ -31,6 +31,9 @@ Se necesita instalar las siguientes aplicaciones y servicios para que el sistema
 - [Composer](https://getcomposer.org/download/): 2.0.9
 - [Laravel](https://laravel.com/): 8.25.0
 - [Heidi SQL](https://www.heidisql.com/download.php): 11.2.0.6213
+- [PDFtk Server](https://www.pdflabs.com/tools/pdftk-server/): 2.02
+- [php-pdftk](https://github.com/mikehaertl/php-pdftk): 0.10.1
+- [SweetAlert 2](https://sweetalert2.github.io/): v11.0.18
 
 ## Licencias
 
@@ -38,4 +41,6 @@ The Creative Tim theme and tools are open-sourced software licensed under the [F
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-The PDFtk Server system is open-sourced software licensed under the [GPL license](https://www.pdflabs.com/docs/pdftk-license/gnu_general_public_license_2.txt)
+The PDFtk Server system is open-sourced software licensed under the [GPL license](https://www.pdflabs.com/docs/pdftk-license/gnu_general_public_license_2.txt).
+
+The php-pdftk package is open-sourced software licensed under the [MIT license](https://spdx.org/licenses/MIT.html#licenseText).
