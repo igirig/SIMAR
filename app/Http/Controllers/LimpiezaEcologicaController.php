@@ -106,7 +106,6 @@ class LimpiezaEcologicaController extends Controller
                 session()->put('pdfgen', 'pdfgen');
                 $this -> notificar($filepath);
                 @readfile($filepath);
-                exit();
             }
         }
     }
