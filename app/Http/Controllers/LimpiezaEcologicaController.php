@@ -47,8 +47,11 @@ class LimpiezaEcologicaController extends Controller
             return redirect()->route('LE.create')->with('error', "error.");
         }else{
             //Variables con colecciones de objetos que contienen los datos a usar.
+                //Estacion -> Se obtiene todos los datos de la DB del ID obtenido del inputServiceStation
             $estacion = Estacion::where('id', $request->inputServiceStation)->get();
+                //Aquí se llama el nombre del estado con el ID de la estación
             $estado = Estado::where('id', $estacion{0}{'estado_id'})->get('nombre');
+                //Aquí se llama el nombre del municipio con el ID de la estación
             $municipio = Municipio::where('id', $estacion{0}{'municipio_id'})->get('nombre');
 
             $filename = 'CLE_'.$estacion{0}{'noEstacion'}.rand().'.pdf';
@@ -103,9 +106,8 @@ class LimpiezaEcologicaController extends Controller
                 
 
                 // Se lee el archivo.
-                session()->put('pdfgen', 'pdfgen');
-                $this -> notificar($filepath);
-                @readfile($filepath);
+                return redirect()->route('LE.create')->with('pdfgen','pdfgen');
+                //@readfile($filepath);
             }
         }
     }
