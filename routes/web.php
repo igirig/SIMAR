@@ -89,4 +89,5 @@ Route::post('/manifiestos', [App\Http\Controllers\ManifiestoController::class, '
 Route::get('/LE/create', [App\Http\Controllers\LimpiezaEcologicaController::class, 'create'])->name('LE.create');
 Route::POST('/LE/store', [App\Http\Controllers\LimpiezaEcologicaController::class, 'store'])->name('LE.store');
 Route::get('/RME/create', [App\Http\Controllers\ResiduosManejoEspecialController::class, 'create'])->name('RME.create');
+Route::POST('/RME/store', [App\Http\Controllers\ResiduosManejoEspecialController::class, 'store'])->name('RME.store');
 Route::get('/MRP/create', [App\Http\Controllers\ResiduosPeligrososController::class, 'create'])->name('MRP.create');
