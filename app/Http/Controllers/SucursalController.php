@@ -14,8 +14,9 @@ class SucursalController extends Controller
 {
     public function index()
     {
+        $clientes = DB::table('clientes')->orderBy('id')->get();
         $sucursales = Sucursal::paginate(6);
-        return view('sucursales.index', compact('sucursales'));
+        return view('sucursales.index', compact('sucursales', 'clientes'));
     }
 
     public function forStates($id)
@@ -41,7 +42,11 @@ class SucursalController extends Controller
 
     public function show(Sucursal $sucursal)
     {
-        return view('sucursales.show', compact('sucursal'));
+        $cliente = DB::table('clientes')->where('id', '=', $sucursal->cliente_id)->pluck('razonSocial');
+        $estado = DB::table('estados')->where('id', '=', $sucursal->estado_id)->pluck('nombre');
+        $municipio = DB::table('municipios')->where('id', '=', $sucursal->municipio_id)->pluck('nombre');
+
+        return view('sucursales.show', compact('sucursal', 'cliente', 'estado', 'municipio'));
     }
 
     public function edit(Sucursal $sucursal)

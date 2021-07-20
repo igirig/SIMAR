@@ -29,7 +29,11 @@
                                             <tbody>
                                                 @foreach ($sucursales as $sucursal)
                                                     <tr>
-                                                        <td>{{ $sucursal->cliente_id }}</td>
+                                                        @foreach ($clientes as $cliente)
+                                                            @if ($cliente->id == $sucursal->cliente_id)
+                                                                <td>{{ $cliente->razonSocial }}</td>
+                                                            @endif
+                                                        @endforeach
                                                         <td>{{ $sucursal->nombre }}</td>
                                                         <td>{{ $sucursal->telefono }}</td>
                                                         <td><a href="mailto:{{ $sucursal->correo }}"
@@ -37,12 +41,10 @@
                                                         </td>
                                                         <td class="td-actions text-right">
                                                             <a href="{{ route('sucursales.show', $sucursal->id) }}"
-                                                                class="btn btn-info" title="Visualizar sucursal
-                                                                                        "><i
+                                                                class="btn btn-info" title="Visualizar sucursal"><i
                                                                     class="material-icons">person</i></a>
                                                             <a href="{{ route('sucursales.edit', $sucursal->id) }}"
-                                                                class="btn btn-warning" title="Editar sucursal
-                                                                                        "><i
+                                                                class="btn btn-warning" title="Editar sucursal"><i
                                                                     class="material-icons">edit</i></a>
                                                             <form
                                                                 action="{{ route('sucursales.destroy', $sucursal->id) }}"
@@ -51,11 +53,12 @@
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button class="btn btn-danger" type="submit"
-                                                                    rel="tooltip"><i class="material-icons" title="Eliminar sucursal
-                                                                                                ">close</i></button>
+                                                                    rel="tooltip"><i class="material-icons"
+                                                                        title="Eliminar sucursal">close</i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
+
                                                 @endforeach
                                             </tbody>
                                         </table>

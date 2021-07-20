@@ -29,7 +29,7 @@
                                                     </tr>
                                                     <tr>
                                                         <th>Cliente</th>
-                                                        <td>{{ $sucursal->cliente_id }}</td>
+                                                        <td>{{ $cliente[0] }}</td>
                                                     </tr>
                                                     <tr>
                                                         <th>Nombre</th>
@@ -44,13 +44,16 @@
                                                     <tr>
                                                         <th>Dirección</th>
                                                         <td>{{ $sucursal->calle }} #{{ $sucursal->noExterior }},
-                                                            {{ $sucursal->noInterior }} Col. {{ $sucursal->colonia }} C.P.
+                                                            {{ $sucursal->noInterior }} Col. {{ $sucursal->colonia }}
+                                                            C.P.
                                                             {{ $sucursal->codigoPostal }}.
-                                                            {{ $sucursal->estado_id }}, {{ $sucursal->municipio_id }} </td>
+                                                            {{ $estado[0] }}, {{ $municipio[0] }}
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <th>Teléfono</th>
-                                                        <td>{{ $sucursal->telefono }} ext. {{ $sucursal->extension }}</td>
+                                                        <td>{{ $sucursal->telefono }} ext. {{ $sucursal->extension }}
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <th>Correo de contacto</th>
@@ -72,8 +75,8 @@
                                                     class="btn btn-sm btn-success mr-3">Volver al índice</a>
                                                 <a href="{{ route('sucursales.edit', $sucursal->id) }}"
                                                     class="btn btn-sm btn-warning mr-3">Editar sucursal</a>
-                                                <form action="{{ route('sucursales.destroy', $sucursal->id) }}" method="POST"
-                                                    style="display: inline-block;"
+                                                <form action="{{ route('sucursales.destroy', $sucursal->id) }}"
+                                                    method="POST" style="display: inline-block;"
                                                     onsubmit="return confirm('¿Esta seguro que desea eliminar esta sucursal: {{ $sucursal->nombre }}?')">
                                                     @csrf
                                                     @method('DELETE')
