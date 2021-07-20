@@ -31,8 +31,16 @@
                                                     <tr>
                                                         <td>{{ $residuo->nombre }}</td>
                                                         <td>{{ $residuo->noONU }}</td>
-                                                        <td>{{ $residuo->clase_id }}</td>
-                                                        <td>{{ $residuo->materia_id }}</td>
+                                                        @foreach ($clases as $clase)
+                                                            @if ($clase->id == $residuo->clase_id)
+                                                                <td>{{ $clase->nombre }}</td>
+                                                            @endif
+                                                        @endforeach
+                                                        @foreach ($materias as $materia)
+                                                            @if ($materia->id == $residuo->materia_id)
+                                                                <td>{{ $materia->nombre }}</td>
+                                                            @endif
+                                                        @endforeach
                                                         <td class="td-actions text-right">
                                                             <a href="{{ route('residuos.show', $residuo->id) }}"
                                                                 class="btn btn-info" title="Visualizar residuo

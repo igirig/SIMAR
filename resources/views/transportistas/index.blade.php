@@ -31,7 +31,12 @@
                                                     <tr>
                                                         <td>{{ $transportista->razonSocial }}</td>
                                                         <td>{{ $transportista->noRegistroAmbiental }}</td>
-                                                        <td>{{ $transportista->telefono }}</td>
+                                                        <td>{{ $transportista->telefono }}
+                                                            @if ($transportista->extension > 0)
+                                                                ext. {{ $transportista->extension }}
+                                                            @else
+                                                            @endif
+                                                        </td>
                                                         <td><a href="mailto:{{ $transportista->correo }}"
                                                                 title="Enviar correo a {{ $transportista->correo }}">{{ $transportista->correo }}</a>
                                                         </td>

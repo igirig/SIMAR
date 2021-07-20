@@ -13,8 +13,10 @@ class ResiduoController extends Controller
 {
     public function index()
     {
+        $clases = DB::table('clases_residuo')->orderBy('id')->get();
+        $materias = DB::table('estados_residuo')->orderBy('id')->get();
         $residuos = Residuo::paginate(6);
-        return view('residuos.index', compact('residuos'));
+        return view('residuos.index', compact('residuos', 'clases', 'materias'));
     }
 
     public function create()
@@ -34,7 +36,9 @@ class ResiduoController extends Controller
 
     public function show(Residuo $residuo)
     {
-        return view('residuos.show', compact('residuo'));
+        $clase = DB::table('clases_residuo')->where('id', '=', $residuo->clase_id)->pluck('nombre');
+        $materia = DB::table('estados_residuo')->where('id', '=', $residuo->materia_id)->pluck('nombre');
+        return view('residuos.show', compact('residuo', 'clase', 'materia'));
     }
 
     public function edit(Residuo $residuo)

@@ -31,7 +31,12 @@
                                                     <tr>
                                                         <td>{{ $planta->razonSocial }}</td>
                                                         <td>{{ $planta->noRegistroAmbiental }}</td>
-                                                        <td>{{ $planta->telefono }}</td>
+                                                        <td>{{ $planta->telefono }}
+                                                            @if ($planta->extension > 0)
+                                                                ext. {{ $planta->extension }}
+                                                            @else
+                                                            @endif
+                                                        </td>
                                                         <td><a href="mailto:{{ $planta->correo }}" title="Enviar correo a {{ $planta->correo }}">{{ $planta->correo }}</a></td>
                                                         <td class="td-actions text-right">
                                                             <a href="{{ route('plantas.show', $planta->id) }}"

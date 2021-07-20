@@ -39,14 +39,28 @@
                                                     </tr>
                                                     <tr>
                                                         <th>Dirección</th>
-                                                        <td>{{ $estacion->calle }} #{{ $estacion->noExterior }},
-                                                            {{ $estacion->noInterior }} Col. {{ $estacion->colonia }},
-                                                            {{ $estacion->estado_id }}, {{ $estacion->municipio_id }} C.P.
-                                                            {{ $estacion->codigoPostal }}</td>
+                                                        <td>{{ $estacion->calle }}
+                                                            @if ($estacion->noExterior != null)
+                                                                #{{ $estacion->noExterior }}
+                                                            @else S/N
+                                                            @endif
+                                                            @if ($estacion->noInterior != null)
+                                                                , Interior: {{ $estacion->noExterior }}
+                                                            @else
+                                                            @endif
+                                                            , Col. {{ $estacion->colonia }},
+                                                            C.P. {{ $estacion->codigoPostal }},
+                                                            {{ $estado[0] }}, {{ $municipio[0] }}
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <th>Teléfono</th>
-                                                        <td>{{ $estacion->telefono }} ext. {{ $estacion->extension }}</td>
+                                                        <td>{{ $estacion->telefono }}
+                                                            @if ($estacion->extension > 0)
+                                                                ext. {{ $estacion->extension }}
+                                                            @else
+                                                            @endif
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <th>Correo de contacto</th>
@@ -68,8 +82,8 @@
                                                     class="btn btn-sm btn-success mr-3">Volver al índice</a>
                                                 <a href="{{ route('estaciones.edit', $estacion->id) }}"
                                                     class="btn btn-sm btn-warning mr-3">Editar estación</a>
-                                                <form action="{{ route('estaciones.destroy', $estacion->id) }}" method="POST"
-                                                    style="display: inline-block;"
+                                                <form action="{{ route('estaciones.destroy', $estacion->id) }}"
+                                                    method="POST" style="display: inline-block;"
                                                     onsubmit="return confirm('¿Está seguro que desea eliminar esta estación: {{ $estacion->razonSocial }}?')">
                                                     @csrf
                                                     @method('DELETE')

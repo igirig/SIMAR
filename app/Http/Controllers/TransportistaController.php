@@ -39,7 +39,9 @@ class TransportistaController extends Controller
 
     public function show(Transportista $transportista)
     {
-        return view('transportistas.show', compact('transportista'));
+        $estado = DB::table('estados')->where('id', '=', $transportista->estado_id)->pluck('nombre');
+        $municipio = DB::table('municipios')->where('id', '=', $transportista->municipio_id)->pluck('nombre');
+        return view('transportistas.show', compact('transportista', 'estado', 'municipio'));
     }
 
     public function edit(Transportista $transportista)

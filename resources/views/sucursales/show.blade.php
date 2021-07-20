@@ -43,16 +43,27 @@
                                                     </tr>
                                                     <tr>
                                                         <th>Dirección</th>
-                                                        <td>{{ $sucursal->calle }} #{{ $sucursal->noExterior }},
-                                                            {{ $sucursal->noInterior }} Col. {{ $sucursal->colonia }}
-                                                            C.P.
-                                                            {{ $sucursal->codigoPostal }}.
+                                                        <td>{{ $sucursal->calle }}
+                                                            @if ($sucursal->noExterior != null)
+                                                                #{{ $sucursal->noExterior }}
+                                                            @else S/N
+                                                            @endif
+                                                            @if ($sucursal->noInterior != null)
+                                                                , Interior: {{ $sucursal->noExterior }}
+                                                            @else
+                                                            @endif
+                                                            , Col. {{ $sucursal->colonia }},
+                                                            C.P. {{ $sucursal->codigoPostal }},
                                                             {{ $estado[0] }}, {{ $municipio[0] }}
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <th>Teléfono</th>
-                                                        <td>{{ $sucursal->telefono }} ext. {{ $sucursal->extension }}
+                                                        <td>{{ $sucursal->telefono }}
+                                                            @if ($sucursal->extension > 0)
+                                                                ext. {{ $sucursal->extension }}
+                                                            @else
+                                                            @endif
                                                         </td>
                                                     </tr>
                                                     <tr>

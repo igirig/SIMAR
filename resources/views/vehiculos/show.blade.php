@@ -30,7 +30,7 @@
                                                     </tr>
                                                     <tr>
                                                         <th>Transportista</th>
-                                                        <td>{{ $vehiculo->transportista_id }}</td>
+                                                        <td>{{ $transportista[0] }}</td>
                                                     </tr>
                                                     <tr>
                                                         <th>Número de Permiso de la SCT</th>
@@ -40,16 +40,16 @@
                                                     </tr>
                                                     <tr>
                                                         <th>Tipo de vehículo</th>
-                                                        <td>{{ $vehiculo->tipo_id }}</td>
+                                                        <td>{{ $tipo[0] }}</td>
                                                     </tr>
                                                     <tr>
                                                         <th>Capacidad del vehículo</th>
-                                                        <td>{{ $vehiculo->capacidad_id }}</td>
+                                                        <td>{{ $capacidad[0] }}</td>
                                                     </tr>
                                                     <tr>
                                                         <th>Número de placas</th>
                                                         <td><span
-                                                                class="badge badge-primary">{{ $vehiculo->noPlaca }}</span>
+                                                                class="badge badge-info">{{ $vehiculo->noPlaca }}</span>
                                                         </td>
                                                     </tr>
                                                     <tr>

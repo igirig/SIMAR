@@ -39,7 +39,9 @@ class EstacionController extends Controller
 
     public function show(Estacion $estacion)
     {
-        return view('estaciones.show', compact('estacion'));
+        $estado = DB::table('estados')->where('id', '=', $estacion->estado_id)->pluck('nombre');
+        $municipio = DB::table('municipios')->where('id', '=', $estacion->municipio_id)->pluck('nombre');
+        return view('estaciones.show', compact('estacion', 'estado', 'municipio'));
     }
 
     public function edit(Estacion $estacion)

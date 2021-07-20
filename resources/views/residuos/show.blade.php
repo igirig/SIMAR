@@ -7,7 +7,8 @@
                     <div class="card">
                         <div class="card-header card-header-info">
                             <h4 class="card-title">Detalles del residuo</h4>
-                            <p class="card-category">Vista detallada del vehículo con las placas {{ $residuo->noPlaca }}...</p>
+                            <p class="card-category">Vista detallada del vehículo con las placas
+                                {{ $residuo->noPlaca }}...</p>
                         </div>
                         <!--Body-->
                         <div class="card-body">
@@ -33,46 +34,66 @@
                                                     </tr>
                                                     <tr>
                                                         <th>Corrosivo</th>
-                                                        <td><span
-                                                                class="badge badge-primary">{{ $residuo->corrosivo }}</span>
-                                                        </td>
+                                                        @if ($residuo->corrosivo == 1)
+                                                            <td><span class="badge badge-primary">Si</span>
+                                                            </td>
+                                                        @else
+                                                            <td>No</td>
+                                                        @endif
                                                     </tr>
                                                     <tr>
                                                         <th>Reactivo</th>
-                                                        <td><span
-                                                                class="badge badge-primary">{{ $residuo->reactivo }}</span>
-                                                        </td>
+                                                        @if ($residuo->reactivo == 1)
+                                                            <td><span class="badge badge-primary">Si</span>
+                                                            </td>
+                                                        @else
+                                                            <td>No</td>
+                                                        @endif
                                                     </tr>
                                                     <tr>
                                                         <th>Explosivo</th>
-                                                        <td><span
-                                                                class="badge badge-primary">{{ $residuo->explosivo }}</span>
-                                                        </td>
+                                                        @if ($residuo->explosivo == 1)
+                                                            <td><span class="badge badge-primary">Si</span>
+                                                            </td>
+                                                        @else
+                                                            <td>No</td>
+                                                        @endif
                                                     </tr>
                                                     <tr>
                                                         <th>Tóxico</th>
-                                                        <td><span
-                                                                class="badge badge-primary">{{ $residuo->toxico }}</span>
-                                                        </td>
+                                                        @if ($residuo->toxico == 1)
+                                                            <td><span class="badge badge-primary">Si</span>
+                                                            </td>
+                                                        @else
+                                                            <td>No</td>
+                                                        @endif
                                                     </tr>
-
                                                     <tr>
                                                         <th>Inflamable</th>
-                                                        <td><span
-                                                                class="badge badge-primary">{{ $residuo->inflamable }}</span>
-                                                        </td>
+                                                        @if ($residuo->inflamable == 1)
+                                                            <td><span class="badge badge-primary">Si</span>
+                                                            </td>
+                                                        @else
+                                                            <td>No</td>
+                                                        @endif
                                                     </tr>
                                                     <tr>
                                                         <th>Biológico</th>
-                                                        <td><span
-                                                                class="badge badge-primary">{{ $residuo->biologico }}</span>
-                                                        </td>
+                                                        @if ($residuo->biologico == 1)
+                                                            <td><span class="badge badge-primary">Si</span>
+                                                            </td>
+                                                        @else
+                                                            <td>No</td>
+                                                        @endif
                                                     </tr>
                                                     <tr>
                                                         <th>Mezcla</th>
-                                                        <td><span
-                                                                class="badge badge-primary">{{ $residuo->mezcla }}</span>
-                                                        </td>
+                                                        @if ($residuo->mezcla == 1)
+                                                            <td><span class="badge badge-primary">Si</span>
+                                                            </td>
+                                                        @else
+                                                            <td>No</td>
+                                                        @endif
                                                     </tr>
                                                     <tr>
                                                         <th>Numero de la ONU</th>
@@ -86,11 +107,11 @@
                                                     </tr>
                                                     <tr>
                                                         <th>Clase del residuo</th>
-                                                        <td>{{ $residuo->clase_id }}</td>
+                                                        <td>{{ $clase[0] }}</td>
                                                     </tr>
                                                     <tr>
                                                         <th>Estado de la materia</th>
-                                                        <td>{{ $residuo->materia_id }}</td>
+                                                        <td>{{ $materia[0] }}</td>
                                                     </tr>
                                                     <tr>
                                                         <th>Ultima modificación</th>
@@ -106,8 +127,8 @@
                                                     class="btn btn-sm btn-success mr-3">Volver al índice</a>
                                                 <a href="{{ route('residuos.edit', $residuo->id) }}"
                                                     class="btn btn-sm btn-warning mr-3">Editar residuo</a>
-                                                <form action="{{ route('residuos.destroy', $residuo->id) }}" method="POST"
-                                                    style="display: inline-block;"
+                                                <form action="{{ route('residuos.destroy', $residuo->id) }}"
+                                                    method="POST" style="display: inline-block;"
                                                     onsubmit="return confirm('¿Esta seguro que desea eliminar este residuo: {{ $residuo->nombre }}?')">
                                                     @csrf
                                                     @method('DELETE')

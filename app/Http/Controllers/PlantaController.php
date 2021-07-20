@@ -17,7 +17,8 @@ class PlantaController extends Controller
         return view('plantas.index', compact('plantas'));
     }
 
-    public function forStates($id){
+    public function forStates($id)
+    {
         return DB::table('municipios')->select('*')->where('estado_id', '=', $id)->orderBy('nombre')->get();
     }
 
@@ -38,7 +39,9 @@ class PlantaController extends Controller
 
     public function show(Planta $planta)
     {
-        return view('plantas.show', compact('planta'));
+        $estado = DB::table('estados')->where('id', '=', $planta->estado_id)->pluck('nombre');
+        $municipio = DB::table('municipios')->where('id', '=', $planta->municipio_id)->pluck('nombre');
+        return view('plantas.show', compact('planta', 'estado', 'municipio'));
     }
 
     public function edit(Planta $planta)
@@ -50,18 +53,20 @@ class PlantaController extends Controller
 
     public function update(PlantaEditRequest $request, planta $planta)
     {
-        $data = $request->only('razonSocial',
-        'noRegistroAmbiental',
-        'calle',
-        'noExterior',
-        'noInterior',
-        'colonia',
-        'codigoPostal',
-        'estado_id',
-        'municipio_id',
-        'telefono',
-        'extension',
-        'correo',);
+        $data = $request->only(
+            'razonSocial',
+            'noRegistroAmbiental',
+            'calle',
+            'noExterior',
+            'noInterior',
+            'colonia',
+            'codigoPostal',
+            'estado_id',
+            'municipio_id',
+            'telefono',
+            'extension',
+            'correo',
+        );
 
         $planta->update($data);
         return redirect()->route('plantas.show', $planta->id)->with('success', 'Planta actualizada correctamente');

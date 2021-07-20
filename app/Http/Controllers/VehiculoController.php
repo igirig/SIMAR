@@ -14,8 +14,11 @@ class VehiculoController extends Controller
 {
     public function index()
     {
+        $transportistas = DB::table('transportistas')->orderBy('id')->get();
+        $tipos = DB::table('tipos_vehiculo')->orderBy('id')->get();
+        $capacidades = DB::table('capacidades_vehiculo')->orderBy('id')->get();
         $vehiculos = Vehiculo::paginate(6);
-        return view('vehiculos.index', compact('vehiculos'));
+        return view('vehiculos.index', compact('vehiculos', 'transportistas', 'tipos', 'capacidades'));
     }
 
     public function create()
@@ -36,7 +39,10 @@ class VehiculoController extends Controller
 
     public function show(Vehiculo $vehiculo)
     {
-        return view('vehiculos.show', compact('vehiculo'));
+        $transportista = DB::table('transportistas')->where('id', '=', $vehiculo->transportista_id)->pluck('razonSocial');
+        $tipo = DB::table('tipos_vehiculo')->where('id', '=', $vehiculo->tipo_id)->pluck('nombre');
+        $capacidad = DB::table('capacidades_vehiculo')->where('id', '=', $vehiculo->capacidad_id)->pluck('nombre');
+        return view('vehiculos.show', compact('vehiculo', 'transportista', 'tipo', 'capacidad'));
     }
 
     public function edit(Vehiculo $vehiculo)
@@ -50,11 +56,13 @@ class VehiculoController extends Controller
     public function update(VehiculoEditRequest $request, vehiculo $vehiculo)
     {
 
-        $data = $request->only('transportista_id',
-        'noPermisoSCT',
-        'tipo_id',
-        'capacidad_id',
-        'noPlaca',);
+        $data = $request->only(
+            'transportista_id',
+            'noPermisoSCT',
+            'tipo_id',
+            'capacidad_id',
+            'noPlaca',
+        );
 
         $vehiculo->update($data);
         return redirect()->route('vehiculos.show', $vehiculo->id)->with('success', 'Vehiculo actualizada correctamente');

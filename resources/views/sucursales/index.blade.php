@@ -31,11 +31,18 @@
                                                     <tr>
                                                         @foreach ($clientes as $cliente)
                                                             @if ($cliente->id == $sucursal->cliente_id)
-                                                                <td>{{ $cliente->razonSocial }}</td>
+                                                                <td><a
+                                                                        href="{{ route('clientes.show', $cliente->id) }}">{{ $cliente->razonSocial }}</a>
+                                                                </td>
                                                             @endif
                                                         @endforeach
                                                         <td>{{ $sucursal->nombre }}</td>
-                                                        <td>{{ $sucursal->telefono }}</td>
+                                                        <td>{{ $sucursal->telefono }}
+                                                            @if ($sucursal->extension > 0)
+                                                                ext. {{ $sucursal->extension }}
+                                                            @else
+                                                            @endif
+                                                        </td>
                                                         <td><a href="mailto:{{ $sucursal->correo }}"
                                                                 title="Enviar correo a {{ $sucursal->correo }}">{{ $sucursal->correo }}</a>
                                                         </td>
