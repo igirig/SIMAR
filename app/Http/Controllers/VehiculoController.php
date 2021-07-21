@@ -47,9 +47,9 @@ class VehiculoController extends Controller
 
     public function edit(Vehiculo $vehiculo)
     {
-        $transportistas = Transportista::all('razonSocial', 'id');
-        $tipos = Tipo_vehiculo::all('nombre', 'id');
-        $capacidades = Capacidad_vehiculo::all('nombre', 'id');
+        $transportistas = DB::table('transportistas')->orderBy('id')->get();
+        $tipos = DB::table('tipos_vehiculo')->orderBy('id')->get();
+        $capacidades = DB::table('capacidades_vehiculo')->orderBy('id')->get();
         return view('vehiculos.edit', compact('vehiculo', 'transportistas', 'tipos', 'capacidades'));
     }
 

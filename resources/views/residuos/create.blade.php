@@ -17,8 +17,8 @@
                                     <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="nombre"
-                                            placeholder="Ingrese su nombre"
-                                            value="{{ old('nombre') }}" onkeyup="this.value = this.value.toUpperCase();">
+                                            placeholder="Ingrese su nombre" value="{{ old('nombre') }}"
+                                            onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('nombre'))
                                             <span class="error text-danger"
                                                 for="input-nombre">{{ $errors->first('nombre') }}</span>
@@ -29,77 +29,79 @@
                                 {{-- BOTONES PARA RESIDUOS --}}
 
                                 <div class="row">
-                                    <label for="nombre" class="col-sm-2 col-form-label">Clasifiación:</label>
-                                    <div class="col-sm-10">
-                                        <div class="form-check">
-                                            <label class="col-sm-12 form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                Corrosivo
-                                                <span class="form-check-sign">
-                                                    <span class="check"></span>
-                                                </span>
-                                            </label>
-                                        </div>
+                                    <label for="corrosivo" class="col-sm-2 col-form-label">¿Es corrosivo?</label>
+                                    <div class="col-sm-1">
+                                        <input type="checkbox" class="form-control" name="corrosivo" value="1">
+                                        @if ($errors->has('corrosivo'))
+                                            <span class="error text-danger"
+                                                for="input-corrosivo">{{ $errors->first('corrosivo') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
 
-                                        <div class="form-check">
-                                            <label class="col-sm-12 form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                Reactivo
-                                                <span class="form-check-sign">
-                                                    <span class="check"></span>
-                                                </span>
-                                            </label>
-                                        </div>
+                                <div class="row">
+                                    <label for="reactivo" class="col-sm-2 col-form-label">¿Es reactivo?</label>
+                                    <div class="col-sm-1">
+                                        <input type="checkbox" class="form-control" name="reactivo" value="1">
+                                        @if ($errors->has('reactivo'))
+                                            <span class="error text-danger"
+                                                for="input-reactivo">{{ $errors->first('reactivo') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
 
-                                        <div class="form-check">
-                                            <label class="col-sm-12 form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                Explosivo
-                                                <span class="form-check-sign">
-                                                    <span class="check"></span>
-                                                </span>
-                                            </label>
-                                        </div>
+                                <div class="row">
+                                    <label for="explosivo" class="col-sm-2 col-form-label">¿Es explosivo?</label>
+                                    <div class="col-sm-1">
+                                        <input type="checkbox" class="form-control" name="explosivo" value="1">
+                                        @if ($errors->has('explosivo'))
+                                            <span class="error text-danger"
+                                                for="input-explosivo">{{ $errors->first('explosivo') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
 
-                                        <div class="form-check">
-                                            <label class="col-sm-12 form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                Tóxico
-                                                <span class="form-check-sign">
-                                                    <span class="check"></span>
-                                                </span>
-                                            </label>
-                                        </div>
+                                <div class="row">
+                                    <label for="toxico" class="col-sm-2 col-form-label">¿Es tóxico?</label>
+                                    <div class="col-sm-1">
+                                        <input type="checkbox" class="form-control" name="toxico" value="1">
+                                        @if ($errors->has('toxico'))
+                                            <span class="error text-danger"
+                                                for="input-toxico">{{ $errors->first('toxico') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
 
-                                        <div class="form-check">
-                                            <label class="col-sm-12 form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                Inflamable
-                                                <span class="form-check-sign">
-                                                    <span class="check"></span>
-                                                </span>
-                                            </label>
-                                        </div>
+                                <div class="row">
+                                    <label for="inflamable" class="col-sm-2 col-form-label">¿Es inflamable?</label>
+                                    <div class="col-sm-1">
+                                        <input type="checkbox" class="form-control" name="inflamable" value="1">
+                                        @if ($errors->has('inflamable'))
+                                            <span class="error text-danger"
+                                                for="input-inflamable">{{ $errors->first('inflamable') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
 
-                                        <div class="form-check">
-                                            <label class="col-sm-12 form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                Biológico
-                                                <span class="form-check-sign">
-                                                    <span class="check"></span>
-                                                </span>
-                                            </label>
-                                        </div>
+                                <div class="row">
+                                    <label for="biologico" class="col-sm-2 col-form-label">¿Es biológico?</label>
+                                    <div class="col-sm-1">
+                                        <input type="checkbox" class="form-control" name="biologico" value="1">
+                                        @if ($errors->has('biologico'))
+                                            <span class="error text-danger"
+                                                for="input-biologico">{{ $errors->first('biologico') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
 
-                                        <div class="form-check">
-                                            <label class="col-sm-12 form-check-label">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                Mezcla
-                                                <span class="form-check-sign">
-                                                    <span class="check"></span>
-                                                </span>
-                                            </label>
-                                        </div>
+                                <div class="row">
+                                    <label for="mezcla" class="col-sm-2 col-form-label">¿Es mezcla?</label>
+                                    <div class="col-sm-1">
+                                        <input type="checkbox" class="form-control" name="mezcla" value="1">
+                                        @if ($errors->has('mezcla'))
+                                            <span class="error text-danger"
+                                                for="input-mezcla">{{ $errors->first('mezcla') }}</span>
+                                        @endif
                                     </div>
                                 </div>
 
@@ -132,8 +134,8 @@
                                 <div class="row">
                                     <label for="clase_id" class="col-sm-2 col-form-label">Clase:</label>
                                     <div class="col-md-7">
-                                        <select name="clase_id"
-                                            class="form-control @error('clase_id') is-invalid @enderror" id="clase_id">
+                                        <select name="clase_id" class="form-control @error('clase_id') is-invalid @enderror"
+                                            id="clase_id">
                                             <option value="">Seleccione el clase...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($clases as $clase)

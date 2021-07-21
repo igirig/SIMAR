@@ -51,9 +51,9 @@ class SucursalController extends Controller
 
     public function edit(Sucursal $sucursal)
     {
-        $clientes = Cliente::all('razonSocial', 'id');
-        $estados = Estado::all('nombre', 'id');
-        $municipios = Municipio::all('nombre', 'id');
+        $clientes = DB::table('clientes')->orderBy('id')->get();
+        $estados = DB::table('estados')->get();
+        $municipios = DB::table('municipios')->get();
         return view('sucursales.edit', compact('sucursal', 'clientes', 'estados', 'municipios'));
     }
 

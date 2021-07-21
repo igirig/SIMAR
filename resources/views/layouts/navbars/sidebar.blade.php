@@ -19,7 +19,7 @@
             </li>
 
             {{-- Documentos --}}
-            <li class="nav-item{{ $activePage == 'manifiestos.create' ? ' active' : '' }}">
+            <li class="nav-item{{ $activePage == 'manifiestos.index' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('manifiestos.create') }}">
                     <i class="material-icons">description</i>
                     {{-- Ícono desde una imagen
@@ -27,6 +27,8 @@
                     <p>{{ __('Crear documento') }}</p>
                 </a>
             </li>
+
+            <hr>
 
             {{-- Usuarios --}}
             <li class="nav-item {{ $activePage == 'users.index' || $activePage == 'users.create' ? ' active' : '' }}">

@@ -59,6 +59,10 @@
                                 <div class="card-footer mr-auto">
                                     {{ $users->links() }}
                                 </div>
+                                <div class="card-footer ml-auto mr-auto">
+                                    <a href="{{ route('users.create') }}" class="btn btn-warning mr-3">Crear
+                                        usuario</a>
+                                </div>
                             </div>
                         </div>
                     </div>

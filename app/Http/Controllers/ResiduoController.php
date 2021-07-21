@@ -43,8 +43,8 @@ class ResiduoController extends Controller
 
     public function edit(Residuo $residuo)
     {
-        $clases = Clase_residuo::all('nombre', 'id');
-        $materias = Estado_residuo::all('nombre', 'id');
+        $clases = DB::table('clases_residuo')->orderBy('id')->get();
+        $materias = DB::table('estados_residuo')->orderBy('id')->get();
         return view('residuos.edit', compact('residuo', 'clases', 'materias'));
     }
 

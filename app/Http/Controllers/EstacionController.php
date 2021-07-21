@@ -46,8 +46,8 @@ class EstacionController extends Controller
 
     public function edit(Estacion $estacion)
     {
-        $estados = Estado::all('nombre', 'id');
-        $municipios = Municipio::all('nombre', 'id');
+        $estados = DB::table('estados')->get();
+        $municipios = DB::table('municipios')->get();
         return view('estaciones.edit', compact('estacion', 'estados', 'municipios'));
     }
 

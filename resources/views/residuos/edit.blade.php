@@ -11,6 +11,7 @@
                             <div class="card-header card-header-warning">
                                 <h4 class="card-title">Editar Residuo</h4>
                                 <p class="card-category">Edite los datos del Residuo {{ $residuo->nombre }}...</p>
+                                <p class="card-category">*</p>
                             </div>
                             <div class="card-body">
 
@@ -23,6 +24,111 @@
                                         @if ($errors->has('nombre'))
                                             <span class="error text-danger"
                                                 for="input-nombre">{{ $errors->first('nombre') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label for="corrosivo" class="col-sm-2 col-form-label">¿Es corrosivo?</label>
+                                    <div class="col-sm-1">
+                                        @if ($residuo->corrosivo == 1)
+                                            <input type="checkbox" class="form-control" name="corrosivo" value="1" checked>
+                                        @else
+                                            <input type="checkbox" class="form-control" name="corrosivo" value="1">
+                                        @endif
+                                        @if ($errors->has('corrosivo'))
+                                            <span class="error text-danger"
+                                                for="input-corrosivo">{{ $errors->first('corrosivo') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label for="reactivo" class="col-sm-2 col-form-label">¿Es reactivo?</label>
+                                    <div class="col-sm-1">
+                                        @if ($residuo->reactivo == 1)
+                                            <input type="checkbox" class="form-control" name="reactivo" value="1" checked>
+                                        @else
+                                            <input type="checkbox" class="form-control" name="reactivo" value="1">
+                                        @endif
+                                        @if ($errors->has('reactivo'))
+                                            <span class="error text-danger"
+                                                for="input-reactivo">{{ $errors->first('reactivo') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label for="explosivo" class="col-sm-2 col-form-label">¿Es explosivo?</label>
+                                    <div class="col-sm-1">
+                                        @if ($residuo->explosivo == 1)
+                                            <input type="checkbox" class="form-control" name="explosivo" value="1" checked>
+                                        @else
+                                            <input type="checkbox" class="form-control" name="explosivo" value="1">
+                                        @endif
+                                        @if ($errors->has('explosivo'))
+                                            <span class="error text-danger"
+                                                for="input-explosivo">{{ $errors->first('explosivo') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label for="toxico" class="col-sm-2 col-form-label">¿Es tóxico?</label>
+                                    <div class="col-sm-1">
+                                        @if ($residuo->toxico == 1)
+                                            <input type="checkbox" class="form-control" name="toxico" value="1" checked>
+                                        @else
+                                            <input type="checkbox" class="form-control" name="toxico" value="1">
+                                        @endif
+                                        @if ($errors->has('toxico'))
+                                            <span class="error text-danger"
+                                                for="input-toxico">{{ $errors->first('toxico') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label for="inflamable" class="col-sm-2 col-form-label">¿Es inflamable?</label>
+                                    <div class="col-sm-1">
+                                        @if ($residuo->inflamable == 1)
+                                            <input type="checkbox" class="form-control" name="inflamable" value="1" checked>
+                                        @else
+                                            <input type="checkbox" class="form-control" name="inflamable" value="1">
+                                        @endif
+                                        @if ($errors->has('inflamable'))
+                                            <span class="error text-danger"
+                                                for="input-inflamable">{{ $errors->first('inflamable') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label for="biologico" class="col-sm-2 col-form-label">¿Es biológico?</label>
+                                    <div class="col-sm-1">
+                                        @if ($residuo->biologico == 1)
+                                            <input type="checkbox" class="form-control" name="biologico" value="1" checked>
+                                        @else
+                                            <input type="checkbox" class="form-control" name="biologico" value="1">
+                                        @endif
+                                        @if ($errors->has('biologico'))
+                                            <span class="error text-danger"
+                                                for="input-biologico">{{ $errors->first('biologico') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label for="mezcla" class="col-sm-2 col-form-label">¿Es mezcla?</label>
+                                    <div class="col-sm-1">
+                                        @if ($residuo->mezcla == 1)
+                                            <input type="checkbox" class="form-control" name="mezcla" value="1" checked>
+                                        @else
+                                            <input type="checkbox" class="form-control" name="mezcla" value="1">
+                                        @endif
+                                        @if ($errors->has('mezcla'))
+                                            <span class="error text-danger"
+                                                for="input-mezcla">{{ $errors->first('mezcla') }}</span>
                                         @endif
                                     </div>
                                 </div>

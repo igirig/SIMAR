@@ -46,8 +46,8 @@ class PlantaController extends Controller
 
     public function edit(Planta $planta)
     {
-        $estados = Estado::all('nombre', 'id');
-        $municipios = Municipio::all('nombre', 'id');
+        $estados = DB::table('estados')->get();
+        $municipios = DB::table('municipios')->get();
         return view('plantas.edit', compact('planta', 'estados', 'municipios'));
     }
 

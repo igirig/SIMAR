@@ -46,8 +46,8 @@ class TransportistaController extends Controller
 
     public function edit(Transportista $transportista)
     {
-        $estados = Estado::all('nombre', 'id');
-        $municipios = Municipio::all('nombre', 'id');
+        $estados = DB::table('estados')->get();
+        $municipios = DB::table('municipios')->get();
         return view('transportistas.edit', compact('transportista', 'estados', 'municipios'));
     }
 

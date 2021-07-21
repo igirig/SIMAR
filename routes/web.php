@@ -18,6 +18,8 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/template', [App\Http\Controllers\HomeController::class, 'template'])->name('homeTemplate');
+
 
 Route::get('/users/create', [App\Http\Controllers\UserController::class, 'create'])->name('users.create');
 Route::post('/users', [App\Http\Controllers\UserController::class, 'store'])->name('users.store');

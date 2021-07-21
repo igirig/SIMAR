@@ -25,13 +25,7 @@ class ResiduoCreateRequest extends FormRequest
     {
         return [
             'nombre' => 'required|min:3|unique:residuos',
-            'corrosivo' => 'required',
-            'reactivo' => 'required',
-            'explosivo' => 'required',
-            'toxico' => 'required',
-            'inflamable' => 'required',
-            'biologico' => 'required',
-            'mezcla' => 'required',
+
             'noONU' => 'required|min:6|max:7',
             'descripcion' => 'required|min:3',
             'clase_id' => 'required',

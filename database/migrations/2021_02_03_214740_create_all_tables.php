@@ -54,13 +54,13 @@ class CreateAllTables extends Migration
         Schema::create('residuos', function (Blueprint $table) {
             $table->id();
             $table->string('nombre')->unique();
-            $table->boolean('corrosivo'); //TRUE=si es, FALSE=no es
-            $table->boolean('reactivo'); //TRUE=si es, FALSE=no es
-            $table->boolean('explosivo'); //TRUE=si es, FALSE=no es
-            $table->boolean('toxico'); //TRUE=si es, FALSE=no es
-            $table->boolean('inflamable'); //TRUE=si es, FALSE=no es
-            $table->boolean('biologico'); //TRUE=si es, FALSE=no es (BIOLÓGICO/INFECCIOSO)
-            $table->boolean('mezcla'); //TRUE=si es, FALSE=no es
+            $table->boolean('corrosivo')->default('0'); //TRUE=si es, FALSE=no es
+            $table->boolean('reactivo')->default('0'); //TRUE=si es, FALSE=no es
+            $table->boolean('explosivo')->default('0'); //TRUE=si es, FALSE=no es
+            $table->boolean('toxico')->default('0'); //TRUE=si es, FALSE=no es
+            $table->boolean('inflamable')->default('0'); //TRUE=si es, FALSE=no es
+            $table->boolean('biologico')->default('0'); //TRUE=si es, FALSE=no es (BIOLÓGICO/INFECCIOSO)
+            $table->boolean('mezcla')->default('0'); //TRUE=si es, FALSE=no es
             $table->string('noONU'); //Número de la ONU
             $table->string('descripcion')->nullable(); //Descipción del residuo
             $table->unsignedBigInteger('clase_id');
