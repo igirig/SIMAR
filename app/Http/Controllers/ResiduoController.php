@@ -21,14 +21,12 @@ class ResiduoController extends Controller
     {
         $clases = DB::table('clases_residuo')->orderBy('id')->get();
         $materias = DB::table('estados_residuo')->orderBy('id')->get();
-
         return view('residuos.create', compact('clases', 'materias'));
     }
 
     public function store(ResiduoCreateRequest $request)
     {
         $residuo = Residuo::create($request->all());
-
         return redirect()->route('residuos.show', $residuo->id)->with('success', 'Residuo creada correctamente');
     }
 

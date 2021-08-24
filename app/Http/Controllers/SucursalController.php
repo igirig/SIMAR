@@ -23,7 +23,7 @@ class SucursalController extends Controller
 
     public function create()
     {
-        $clientes = DB::table('clientes')->orderBy('id')->get();
+        $clientes = DB::table('clientes')->orderBy('razonSocial')->get();
         $estados = DB::table('estados')->get();
         $municipios = DB::table('municipios')->get();
 
@@ -50,7 +50,7 @@ class SucursalController extends Controller
 
     public function edit(Sucursal $sucursal)
     {
-        $clientes = DB::table('clientes')->orderBy('id')->get();
+        $clientes = DB::table('clientes')->orderBy('razonSocial')->get();
         $estados = DB::table('estados')->get();
         $municipios = DB::table('municipios')->get();
         return view('sucursales.edit', compact('sucursal', 'clientes', 'estados', 'municipios'));

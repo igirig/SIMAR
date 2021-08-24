@@ -11,7 +11,7 @@
             //alert(estado_id); Llamada peticion AJAX
 
             $.get('/api/estados/' + estado_id + '', function(data) {
-                var select = '<option value="">Seleccione el municipio...</option>';
+                var select = '<option value="">Seleccione el municipio donde esta ubicada la planta de tratamiento...</option>';
                 for (var i = 0; i < data.length; ++i) {
                     select += '<option value="' + data[i].id + '">' + data[i].nombre + '</option>';
                     $('#municipio_id').html(select);

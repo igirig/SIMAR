@@ -20,17 +20,15 @@ class VehiculoController extends Controller
 
     public function create()
     {
-        $transportistas = DB::table('transportistas')->orderBy('id')->get();
-        $tipos = DB::table('tipos_vehiculo')->orderBy('id')->get();
-        $capacidades = DB::table('capacidades_vehiculo')->orderBy('id')->get();
-
+        $transportistas = DB::table('transportistas')->orderBy('razonSocial')->get();
+        $tipos = DB::table('tipos_vehiculo')->orderBy('nombre')->get();
+        $capacidades = DB::table('capacidades_vehiculo')->orderBy('nombre')->get();
         return view('vehiculos.create', compact('transportistas', 'tipos', 'capacidades'));
     }
 
     public function store(VehiculoCreateRequest $request)
     {
         $vehiculo = Vehiculo::create($request->all());
-
         return redirect()->route('vehiculos.show', $vehiculo->id)->with('success', 'Vehiculo creada correctamente');
     }
 
@@ -44,9 +42,9 @@ class VehiculoController extends Controller
 
     public function edit(Vehiculo $vehiculo)
     {
-        $transportistas = DB::table('transportistas')->orderBy('id')->get();
-        $tipos = DB::table('tipos_vehiculo')->orderBy('id')->get();
-        $capacidades = DB::table('capacidades_vehiculo')->orderBy('id')->get();
+        $transportistas = DB::table('transportistas')->orderBy('razonSocial')->get();
+        $tipos = DB::table('tipos_vehiculo')->orderBy('nombre')->get();
+        $capacidades = DB::table('capacidades_vehiculo')->orderBy('nombre')->get();
         return view('vehiculos.edit', compact('vehiculo', 'transportistas', 'tipos', 'capacidades'));
     }
 

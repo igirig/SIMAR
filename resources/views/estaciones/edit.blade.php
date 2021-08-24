@@ -11,7 +11,7 @@
             //alert(estado_id); Llamada peticion AJAX
 
             $.get('/api/estados/' + estado_id + '', function(data) {
-                var select = '<option value="">Seleccione el municipio...</option>';
+                var select = '<option value="">Seleccione el municipio donde esta ubicada la estación de servicio...</option>';
                 for (var i = 0; i < data.length; ++i) {
                     select += '<option value="' + data[i].id + '">' + data[i].nombre + '</option>';
                     $('#municipio_id').html(select);
@@ -31,7 +31,8 @@
                         <div class="card">
                             <div class="card-header card-header-warning">
                                 <h4 class="card-title">Editar estación de servicio</h4>
-                                <p class="card-category">Edite los datos de la estación de servicio {{ $estacion->razonSocial }}...
+                                <p class="card-category">Edite los datos de la estación de servicio
+                                    {{ $estacion->razonSocial }}...
                                 </p>
                             </div>
                             <div class="card-body">
@@ -80,7 +81,7 @@
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noExterior"
                                             value="{{ old('noExterior', $estacion->noExterior) }}" onkeyup="
-                                                this.value=this.value.toUpperCase();" maxlength="16">
+                                                    this.value=this.value.toUpperCase();" maxlength="16">
                                         @if ($errors->has('noExterior'))
                                             <span class="error text-danger"
                                                 for="input-noExterior">{{ $errors->first('noExterior') }}</span>
@@ -131,7 +132,8 @@
                                     <div class="col-md-7">
                                         <select name="estado_id"
                                             class="form-control @error('estado_id') is-invalid @enderror" id="estado_id">
-                                            <option value="">Seleccione el estado...</option>
+                                            <option value="">Seleccione el estado donde esta ubicada la estación de
+                                                servicio...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($estados as $estado)
                                                 <option value="{{ $estado->id }}"
@@ -155,7 +157,8 @@
                                         <select name="municipio_id"
                                             class="form-control @error('municipio_id') is-invalid @enderror"
                                             id="municipio_id">
-                                            <option value="">Seleccione el municipio...</option>
+                                            <option value="">Seleccione el municipio donde esta ubicada la estación de
+                                                servicio...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($municipios as $municipio)
                                                 <option value="{{ $municipio->id }}"
