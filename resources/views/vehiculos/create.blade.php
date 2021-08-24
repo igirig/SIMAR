@@ -19,7 +19,7 @@
                                         <select name="transportista_id"
                                             class="form-control @error('transportista_id') is-invalid @enderror"
                                             id="transportista_id">
-                                            <option value="">Seleccione el transportista...</option>
+                                            <option value="">Seleccione el transportista al que pertenece el vehículo...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($transportistas as $transportista)
                                                 <option value="{{ $transportista->id }}"
@@ -42,7 +42,7 @@
                                         SCT:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noPermisoSCT"
-                                            placeholder="Ingrese su Número de Permiso de la SCT"
+                                            placeholder="Ingrese el número de permiso de la SCT del vehículo"
                                             value="{{ old('noPermisoSCT') }}" maxlength="9"
                                             onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noPermisoSCT'))
@@ -76,13 +76,12 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="capacidad_id" class="col-sm-2 col-form-label">Capacidad del
-                                        vehículo:</label>
+                                    <label for="capacidad_id" class="col-sm-2 col-form-label">Capacidad:</label>
                                     <div class="col-md-7">
                                         <select name="capacidad_id"
                                             class="form-control @error('capacidad_id') is-invalid @enderror"
                                             id="capacidad_id">
-                                            <option value="">Seleccione el capacidad de vehículo...</option>
+                                            <option value="">Seleccione la capacidad del vehículo...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($capacidades as $capacidad)
                                                 <option value="{{ $capacidad->id }}"
@@ -104,7 +103,7 @@
                                     <label for="noPlaca" class="col-sm-2 col-form-label">Número de placas:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noPlaca"
-                                            placeholder="Ingrese su Número de Placa" value="{{ old('noPlaca') }}"
+                                            placeholder="Ingrese el número de placa del vehículo" value="{{ old('noPlaca') }}"
                                             maxlength="7" onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noPlaca'))
                                             <span class="error text-danger"

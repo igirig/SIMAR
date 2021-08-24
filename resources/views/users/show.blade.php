@@ -28,22 +28,17 @@
                                                         <td>{{ $user->id }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Name</th>
+                                                        <th>Nombre</th>
                                                         <td>{{ $user->name }}</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Email</th>
+                                                        <th>Correo electrónico</th>
                                                         <td><span class="badge badge-primary">{{ $user->email }}</span>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Password</th>
-                                                        <td>{{ $user->password }}</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Created at</th>
-                                                        <td><a href="#" target="_blank">{{ $user->created_at }}</a>
-                                                        </td>
+                                                        <th>Última modificación</th>
+                                                        <td>{{ $user->created_at }}</td>
                                                     </tr>
                                                 </tbody>
                                             </table>

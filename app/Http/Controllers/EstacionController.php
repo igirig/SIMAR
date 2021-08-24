@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\EstacionCreateRequest;
 use App\Http\Requests\EstacionEditRequest;
 use App\Models\Estacion;
-use App\Models\Estado;
-use App\Models\Municipio;
 use Illuminate\Support\Facades\DB;
 
 class EstacionController extends Controller

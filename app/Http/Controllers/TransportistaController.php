@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\TransportistaCreateRequest;
 use App\Http\Requests\TransportistaEditRequest;
 use App\Models\Transportista;
-use App\Models\Estado;
-use App\Models\Municipio;
 use Illuminate\Support\Facades\DB;
 
 class TransportistaController extends Controller

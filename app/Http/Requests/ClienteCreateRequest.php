@@ -24,7 +24,7 @@ class ClienteCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'razonSocial' => 'required|min:3|max:128|unique:clientes',
+            'razonSocial' => 'required|min:3|max:64|unique:clientes',
         ];
     }
 

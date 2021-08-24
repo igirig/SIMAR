@@ -5,9 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\VehiculoCreateRequest;
 use App\Http\Requests\VehiculoEditRequest;
 use App\Models\Vehiculo;
-use App\Models\Transportista;
-use App\Models\Tipo_vehiculo;
-use App\Models\Capacidad_vehiculo;
 use Illuminate\Support\Facades\DB;
 
 class VehiculoController extends Controller

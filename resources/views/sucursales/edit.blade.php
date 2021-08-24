@@ -36,11 +36,11 @@
                             <div class="card-body">
 
                                 <div class="row">
-                                    <label for="cliente_id" class="col-sm-2 col-form-label">Clase:</label>
+                                    <label for="cliente_id" class="col-sm-2 col-form-label">Cliente:</label>
                                     <div class="col-md-7">
                                         <select name="cliente_id" class="form-control @error('cliente_id') is-invalid @enderror"
                                             id="cliente_id">
-                                            <option value="">Seleccione el cliente...</option>
+                                            <option value="">Seleccione el cliente al que pertenece la sucursal...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($clientes as $cliente)
                                                 <option value="{{ $cliente->id }}"
@@ -59,7 +59,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="nombre" class="col-sm-2 col-form-label">Razón social:</label>
+                                    <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="nombre"
                                             value="{{ old('nombre', $sucursal->nombre) }}"
@@ -154,7 +154,7 @@
                                     <div class="col-md-7">
                                         <select name="estado_id"
                                             class="form-control @error('estado_id') is-invalid @enderror" id="estado_id">
-                                            <option value="">Seleccione el estado...</option>
+                                            <option value="">Seleccione el estado donde esta ubicada la sucursal...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($estados as $estado)
                                                 <option value="{{ $estado->id }}"
@@ -178,7 +178,7 @@
                                         <select name="municipio_id"
                                             class="form-control @error('municipio_id') is-invalid @enderror"
                                             id="municipio_id">
-                                            <option value="">Seleccione el municipio...</option>
+                                            <option value="">Seleccione el municipio donde esta ubicada la sucursal...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($municipios as $municipio)
                                                 <option value="{{ $municipio->id }}"

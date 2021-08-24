@@ -24,7 +24,7 @@ class CreateAllTables extends Migration
             $table->id();
             $table->unsignedBigInteger('cliente_id');
             $table->foreign('cliente_id')->references('id')->on('clientes');
-            $table->string('nombre')->unique();
+            $table->string('nombre');
             $table->string('noRegistroAmbiental')->unique(); //Número de registro ambiental / SEMARNAT
             $table->string('calle');
             $table->string('noExterior')->nullable(); //Número exterior

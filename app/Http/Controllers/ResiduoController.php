@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ResiduoCreateRequest;
 use App\Http\Requests\ResiduoEditRequest;
 use App\Models\Residuo;
-use App\Models\Clase_residuo;
-use App\Models\Estado_residuo;
 use Illuminate\Support\Facades\DB;
 
 class ResiduoController extends Controller

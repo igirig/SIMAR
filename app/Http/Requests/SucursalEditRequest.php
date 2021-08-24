@@ -26,14 +26,14 @@ class SucursalEditRequest extends FormRequest
         $sucursal = $this->route('sucursal');
         return [
             'cliente_id' => ['required'],
-            'nombre' => [
-                'required', 'min:3', 'max:128', 'unique:sucursales,nombre,' . request()->route('sucursal')->id
-            ],
+            'nombre' => ['required', 'min:3', 'max:64'],
             'noRegistroAmbiental' => [
                 'required', 'size:12', 'unique:sucursales,noRegistroAmbiental,' . request()->route('sucursal')->id
             ],
-            'calle' => ['required', 'min:1', 'max:128'],
-            'colonia' => ['required', 'min:3', 'max:128'],
+            'calle' => ['required', 'min:1', 'max:64'],
+            'noExterior' => ['nullable'],
+            'noInterior' => ['nullable'],
+            'colonia' => ['required', 'min:3', 'max:64'],
             'codigoPostal' => ['required', 'digits:5', 'numeric'],
             'estado_id' => ['required'],
             'municipio_id' => ['required'],

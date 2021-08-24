@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'estaciones.edit', 'titlePage' => 'Estaciones'])
+@extends('layouts.main', ['activePage' => 'estaciones.edit', 'titlePage' => 'Estaciones de servicio'])
 @section('scripts')
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
@@ -30,8 +30,8 @@
                         @method('PUT')
                         <div class="card">
                             <div class="card-header card-header-warning">
-                                <h4 class="card-title">Editar Estacion</h4>
-                                <p class="card-category">Edite los datos de la Estacion {{ $estacion->razonSocial }}...
+                                <h4 class="card-title">Editar estación de servicio</h4>
+                                <p class="card-category">Edite los datos de la estación de servicio {{ $estacion->razonSocial }}...
                                 </p>
                             </div>
                             <div class="card-body">
@@ -214,7 +214,7 @@
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
                                 <a href="{{ url()->previous() }}" class="btn btn-success mr-3">Volver</a>
-                                <button type="submit" class="btn btn-warning">Actualizar estación</button>
+                                <button type="submit" class="btn btn-warning">Actualizar estación de servicio</button>
                             </div>
                             <!--Fin del Footer-->
                         </div>

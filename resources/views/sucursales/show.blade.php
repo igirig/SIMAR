@@ -44,15 +44,15 @@
                                                     <tr>
                                                         <th>Dirección</th>
                                                         <td>{{ $sucursal->calle }}
-                                                            @if ($sucursal->noExterior != null)
-                                                                #{{ $sucursal->noExterior }}
-                                                            @else S/N
+                                                            @if ($sucursal->noExterior == null || $sucursal->noExterior == 'S/N')
+                                                                S/N,
+                                                            @else #{{ $sucursal->noExterior }},
                                                             @endif
                                                             @if ($sucursal->noInterior != null)
-                                                                , Interior: {{ $sucursal->noExterior }}
+                                                                Interior: {{ $sucursal->noInterior }},
                                                             @else
                                                             @endif
-                                                            , Col. {{ $sucursal->colonia }},
+                                                            Col. {{ $sucursal->colonia }},
                                                             C.P. {{ $sucursal->codigoPostal }},
                                                             {{ $estado[0] }}, {{ $municipio[0] }}
                                                         </td>

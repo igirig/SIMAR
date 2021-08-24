@@ -17,8 +17,8 @@
                                     <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="nombre"
-                                            placeholder="Ingrese su nombre" value="{{ old('nombre') }}"
-                                            onkeyup="this.value = this.value.toUpperCase();">
+                                            placeholder="Ingrese el nombre del residuo" value="{{ old('nombre') }}"
+                                            onkeyup="this.value = this.value.toUpperCase();" maxlength="64">
                                         @if ($errors->has('nombre'))
                                             <span class="error text-danger"
                                                 for="input-nombre">{{ $errors->first('nombre') }}</span>
@@ -29,7 +29,7 @@
                                 {{-- BOTONES PARA RESIDUOS --}}
 
                                 <div class="row">
-                                    <label for="corrosivo" class="col-sm-2 col-form-label">¿Es corrosivo?</label>
+                                    <label for="corrosivo" class="col-sm-2 col-form-label">¿El residuo es corrosivo?</label>
                                     <div class="col-sm-1">
                                         <input type="checkbox" class="form-control" name="corrosivo" value="1">
                                         @if ($errors->has('corrosivo'))
@@ -40,7 +40,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="reactivo" class="col-sm-2 col-form-label">¿Es reactivo?</label>
+                                    <label for="reactivo" class="col-sm-2 col-form-label">¿El residuo es reactivo?</label>
                                     <div class="col-sm-1">
                                         <input type="checkbox" class="form-control" name="reactivo" value="1">
                                         @if ($errors->has('reactivo'))
@@ -51,7 +51,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="explosivo" class="col-sm-2 col-form-label">¿Es explosivo?</label>
+                                    <label for="explosivo" class="col-sm-2 col-form-label">¿El residuo es explosivo?</label>
                                     <div class="col-sm-1">
                                         <input type="checkbox" class="form-control" name="explosivo" value="1">
                                         @if ($errors->has('explosivo'))
@@ -62,7 +62,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="toxico" class="col-sm-2 col-form-label">¿Es tóxico?</label>
+                                    <label for="toxico" class="col-sm-2 col-form-label">¿El residuo es tóxico?</label>
                                     <div class="col-sm-1">
                                         <input type="checkbox" class="form-control" name="toxico" value="1">
                                         @if ($errors->has('toxico'))
@@ -73,7 +73,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="inflamable" class="col-sm-2 col-form-label">¿Es inflamable?</label>
+                                    <label for="inflamable" class="col-sm-2 col-form-label">¿El residuo es inflamable?</label>
                                     <div class="col-sm-1">
                                         <input type="checkbox" class="form-control" name="inflamable" value="1">
                                         @if ($errors->has('inflamable'))
@@ -84,7 +84,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="biologico" class="col-sm-2 col-form-label">¿Es biológico?</label>
+                                    <label for="biologico" class="col-sm-2 col-form-label">¿El residuo es biológico?</label>
                                     <div class="col-sm-1">
                                         <input type="checkbox" class="form-control" name="biologico" value="1">
                                         @if ($errors->has('biologico'))
@@ -95,7 +95,7 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="mezcla" class="col-sm-2 col-form-label">¿Es mezcla?</label>
+                                    <label for="mezcla" class="col-sm-2 col-form-label">¿El residuo es mezcla?</label>
                                     <div class="col-sm-1">
                                         <input type="checkbox" class="form-control" name="mezcla" value="1">
                                         @if ($errors->has('mezcla'))
@@ -122,8 +122,8 @@
                                     <label for="descripcion" class="col-sm-2 col-form-label">Descripción:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="descripcion"
-                                            placeholder="Ingrese la descripción" value="{{ old('descripcion') }}"
-                                            onkeyup="this.value = this.value.toUpperCase();">
+                                            placeholder="Ingrese una descripción para el residuo" value="{{ old('descripcion') }}"
+                                            onkeyup="this.value = this.value.toUpperCase();" maxlength="128">
                                         @if ($errors->has('descripcion'))
                                             <span class="error text-danger"
                                                 for="input-descripcion">{{ $errors->first('descripcion') }}</span>
@@ -136,7 +136,7 @@
                                     <div class="col-md-7">
                                         <select name="clase_id" class="form-control @error('clase_id') is-invalid @enderror"
                                             id="clase_id">
-                                            <option value="">Seleccione el clase...</option>
+                                            <option value="">Seleccione la clase a la que pertenece el residuo...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($clases as $clase)
                                                 <option value="{{ $clase->id }}"
@@ -159,7 +159,7 @@
                                     <div class="col-md-7">
                                         <select name="materia_id"
                                             class="form-control @error('materia_id') is-invalid @enderror" id="materia_id">
-                                            <option value="">Seleccione el estado de la materia...</option>
+                                            <option value="">Seleccione el estado de la materia del residuo...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($materias as $materia)
                                                 <option value="{{ $materia->id }}"

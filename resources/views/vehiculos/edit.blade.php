@@ -16,11 +16,11 @@
                             <div class="card-body">
 
                                 <div class="row">
-                                    <label for="transportista_id" class="col-sm-2 col-form-label">Clase:</label>
+                                    <label for="transportista_id" class="col-sm-2 col-form-label">Transportista:</label>
                                     <div class="col-md-7">
                                         <select name="transportista_id" class="form-control @error('transportista_id') is-invalid @enderror"
                                             id="transportista_id">
-                                            <option value="">Seleccione el transportista...</option>
+                                            <option value="">Seleccione el transportista al que pertenece el vehículo...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($transportistas as $transportista)
                                                 <option value="{{ $transportista->id }}"
@@ -53,11 +53,11 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="tipo_id" class="col-sm-2 col-form-label">Clase:</label>
+                                    <label for="tipo_id" class="col-sm-2 col-form-label">Tipo de vehículo:</label>
                                     <div class="col-md-7">
                                         <select name="tipo_id" class="form-control @error('tipo_id') is-invalid @enderror"
                                             id="tipo_id">
-                                            <option value="">Seleccione el tipo...</option>
+                                            <option value="">Seleccione el tipo de vehículo...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($tipos as $tipo)
                                                 <option value="{{ $tipo->id }}"
@@ -76,11 +76,11 @@
                                 </div>
 
                                 <div class="row">
-                                    <label for="capacidad_id" class="col-sm-2 col-form-label">Clase:</label>
+                                    <label for="capacidad_id" class="col-sm-2 col-form-label">Capacidad:</label>
                                     <div class="col-md-7">
                                         <select name="capacidad_id" class="form-control @error('capacidad_id') is-invalid @enderror"
                                             id="capacidad_id">
-                                            <option value="">Seleccione el capacidad...</option>
+                                            <option value="">Seleccione el capacidad del vehículo...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($capacidades as $capacidad)
                                                 <option value="{{ $capacidad->id }}"

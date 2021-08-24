@@ -31,7 +31,7 @@
                             <div class="card-header card-header-warning">
                                 <h4 class="card-title">Nuevo transportista</h4>
                                 <p class="card-category">Ingrese los datos del transportista...</p>
-                                <p class="card-category">(*)Opcional</p>
+                                <p class="card-category">(*) Opcional</p>
                             </div>
                             <div class="card-body">
 
@@ -39,8 +39,8 @@
                                     <label for="razonSocial" class="col-sm-2 col-form-label">Razón social:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="razonSocial"
-                                            placeholder="Ingrese su razón social" value="{{ old('razonSocial') }}"
-                                            onkeyup="this.value = this.value.toUpperCase();" autofocus>
+                                            placeholder="Ingrese la razón social del transportista" value="{{ old('razonSocial') }}"
+                                            onkeyup="this.value = this.value.toUpperCase();" maxlength="64" autofocus>
                                         @if ($errors->has('razonSocial'))
                                             <span class="error text-danger"
                                                 for="input-razonSocial">{{ $errors->first('razonSocial') }}</span>
@@ -53,7 +53,7 @@
                                         ambiental:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noRegistroAmbiental"
-                                            placeholder="Ingrese su número de registro ambiental"
+                                            placeholder="Ingrese el número de registro ambiental del transportista"
                                             value="{{ old('noRegistroAmbiental') }}" maxlength="12"
                                             onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noRegistroAmbiental'))
@@ -67,8 +67,8 @@
                                     <label for="calle" class="col-sm-2 col-form-label">Calle:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="calle"
-                                            placeholder="Ingrese la calle donde esta ubicado" value="{{ old('calle') }}"
-                                            onkeyup="this.value = this.value.toUpperCase();">
+                                            placeholder="Ingrese la calle donde esta ubicado el transportista" value="{{ old('calle') }}"
+                                            onkeyup="this.value = this.value.toUpperCase();" maxlength="64">
                                         @if ($errors->has('calle'))
                                             <span class="error text-danger"
                                                 for="input-calle">{{ $errors->first('calle') }}</span>
@@ -80,8 +80,8 @@
                                     <label for="noExterior" class="col-sm-2 col-form-label">Número exterior:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noExterior"
-                                            placeholder="Ingrese el número exterior donde esta ubicado (*)"
-                                            value="{{ old('noExterior') }}" maxlength="16"
+                                            placeholder="Ingrese el número exterior donde esta ubicado el transportista en caso de tener (*)"
+                                            value="{{ old('noExterior') }}" maxlength="8"
                                             onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noExterior'))
                                             <span class="error text-danger"
@@ -94,8 +94,8 @@
                                     <label for="noInterior" class="col-sm-2 col-form-label">Número interior:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="noInterior"
-                                            placeholder="Ingrese el número interior donde esta ubicado (*)"
-                                            value="{{ old('noInterior') }}" maxlength="16"
+                                            placeholder="Ingrese el número interior donde esta ubicado el transportista en caso de tener (*)"
+                                            value="{{ old('noInterior') }}" maxlength="8"
                                             onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('noInterior'))
                                             <span class="error text-danger"
@@ -108,7 +108,7 @@
                                     <label for="colonia" class="col-sm-2 col-form-label">Colonia:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="colonia"
-                                            placeholder="Ingrese la colonia donde esta ubicado"
+                                            placeholder="Ingrese la colonia donde esta ubicado el transportista"
                                             value="{{ old('colonia') }}"
                                             onkeyup="this.value = this.value.toUpperCase();">
                                         @if ($errors->has('colonia'))
@@ -122,7 +122,7 @@
                                     <label for="codigoPostal" class="col-sm-2 col-form-label">Código postal:</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="codigoPostal"
-                                            placeholder="Ingrese el Código postal donde esta ubicado"
+                                            placeholder="Ingrese el código postal del transportista"
                                             value="{{ old('codigoPostal') }}" maxlength="5">
                                         @if ($errors->has('codigoPostal'))
                                             <span class="error text-danger"
@@ -136,7 +136,7 @@
                                     <div class="col-md-7">
                                         <select name="estado_id"
                                             class="form-control @error('estado_id') is-invalid @enderror" id="estado_id">
-                                            <option value="">Seleccione el estado...</option>
+                                            <option value="">Seleccione el estado donde esta ubicado el transportista...</option>
                                             <!--Comienzo for each -->
                                             @foreach ($estados as $estado)
                                                 <option value="{{ $estado->id }}"
@@ -160,7 +160,14 @@
                                         <select name="municipio_id"
                                             class="form-control @error('municipio_id') is-invalid @enderror"
                                             id="municipio_id">
-                                            <option value="">Seleccione el municipio...</option>
+                                            <option value="">Seleccione el municipio donde esta ubicado el transportista...</option>
+                                            <!--Comienzo for each -->
+                                            @foreach ($municipios as $municipio)
+                                                <option value="{{ $municipio->id }}"
+                                                    {{ old('municipio_id') == $municipio->id ? 'selected' : '' }}>
+                                                    {{ $municipio->nombre }}</option>
+                                            @endforeach
+                                            <!--termino for each -->
                                         </select>
                                         @error('municipio_id')
                                             <span class="invalid-feedback d-block" role="alert">
@@ -174,7 +181,7 @@
                                     <label for="telefono" class="col-sm-2 col-form-label">Teléfono:</label>
                                     <div class="col-sm-7">
                                         <input type="tel" class="form-control" name="telefono"
-                                            placeholder="Ingrese el teléfono donde esta ubicado"
+                                            placeholder="Ingrese el teléfono del transportista"
                                             value="{{ old('telefono') }}" maxlength="10">
                                         @if ($errors->has('telefono'))
                                             <span class="error text-danger"
@@ -187,7 +194,7 @@
                                     <label for="extension" class="col-sm-2 col-form-label">Extensión:</label>
                                     <div class="col-sm-7">
                                         <input type="tel" class="form-control" name="extension"
-                                            placeholder="Ingrese la extensión (*)" value="{{ old('extension') }}"
+                                            placeholder="Ingrese la extensión del transportista en caso de tener (*)" value="{{ old('extension') }}"
                                             maxlength="6">
                                         @if ($errors->has('extension'))
                                             <span class="error text-danger"
@@ -200,8 +207,8 @@
                                     <label for="correo" class="col-sm-2 col-form-label">Correo electrónico:</label>
                                     <div class="col-sm-7">
                                         <input type="email" class="form-control" name="correo"
-                                            placeholder="Ingrese su correo electrónico" value="{{ old('correo') }}"
-                                            onkeyup="this.value = this.value.toLowerCase();">
+                                            placeholder="Ingrese el correo electrónico de contacto del transportista" value="{{ old('correo') }}"
+                                            onkeyup="this.value = this.value.toLowerCase();" maxlength="64">
                                         @if ($errors->has('correo'))
                                             <span class="error text-danger"
                                                 for="input-email">{{ $errors->first('correo') }}</span>

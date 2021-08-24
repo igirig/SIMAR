@@ -40,15 +40,15 @@
                                                     <tr>
                                                         <th>Dirección</th>
                                                         <td>{{ $planta->calle }}
-                                                            @if ($planta->noExterior != null)
-                                                                #{{ $planta->noExterior }}
-                                                            @else S/N
+                                                            @if ($planta->noExterior == null || $planta->noExterior == 'S/N')
+                                                                S/N,
+                                                            @else #{{ $planta->noExterior }},
                                                             @endif
                                                             @if ($planta->noInterior != null)
-                                                                , Interior: {{ $planta->noExterior }}
+                                                                Interior: {{ $planta->noInterior }},
                                                             @else
                                                             @endif
-                                                            , Col. {{ $planta->colonia }},
+                                                            Col. {{ $planta->colonia }},
                                                             C.P. {{ $planta->codigoPostal }},
                                                             {{ $estado[0] }}, {{ $municipio[0] }}
                                                         </td>

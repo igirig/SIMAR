@@ -13,9 +13,9 @@
                             </div>
                             <div class="card-body">
                                 <div class="row">
-                                    <label for="name" class="col-sm-2 col-form-label">Nombre</label>
+                                    <label for="name" class="col-sm-2 col-form-label">Nombre:</label>
                                     <div class="col-sm-7">
-                                        <input type="text" class="form-control" name="name" placeholder="Ingrese su nombre"
+                                        <input type="text" class="form-control" name="name" placeholder="Ingrese el nombre del usuario"
                                             value="{{ old('name') }}" autofocus>
                                         @if ($errors->has('name'))
                                             <span class="error text-danger"
@@ -27,7 +27,7 @@
                                     <label for="email" class="col-sm-2 col-form-label">Correo electrónico:</label>
                                     <div class="col-sm-7">
                                         <input type="email" class="form-control" name="email"
-                                            placeholder="Ingrese su correo electrónico" value="{{ old('email') }}">
+                                            placeholder="Ingrese el correo electrónico del usuario" value="{{ old('email') }}">
                                         @if ($errors->has('email'))
                                             <span class="error text-danger"
                                                 for="input-email">{{ $errors->first('email') }}</span>
@@ -38,7 +38,7 @@
                                     <label for="password" class="col-sm-2 col-form-label">Contraseña</label>
                                     <div class="col-sm-7">
                                         <input type="password" class="form-control" name="password"
-                                            placeholder="Ingrese su contraseña (DEBE SER DE AL MENOS 8 CARACTERES)">
+                                            placeholder="Ingrese la contraseña del usuario (DEBE SER DE AL MENOS 8 CARACTERES)">
                                         @if ($errors->has('password'))
                                             <span class="error text-danger"
                                                 for="input-password">{{ $errors->first('password') }}</span>

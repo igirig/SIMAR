@@ -40,15 +40,15 @@
                                                     <tr>
                                                         <th>Dirección</th>
                                                         <td>{{ $transportista->calle }}
-                                                            @if ($transportista->noExterior != null)
-                                                                #{{ $transportista->noExterior }}
-                                                            @else S/N
+                                                            @if ($transportista->noExterior == null || $transportista->noExterior == 'S/N')
+                                                                S/N,
+                                                            @else #{{ $transportista->noExterior }},
                                                             @endif
                                                             @if ($transportista->noInterior != null)
-                                                                , Interior: {{ $transportista->noExterior }}
+                                                                Interior: {{ $transportista->noInterior }},
                                                             @else
                                                             @endif
-                                                            , Col. {{ $transportista->colonia }},
+                                                            Col. {{ $transportista->colonia }},
                                                             C.P. {{ $transportista->codigoPostal }},
                                                             {{ $estado[0] }}, {{ $municipio[0] }}
                                                         </td>
@@ -69,7 +69,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Ultima modificación</th>
+                                                        <th>Última modificación</th>
                                                         <td>{{ $transportista->updated_at }}</a>
                                                         </td>
                                                     </tr>

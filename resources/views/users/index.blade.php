@@ -22,8 +22,8 @@
                                             <thead class="text-primary">
                                                 <th>ID</th>
                                                 <th>Nombre</th>
-                                                <th>Correo</th>
-                                                <th>Fecha de Creación</th>
+                                                <th>Correo electrónico</th>
+                                                <th>Última modificación</th>
                                                 <th class="text-right">Acciones</th>
                                             </thead>
                                             <tbody>

@@ -5,9 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\SucursalCreateRequest;
 use App\Http\Requests\SucursalEditRequest;
 use App\Models\Sucursal;
-use App\Models\Cliente;
-use App\Models\Estado;
-use App\Models\Municipio;
 use Illuminate\Support\Facades\DB;
 
 class SucursalController extends Controller
@@ -15,7 +12,7 @@ class SucursalController extends Controller
     public function index()
     {
         $clientes = DB::table('clientes')->orderBy('id')->get();
-        $sucursales = Sucursal::paginate(6);
+        $sucursales = Sucursal::paginate(9);
         return view('sucursales.index', compact('sucursales', 'clientes'));
     }
 
@@ -36,6 +33,8 @@ class SucursalController extends Controller
     public function store(SucursalCreateRequest $request)
     {
         $sucursal = Sucursal::create($request->all());
+        if ($sucursal->noExterior == null || $sucursal->noExterior == 'SIN NÚMERO' || $sucursal->noExterior == 'SN' || $sucursal->noExterior == 'SIN NUMERO') $sucursal->noExterior = "S/N";
+        $sucursal->save();
 
         return redirect()->route('sucursales.show', $sucursal->id)->with('success', 'Sucursal creada correctamente');
     }
@@ -74,8 +73,10 @@ class SucursalController extends Controller
             'extension',
             'correo',
         );
-
         $sucursal->update($data);
+        if ($sucursal->noExterior == null || $sucursal->noExterior == 'SIN NÚMERO' || $sucursal->noExterior == 'SN' || $sucursal->noExterior == 'SIN NUMERO') $sucursal->noExterior = "S/N";
+        $sucursal->save();
+
         return redirect()->route('sucursales.show', $sucursal->id)->with('success', 'Sucursal actualizada correctamente');
     }
 

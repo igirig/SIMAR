@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'estaciones.index', 'titlePage' => 'Estaciones'] )
+@extends('layouts.main', ['activePage' => 'estaciones.index', 'titlePage' => 'Estaciones de servicio'] )
 @section('content')
     <div class="content">
         <div class="container-fluid">
@@ -8,7 +8,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-success">
-                                    <h4 class="card-title">Lista de estaciones</h4>
+                                    <h4 class="card-title">Lista de estaciones de servicio</h4>
                                     <p class="card-category">Seleccione una acción...</p>
                                 </div>
                                 <div class="card-body">
@@ -31,31 +31,31 @@
                                                     <tr>
                                                         <td>{{ $estacion->razonSocial }}</td>
                                                         <td>{{ $estacion->noEstacion }}</td>
-                                                        <td>{{ $estacion->telefono }} 
+                                                        <td>{{ $estacion->telefono }}
                                                             @if ($estacion->extension > 0)
                                                                 ext. {{ $estacion->extension }}
                                                             @else
                                                             @endif
                                                         </td>
-                                                        <td><a href="mailto:{{ $estacion->correo }}" title="Enviar correo a {{ $estacion->correo }}">{{ $estacion->correo }}</a></td>
+                                                        <td><a href="mailto:{{ $estacion->correo }}"
+                                                                title="Enviar correo a {{ $estacion->correo }}">{{ $estacion->correo }}</a>
+                                                        </td>
                                                         <td class="td-actions text-right">
                                                             <a href="{{ route('estaciones.show', $estacion->id) }}"
-                                                                class="btn btn-info" title="Visualizar estación
-                                                                "><i
-                                                                    class="material-icons">person</i></a>
+                                                                class="btn btn-info" title="Visualizar estación de servicio
+                                                                    "><i class="material-icons">person</i></a>
                                                             <a href="{{ route('estaciones.edit', $estacion->id) }}"
-                                                                class="btn btn-warning" title="Editar estación
-                                                                "><i
-                                                                    class="material-icons">edit</i></a>
-                                                            <form action="{{ route('estaciones.destroy', $estacion->id) }}"
+                                                                class="btn btn-warning" title="Editar estación de servicio
+                                                                    "><i class="material-icons">edit</i></a>
+                                                            <form
+                                                                action="{{ route('estaciones.destroy', $estacion->id) }}"
                                                                 method="POST" style="display: inline-block;"
-                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar esta estación: {{ $estacion->razonSocial }}?')">
+                                                                onsubmit="return confirm('¿Esta seguro que desea eliminar esta estación de servicio: {{ $estacion->razonSocial }}?')">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button class="btn btn-danger" type="submit"
-                                                                    rel="tooltip"><i class="material-icons"
-                                                                        title="Eliminar estación
-                                                                        ">close</i></button>
+                                                                    rel="tooltip"><i class="material-icons" title="Eliminar estación de servicio
+                                                                            ">close</i></button>
                                                             </form>
                                                         </td>
                                                     </tr>
@@ -69,7 +69,7 @@
                                 </div>
                                 <div class="card-footer ml-auto mr-auto">
                                     <a href="{{ route('estaciones.create') }}" class="btn btn-warning mr-3">Crear
-                                        Estación</a>
+                                        estación de servicio</a>
                                 </div>
                             </div>
                         </div>

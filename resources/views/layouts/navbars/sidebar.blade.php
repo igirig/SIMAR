@@ -30,36 +30,6 @@
 
             <hr>
 
-            {{-- Usuarios --}}
-            <li class="nav-item {{ $activePage == 'users.index' || $activePage == 'users.create' ? ' active' : '' }}">
-                <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample" aria-expanded="false">
-                    <i class="material-icons">account_circle</i>
-                    <p>{{ __('Usuarios') }}
-                        <b class="caret"></b>
-                    </p>
-                </a>
-                <div class="collapse" id="laravelExample">
-                    <ul class="nav">
-                        <li class="nav-item{{ $activePage == 'users.index' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('users.index') }}">
-                                <span class="sidebar-mini">
-                                    <i class="material-icons">contacts</i>
-                                </span>
-                                <span class="sidebar-normal">{{ __('Lista de usuarios') }} </span>
-                            </a>
-                        </li>
-                        <li class="nav-item{{ $activePage == 'users.create' ? ' active' : '' }}">
-                            <a class="nav-link" href="{{ route('users.create') }}">
-                                <span class="sidebar-mini">
-                                    <i class="material-icons">person_add</i>
-                                </span>
-                                <span class="sidebar-normal"> {{ __('Crear un usuario') }} </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-
             {{-- Clientes --}}
             <li
                 class="nav-item {{ $activePage == 'clientes.index' || $activePage == 'clientes.create' ? ' active' : '' }}">
@@ -92,7 +62,7 @@
                 class="nav-item{{ $activePage == 'estaciones.index' || $activePage == 'estaciones.create' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('estaciones.index') }}">
                     <i class="material-icons">local_gas_station</i>
-                    <p>{{ __('Estaciones') }}</p>
+                    <p>{{ __('Estaciones de servicio') }}</p>
                 </a>
             </li>
 
@@ -121,6 +91,38 @@
                     <i class="material-icons">delete</i>
                     <p>{{ __('Residuos') }}</p>
                 </a>
+            </li>
+
+            <hr>
+
+            {{-- Usuarios --}}
+            <li class="nav-item {{ $activePage == 'users.index' || $activePage == 'users.create' ? ' active' : '' }}">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#laravelExample" aria-expanded="false">
+                    <i class="material-icons">account_circle</i>
+                    <p>{{ __('Usuarios') }}
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse" id="laravelExample">
+                    <ul class="nav">
+                        <li class="nav-item{{ $activePage == 'users.index' ? ' active' : '' }}">
+                            <a class="nav-link" href="{{ route('users.index') }}">
+                                <span class="sidebar-mini">
+                                    <i class="material-icons">contacts</i>
+                                </span>
+                                <span class="sidebar-normal">{{ __('Lista de usuarios') }} </span>
+                            </a>
+                        </li>
+                        <li class="nav-item{{ $activePage == 'users.create' ? ' active' : '' }}">
+                            <a class="nav-link" href="{{ route('users.create') }}">
+                                <span class="sidebar-mini">
+                                    <i class="material-icons">person_add</i>
+                                </span>
+                                <span class="sidebar-normal"> {{ __('Crear un usuario') }} </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
 
         </ul>

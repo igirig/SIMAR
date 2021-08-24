@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::get('/register', [App\Http\Controllers\HomeController::class, 'register'])->name('login');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/template', [App\Http\Controllers\HomeController::class, 'template'])->name('homeTemplate');
 

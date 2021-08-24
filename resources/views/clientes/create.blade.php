@@ -17,7 +17,7 @@
                                     <label for="razonSocial" class="col-sm-2 col-form-label">Razón social</label>
                                     <div class="col-sm-7">
                                         <input type="text" class="form-control" name="razonSocial" placeholder="Ingrese la razón social del cliente"
-                                            value="{{ old('razonSocial') }}" onkeyup="this.value = this.value.toUpperCase();" autofocus>
+                                            value="{{ old('razonSocial') }}" onkeyup="this.value = this.value.toUpperCase();" maxlength="64" autofocus>
                                         @if ($errors->has('razonSocial'))
                                             <span class="error text-danger"
                                                 for="input-razonSocial">{{ $errors->first('razonSocial') }}</span>

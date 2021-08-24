@@ -27,14 +27,14 @@ class EstacionCreateRequest extends FormRequest
             'razonSocial' => 'required|min:3|max:64|unique:estaciones',
             'noEstacion' => 'required|min:6|max:13|unique:estaciones',
             'calle' => 'required|min:1|max:64',
-            'noExterior' => 'max:16',
-            'noInterior' => 'max:16',
-            'colonia' => 'required|min:1|max:64',
+            'noExterior' => 'nullable',
+            'noInterior' => 'nullable',
+            'colonia' => 'required|min:3|max:64',
             'codigoPostal' => 'required|digits:5|numeric',
             'estado_id' => 'required',
             'municipio_id' => 'required',
             'telefono' => 'required|digits:10|numeric',
-            'extension' => 'numeric',
+            'extension' => 'nullable|numeric',
             'correo' => 'required|email',
         ];
     }

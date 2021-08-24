@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\PlantaCreateRequest;
 use App\Http\Requests\PlantaEditRequest;
 use App\Models\Planta;
-use App\Models\Estado;
-use App\Models\Municipio;
 use Illuminate\Support\Facades\DB;
 
 class PlantaController extends Controller

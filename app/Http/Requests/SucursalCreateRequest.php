@@ -25,15 +25,17 @@ class SucursalCreateRequest extends FormRequest
     {
         return [
             'cliente_id' => 'required',
-            'nombre' => 'required|min:3|max:128|unique:sucursales',
+            'nombre' => 'required|min:3|max:64',
             'noRegistroAmbiental' => 'required|size:12|unique:sucursales',
-            'calle' => 'required|min:1|max:128',
-            'colonia' => 'required|min:3|max:128',
+            'calle' => 'required|min:1|max:64',
+            'noExterior' => 'nullable',
+            'noInterior' => 'nullable',
+            'colonia' => 'required|min:3|max:64',
             'codigoPostal' => 'required|digits:5|numeric',
             'estado_id' => 'required',
             'municipio_id' => 'required',
             'telefono' => 'required|digits:10|numeric',
-            'extension' => 'numeric',
+            'extension' => 'nullable|numeric',
             'correo' => 'required|email',
         ];
     }
