@@ -26,7 +26,7 @@ class TransportistaEditRequest extends FormRequest
         $transportista = $this->route('transportista');
         return [
             'razonSocial' => ['required', 'min:3', 'max:64', 'unique:transportistas,razonSocial,' . request()->route('transportista')->id],
-            'noRegistroAmbiental' => ['required', 'min:12', 'max:13', 'unique:transportistas,noRegistroAmbiental,' . request()->route('transportista')->id],
+            'noRegistroAmbiental' => ['required', 'size:12', 'unique:transportistas,noRegistroAmbiental,' . request()->route('transportista')->id],
             'calle' => ['required', 'min:1', 'max:64'],
             'noExterior' => ['nullable'],
             'noInterior' => ['nullable'],
@@ -35,7 +35,7 @@ class TransportistaEditRequest extends FormRequest
             'estado_id' => ['required'],
             'municipio_id' => ['required'],
             'telefono' => ['required', 'digits:10', 'numeric'],
-            'extension' => ['numeric', 'nullable'],
+            'extension' => ['nullable', 'numeric'],
             'correo' => ['required', 'email'],
         ];
     }

@@ -35,7 +35,7 @@ class EstacionEditRequest extends FormRequest
             'estado_id' => ['required'],
             'municipio_id' => ['required'],
             'telefono' => ['required', 'digits:10', 'numeric'],
-            'extension' => ['numeric', 'nullable'],
+            'extension' => ['nullable', 'numeric'],
             'correo' => ['required', 'email'],
         ];
     }

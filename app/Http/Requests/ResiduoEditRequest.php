@@ -34,8 +34,8 @@ class ResiduoEditRequest extends FormRequest
             'mezcla' => [''],
             'noONU' => ['required', 'min:6', 'max:7'],
             'descripcion' => ['required', 'min:3'],
-            'clase_id' => [''],
-            'materia_id' => [''],
+            'clase_id' => ['required'],
+            'materia_id' => ['required'],
         ];
     }
 }

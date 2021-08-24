@@ -25,10 +25,10 @@ class VehiculoEditRequest extends FormRequest
     {
         $vehiculo = $this->route('vehiculo');
         return [
-            'transportista_id' => [''],
+            'transportista_id' => ['required'],
             'noPermisoSCT' => ['required', 'size:9', 'unique:vehiculos,noPermisoSCT,' . request()->route('vehiculo')->id],
-            'tipo_id' => [''],
-            'capacidad_id' => [''],
+            'tipo_id' => ['required'],
+            'capacidad_id' => ['required'],
             'noPlaca' => ['required', 'min:6', 'max:7', 'unique:vehiculos,noPlaca,' . request()->route('vehiculo')->id],
         ];
     }
