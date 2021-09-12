@@ -7,7 +7,15 @@ use App\Models\Transportista;
 use App\Models\Planta;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use mikehaertl\pdftk\Pdf;
 use App\Models\Residuo;
+use App\Models\Estacion;
+use App\Models\Municipio;
+use App\Models\Estado;
+use App\Models\Sucursal;
+use App\Models\Vehiculo;
+use App\Models\Tipo_vehiculo;
+use SebastianBergmann\Environment\Console;
 
 class ResiduosManejoEspecialController extends Controller
 {
@@ -28,11 +36,13 @@ class ResiduosManejoEspecialController extends Controller
      */
     public function create()
     {
-        $clientes = ResiduosManejoEspecial::all(['razonSocial', 'id']);
+        $sucursales = Sucursal::all(['nombre', 'id']);
         $transportistas = Transportista::all(['razonSocial', 'id']);
         $plantas = Planta::all(['razonSocial', 'id']);
-        $residuos = Residuo::all(['nombre','id']);
-        return view('manifiestos.RME', compact('clientes', 'transportistas', 'plantas', 'residuos'));
+        $residuos = Residuo::all(['nombre','id']);  
+        $vehiculos = Vehiculo::all(['noPlaca','id']);
+        $municipios = Municipio::all(['nombre', 'id']);
+        return view('manifiestos.RME', compact('sucursales', 'transportistas', 'plantas', 'residuos', 'vehiculos', 'municipios'));
     }
 
     /**
@@ -43,49 +53,87 @@ class ResiduosManejoEspecialController extends Controller
      */
     public function store(Request $request)
     {
-        
-        /*
+       
         $request->session()->flush();
-        if($request->inputServiceStation == null){
-            return redirect()->route('LE.create')->with('error', "error.");
+        if($request->inputGenerator == null){
+            return redirect()->route('RME.create')->with('error', "error.");
         }
-        if($request->inputServiceStation == null)
+        else if($request->inputTransportist == null){
+            return redirect()->route('RME.create')->with('error', "error.");
+        }
+        else if($request->inputDestinatario == null){
+            return redirect()->route('RME.create')->with('error', "error.");
+        }
+        else if($request->inputVehicle == null){
+            return redirect()->route('RME.create')->with('error', "error.");
+        }
+        else if($request->inputResiduo0 == null){
+            return redirect()->route('RME.create')->with('error', "error.");
+        }
+        
         else{
+            
             //Variables con colecciones de objetos que contienen los datos a usar.
-            $estacion = Estacion::where('id', $request->inputServiceStation)->get();
-            $estado = Estado::where('id', $estacion{0}{'estado_id'})->get('nombre');
-            $municipio = Municipio::where('id', $estacion{0}{'municipio_id'})->get('nombre');
 
-            $filename = 'CLE_'.$estacion{0}{'noEstacion'}.rand().'.pdf';
-            if($estacion{0}{'noInterior'}==null){
-                $direccion = $estacion{0}{'calle'}.', No. Ext.: '.$estacion{0}{'noExterior'}.', Col: '.$estacion{0}{'colonia'}.', C.P.: '.$estacion{0}{'codigoPostal'}.', '.$municipio{0}->nombre.', '.$estado{0}->nombre;
+            
+            $generador = Sucursal::where('id', $request->inputGenerator)->get();
+            $estado_gen = Estado::where('id', $generador{0}{'estado_id'})->get('nombre');    
+            $municipio_gen = Municipio::where('id', $generador{0}{'municipio_id'})->get('nombre');
+            $transportista = Transportista::where('id', $request->inputTransportist)->get();
+            $estado_tra = Estado::where('id', $transportista{0}{'estado_id'})->get('nombre');    
+            $municipio_tra = Municipio::where('id', $transportista{0}{'municipio_id'})->get('nombre');
+            $destinatario = Planta::where('id', $request->inputDestinatario)->get();
+            $estado_des = Estado::where('id', $destinatario{0}{'estado_id'})->get('nombre');    
+            $municipio_des = Municipio::where('id', $destinatario{0}{'municipio_id'})->get('nombre');
+            $vehiculo = Vehiculo::where('id', $request->inputVehicle)->get();
+            $tipoVehiculo = Tipo_vehiculo::where('id', $vehiculo{0}{'tipo_id'})->get('nombre');
+
+            $filename = 'RME_'.$generador{0}{'noRegistroAmbiental'}.rand().'.pdf';
+
+            if($generador{0}{'noInterior'} == NULL){
+                $noInt = 's/n';
             }else{
-                $direccion = $estacion{0}{'calle'}.', No. Ext.: '.$estacion{0}{'noExterior'}.', No. Int.: '.$estacion{0}{'noInterior'}.', Col: '.$estacion{0}{'colonia'}.', C.P.: '.$estacion{0}{'codigoPostal'}.', '.$municipio{0}->nombre.', '.$estado{0}->nombre;
+                $noInt = $generador{0}{'noInterior'};
             }
 
             //Llenado del formulario con datos en un array
-            $pdf = new Pdf('../public/pdfs/CLE.pdf');
+            $pdf = new Pdf('../public/pdfs/ERME.pdf');
             $result = $pdf->fillForm([
-                'razonSocial_0' => $estacion{0}{'razonSocial'},
-                'direccion_0' => $direccion,
-                'colonia_0' => $estacion{0}{'colonia'},
-                'ciudadPoblacion_0' => $municipio{0}->nombre,
-                'estado_0' => $estado{0}->nombre,
-                'razonSocial_1' => $estacion{0}{'razonSocial'},
-                'direccion_1' => $direccion,
-                'colonia_1' => $estacion{0}{'colonia'},
-                'ciudadPoblacion_1' => $municipio{0}->nombre,
-                'estado_1' => $estado{0}->nombre,
-                'razonSocial_2' => $estacion{0}{'razonSocial'},
-                'direccion_2' => $direccion,
-                'colonia_2' => $estacion{0}{'colonia'},
-                'ciudadPoblacion_2' => $municipio{0}->nombre,
-                'estado_2' => $estado{0}->nombre,
-                'razonSocial_3' => $estacion{0}{'razonSocial'},
-                'direccion_3' => $direccion,
-                'colonia_3' => $estacion{0}{'colonia'},
-                'ciudadPoblacion_3' => $municipio{0}->nombre,
-                'estado_3' => $estado{0}->nombre
+                'numRegistroAmbientalGen_0' => $generador{0}{'noRegistroAmbiental'},
+                'razonSocialGenerador_0' => $generador{0}{'nombre'},
+                'codigoPostal_0' => $generador{0}{'codigoPostal'},
+                'calle_0' => $generador{0}{'calle'},
+                'numExt_0' => $generador{0}{'noExterior'},
+                'numInt_0' => $noInt,
+                'colonia_0' => $generador{0}{'colonia'},
+                'municipioDelegacion_0' => $municipio_gen{0}->nombre,
+                'estado_0' => $estado_gen{0}->nombre,
+                'telefono_0' => $generador{0}{'telefono'},
+                'correoElectronico_0' => $generador{0}{'correo'},
+                'razonSocialTransportista_0' => $transportista{0}{'razonSocial'},
+                'codigoPostalTransportista_0' => $transportista{0}{'codigoPostal'},
+                'calleTransportista_0' => $transportista{0}{'calle'},
+                'numExtTransportista_0' => $transportista{0}{'noExterior'},
+                'numIntTransportista_0' => $transportista{0}{'noInterior'},
+                'coloniaTransportista_0' => $transportista{0}{'colonia'},
+                'municipioTransportista_0' => $municipio_tra{0}->nombre,
+                'estadoTransportista_0' => $estado_gen{0}->nombre,
+                'telefonoTransportista_0' => $transportista{0}{'telefono'},
+                'correoElectronicoTransportista_0' => $transportista{0}{'correo'},
+                'razonSocialDestinatario_0' => $destinatario{0}{'razonSocial'},
+                'codigoPostalDestinatario_0' => $destinatario{0}{'codigoPostal'},
+                'calleDestinatario_0' => $destinatario{0}{'calle'},
+                'numExtDestinatario_0' => $destinatario{0}{'noExterior'},
+                'numIntDestinatario_0' => $destinatario{0}{'noInterior'},
+                'coloniaDestinatario_0' => $destinatario{0}{'colonia'},
+                'municipioDestinatario_0' => $municipio_des{0}->nombre,
+                'estadoDestinatario_0' => $estado_des{0}->nombre,
+                'telefonoDestinatario_0' => $destinatario{0}{'telefono'},
+                'correoElectronicoDestinatario_0' => $destinatario{0}{'correo'},
+                'numAutorizacionDestinatario_0' => $destinatario{0}{'noRegistroAmbiental'},
+                'numAutorizacion_0' => $vehiculo{0}{'noPermisoSCT'},
+                'tipoVehiculo_0' => $tipoVehiculo{0}->nombre,
+                'numPlaca_0' => $vehiculo{0}{'noPlaca'},
             ])
             ->needAppearances()
             ->flatten()
@@ -93,7 +141,7 @@ class ResiduosManejoEspecialController extends Controller
 
             if ($result === false) {
                 $error = $pdf->getError();
-                return redirect()->route('LE.create')->with('errorPDF', $error);
+                return redirect()->route('RME.create')->with('error', "error.");
             }else{
                 // Almacenamiento del nombre y ruta del archivo en una variable
                 $filepath = '../pdf_filled/'.$filename;
@@ -111,8 +159,9 @@ class ResiduosManejoEspecialController extends Controller
                 $this -> notificar($filepath);
                 @readfile($filepath);
                 exit();
+                
             }
-        }*/
+        }
     }
 
     /**
