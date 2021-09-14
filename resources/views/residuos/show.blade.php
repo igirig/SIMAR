@@ -7,8 +7,8 @@
                     <div class="card">
                         <div class="card-header card-header-info">
                             <h4 class="card-title">Detalles del residuo</h4>
-                            <p class="card-category">Vista detallada del vehículo con las placas
-                                {{ $residuo->noPlaca }}...</p>
+                            <p class="card-category">Vista detallada del residuo 
+                                {{ $residuo->nombre }}...</p>
                         </div>
                         <!--Body-->
                         <div class="card-body">
